@@ -1,14 +1,4 @@
-import {
-  Button,
-  Card,
-  Divider,
-  Heading,
-  ObservationsTable,
-  Skeleton,
-  Text,
-} from "@/shared/ui";
-import { SubscriptionStatus, useSubscriptionStatus } from "@/shared/hooks";
-import clsx from "clsx";
+import { Button, Card, Divider, Heading, Text } from "@/shared/ui";
 import { motion } from "framer-motion";
 
 export function Dashboard() {
@@ -42,7 +32,6 @@ function RecentObservationsPanel() {
     <Card className="lg:col-span-2 lg:row-span-2 xl:col-span-3 xl:row-span-2">
       <Heading>Recent Observations</Heading>
       <Divider className="mt-6" />
-      <ObservationsTable />
     </Card>
   );
 }
@@ -96,78 +85,21 @@ function TrainingPanel() {
 }
 
 function SubscriptionPanel() {
-  const { subscription, isLoading } = useSubscriptionStatus();
-
-  const textClassName = clsx(
-    "text-sm",
-    subscription?.status &&
-      [
-        "incomplete",
-        "incomplete_expired",
-        "past_due",
-        "canceled",
-        "unpaid",
-      ].includes(subscription?.status) &&
-      "text-red-600",
-    subscription?.status &&
-      ["paused"].includes(subscription?.status) &&
-      "text-zinc-600",
-    subscription?.status &&
-      ["trialing", "active"].includes(subscription?.status) &&
-      "text-green-600",
-  );
-
-  function getSubscriptionStatusMessage(
-    status: SubscriptionStatus | undefined,
-  ) {
-    switch (status) {
-      case "incomplete":
-      case "incomplete_expired":
-        return "incomplete";
-      case "trialing":
-      case "active":
-        return "active";
-      case "past_due":
-        return "inactive";
-      case "canceled":
-        return "inactive";
-      case "unpaid":
-        return "inactive";
-      case "paused":
-        return "paused";
-      default:
-        return "inactive";
-    }
-  }
-
-  const message = getSubscriptionStatusMessage(subscription?.status);
   return (
     <Card className="flex flex-col space-y-6 xl:col-span-2 xl:row-span-1">
       <Heading>Subscription</Heading>
       <Divider />
-      {isLoading ? (
-        <div className="flex flex-col space-y-4">
-          <Skeleton data-testid="subscription-skeleton" />
-          <Skeleton data-testid="subscription-skeleton" />
-          <Skeleton
-            className="ml-auto w-1/4"
-            data-testid="subscription-skeleton"
-          />
-        </div>
-      ) : (
-        <>
-          <div className="flex flex-1 flex-col space-y-3">
-            <Text className={textClassName}>
-              Your subscription is{" "}
-              <span className="font-semibold" data-testid="subscription-status">
-                {message}
-              </span>
-              .
-            </Text>
-          </div>
-          <Button className="ml-auto mt-auto">Manage Subscription</Button>
-        </>
-      )}
+
+      <div className="flex flex-1 flex-col space-y-3">
+        <Text>
+          Your subscription is{" "}
+          <span className="font-semibold" data-testid="subscription-status">
+            active
+          </span>
+          .
+        </Text>
+      </div>
+      <Button className="ml-auto mt-auto">Manage Subscription</Button>
     </Card>
   );
 }

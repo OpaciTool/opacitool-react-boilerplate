@@ -14,7 +14,6 @@ export * from "./input";
 export * from "./link";
 export * from "./logo";
 export * from "./navbar";
-export * from "./observations-table";
 export * from "./radio";
 export * from "./select";
 export * from "./skeleton";

@@ -14,7 +14,6 @@ import {
   TouchTarget,
 } from "./";
 
-import { firebaseAuth } from "@/shared/config/firebaseConfig";
 import * as Headless from "@headlessui/react";
 import {
   ArrowRightStartOnRectangleIcon,
@@ -46,7 +45,7 @@ export function AccountDropdownMenu({
         <DropdownLabel>Privacy policy</DropdownLabel>
       </DropdownItem>
       <DropdownDivider />
-      <DropdownItem onClick={() => firebaseAuth.signOut()}>
+      <DropdownItem>
         <ArrowRightStartOnRectangleIcon />
         <DropdownLabel>Sign out</DropdownLabel>
       </DropdownItem>
@@ -417,13 +416,6 @@ export function ApplicationLayout({
             <SidebarSpacer />
 
             <SidebarSection>
-              <SidebarItem
-                current={pathname?.startsWith("/account")}
-                to="/account"
-              >
-                <UserIcon />
-                <SidebarLabel>Account</SidebarLabel>
-              </SidebarItem>
               <SidebarItem
                 current={pathname?.startsWith("/support")}
                 to="/support"

@@ -1,4 +1,3 @@
-import { ObservationsList } from "@/features/observations/ui";
 import { Divider, Heading } from "@/shared/ui";
 import { motion } from "framer-motion";
 
@@ -21,7 +20,6 @@ export function ObservationsPage() {
     >
       <Heading>Observations</Heading>
       <Divider className="mt-6" />
-      <ObservationsList />
     </motion.div>
   );
 }
