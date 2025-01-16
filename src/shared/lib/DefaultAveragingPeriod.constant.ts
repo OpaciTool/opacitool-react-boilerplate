@@ -1,0 +1,1 @@
+export const DEFAULT_AVERAGING_PERIOD = 4;
