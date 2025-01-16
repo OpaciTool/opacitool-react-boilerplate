@@ -1,6 +1,5 @@
 import {
   Avatar,
-  Badge,
   Dropdown,
   DropdownButton,
   DropdownDivider,
@@ -14,8 +13,6 @@ import {
   NavbarSpacer,
   TouchTarget,
 } from "./";
-
-import { useAuthState } from "@/shared/hooks";
 
 import { firebaseAuth } from "@/shared/config/firebaseConfig";
 import * as Headless from "@headlessui/react";
@@ -33,9 +30,8 @@ import {
 } from "@heroicons/react/20/solid";
 import clsx from "clsx";
 import { LayoutGroup, motion } from "framer-motion";
-import React, { Fragment, forwardRef, useEffect, useId, useState } from "react";
-import toast from "react-hot-toast";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import React, { Fragment, forwardRef, useId, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
 
 export function AccountDropdownMenu({
@@ -371,15 +367,6 @@ export function ApplicationLayout({
   contentPadding?: boolean;
 }) {
   const pathname = useLocation().pathname;
-  const navigate = useNavigate();
-
-  const { auth, user, isError, isPending } = useAuthState();
-
-  useEffect(() => {
-    if (isError || Boolean(!user && auth === null)) {
-      navigate("/login");
-    }
-  }, [auth, isError, isPending, navigate, user]);
 
   return (
     <SidebarLayout
@@ -401,23 +388,7 @@ export function ApplicationLayout({
         <Sidebar>
           <SidebarHeader>
             <SidebarLabel className="text-xl font-bold">
-              <Heading className="flex justify-between">
-                OpaciTool
-                {import.meta.env.VITE_ENVIRONMENT !== "production" && (
-                  <Badge
-                    className="w-min uppercase hover:cursor-pointer"
-                    color="orange"
-                    onClick={async () => {
-                      navigator.clipboard.writeText(
-                        (await auth?.getIdToken()) ?? "error",
-                      );
-                      toast("DEV: Copied token to clipboard");
-                    }}
-                  >
-                    {import.meta.env.VITE_ENVIRONMENT}
-                  </Badge>
-                )}
-              </Heading>
+              <Heading className="flex justify-between">OpaciTool</Heading>
             </SidebarLabel>
           </SidebarHeader>
 
@@ -472,10 +443,10 @@ export function ApplicationLayout({
                   </div>
                   <span className="min-w-0">
                     <span className="block truncate text-sm/5 font-medium text-zinc-950 dark:text-white">
-                      {user?.email}
+                      john.doe@email.com
                     </span>
                     <span className="block truncate text-xs/5 font-normal text-zinc-500 dark:text-zinc-400">
-                      {user?.uid}
+                      1234567890
                     </span>
                   </span>
                 </span>

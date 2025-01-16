@@ -6,34 +6,22 @@ import { ObservationPdfWrapper } from "@/features/observation-pdf";
 
 import { QueryClientProvider } from "@tanstack/react-query";
 
-import { EnvErrorBoundary, EnvValidator } from "@/widgets/error";
-
 import {
   AccountSettingsPage,
   Dashboard,
-  ForgotPasswordPage,
-  LoginPage,
   ObservationPage,
   ObservationsPage,
-  RegisterPage,
   SupportPage,
-  VerifyEmail,
 } from "@/pages";
 import { queryClient } from "@/shared/lib";
 import { ApplicationLayout } from "@/shared/ui";
-
-const REQUIRED_ENV_VARIABLES = ["VITE_API_URL"];
 
 const router = createBrowserRouter([
   {
     element: (
       <QueryClientProvider client={queryClient}>
         <AnimatePresence mode="wait">
-          <EnvErrorBoundary>
-            <EnvValidator requiredEnvVars={REQUIRED_ENV_VARIABLES}>
-              <Outlet />
-            </EnvValidator>
-          </EnvErrorBoundary>
+          <Outlet />
           <Toaster position="top-right" />
         </AnimatePresence>
       </QueryClientProvider>
@@ -90,22 +78,6 @@ const router = createBrowserRouter([
             <div>Training</div>
           </ApplicationLayout>
         ),
-      },
-      {
-        path: "/login",
-        element: <LoginPage />,
-      },
-      {
-        path: "/register",
-        element: <RegisterPage />,
-      },
-      {
-        path: "/forgot-password",
-        element: <ForgotPasswordPage />,
-      },
-      {
-        path: "/verify-email",
-        element: <VerifyEmail />,
       },
     ],
   },
