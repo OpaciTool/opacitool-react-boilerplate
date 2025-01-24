@@ -43,7 +43,8 @@ export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarPro
         {onClose && (
           <button
             onClick={onClose}
-            className="absolute top-4 right-2  text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 lg:hidden"
+            aria-label="Close sidebar"
+            className="absolute top-4 right-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 lg:hidden"
           >
             <XMarkIcon className="size-7" />
           </button>
