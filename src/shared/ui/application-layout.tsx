@@ -32,6 +32,7 @@ import { LayoutGroup, motion } from "framer-motion";
 import React, { Fragment, forwardRef, useId, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { twMerge } from "tailwind-merge";
+import { ThemeToggle } from "./theme-toggle";
 
 export function AccountDropdownMenu({
   anchor,
@@ -450,6 +451,9 @@ export function ApplicationLayout({
         </Sidebar>
       }
     >
+      <div className="fixed top-4 right-4 z-50">
+        <ThemeToggle />
+      </div>
       {children}
     </SidebarLayout>
   );

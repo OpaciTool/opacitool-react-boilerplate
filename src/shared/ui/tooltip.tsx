@@ -44,3 +44,30 @@ export function ToolTip({
     </TooltipProvider>
   );
 }
+
+export function Tooltip({
+  children,
+  content,
+}: {
+  children: React.ReactNode;
+  content: string;
+}) {
+  return (
+    <TooltipPrimitive.Provider>
+      <TooltipPrimitive.Root>
+        <TooltipPrimitive.Trigger asChild>
+          {children}
+        </TooltipPrimitive.Trigger>
+        <TooltipPrimitive.Portal>
+          <TooltipPrimitive.Content
+            className="rounded-lg bg-zinc-900 px-3 py-1.5 text-sm text-white shadow-lg dark:bg-white dark:text-zinc-900"
+            sideOffset={5}
+          >
+            {content}
+            <TooltipPrimitive.Arrow className="fill-zinc-900 dark:fill-white" />
+          </TooltipPrimitive.Content>
+        </TooltipPrimitive.Portal>
+      </TooltipPrimitive.Root>
+    </TooltipPrimitive.Provider>
+  );
+}
