@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors');
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -30,6 +32,12 @@ export default {
           800: "#328b90",
           900: "#2b777c",
         },
+        teal: {
+          400: '#3BCDD3'
+        },
+      },
+      screens: {
+        'xs': '375px',
       },
     },
   },
@@ -44,4 +52,5 @@ export default {
       pattern: /^bg-opacity-/,
     },
   ],
+  darkMode: "class",
 };

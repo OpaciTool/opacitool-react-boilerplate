@@ -22,3 +22,4 @@ export * from "./stat";
 export * from "./switch";
 export * from "./text";
 export * from "./textarea";
+export * from "./tooltip";

@@ -13,6 +13,6 @@ export default defineConfig({
     globals: true,
     setupFiles: "./src/test/setup.tsx",
     testTimeout: 10000,
-    watch: false,
+    watch: false
   },
 });
