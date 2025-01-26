@@ -1,0 +1,146 @@
+{
+  "lectureId": "intro-3",
+  "moduleId": 1,
+  "title": "Smoke School",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "What is Smoke School?",
+      "content": {
+        "text": "Most sources that produce air emissions have limitations on the opacity of their emissions.  To determine if a facility is in compliance with these limits, individuals can be trained and tested through a smoke school.  Smoke school is the process of being trained and certified to read the opacity of visible emissions using visual memory. ",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-3/15.jpg",
+          "alt": "Image"
+        }
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "tabs",
+      "title": "About Smoke School",
+      "content": {
+        "tabs": [
+          {
+            "id": "components",
+            "label": "Components of Smoke School",
+            "content": {
+              "description": "Smoke school consists of two components; lecture and the visual test.  The lecture, which you are currently completing, teaches proper visible emission observation and documentation procedures.  The visual test teaches you how to determine opacity and tests you on your assessment accuracy.",
+              "sections": [
+                {
+                  "title": "The Lecture",
+                  "description": "A smoke school lecture can be completed online or in-person.  The lecture teaches how to properly observe and document visible emissions observations. Online lectures usually allow you to learn at your own pace and provide printable reference forms for observations.  ",
+                  "images": [
+                    {
+                      "url": "/images/training/module-1/lecture-3/16.jpg",
+                      "alt": "Classroom Training 1",
+                      "caption": "Online lectures are self-paced and completed at home or in the office. "
+                    },
+                    {
+                      "url": "/images/training/module-1/lecture-3/17.jpg",
+                      "alt": "Classroom Training 2",
+                      "caption": "In-person lectures are usually performed the day before the visual test."
+                    }
+                  ]
+                },
+                {
+                  "title": "The Visual Test",
+                  "description": "The visual test can be performed with a virtual reality (VR) headset or by attending an in-person smoke school event. The visual test requires accurately assessing the opacity of 25 values of black smoke and 25 values of white smoke. Prior to the test, demonstrations of various opacity values are provided to ensure your eyes are calibrated. You must successfully pass both smoke colors to receive your certification. If you do not pass, you can retake the test.",
+                  "images": [
+                    {
+                      "url": "/images/training/module-1/lecture-3/18.jpg",
+                      "alt": "Field Training 1",
+                      "caption": "Students  at an In-person Smoke School"
+                    },
+                    {
+                      "url": "/images/training/module-1/lecture-3/19.jpg",
+                      "alt": "Field Training 2",
+                      "caption": "Student completing smoke school using a VR headset."
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          {
+            "id": "attendees",
+            "label": "Who Attends Smoke School?",
+            "content": {
+              "description": "",
+              "sections": [
+                {
+                  "title": "Commercial & Industrial Sources",
+                  "layout": "text-left",
+                  "type": "split",
+                  "content": {
+                    "text": "Any industrial or commercial source that has the potential to emit matter into the air will likely have an air permit which regulates the opacity of the emissions.  Many industrial and commercial facilities have in-house personnel who are certified through a smoke school program.",
+                    "media": {
+                      "type": "image",
+                      "url": "/images/training/module-1/lecture-3/21.jpg",
+                      "alt": "Environmental Professional"
+                    }
+                  }
+                },
+                {
+                  "title": "Regulatory Agencies",
+                  "layout": "text-right",
+                  "type": "split",
+                  "content": {
+                    "text": "Federal, state and municipal regulatory agencies have inspectors who ensure opacity limitations are not exceeded at commercial facilities.  These individuals are certified through a smoke school program.",
+                    "media": {
+                      "type": "image",
+                      "url": "/images/training/module-1/lecture-3/22.jpg",
+                      "alt": "Regulatory Personnel"
+                    }
+                  }
+                },
+                {
+                  "title": "Environmental Consultants",
+                  "layout": "text-left",
+                  "type": "split",
+                  "content": {
+                    "text": "Commercial sources sometimes hire third-party consultants to perform regularly-scheduled opacity observations.  These consultants are certified through a smoke school program.",
+                    "media": {
+                      "type": "image",
+                      "url": "/images/training/module-1/lecture-3/23.jpg",
+                      "alt": "Facility Operator"
+                    }
+                  }
+                },
+                {
+                  "title": "Community & Environmental Groups",
+                  "layout": "text-right",
+                  "type": "split",
+                  "content": {
+                    "text": "Community watch groups usually arise in areas where repeat opacity offenders are present and there is a direct effect on their community.  Environmental groups also monitor opacity from facilities who have repeatedly exceeded their opacity limit or in areas where air pollution is increasing and action is required.  ",
+                    "media": {
+                      "type": "image",
+                      "url": "/images/training/module-1/lecture-3/24.jpg",
+                      "alt": "Quality Assurance Staff"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-left",
+      "title": "EPA Method 9 Certification",
+      "content": {
+        "text": "When you successfully complete a smoke school, you are certified to perform USEPA Method 9 testing. USEPA Method 9 is a federal test method and applies to all states.  However, each state can modify the method to be more stringent (not less) than the federal method.  For example, the USEPA recommends completing a smoke school lecture if you are being certified at an in-person smoke school.  It does not require it unless you are being trained using virtual reality.  However, multiple states require completion of the lecture at least once every three years even if you are certified in-person.  We strongly recommend completing the lecture every 3 years as a refresher course. USEPA Method 9 also establishes the certification period as 6 months.  All states have adopted the same 6 month certification duration. ",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-3/20.png",
+          "alt": "Certification Requirements"
+        }
+      }
+    }
+  ]
+}

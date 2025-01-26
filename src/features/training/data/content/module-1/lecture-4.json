@@ -1,0 +1,101 @@
+{
+  "lectureId": "intro-4",
+  "moduleId": 1,
+  "title": "The Importance of Opacity Observations",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Health Impacts of Air Pollution",
+      "content": {
+        "text": "There are many health impacts associated with air pollution.  Opacity observations are one of the easiest and most effective ways to monitor and reduce air pollution.  By becoming a visible emissions observer, you are helping to reduce the deadliest form of pollution in the world.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-4/25.jpg",
+          "alt": "VE Introduction"
+        }
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Health Fact #1",
+      "content": {
+        "text": "92% of the world’s population lives in places where air pollution exceeds safe limits.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-4/26.jpg",
+          "alt": "Example Image",
+          "isClickable": true,
+          "caption": "Areas in yellow, red, orange and purple exceed the WHO’s safety limits for air pollution."
+        }
+      }
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Health Fact #2",
+      "content": {
+        "text": "Air pollution is the fourth-largest threat to human health after high blood pressure, dietary risks and smoking.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-4/27.jpg",
+          "alt": "Example Image",
+          "isClickable": true,
+          "caption": ""
+        }
+      }
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Health Fact #3",
+      "content": {
+        "text": "In 2017, approximately 10% of all deaths worldwide were from air pollution related diseases.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-4/28.jpg",
+          "alt": "Example Image",
+          "isClickable": true,
+          "caption": ""
+        }
+      }
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Health Fact #4",
+      "content": {
+        "text": "In 2017, it is estimated that air pollution reduced worldwide life expectancy by an average of 20 months.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-4/29.jpg",
+          "alt": "Example Image",
+          "isClickable": true,
+          "caption": ""
+        }
+      }
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Health Fact #5",
+      "content": {
+        "text": "Countries with the highest air pollution levels might surprise you.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-1/lecture-4/30.jpg",
+          "alt": "Example Image",
+          "isClickable": true,
+          "caption": ""
+        }
+      }
+    }
+  ]
+} 
