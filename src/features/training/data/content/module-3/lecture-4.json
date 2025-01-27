@@ -1,0 +1,47 @@
+{
+  "lectureId": "module-3-lecture-4",
+  "moduleId": 3,
+  "title": "Contrasting Backgrounds",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Contrasting Background",
+      "content": {
+        "text": "The opacity of visible emissions is determined by visually evaluating how much the background is obscured when viewing through the plume. The contrast between the plume's color and the background will significantly influence the opacity readings."
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "High-Contrasting Backgrounds",
+      "content": {
+        "text": "If possible, the observer should position themselves to view the plume against a high-contrast background. A dark background is ideal when observing a white plume, while dark or black plumes are best viewed against blue skies or other light-colored backgrounds.\n\nHigh-contrast backgrounds may introduce positive bias in the readings, meaning the opacity readings could be higher than the actual opacity. It is generally preferable to have positive bias in the readings than negative bias, as the latter can result in underestimating the opacity."
+      }
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Low-Contrasting Backgrounds",
+      "content": {
+        "text": "At times, the observer may not have control over the background and must observe the plume against a low-contrast background. Low-contrast backgrounds typically result in negative bias, where the opacity readings are lower than the actual opacity. Negative bias can lead to a facility appearing to comply with an opacity limit, even when it is actually exceeding the limit."
+      }
+    },
+    {
+      "id": "section-4",
+      "type": "video",
+      "title": "Video Demonstrating Contrast",
+      "content": {
+        "text": "The following video shows the same opacity value with a low-contrasting background and a high-contrasting background.  Notice the effect the background has on the apparent opacity.",
+        "media": {
+          "type": "video",
+          "url": "/images/training/module-3/video.mp4",
+          "alt": "Background Selection Video"
+        }
+      }
+    }
+  ]
+} 

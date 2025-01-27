@@ -47,6 +47,20 @@ type SplitSectionMedia = {
   caption?: string;
 };
 
+type ImageGridContent = {
+  text: string;
+  media: {
+    type: "image-grid";
+    images: Array<{
+      url: string;
+      alt: string;
+      isClickable?: boolean;
+      caption?: string;
+    }>;
+  };
+};
+
+
 type LectureContent = {
   lectureId: string;
   moduleId: number;
@@ -55,6 +69,7 @@ type LectureContent = {
     | {
         id: string;
         type: "split";
+        divider?: boolean;
         layout?: "text-left" | "text-right";
         title: string;
         content: {
@@ -65,18 +80,14 @@ type LectureContent = {
     | {
         id: string;
         type: "image-grid";
+        divider?: boolean;
         title: string;
-        content: {
-          text: string;
-          media: {
-            type: "image-grid";
-            images: Array<{ url: string; alt: string }>;
-          };
-        };
+        content: ImageGridContent;
       }
     | {
         id: string;
         type: "video";
+        divider?: boolean;
         title: string;
         content: {
           text: string;
@@ -90,6 +101,7 @@ type LectureContent = {
     | {
         id: string;
         type: "tabs";
+        divider?: boolean;
         title: string;
         content: {
           tabs: Array<{
@@ -102,6 +114,7 @@ type LectureContent = {
     | {
         id: string;
         type: "quiz";
+        divider?: boolean;
         title: string;
         content: QuizType;
       }
@@ -114,17 +127,38 @@ import lecture2 from "../data/content/module-1/lecture-2.json";
 import lecture3 from "../data/content/module-1/lecture-3.json";
 import lecture4 from "../data/content/module-1/lecture-4.json";
 import quiz1 from "../data/content/module-1/quiz.json";
+import lecture1Module3 from "../data/content/module-3/lecture-1.json";
+import lecture2Module3 from "../data/content/module-3/lecture-2.json";
+import lecture3Module3 from "../data/content/module-3/lecture-3.json";
+import lecture4Module3 from "../data/content/module-3/lecture-4.json";
+import lecture5Module3 from "../data/content/module-3/lecture-5.json";
+import lecture6Module3 from "../data/content/module-3/lecture-6.json";
+import lecture7Module3 from "../data/content/module-3/lecture-7.json";
+import lecture8Module3 from "../data/content/module-3/lecture-8.json";
+import quiz1Module3 from "../data/content/module-3/quiz.json";
 
 import { ImageGridSection } from "./sections/ImageGridSection";
 import { VideoSection } from "./sections/VideoSection";
 
 // Add type assertion after imports
 const lectures = {
+  // Module 1
   "about-course": lecture1 as LectureContent,
   "visible-emissions-opacity": lecture2 as LectureContent,
   "smoke-school": lecture3 as LectureContent,
   "ve-observations-importance": lecture4 as LectureContent,
   "module-1-quiz": quiz1 as LectureContent,
+  
+  // Module 3
+  "method-9-basics": lecture1Module3 as LectureContent,
+  "sun-position": lecture2Module3 as LectureContent,
+  "viewing-angle-distance": lecture3Module3 as LectureContent,
+  "contrasting-background": lecture4Module3 as LectureContent,
+  "atmospheric-conditions": lecture5Module3 as LectureContent,
+  "steam-plumes": lecture6Module3 as LectureContent,
+  "fugitive-emissions": lecture7Module3 as LectureContent,
+  "equipment-needed": lecture8Module3 as LectureContent,
+  "module-3-quiz": quiz1Module3 as LectureContent,
 };
 
 export function LectureContent() {
@@ -211,44 +245,54 @@ export function LectureContent() {
           switch (section.type) {
             case "split":
               return (
-                <SplitSection
-                  key={section.id}
-                  title={section.title}
-                  content={section.content}
-                  layout={section.layout}
-                />
+                <div key={section.id}>
+                  <SplitSection
+                    title={section.title}
+                    content={section.content}
+                    layout={section.layout}
+                  />
+                  {section.divider && <Divider className="my-8" />}
+                </div>
               );
             case "image-grid":
               return (
-                <ImageGridSection
-                  key={section.id}
-                  title={section.title}
-                  content={section.content}
-                />
+                <div key={section.id}>
+                  <ImageGridSection
+                    title={section.title}
+                    content={section.content}
+                  />
+                  {section.divider && <Divider className="my-8" />}
+                </div>
               );
             case "video":
               return (
-                <VideoSection
-                  key={section.id}
-                  title={section.title}
-                  content={section.content}
-                />
+                <div key={section.id}>
+                  <VideoSection
+                    title={section.title}
+                    content={section.content}
+                  />
+                  {section.divider && <Divider className="my-8" />}
+                </div>
               );
             case "tabs":
               return (
-                <TabsSection
-                  key={section.id}
-                  title={section.title}
-                  content={section.content}
-                />
+                <div key={section.id}>
+                  <TabsSection
+                    title={section.title}
+                    content={section.content}
+                  />
+                  {section.divider && <Divider className="my-8" />}
+                </div>
               );
             case "quiz":
               return (
-                <Quiz
-                  key={section.id}
-                  quiz={section.content}
-                  onComplete={(score) => console.log(`Quiz completed with score: ${score}`)}
-                />
+                <div key={section.id}>
+                  <Quiz
+                    quiz={section.content}
+                    onComplete={(score) => console.log(`Quiz completed with score: ${score}`)}
+                  />
+                  {section.divider && <Divider className="my-8" />}
+                </div>
               );
             // Add other section types here later
             default:

@@ -1,0 +1,48 @@
+{
+  "lectureId": "module-3-lecture-3",
+  "moduleId": 3,
+  "title": "Observation Point",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "image-grid",
+      "title": "Viewing Position Between Observer & Emissions",
+      "content": {
+        "text": "When conducting EPA Method 9 observations, the observer must position themselves to view the shortest path across the plume at its point of greatest opacity, which is always perpendicular to the plume's path.\n\nImproper positioning can result in inaccurate readings. If the visual path through the plume is too long, opacity readings will be higher than the actual opacity (positive bias). Conversely, if the path is too short, the readings will be lower than the actual opacity (negative bias).\n\nWind can shift the plume's direction during observations, requiring the observer to adjust their position to maintain a perpendicular view of the plume.",
+        "media": {
+          "type": "image-grid",
+          "images": [
+            {
+              "url": "/images/training/module-3/lecture-3/7.jpg",
+              "alt": "Image 1",
+              "isClickable": true,
+              "caption": "Correct viewing path - perpendicular to the plume."
+            },
+            {
+              "url": "/images/training/module-3/lecture-3/8.jpg",
+              "alt": "Image 2",
+              "isClickable": true,
+              "caption": "Incorrect viewing path - parallel to the plume."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Vertical Viewing Angle",
+      "content": {
+        "text": "The vertical path length through the plume must also be considered during observations. It should remain under 18° to prevent positive bias. This requires the observer to stand at least three stack heights away from the plume.\n\nWhile there is no maximum distance between the observer and the stack, the plume must remain clearly visible. In cases where closer proximity is not possible, binoculars may be used to ensure accurate observations.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-3/lecture-3/9.jpg",
+          "alt": "Image 3",
+          "isClickable": true,
+          "caption": ""
+        }
+      }
+    }
+  ]
+} 

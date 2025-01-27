@@ -1,0 +1,61 @@
+{
+  "lectureId": "module-3-lecture-2",
+  "moduleId": 3,
+  "title": "Sun Position",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "The Sun and Its Effect on Method 9 Observations",
+      "content": {
+        "text": "As previously mentioned, light interacts with particulate matter, and the position of the sun significantly influences the perceived opacity of emissions.\n\nEPA Method 9 requires the sun to be within a 140° sector behind the observer when taking opacity readings. If the sun is outside this range, light can reflect off the particles in the emissions, increasing the apparent opacity and introducing a positive bias to your readings.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-3/lecture-2/5.jpg",
+          "alt": "Sun Position Diagram",
+          "isClickable": true,
+          "caption": ""
+        }
+      }
+    },
+    {
+        "id": "section-2",
+        "type": "split",
+        "layout": "text-right",
+        "title": "",
+        "content": {
+          "text": "Depending on your geographic location and the time of year, the sun may be directly above you during mid-day hours. If possible, it is best to avoid this time when making opacity observations.",
+          "media": {
+            "type": "image",
+            "url": "/images/training/module-3/lecture-2/6.jpg",
+            "alt": "Sun Position Diagram",
+            "isClickable": false,
+            "caption": ""
+          }
+        }
+      },
+    {
+      "id": "section-3",
+      "type": "video",
+      "title": "",
+      "content": {
+        "text": "The following video shows the effect the sun has on the opacity of a plume.  The opacity in each clip is the same but the apparent opacity changes based on the angle of the sun, the presence of clouds and the location of the sun relative to the observer.",
+        "media": {
+          "type": "video",
+          "url": "/images/training/module-3/video.mp4",
+          "alt": "Sun Position Animation"
+        }
+      }
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "title": "The Effect of the Sun at Smoke School",
+      "content": {
+        "text": "The “apparent opacity” of smoke during a smoke school session can vary significantly depending on factors such as the time of day, time of year, sky conditions, and the observer's position relative to the smoke generator. Even a difference of just one hour can noticeably alter the apparent opacity, especially with white smoke, which reflects sunlight. The contrast between the smoke and its background also plays a significant role in how its opacity is perceived.\n\nFor over 50 years, in-person smoke school has been the traditional method for obtaining EPA Method 9 certification. However, advancements in technology have introduced a more consistent and precise alternative: virtual reality (VR) training for smoke school.\n\nVR-based smoke school offers several advantages over traditional in-person training. It allows for greater control over variables such as the timing of recordings, the camera angle relative to the smoke generator, atmospheric conditions, and background settings. This improved control enhances the consistency and accuracy of the training experience."
+      }
+    }
+  ]
+} 
