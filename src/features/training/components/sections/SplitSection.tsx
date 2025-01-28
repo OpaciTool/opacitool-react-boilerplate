@@ -14,6 +14,7 @@ interface SplitSectionProps {
       alt?: string;
       isClickable?: boolean;
       caption?: string;
+      width?: string;
     };
   };
   layout?: "text-left" | "text-right";
@@ -50,7 +51,9 @@ export function SplitSection({
           <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
             {title}
           </h2>
-          <Text className="whitespace-pre-line">{content.text}</Text>
+          <div className="prose prose-zinc dark:prose-invert max-w-none prose-p:text-base">
+            <Text className="whitespace-pre-line">{content.text}</Text>
+          </div>
         </div>
 
         {/* Media Content - Only render if media exists */}
@@ -69,8 +72,12 @@ export function SplitSection({
                   <>
                     <img
                       src={content.media.url}
-                      alt={content.media.alt || title}
-                      className="w-full h-full object-cover"
+                      alt={content.media.alt || ""}
+                      className={clsx(
+                        "w-full h-full object-contain",
+                        content.media.isClickable && "cursor-pointer hover:opacity-90 transition-opacity"
+                      )}
+                      style={content.media.width ? { width: content.media.width } : undefined}
                     />
                     {content.media.isClickable && (
                       <div className="absolute bottom-2 right-2 p-1.5 rounded-full bg-orange-600">

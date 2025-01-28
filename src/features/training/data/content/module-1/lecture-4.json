@@ -12,10 +12,12 @@
         "text": "There are many health impacts associated with air pollution.  Opacity observations are one of the easiest and most effective ways to monitor and reduce air pollution.  By becoming a visible emissions observer, you are helping to reduce the deadliest form of pollution in the world.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-1/lecture-4/25.jpg",
-          "alt": "VE Introduction"
+          "url": "/images/training/module-1/lecture-4/25.png",
+          "alt": "VE Introduction",
+          "width": "300px"
         }
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-2",
@@ -31,7 +33,8 @@
           "isClickable": true,
           "caption": "Areas in yellow, red, orange and purple exceed the WHO’s safety limits for air pollution."
         }
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-3",
@@ -47,7 +50,8 @@
           "isClickable": true,
           "caption": ""
         }
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-4",
@@ -63,7 +67,8 @@
           "isClickable": true,
           "caption": ""
         }
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-5",
@@ -79,7 +84,8 @@
           "isClickable": true,
           "caption": ""
         }
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-6",

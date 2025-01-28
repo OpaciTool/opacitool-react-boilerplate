@@ -13,9 +13,12 @@
         "media": {
           "type": "image",
           "url": "/images/training/module-1/lecture-3/15.jpg",
-          "alt": "Image"
+          "alt": "Image",
+          "caption": "Individuals trained at smoke school can perform opacity observations at any facility."
+        
         }
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-2",
@@ -126,7 +129,8 @@
             }
           }
         ]
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-3",
@@ -134,11 +138,12 @@
       "layout": "text-left",
       "title": "EPA Method 9 Certification",
       "content": {
-        "text": "When you successfully complete a smoke school, you are certified to perform USEPA Method 9 testing. USEPA Method 9 is a federal test method and applies to all states.  However, each state can modify the method to be more stringent (not less) than the federal method.  For example, the USEPA recommends completing a smoke school lecture if you are being certified at an in-person smoke school.  It does not require it unless you are being trained using virtual reality.  However, multiple states require completion of the lecture at least once every three years even if you are certified in-person.  We strongly recommend completing the lecture every 3 years as a refresher course. USEPA Method 9 also establishes the certification period as 6 months.  All states have adopted the same 6 month certification duration. ",
+        "text": "When you successfully complete a smoke school, you are certified to perform USEPA Method 9 testing.\n\nUSEPA Method 9 is a federal test method and applies to all states.  However, each state can modify the method to be more stringent (not less) than the federal method.  For example, the USEPA recommends completing a smoke school lecture if you are being certified at an in-person smoke school.  It does not require it unless you are being trained using virtual reality.  However, multiple states require completion of the lecture at least once every three years even if you are certified in-person.  We strongly recommend completing the lecture every 3 years as a refresher course.\n\nUSEPA Method 9 also establishes the certification period as 6 months.  All states have adopted the same 6 month certification duration.",
         "media": {
           "type": "image",
           "url": "/images/training/module-1/lecture-3/20.png",
-          "alt": "Certification Requirements"
+          "alt": "Certification Requirements",
+          "width": "350px"
         }
       }
     }

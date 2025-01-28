@@ -1,0 +1,155 @@
+{
+  "lectureId": "module-2-quiz",
+  "moduleId": 2,
+  "title": "Module 2 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 2 Quiz",
+      "content": {
+        "moduleId": 2,
+        "title": "Module 2 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "Which of the following would be classified as a source of fugitive emissions?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q1_a",
+                "text": "Power plant smoke stack",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_b",
+                "text": "Residential chimney",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_c",
+                "text": "Outdoor material stock pile",
+                "isCorrect": true
+              },
+              {
+                "id": "q1_d",
+                "text": "Roof vent",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "Which of the following would be classified as a source of fugitive emissions?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q2_a",
+                "text": "Looping",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_b",
+                "text": "Lifting",
+                "isCorrect": true
+              },
+              {
+                "id": "q2_c",
+                "text": "Fanning",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_d",
+                "text": "Coning",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "Particulate matter exposure has been linked to:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q3_a",
+                "text": "Irregular heartbeat",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_b",
+                "text": "Increased frequency of heart attack",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_c",
+                "text": "Increase asthmatic severity",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_d",
+                "text": "All of the above",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "Visible emissions can be composed of:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q4_a",
+                "text": "Dust",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_b",
+                "text": "Gases",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_c",
+                "text": "Soot",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_d",
+                "text": "All of the above",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "text": "When light passes through a particle and continues its initial direction, the interaction is known as:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q5_a",
+                "text": "Absorption",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_b",
+                "text": "Transmission",
+                "isCorrect": true
+              },
+              {
+                "id": "q5_c",
+                "text": "Refraction",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_d",
+                "text": "Reflection",
+                "isCorrect": false
+              }
+            ]
+          }
+        ],
+        "passingScore": 80
+      }
+    }
+  ]
+}

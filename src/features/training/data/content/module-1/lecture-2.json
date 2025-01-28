@@ -30,7 +30,8 @@
             }
           ]
         }
-      }
+      },
+      "divider": true
     },
     {
       "id": "section-2",

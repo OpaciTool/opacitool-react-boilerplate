@@ -1,0 +1,88 @@
+{
+  "lectureId": "module-2-lecture-5",
+  "moduleId": 2,
+  "title": "Particles & Light",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "The Visible Spectrum",
+      "content": {
+        "text": "The average human eye can perceive light with wavelengths ranging from 380 nm to 700 nm, known as the \"visible spectrum.\" Particles that interact with light in this range can influence the opacity of visible emissions. Factors such as a particle's shape, color, composition, and size can all affect how it interacts with light.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-5/23.jpg",
+          "alt": "Opacity Range Introduction",
+          "isClickable": true
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Particles Can Transmit, Reflect or Absorb Light",
+      "content": {
+        "text": "Emissions are composed of numerous particle types with each having a different chemical or physical composition.  Light may be absorbed, reflected and transmitted by different particles within the same plume."
+      }
+    },
+    {
+      "id": "section-3",
+      "type": "image-grid",
+      "title": "Transmission",
+      "content": {
+        "text": "Transmission occurs when light passes through a particle. Within the particle, electrons resonate at specific frequencies. If the frequency of the incoming light differs from the particle's resonant frequency and the particle is transparent, the light will pass through.\n\nRefraction is a type of transmission where the light changes direction but is still transmitted through the particle.",
+        "media": {
+          "type": "image-grid",
+          "images": [
+            {
+              "url": "/images/training/module-2/lecture-5/24.jpg",
+              "alt": "Example 1"
+            },
+            {
+              "url": "/images/training/module-2/lecture-5/25.jpg",
+              "alt": "Example 2"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "section-4",
+      "type": "image-grid",
+      "title": "Reflection",
+      "content": {
+        "text": "Reflection occurs when light strikes a particle and changes direction, moving away from it. If the frequency of the incoming light differs from the resonant frequency of the particle's electrons and the particle is opaque, the light energy is reflected.\n\nScattering occurs when light is reflected in many directions as opposed to one direction.",
+        "media": {
+          "type": "image-grid",
+          "images": [
+            {
+              "url": "/images/training/module-2/lecture-5/26.jpg",
+              "alt": "Example 3"
+            },
+            {
+              "url": "/images/training/module-2/lecture-5/27.jpg",
+              "alt": "Example 4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Absorption",
+      "content": {
+        "text": "Absorption occurs when light strikes a particle and is converted into thermal energy. This happens when the frequency of the incoming light matches the resonant frequency of the particle's electrons, causing the light to be absorbed.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-5/28.jpg",
+          "alt": "Final Image"
+        }
+      }
+    }
+  ]
+} 

@@ -37,6 +37,18 @@ export default {
       screens: {
         'xs': '375px',
       },
+      transformStyle: {
+        '3d': 'preserve-3d',
+      },
+      backfaceVisibility: {
+        'hidden': 'hidden',
+      },
+      rotate: {
+        'y-180': 'rotateY(180deg)',
+      },
+      perspective: {
+        '1000': '1000px',
+      },
     },
   },
   plugins: [

@@ -3,21 +3,11 @@ import { Dialog } from "@headlessui/react";
 import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { Text } from "@/shared/ui";
 import clsx from "clsx";
+import type { ImageGridContent } from "../LectureContent";
 
 interface ImageGridSectionProps {
   title: string;
-  content: {
-    text: string;
-    media: {
-      type: "image-grid";
-      images: Array<{
-        url: string;
-        alt: string;
-        isClickable?: boolean;
-        caption?: string;
-      }>;
-    };
-  };
+  content: ImageGridContent;
 }
 
 export function ImageGridSection({ title, content }: ImageGridSectionProps) {
@@ -28,10 +18,13 @@ export function ImageGridSection({ title, content }: ImageGridSectionProps) {
       <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-6">
         {title}
       </h2>
-      <div className="prose prose-zinc dark:prose-invert max-w-none mb-8">
+      <div className="prose prose-zinc dark:prose-invert max-w-none mb-8 prose-p:text-base">
         <Text className="whitespace-pre-line">{content.text}</Text>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className={clsx(
+        "grid gap-4",
+        content.media.grid || "grid-cols-1 md:grid-cols-2" // default to 2x2 if no grid specified
+      )}>
         {content.media.images.map((image, index) => (
           <div key={index} className="relative">
             <div

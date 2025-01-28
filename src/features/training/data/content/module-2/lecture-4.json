@@ -1,0 +1,122 @@
+{
+  "lectureId": "module-2-lecture-4",
+  "moduleId": 2,
+  "title": "Particle Types",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Types of Particles in Visible Emissions",
+      "content": {
+        "text": "Particulate matter is a generalized term for all of the particles in air emissions.  Particulate matter can be further broken down into individual particle types.  One or more of the following particle types are found in air emissions."
+      },
+      "divider": true
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Dust",
+      "content": {
+        "text": "Dust is generally released into the air through mechanical agitation. Dust particles can range in size from 1 µm to 100 µm. ",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-4/16.jpg",
+          "alt": "Example 1"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Soot",
+      "content": {
+        "text": "Soot forms during incomplete combustion and consists mostly of carbon.  Individual soot particles range from .006 µm to .03 µm in diameter but generally combine to form larger particles.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-4/17.jpg",
+          "alt": "Example 2"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Fly Ash",
+      "content": {
+        "text": "Fly ash is produced from burning coal.  Fly ash particles range from 0.5 µm to 300 µm in diameter.  Fly ash can contain trace concentrations of arsenic, hexavalent chromium, mercury and other elements which can be hazardous to human health.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-4/18.jpg",
+          "alt": "Example 3"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Vapor",
+      "content": {
+        "text": "Generally, vapors refer to the gas phase of something that is normally a liquid or solid.  A vapor can be condensed to a liquid or solid by increasing pressure without reducing temperature.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-4/19.jpg",
+          "alt": "Example 4"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Fumes",
+      "content": {
+        "text": "Fumes are dispersions of solid matter in gases. Fume particles generally consist of metals or metal oxides.  Fume particles are very small, ranging from 0.01 µm to 1 µm.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-4/20.jpg",
+          "alt": "Example 5"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-7",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Mist",
+      "content": {
+        "text": "Mist is the suspension of water droplets in air.  Atmospheric fog is comprised of mist.  Mist ranges from 2 µm to 15 µm.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-4/21.jpg",
+          "alt": "Example 6"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-8",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Gases",
+      "content": {
+        "text": "Gases do not occupy a specific shape or volume.  They are often present in air emissions.  Nitrogen dioxide is a reddish-brown gas and often found in smog.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-2/lecture-4/22.jpg",
+          "alt": "Example 7"
+        }
+      },
+      "divider": true
+    }
+  ]
+} 

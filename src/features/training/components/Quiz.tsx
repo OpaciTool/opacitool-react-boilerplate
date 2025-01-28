@@ -94,7 +94,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
                     className={clsx(
                       "flex items-center gap-3 p-3 rounded-lg border cursor-pointer",
                       !submitted && "hover:bg-zinc-50 dark:hover:bg-zinc-800",
-                      isSelected && !submitted && "border-orange-600 bg-orange-50 dark:bg-orange-900/20",
+                      isSelected && !submitted && "border-brand-blue-800 bg-orange-50 dark:bg-orange-900/20",
                       showCorrect && "border-green-600 bg-green-50 dark:bg-green-900/20",
                       showIncorrect && "border-red-600 bg-red-50 dark:bg-red-900/20"
                     )}
@@ -106,7 +106,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
                       checked={isSelected}
                       onChange={() => handleOptionSelect(question.id, option.id, question.type)}
                       disabled={submitted}
-                      className="text-orange-600"
+                      className="text-brand-blue-800"
                     />
                     <Text>{option.text}</Text>
                   </label>
