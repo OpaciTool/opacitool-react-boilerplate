@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Text, Button } from "@/shared/ui";
 import type { Quiz as QuizType } from "../types/quiz";
 import clsx from "clsx";
@@ -12,6 +12,10 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
   const [answers, setAnswers] = useState<Record<string, string[]>>({});
   const [submitted, setSubmitted] = useState(false);
 
+  useEffect(() => {
+    setAnswers({});
+    setSubmitted(false);
+  }, [quiz.moduleId]);
 
   const handleOptionSelect = (questionId: string, optionId: string, type: "single" | "multiple") => {
     setAnswers(prev => {
