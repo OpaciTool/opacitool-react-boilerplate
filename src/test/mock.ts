@@ -1,4 +1,3 @@
-import { ObservationScreenshot } from "@/features/observation-test/model";
 import type {
   Observation,
   ObservationAsset,
@@ -173,27 +172,6 @@ export const MOCK_OBSERVATION_READINGS: ObservationReading[] = [
     modified_at: "2021-09-01T00:00:00Z",
     opacity: 0.5,
     sort_order: 1000,
-  },
-];
-
-/* -------------------------- Observation Readings -------------------------- */
-
-export const MOCK_OBSERVATION_SCREENSHOTS: ObservationScreenshot[] = [
-  {
-    id: 1,
-    observation_id: MOCK_OBSERVATIONS[0].id,
-    created_at: "2021-09-01T00:00:00Z",
-    modified_at: "2021-09-01T00:00:00Z",
-    opacity: 0.5,
-    revised_opacity: null,
-    timestamp: "2024-07-28T10:30:00Z",
-    latitude: 0,
-    longitude: 0,
-    include_with_report: false,
-    asset: {
-      public_url: "https://www.example.com",
-      object_name: "test",
-    },
   },
 ];
 

@@ -2,7 +2,6 @@ import { delay, http, HttpResponse } from "msw";
 import {
   MOCK_OBSERVATION_ASSETS,
   MOCK_OBSERVATION_PAUSES,
-  MOCK_OBSERVATION_SCREENSHOTS,
   MOCK_OBSERVATIONS,
   MOCK_USER_DEVICE,
 } from "./mock";
@@ -73,12 +72,6 @@ export const HANDLERS = [
   http.get("/users/:id/observations/:observationUID/screenshots", async () => {
     return HttpResponse.json([]);
   }),
-  http.get(
-    "/users/:id/observations/:observationUID/screenshots/:screenshotID",
-    async () => {
-      return HttpResponse.json(MOCK_OBSERVATION_SCREENSHOTS[0]);
-    },
-  ),
   http.post(
     "/users/:id/observations/:observationUID/readings",
     async ({ request }) => {
