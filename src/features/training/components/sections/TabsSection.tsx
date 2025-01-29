@@ -1,0 +1,104 @@
+import { useState } from "react";
+import clsx from "clsx";
+import type { TabContent } from "../LectureContent";
+import { SplitSection } from "./SplitSection";
+
+interface TabsSectionProps {
+  title: string;
+  content: {
+    tabs: Array<{
+      id: string;
+      label: string;
+      content: TabContent;
+    }>;
+  };
+}
+
+export function TabsSection({ title, content }: TabsSectionProps) {
+  const [activeTab, setActiveTab] = useState(content.tabs[0].id);
+
+  return (
+    <div className="py-8 first:pt-0 last:pb-0">
+      <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-6">
+        {title}
+      </h2>
+      
+      {/* Tabs Navigation */}
+      <div className="border-b border-zinc-200 dark:border-zinc-700">
+        <nav className="flex gap-4" aria-label="Tabs">
+          {content.tabs.map((tab) => (
+            <button
+              key={tab.id}
+              onClick={() => setActiveTab(tab.id)}
+              className={clsx(
+                "px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors",
+                activeTab === tab.id
+                  ? "border-orange-600 text-orange-600 dark:text-orange-500"
+                  : "border-transparent text-zinc-500 hover:text-zinc-700 hover:border-zinc-300 dark:text-zinc-400 dark:hover:text-zinc-300"
+              )}
+            >
+              {tab.label}
+            </button>
+          ))}
+        </nav>
+      </div>
+
+      {/* Tab Content */}
+      <div className="mt-6 prose prose-zinc dark:prose-invert">
+        {content.tabs.map((tab) => (
+          <div
+            key={tab.id}
+            className={clsx(
+              "transition-opacity",
+              activeTab === tab.id ? "block" : "hidden"
+            )}
+          >
+            <TabContent content={tab.content} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function TabContent({ content }: { content: TabContent }) {
+  return (
+    <div className="space-y-8">
+      <p className="whitespace-pre-line">{content.description}</p>
+      
+      {content.sections?.map((section, index) => {
+        if ('images' in section) {
+          // Image grid section
+          return (
+            <div key={index} className="space-y-4">
+              <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
+                {section.title}
+              </h3>
+              <p className="whitespace-pre-line">{section.description}</p>
+              <div className="flex gap-6">
+                {section.images.map((image, imgIndex) => (
+                  <figure key={imgIndex} className="flex-1">
+                    <img src={image.url} alt={image.alt} className="w-full rounded-lg" />
+                    <figcaption className="mt-2 text-sm text-center text-zinc-500 dark:text-zinc-400">
+                      {image.caption}
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            </div>
+          );
+        } else {
+          // Split section
+          return (
+            <SplitSection
+              key={index}
+              title={section.title}
+              content={section.content}
+              layout={section.layout}
+            />
+          );
+        }
+      })}
+    </div>
+  );
+} 

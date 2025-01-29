@@ -1,0 +1,154 @@
+{
+  "lectureId": "module-3-quiz",
+  "moduleId": 3,
+  "title": "Module 3 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 3 Quiz",
+      "content": {
+        "moduleId": 3,
+        "title": "Module 3 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "What is the standard duration of an EPA Method 9 test?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q1_a",
+                "text": "6 minutes",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_b",
+                "text": "12 minutes",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_c",
+                "text": "10 minutes",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_d",
+                "text": "Method 9 does not set the test duration.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "During Method 9 testing, the sun must be within __________ to your back.",
+            "type": "single",
+            "options": [
+              {
+                "id": "q2_a",
+                "text": "180°",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_b",
+                "text": "140°",
+                "isCorrect": true
+              },
+              {
+                "id": "q2_c",
+                "text": "220°",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_d",
+                "text": "150°",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "EPA Method 9 requires opacity observations to be made in ______ increments.",
+            "type": "single",
+            "options": [
+              {
+                "id": "q3_a",
+                "text": "10%°",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_b",
+                "text": "4%",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_c",
+                "text": "5%°",
+                "isCorrect": true
+              },
+              {
+                "id": "q3_d",
+                "text": "7%°",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "The viewing angle between the observer and observation point in the plume should be less than:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q4_a",
+                "text": "40°",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_b",
+                "text": "30°",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_c",
+                "text": "18°",
+                "isCorrect": true
+              },
+              {
+                "id": "q4_d",
+                "text": "52°",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "text": "When making opacity observations, the highest point of opacity without _________________ should be observed.",
+            "type": "single",
+            "options": [
+              {
+                "id": "q5_a",
+                "text": "Water vapor°",
+                "isCorrect": true
+              },
+              {
+                "id": "q5_b",
+                "text": "Haze",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_c",
+                "text": "Soot",
+                "isCorrect": true
+              },
+              {
+                "id": "q5_d",
+                "text": "Color",
+                "isCorrect": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+} 

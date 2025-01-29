@@ -1,0 +1,55 @@
+{
+  "lectureId": "module-3-lecture-7",
+  "moduleId": 3,
+  "title": "Detached Steam Plumes",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Opacity Readings on Fugitive Emission Sources",
+      "content": {
+        "text": "Fugitive emissions are observed using EPA Method 9 in a manner similar to reading point-source emissions. However, because fugitive emissions are not concentrated at a single point, there are additional steps the observer must take to ensure accurate opacity readings."
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "image-grid",
+      "title": "Examples of Fugitive Emission Sources",
+      "content": {
+        "text": "",
+        "media": {
+          "type": "image-grid",
+          "images": [
+            {
+              "url": "/images/training/module-3/lecture-7/15.jpg",
+              "alt": "Detached Steam Plume Example 1"
+            },
+            {
+              "url": "/images/training/module-3/lecture-7/16.jpg",
+              "alt": "Detached Steam Plume Example 2"
+            },
+            {
+              "url": "/images/training/module-3/lecture-7/17.jpg",
+              "alt": "Detached Steam Plume Example 3"
+            },
+            {
+              "url": "/images/training/module-3/lecture-7/18.jpg",
+              "alt": "Detached Steam Plume Example 4"
+            }
+          ]
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-left",
+      "title": "How to Read Opacity of Fugitive Emissions",
+      "content": {
+        "text": "\n• Similar to point-source emissions, the observer should take readings at the point of greatest opacity in the plume, ensuring the view is perpendicular to the plume's direction. The sun should remain within a 140° sector behind the observer.\n\n• Fugitive emissions can interfere with each other, especially in busy or dusty environments. The observer should make every effort to isolate the emissions from the source being observed.\n\n• Fugitive emissions are sensitive to small changes in wind direction and speed. The observer should be prepared to reposition quickly if the emissions shift direction."
+      }
+    }
+  ]
+}

@@ -1,6 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-const colors = require('tailwindcss/colors');
-
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -38,6 +36,18 @@ export default {
       },
       screens: {
         'xs': '375px',
+      },
+      transformStyle: {
+        '3d': 'preserve-3d',
+      },
+      backfaceVisibility: {
+        'hidden': 'hidden',
+      },
+      rotate: {
+        'y-180': 'rotateY(180deg)',
+      },
+      perspective: {
+        '1000': '1000px',
       },
     },
   },

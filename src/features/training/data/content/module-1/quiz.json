@@ -1,0 +1,154 @@
+{
+  "lectureId": "module-1-quiz",
+  "moduleId": 1,
+  "title": "Module 1 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 1 Quiz",
+      "content": {
+        "moduleId": 1,
+        "title": "Module 1 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "If smoke reduces the visibility of a background by 40%, what is the opacity of the smoke?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q1_a",
+                "text": "50%",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_b",
+                "text": "40%",
+                "isCorrect": true
+              },
+              {
+                "id": "q1_c",
+                "text": "20%",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_d",
+                "text": "60%",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "How long is a Method 9 certification valid?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q2_a",
+                "text": "3 months",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_b",
+                "text": "12 months",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_c",
+                "text": "6 months",
+                "isCorrect": true
+              },
+              {
+                "id": "q2_d",
+                "text": "None of the above",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "What are the two components of a smoke school course?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q3_a",
+                "text": "Lecture & Documentation Procedures",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_b",
+                "text": "Lecture & Visual Test",
+                "isCorrect": true
+              },
+              {
+                "id": "q3_c",
+                "text": "Visual Test & Certification",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_d",
+                "text": "Lecture & Written Test",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "What is opacity?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q4_a",
+                "text": "The degree to which matter obstructs light",
+                "isCorrect": true
+              },
+              {
+                "id": "q4_b",
+                "text": "The density of matter",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_c",
+                "text": "The reflection of light",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_d",
+                "text": "None of the above",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "text": "What colors of smoke are used during the visual test?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q5_a",
+                "text": "Yellow & Black",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_b",
+                "text": "Black & Red",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_c",
+                "text": "White & Black",
+                "isCorrect": true
+              },
+              {
+                "id": "q5_d",
+                "text": "None of the above",
+                "isCorrect": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+} 
