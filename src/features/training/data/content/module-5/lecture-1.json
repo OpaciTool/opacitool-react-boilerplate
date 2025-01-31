@@ -1,0 +1,25 @@
+{
+  "lectureId": "module-5-lecture-1",
+  "moduleId": 5,
+  "title": "Rectangular Emission Points",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "containerType": "flex-col",
+      "title": "Observing Rectangular Emission Points",
+      "content": {
+        "text": "Emission points are not always round or square. When an emission point is rectangular, the observer must observe emissions parallel to the short axis. Observations made parallel to the long axis will result in higher observed opacity than the actual opacity, due to the increased visual path through the smoke.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-5/lecture-1/1.jpg",
+          "alt": "Opacity Determination Example",
+          "caption": "Observe across the short axis of a rectangular emission point.",
+          "isClickable": false,
+          "width": "70%"
+        }
+      }
+    }
+  ]
+} 

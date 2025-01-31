@@ -18,12 +18,14 @@ interface SplitSectionProps {
     };
   };
   layout?: "text-left" | "text-right";
+  containerType?: "grid" | "flex-col";
 }
 
 export function SplitSection({
   title,
   content,
   layout = "text-left",
+  containerType = "grid"
 }: SplitSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isTextLeft = layout === "text-left";
@@ -33,10 +35,14 @@ export function SplitSection({
       {/* Split Content Container */}
       <div
         className={clsx(
-          content.media 
-            ? "grid items-center gap-8 lg:grid-cols-2"
-            : "flex flex-col",
-          isTextLeft ? "lg:grid-flow-col" : "lg:grid-flow-col-dense",
+          containerType === "grid" 
+            ? clsx(
+                content.media 
+                  ? "grid items-center gap-8 lg:grid-cols-2"
+                  : "flex flex-col",
+                isTextLeft ? "lg:grid-flow-col" : "lg:grid-flow-col-dense",
+              )
+            : "flex flex-col gap-8"
         )}
       >
         {/* Text Content */}

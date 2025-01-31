@@ -92,6 +92,7 @@ type LectureContent = {
         type: "split";
         divider?: boolean;
         layout?: "text-left" | "text-right";
+        containerType?: "grid" | "flex-col";
         title: string;
         content: {
           text: string;
@@ -195,6 +196,12 @@ import lecture3Module4 from "../data/content/module-4/lecture-3.json";
 import lecture4Module4 from "../data/content/module-4/lecture-4.json";
 import quiz1Module4 from "../data/content/module-4/quiz.json";
 
+// Import module 5 lectures
+import lecture1Module5 from "../data/content/module-5/lecture-1.json";
+import lecture2Module5 from "../data/content/module-5/lecture-2.json";
+import lecture3Module5 from "../data/content/module-5/lecture-3.json";
+import quiz1Module5 from "../data/content/module-5/quiz.json";
+
 import { ImageGridSection } from "./sections/ImageGridSection";
 import { VideoSection } from "./sections/VideoSection";
 
@@ -233,6 +240,11 @@ const lectures = {
   "auditing-form": lecture3Module4 as LectureContent, 
   "legal-aspects": lecture4Module4 as LectureContent,
   "module-4-quiz": quiz1Module4 as LectureContent,
+
+  // Module 5
+  "rectangular-emission-points": lecture1Module5 as LectureContent,
+  "multiple-sources": lecture2Module5 as LectureContent,
+  "intermittent-emissions": lecture3Module5 as LectureContent
 };
 
 // Add type guard function
@@ -329,6 +341,7 @@ export function LectureContent() {
                     title={section.title}
                     content={section.content}
                     layout={section.layout}
+                    containerType={section.containerType}
                   />
                   {section.divider && <Divider className="my-8" />}
                 </div>

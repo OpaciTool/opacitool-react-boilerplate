@@ -1,0 +1,18 @@
+{
+  "lectureId": "module-5-quiz",
+  "moduleId": 5,
+  "title": "Module 5 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 5 Quiz",
+      "content": {
+        "moduleId": 5,
+        "title": "Module 5 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "questions": []
+      }
+    }
+  ]
+} 
