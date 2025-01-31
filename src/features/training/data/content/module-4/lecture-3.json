@@ -1,0 +1,125 @@
+{
+  "lectureId": "module-4-lecture-3",
+  "moduleId": 4,
+  "title": "Auditing the Form",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "title": "Questions to Ask After Completing the Test Form",
+      "content": {
+        "text": "Accuracy and proper adherence to EPA Method 9 procedures are critical to ensure a complete and legally-defensible test form. Below are some key questions an observer should address after each observation."
+      },
+      "divider": true
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Was the Viewing Angle Less than 18°?",
+      "content": {
+        "text": "This can be determined by ensuring the “Observation Point - Distance” field is at least three times the “Observation Point - Height” field and/or by measuring the angle and inputting it in the “Observation Point - Angle” field.\n\nIf the viewing angle is more than 18°, each reading will need to be corrected using the slant angle correction formula discussed in the next module.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-3/10.jpg",
+          "alt": "Uncontrolled Events Example"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Observer-Fault Events",
+      "content": {
+        "text": "Sometimes readings are missed due to observer error or distraction. This includes being distracted by a phone call, failing to watch the time, or any other reason where the reading could have been taken but wasn't.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-3/11.jpg",
+          "alt": "Observer-Fault Example",
+          "width": "300px"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Marking Missed Readings",
+      "content": {
+        "text": "Proper documentation of missed readings is essential. Use a dash (-) for uncontrolled events and an X for observer-fault events. This distinction is important as it affects how the rolling average is calculated.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-3/12.jpg",
+          "alt": "Marking Missed Readings"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Documentation Requirements",
+      "content": {
+        "text": "All missed readings must be documented in the Comments section of the test form. Include the time of the missed reading and the specific reason why it was missed. This documentation helps validate the test results.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-3/13.jpg",
+          "alt": "Documentation Example"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Impact on Calculations",
+      "content": {
+        "text": "Uncontrolled missed readings can be skipped in the rolling average calculation, but you still need 24 valid consecutive readings. Observer-fault missed readings break the rolling average - you must have 24 valid consecutive readings before or after the X.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-3/14.jpg",
+          "alt": "Calculation Impact",
+          "width": "300px"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-7",
+      "type": "split",
+      "title": "Was the Test Duration Sufficient?",
+      "content": {
+        "text": "EPA Method 9 does not state the duration of the test, only the averaging period. The test duration is set by the regulation affecting the source and can usually be found in the facility’s air permit."
+      }
+    },
+    {
+      "id": "section-8",
+      "type": "split",
+      "title": "Were Any Readings Skipped?",
+      "content": {
+        "text": "If a reading was skipped, ensure you have enough valid readings to offset the skips. Also, record the reason for the skip in the Comments field."
+      }
+    },
+    {
+      "id": "section-9",
+      "type": "split",
+      "title": "Did You Double-Check Your Calculations?",
+      "content": {
+        "text": "Make sure the highest six-minute period is indicated on the form and ensure the average opacity for that period is correct."
+      }
+    },
+    {
+      "id": "section-10",
+      "type": "split",
+      "title": "Is Your Certification Valid?",
+      "content": {
+        "text": "The date of the observations must be within 6 months of your certification date. A copy of your most recent certification should always be filed with your completed test form."
+      }
+    }
+  ]
+}

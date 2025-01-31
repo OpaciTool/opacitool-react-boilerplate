@@ -1,0 +1,154 @@
+{
+  "lectureId": "module-4-quiz",
+  "moduleId": 4,
+  "title": "Module 4 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 4 Quiz",
+      "content": {
+        "moduleId": 4,
+        "title": "Module 4 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "When auditing your Method 9 observation form, the date of observations must be:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q1_a",
+                "text": "Within 6 months of your certification date ",
+                "isCorrect": true
+              },
+              {
+                "id": "q1_b",
+                "text": "Within 7 months of your certification date",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_c",
+                "text": "Within 12 months of your certification date",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_d",
+                "text": "None of the above",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "If an opacity reading is intentionally skipped:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q2_a",
+                "text": "It can be included but not counted within your average.",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_b",
+                "text": "It cannot be included within your average.",
+                "isCorrect": true
+              },
+              {
+                "id": "q2_c",
+                "text": "There must be 18 consecutive readings before or after the skip.",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_d",
+                "text": "The test must be restarted.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "If an opacity reading is missed due to interference:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q3_a",
+                "text": "It can be included but not counted within your average.",
+                "isCorrect": true
+              },
+              {
+                "id": "q3_b",
+                "text": "There must be 24 consecutive readings before or after the skip.",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_c",
+                "text": "The test must be restarted.",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_d",
+                "text": "None of the above.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "The rolling-average calculation for a Method 9 test requires at least:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q4_a",
+                "text": "36 readings",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_b",
+                "text": "18 readings",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_c",
+                "text": "24 readings",
+                "isCorrect": true
+              },
+              {
+                "id": "q4_d",
+                "text": "6 readings",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "text": "If the Source Layout Sketch indicates the plume was traveling towards you:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q5_a",
+                "text": "You were not in the proper position.°",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_b",
+                "text": "Your test results may be invalid.",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_c",
+                "text": "Your opacity readings are likely higher than the actual opacity.",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_d",
+                "text": "All of the above.",
+                "isCorrect": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

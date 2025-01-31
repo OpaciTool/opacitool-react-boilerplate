@@ -11,6 +11,7 @@ import { TabsSection } from "./sections/TabsSection";
 import type { Quiz as QuizType } from "../types/quiz";
 import { Quiz } from "./Quiz";
 import { FlippableImageGridSection } from "./sections/FlippableImageGridSection";
+import { TwoColumnSection } from "./sections/TwoColumnSection";
 
 export type TabContent = {
   description: string;
@@ -138,6 +139,25 @@ type LectureContent = {
         title: string;
         content: QuizType;
       }
+    | {
+        id: string;
+        type: "two-column";
+        divider?: boolean;
+        title: string;
+        content: {
+          text: string;
+          media: {
+            columns: Array<{
+              image: {
+                url: string;
+                alt: string;
+              };
+              title: string;
+              text: string;
+            }>;
+          };
+        };
+      }
   >;
 };
 
@@ -147,6 +167,17 @@ import lecture2 from "../data/content/module-1/lecture-2.json";
 import lecture3 from "../data/content/module-1/lecture-3.json";
 import lecture4 from "../data/content/module-1/lecture-4.json";
 import quiz1 from "../data/content/module-1/quiz.json";
+
+// Import module 2 lectures
+import lecture1Module2 from "../data/content/module-2/lecture-1.json";
+import lecture2Module2 from "../data/content/module-2/lecture-2.json";
+import lecture3Module2 from "../data/content/module-2/lecture-3.json";
+import lecture4Module2 from "../data/content/module-2/lecture-4.json";
+import lecture5Module2 from "../data/content/module-2/lecture-5.json";
+import lecture6Module2 from "../data/content/module-2/lecture-6.json";
+import quiz1Module2 from "../data/content/module-2/quiz.json";
+
+// Import module 3 lectures
 import lecture1Module3 from "../data/content/module-3/lecture-1.json";
 import lecture2Module3 from "../data/content/module-3/lecture-2.json";
 import lecture3Module3 from "../data/content/module-3/lecture-3.json";
@@ -157,14 +188,12 @@ import lecture7Module3 from "../data/content/module-3/lecture-7.json";
 import lecture8Module3 from "../data/content/module-3/lecture-8.json";
 import quiz1Module3 from "../data/content/module-3/quiz.json";
 
-// Import module 2 lectures
-import lecture1Module2 from "../data/content/module-2/lecture-1.json";
-import lecture2Module2 from "../data/content/module-2/lecture-2.json";
-import lecture3Module2 from "../data/content/module-2/lecture-3.json";
-import lecture4Module2 from "../data/content/module-2/lecture-4.json";
-import lecture5Module2 from "../data/content/module-2/lecture-5.json";
-import lecture6Module2 from "../data/content/module-2/lecture-6.json";
-import quiz1Module2 from "../data/content/module-2/quiz.json";
+// Import module 4 lectures
+import lecture1Module4 from "../data/content/module-4/lecture-1.json";
+import lecture2Module4 from "../data/content/module-4/lecture-2.json";
+import lecture3Module4 from "../data/content/module-4/lecture-3.json";
+import lecture4Module4 from "../data/content/module-4/lecture-4.json";
+import quiz1Module4 from "../data/content/module-4/quiz.json";
 
 import { ImageGridSection } from "./sections/ImageGridSection";
 import { VideoSection } from "./sections/VideoSection";
@@ -197,6 +226,13 @@ const lectures = {
   "fugitive-emissions": lecture7Module3 as LectureContent,
   "equipment-needed": lecture8Module3 as LectureContent,
   "module-3-quiz": quiz1Module3 as LectureContent,
+
+  // Module 4
+  "documentation-procedure": lecture1Module4 as LectureContent,
+  "calculating-average-opacity": lecture2Module4 as LectureContent,
+  "auditing-form": lecture3Module4 as LectureContent, 
+  "legal-aspects": lecture4Module4 as LectureContent,
+  "module-4-quiz": quiz1Module4 as LectureContent,
 };
 
 // Add type guard function
@@ -340,6 +376,16 @@ export function LectureContent() {
                   <Quiz
                     quiz={section.content}
                     onComplete={(score) => console.log(`Quiz completed with score: ${score}`)}
+                  />
+                  {section.divider && <Divider className="my-8" />}
+                </div>
+              );
+            case "two-column":
+              return (
+                <div key={section.id}>
+                  <TwoColumnSection
+                    title={section.title}
+                    content={section.content}
                   />
                   {section.divider && <Divider className="my-8" />}
                 </div>
