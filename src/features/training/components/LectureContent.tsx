@@ -12,6 +12,7 @@ import type { Quiz as QuizType } from "../types/quiz";
 import { Quiz } from "./Quiz";
 import { FlippableImageGridSection } from "./sections/FlippableImageGridSection";
 import { TwoColumnSection } from "./sections/TwoColumnSection";
+import VisibleEmissionsForm from "./sections/VisibleEmissionsForm";
 
 export type TabContent = {
   description: string;
@@ -159,6 +160,15 @@ type LectureContent = {
           };
         };
       }
+    | {
+        id: string;
+        type: "form";
+        title: string;
+        divider?: boolean;
+        content?: {
+          text?: string;
+        };
+      }
   >;
 };
 
@@ -200,7 +210,7 @@ import quiz1Module4 from "../data/content/module-4/quiz.json";
 import lecture1Module5 from "../data/content/module-5/lecture-1.json";
 import lecture2Module5 from "../data/content/module-5/lecture-2.json";
 import lecture3Module5 from "../data/content/module-5/lecture-3.json";
-import quiz1Module5 from "../data/content/module-5/quiz.json";
+
 
 import { ImageGridSection } from "./sections/ImageGridSection";
 import { VideoSection } from "./sections/VideoSection";
@@ -403,7 +413,13 @@ export function LectureContent() {
                   {section.divider && <Divider className="my-8" />}
                 </div>
               );
-            // Add other section types here later
+            case "form":
+              return (
+                <div key={section.id}>
+                  <VisibleEmissionsForm />
+                  {section.divider && <Divider className="my-8" />}
+                </div>
+              );
             default:
               return null;
           }
