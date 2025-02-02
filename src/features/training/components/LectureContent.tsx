@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { navigationData } from "../data/navigation";
-import { Divider, Heading, Text } from "@/shared/ui";
+import { Divider, Text } from "@/shared/ui";
 import { BookmarkIcon as BookmarkOutlineIcon } from "@heroicons/react/24/outline";
 import { BookmarkIcon as BookmarkFilledIcon } from "@heroicons/react/24/solid";
 import { toast } from "react-hot-toast";
@@ -13,6 +13,12 @@ import { Quiz } from "./Quiz";
 import { FlippableImageGridSection } from "./sections/FlippableImageGridSection";
 import { TwoColumnSection } from "./sections/TwoColumnSection";
 import VisibleEmissionsForm from "./sections/VisibleEmissionsForm";
+import FormulaSection from "./sections/FormulaSection";
+import AngleFormulaSection from "./sections/AngleFormulaSection";
+import MethodsComparison from "./MethodComparision";
+import { SectionDivider } from "./SectionDivider";
+import { ImageGridSection } from "./sections/ImageGridSection";
+import { VideoSection } from "./sections/VideoSection";
 
 export type TabContent = {
   description: string;
@@ -24,6 +30,7 @@ export type TabContent = {
           url: string;
           alt: string;
           caption: string;
+          width?: string;
         }>;
       }
     | {
@@ -61,6 +68,7 @@ export type ImageGridContent = {
       alt: string;
       isClickable?: boolean;
       caption?: string;
+      width?: string;
     }>;
   };
 };
@@ -92,8 +100,10 @@ type LectureContent = {
         id: string;
         type: "split";
         divider?: boolean;
+        dividerStyle?: string;
         layout?: "text-left" | "text-right";
         containerType?: "grid" | "flex-col";
+        bgColor?: string;
         title: string;
         content: {
           text: string;
@@ -104,7 +114,9 @@ type LectureContent = {
         id: string;
         type: "image-grid";
         divider?: boolean;
+        dividerStyle?: string;
         title: string;
+        bgColor?: string;
         content: ImageGridContent | FlippableImageGridContent;
       }
     | {
@@ -112,12 +124,15 @@ type LectureContent = {
         type: "video";
         divider?: boolean;
         title: string;
+        bgColor?: string;
         content: {
           text: string;
           media: {
             type: "video";
             url: string;
             alt: string;
+            caption?: string;
+            width?: string;
           };
         };
       }
@@ -125,7 +140,9 @@ type LectureContent = {
         id: string;
         type: "tabs";
         divider?: boolean;
+        dividerStyle?: string;
         title: string;
+        bgColor?: string;
         content: {
           tabs: Array<{
             id: string;
@@ -169,6 +186,24 @@ type LectureContent = {
           text?: string;
         };
       }
+    | {
+        id: string;
+        type: "formula";
+        title: string;
+        divider?: boolean;
+      }
+    | {
+        id: string;
+        type: "angle-formula";
+        title: string;
+        divider?: boolean;
+      }
+    | {
+        id: string;
+        type: "method-comparison";
+        title: string;
+        divider?: boolean;
+      }
   >;
 };
 
@@ -210,10 +245,21 @@ import quiz1Module4 from "../data/content/module-4/quiz.json";
 import lecture1Module5 from "../data/content/module-5/lecture-1.json";
 import lecture2Module5 from "../data/content/module-5/lecture-2.json";
 import lecture3Module5 from "../data/content/module-5/lecture-3.json";
+import lecture4Module5 from "../data/content/module-5/lecture-4.json";
+import lecture5Module5 from "../data/content/module-5/lecture-5.json";
+import lecture6Module5 from "../data/content/module-5/lecture-6.json";
+import lecture7Module5 from "../data/content/module-5/lecture-7.json";
+import quiz1Module5 from "../data/content/module-5/quiz.json";
+
+// Import module 6 lectures
+import lecture1Module6 from "../data/content/module-6/lecture-1.json";
+import lecture2Module6 from "../data/content/module-6/lecture-2.json";
+import lecture3Module6 from "../data/content/module-6/lecture-3.json";
+import lecture4Module6 from "../data/content/module-6/lecture-4.json";
+import quiz1Module6 from "../data/content/module-6/quiz.json";
 
 
-import { ImageGridSection } from "./sections/ImageGridSection";
-import { VideoSection } from "./sections/VideoSection";
+
 
 // Add type assertion after imports
 const lectures = {
@@ -254,7 +300,19 @@ const lectures = {
   // Module 5
   "rectangular-emission-points": lecture1Module5 as LectureContent,
   "multiple-sources": lecture2Module5 as LectureContent,
-  "intermittent-emissions": lecture3Module5 as LectureContent
+  "intermittent-emissions": lecture3Module5 as LectureContent,
+  "tall-stacks-viewing-angles": lecture4Module5 as LectureContent,
+  "predicting-steam-plumes": lecture5Module5 as LectureContent,
+  "reacting-plumes": lecture6Module5 as LectureContent,
+  "night-observations": lecture7Module5 as LectureContent,
+  "module-5-quiz": quiz1Module5 as LectureContent,
+
+  // Module 6
+  "alternative-test-method-intro": lecture1Module6 as LectureContent,
+  "epa-methods-203": lecture2Module6 as LectureContent,
+  "epa-alt-082": lecture3Module6 as LectureContent,
+  "epa-alt-152": lecture4Module6 as LectureContent,
+  "module-6-quiz": quiz1Module6 as LectureContent,
 };
 
 // Add type guard function
@@ -274,6 +332,11 @@ export function LectureContent() {
   useEffect(() => {
     setIsBookmarked(localStorage.getItem('lastVisitedLecture') === lecturePath);
   }, [moduleSlug, lectureSlug, lecturePath]);
+
+  // Add this useEffect to scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [moduleSlug, lectureSlug]); // Dependencies ensure this runs on route change
 
   const handleBookmark = () => {
     if (isBookmarked) {
@@ -299,6 +362,7 @@ export function LectureContent() {
   // Get lecture content
   const content = lectures[lectureSlug as keyof typeof lectures];
 
+  console.log('Lecture content:', content);
 
   if (!currentModule || !currentLecture) {
     return (
@@ -309,121 +373,151 @@ export function LectureContent() {
   }
 
   return (
-    <div className="p-6">
-      <div>
-        
-      </div>
-      <div className="lg:flex justify-between items-center">
-        <div className="space-y-1">
-          <Text className="text-sm text-zinc-500">{currentModule.title}</Text>
-          <Heading>{currentLecture.title}</Heading>
+    <div className="min-h-screen bg-white dark:bg-zinc-900">
+      <div className="">
+        <div className="lg:flex justify-between items-center bg-zinc-900 py-8 px-4 lg:px-14 ">
+          <div className="space-y-1">
+            <h3 className="text-2xl text-zinc-500">{currentModule.title}</h3>
+            <h2 className="text-4xl font-bold text-white dark:text-white">{currentLecture.title}</h2>
+          </div>
+          <Tooltip content="Bookmark this lecture">
+            <button
+              onClick={handleBookmark}
+              className="flex items-center gap-2 lg:px-3 py-2 rounded-lg  dark:hover:bg-zinc-800 transition-colors"
+              aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+            >
+              {isBookmarked ? (
+                <>
+                  <BookmarkFilledIcon className="size-14 text-teal-400" />
+                  <span className="text-xl font-medium text-teal-400">Bookmarked</span>
+                </>
+              ) : (
+                <>
+                  <BookmarkOutlineIcon className="size-14 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300" />
+                  <span className="text-xl font-medium text-zinc-200 hover:text-zinc-600 dark:hover:text-zinc-300">Bookmark</span>
+                </>
+              )}
+            </button>
+          </Tooltip>
         </div>
-        <Tooltip content="Bookmark this lecture">
-          <button
-            onClick={handleBookmark}
-            className="flex items-center gap-2 lg:px-3 py-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-            aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
-          >
-            {isBookmarked ? (
-              <>
-                <BookmarkFilledIcon className="size-5 text-teal-400" />
-                <span className="text-sm font-medium text-teal-400">Bookmarked</span>
-              </>
-            ) : (
-              <>
-                <BookmarkOutlineIcon className="size-5 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300" />
-                <span className="text-sm font-medium text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300">Bookmark</span>
-              </>
-            )}
-          </button>
-        </Tooltip>
-      </div>
-      <Divider className="mt-6" />
-      
-      {/* Render lecture sections */}
-      <div className="mt-6 space-y-8 w-[85%] mx-auto">
-        {content?.sections.map((section) => {
-          switch (section.type) {
-            case "split":
-              return (
-                <div key={section.id}>
-                  <SplitSection
-                    title={section.title}
-                    content={section.content}
-                    layout={section.layout}
-                    containerType={section.containerType}
-                  />
-                  {section.divider && <Divider className="my-8" />}
-                </div>
-              );
-            case "image-grid":
-              return (
-                <div key={section.id}>
-                  {isFlippableGrid(section.content) ? (
-                    <FlippableImageGridSection
+        <Divider className=" h-1 bg-black  " />
+        
+        {/* Render lecture sections */}
+        <div className="">
+          {content?.sections.map((section) => {
+            
+            switch (section.type) {
+              case "split":
+                return (
+                  <div key={section.id}>
+                    <SplitSection
+                      title={section.title}
+                      content={section.content}
+                      layout={section.layout}
+                      containerType={section.containerType}
+                      bgColor={section.bgColor}
+                    />
+                    {section.divider && (
+                      <SectionDivider 
+                        className={section.dividerStyle}
+                      />
+                    )}
+                  </div>
+                );
+              case "image-grid":
+                return (
+                  <div key={section.id}>
+                    {isFlippableGrid(section.content) ? (
+                      <FlippableImageGridSection
+                        title={section.title}
+                        content={section.content}
+                        bgColor={section.bgColor}
+                      />
+                    ) : (
+                      <ImageGridSection
+                        title={section.title}
+                        content={section.content}
+                        bgColor={section.bgColor}
+                      />
+                    )}
+                    {section.divider && <SectionDivider className={section.dividerStyle}/>}
+                  </div>
+                );
+              case "video":
+                return (
+                  <div key={section.id}>
+                    <VideoSection
+                      title={section.title}
+                      content={section.content}
+                      bgColor={section.bgColor}
+                    />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "tabs":
+                return (
+                  <div key={section.id}>
+                    <TabsSection
+                      title={section.title}
+                      content={section.content}
+                      bgColor={section.bgColor}
+                    />
+                    {section.divider && <SectionDivider className={section.dividerStyle}/>}
+                  </div>
+                );
+              case "quiz":
+                return (
+                  <div key={section.id}>
+                    <Quiz
+                      quiz={section.content}
+                      onComplete={(score) => console.log(`Quiz completed with score: ${score}`)}
+                    />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "two-column":
+                return (
+                  <div key={section.id}>
+                    <TwoColumnSection
                       title={section.title}
                       content={section.content}
                     />
-                  ) : (
-                    <ImageGridSection
-                      title={section.title}
-                      content={section.content}
-                    />
-                  )}
-                  {section.divider && <Divider className="my-8" />}
-                </div>
-              );
-            case "video":
-              return (
-                <div key={section.id}>
-                  <VideoSection
-                    title={section.title}
-                    content={section.content}
-                  />
-                  {section.divider && <Divider className="my-8" />}
-                </div>
-              );
-            case "tabs":
-              return (
-                <div key={section.id}>
-                  <TabsSection
-                    title={section.title}
-                    content={section.content}
-                  />
-                  {section.divider && <Divider className="my-8" />}
-                </div>
-              );
-            case "quiz":
-              return (
-                <div key={section.id}>
-                  <Quiz
-                    quiz={section.content}
-                    onComplete={(score) => console.log(`Quiz completed with score: ${score}`)}
-                  />
-                  {section.divider && <Divider className="my-8" />}
-                </div>
-              );
-            case "two-column":
-              return (
-                <div key={section.id}>
-                  <TwoColumnSection
-                    title={section.title}
-                    content={section.content}
-                  />
-                  {section.divider && <Divider className="my-8" />}
-                </div>
-              );
-            case "form":
-              return (
-                <div key={section.id}>
-                  <VisibleEmissionsForm />
-                  {section.divider && <Divider className="my-8" />}
-                </div>
-              );
-            default:
-              return null;
-          }
-        })}
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "form":
+                return (
+                  <div key={section.id}>
+                    <VisibleEmissionsForm />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "formula":
+                return (
+                  <div key={section.id}>
+                    <FormulaSection />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "angle-formula":
+                return (
+                  <div key={section.id}>
+                    <AngleFormulaSection />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "method-comparison":
+                return (
+                  <div key={section.id}>
+                    <MethodsComparison />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              default:
+                return null;
+            }
+          })}
+        </div>
       </div>
     </div>
   );

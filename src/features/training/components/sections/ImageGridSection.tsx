@@ -1,35 +1,38 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { Text } from "@/shared/ui";
 import clsx from "clsx";
 import type { ImageGridContent } from "../LectureContent";
 
 interface ImageGridSectionProps {
   title: string;
   content: ImageGridContent;
+  bgColor?: string;
 }
 
-export function ImageGridSection({ title, content }: ImageGridSectionProps) {
+export function ImageGridSection({ title, content, bgColor }: ImageGridSectionProps) {
   const [selectedImage, setSelectedImage] = useState<{url: string; caption?: string} | null>(null);
 
   return (
-    <div className="py-8 first:pt-0 last:pb-0">
+    <div className={clsx(
+      "py-10 px-14  last:pb-0",
+      bgColor
+    )}>
       <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-6">
         {title}
       </h2>
-      <div className="prose prose-zinc dark:prose-invert max-w-none mb-8 prose-p:text-base">
-        <Text className="whitespace-pre-line">{content.text}</Text>
+      <div className="text-zinc-900 text-lg dark:prose-invert  mb-8 ">
+        <p className="whitespace-pre-line">{content.text}</p>
       </div>
       <div className={clsx(
         "grid gap-4",
-        content.media.grid || "grid-cols-1 md:grid-cols-2" // default to 2x2 if no grid specified
+        content.media.grid || "grid-cols-1 md:grid-cols-2"
       )}>
         {content.media.images.map((image, index) => (
           <div key={index} className="relative">
             <div
               className={clsx(
-                "rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800",
+                "rounded-lg overflow-hidden ",
                 "flex items-center justify-center",
                 image.isClickable && "cursor-pointer hover:opacity-90 transition-opacity"
               )}
@@ -41,7 +44,8 @@ export function ImageGridSection({ title, content }: ImageGridSectionProps) {
               <img
                 src={image.url}
                 alt={image.alt}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-lg"
+                style={image.width ? { width: image.width } : undefined}
               />
               {image.isClickable && (
                 <div className="absolute bottom-2 right-2 p-1.5 rounded-full bg-orange-600">

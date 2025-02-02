@@ -1,6 +1,22 @@
 {
   "lectureId": "module-5-lecture-7",
   "moduleId": 5,
-  "title": "Practice Runs",
-  "sections": []
+  "title": "Night Observations",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "How to Observe Plumes at Night",
+      "content": {
+        "text": "If the observer is required to perform opacity observations at night, they must be certified to conduct night observations. Night certification involves using artificial light to illuminate smoke from a smoke generator. This is a somewhat controversial topic within the smoke school industry. EPA Method 9 does not address night observations or specify requirements for light sources. Very few places offer night certification, and some states do not recognize this certification.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-5/13.jpg",
+          "alt": "Image",
+          "caption": "Accurate night observations are difficult - especially with tall stacks."
+        }
+      }
+    }
+  ]
 } 

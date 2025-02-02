@@ -12,13 +12,17 @@ interface TabsSectionProps {
       content: TabContent;
     }>;
   };
+  bgColor?: string;
 }
 
-export function TabsSection({ title, content }: TabsSectionProps) {
+export function TabsSection({ title, content, bgColor }: TabsSectionProps) {
   const [activeTab, setActiveTab] = useState(content.tabs[0].id);
 
   return (
-    <div className="py-8 first:pt-0 last:pb-0">
+    <div className={clsx(
+      "py-8 px-4 lg:px-14 last:pb-0",
+      bgColor
+    )}>
       <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-6">
         {title}
       </h2>
@@ -64,21 +68,26 @@ export function TabsSection({ title, content }: TabsSectionProps) {
 function TabContent({ content }: { content: TabContent }) {
   return (
     <div className="space-y-8">
-      <p className="whitespace-pre-line">{content.description}</p>
+      <p className="whitespace-pre-line text-lg text-zinc-900">{content.description}</p>
       
       {content.sections?.map((section, index) => {
         if ('images' in section) {
-          // Image grid section
           return (
             <div key={index} className="space-y-4">
               <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
                 {section.title}
               </h3>
-              <p className="whitespace-pre-line">{section.description}</p>
+              <p className="whitespace-pre-line text-lg text-zinc-900">{section.description}</p>
               <div className="flex gap-6">
                 {section.images.map((image, imgIndex) => (
-                  <figure key={imgIndex} className="flex-1">
-                    <img src={image.url} alt={image.alt} className="w-full rounded-lg" />
+                  <figure key={imgIndex} className=" " style={image.width ? { width: image.width } : undefined}>
+                    <img 
+                      src={image.url} 
+                      alt={image.alt} 
+                      className="w-full rounded-lg" 
+                      
+                      
+                    />
                     <figcaption className="mt-2 text-sm text-center text-zinc-500 dark:text-zinc-400">
                       {image.caption}
                     </figcaption>
@@ -88,7 +97,6 @@ function TabContent({ content }: { content: TabContent }) {
             </div>
           );
         } else {
-          // Split section
           return (
             <SplitSection
               key={index}
@@ -101,4 +109,5 @@ function TabContent({ content }: { content: TabContent }) {
       })}
     </div>
   );
-} 
+}
+

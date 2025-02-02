@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+
 interface VideoSectionProps {
   title: string;
   content: {
@@ -6,26 +8,30 @@ interface VideoSectionProps {
       type: "video";
       url: string;
       alt: string;
-      poster?: string;
+      caption?: string;
+      width?: string;
     };
   };
+  bgColor?: string;
 }
 
-export function VideoSection({ title, content }: VideoSectionProps) {
+export function VideoSection({ title, content, bgColor }: VideoSectionProps) {
   return (
-    <div className="py-8 first:pt-0 last:pb-0">
+    <div className={clsx(
+      "py-8 px-14",
+      bgColor
+    )}>
       <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-6">
         {title}
       </h2>
-      <div className="prose prose-zinc dark:prose-invert max-w-none mb-8">
+      <div className="text-zinc-900 text-lg dark:prose-invert mb-8">
         <p className="whitespace-pre-line">{content.text}</p>
       </div>
-      <div className="aspect-video rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+      <div className="flex justify-center">
         <video
           controls
-          className="w-full h-full"
-          poster={content.media.poster}
-          preload="metadata"
+          className="rounded-lg"
+          style={content.media.width ? { width: content.media.width } : undefined}
         >
           <source src={content.media.url} type="video/mp4" />
           {content.media.alt}

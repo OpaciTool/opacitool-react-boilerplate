@@ -7,6 +7,7 @@
       "id": "section-1",
       "type": "image-grid",
       "title": "Visible Emisions",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "Visible emissions are exactly what they sound like - air emissions that you can see.  Visible emissions come from all types of processes and sources ranging from coal plants to dusty gravel roads.  The following images represent different types of visible emissions.",
         "media": {
@@ -14,37 +15,44 @@
           "images": [
             {
               "url": "/images/training/module-1/lecture-2/11.jpg",
-              "alt": "Opacity Example 1"
+              "alt": "Opacity Example 1",
+              "width": "500px"
             },
             {
               "url": "/images/training/module-1/lecture-2/12.jpg",
-              "alt": "Opacity Example 2"
+              "alt": "Opacity Example 2",
+              "width": "500px"
             },
             {
               "url": "/images/training/module-1/lecture-2/13.jpg",
-              "alt": "Opacity Example 3"
+              "alt": "Opacity Example 3",
+              "width": "500px"
             },
             {
               "url": "/images/training/module-1/lecture-2/14.jpg",
-              "alt": "Opacity Example 4"
+              "alt": "Opacity Example 4",
+              "width": "500px"
             }
           ]
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "video",
       "title": "What is Opacity?",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "Opacity is the degree to which matter obstructs the transmission of light.  The opacity of visible emissions is directly related to how much you can see through the emission.  For example, smoke with a 20% opacity would reduce your view of the background by 20%.  Watch this brief video to see the effect of opacity on a background.",
         "media": {
           "type": "video",
           "url": "/images/training/module-1/video.mp4",
-          "alt": "Opacity Measurement Video"
+          "alt": "Opacity Measurement Video",
+          "width": "70%"
         }
       }
     }
   ]
-} 
+}

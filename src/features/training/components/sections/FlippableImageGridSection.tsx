@@ -6,6 +6,7 @@ import type { FlippableImageGridContent } from "../LectureContent";
 interface FlippableImageGridProps {
   title: string;
   content: FlippableImageGridContent;
+  bgColor?: string;
 }
 
 export function FlippableImageGridSection({ title, content }: FlippableImageGridProps) {

@@ -1,6 +1,31 @@
 {
   "lectureId": "module-5-lecture-6",
   "moduleId": 5,
-  "title": "Brown Plumes",
-  "sections": []
-} 
+  "title": "Reacting Plumes",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "How to Observe Plumes That React With Air",
+      "content": {
+        "text": "A reacting plume, or secondary plume, occurs when emissions contain chemicals that react upon contact with ambient air. The opacity of the plume increases as it exits the stack. Reacting plumes are commonly associated with processes involving sulfuric acid or with glass manufacturing facilities.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-5/12.jpg",
+          "alt": "Image",
+          "caption": "Reacting plumes are limited to certain industries and do not dissipate quickly like a steam plume."
+        }
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "",
+      "content": {
+        "text": "Observing a secondary plume is the same as observing any other source except the observation point will likely be further away from the stack exit. Readings are made at the highest point of opacity where water vapor is not present."
+      }
+    }
+  ]
+}
