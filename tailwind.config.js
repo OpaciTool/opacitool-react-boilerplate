@@ -63,9 +63,18 @@ export default {
     "bg-[#EEEEEE]",
     "bg-white",
     "bg-black",
+    "w-[80%]",
+    "lg:w-[60%]",
+    "mx-auto",
     {
       pattern: /^bg-opacity-/,
     },
+    {
+      pattern: /^w-/,
+    },
+    {
+      pattern: /^lg:w-/,
+    }
   ],
   darkMode: "class",
 };

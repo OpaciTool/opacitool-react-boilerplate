@@ -7,16 +7,19 @@
       "id": "section-1",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Recommended Equipment for Method 9 Observations",
       "content": {
         "text": "The observer's knowledge of EPA Method 9 and their ability to accurately assign opacity values are the most essential tools when performing an EPA Method 9 test. Additionally, some or all of the following items may be required.\n\nWhen using OpaciTool for observations, most of these items are not necessary. The operation and features of OpaciTool are covered in the OpaciTool training modules."
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Test Form or OpaciTool App",
       "content": {
         "text": "The observer will need to document their observations on an EPA Method 9 test form or by using the OpaciTool app. Blank forms can be downloaded from the Resources section of the course. Instructions for filling out the form will be covered in the next section. Alternatively, data can be entered into the OpaciTool app, which will automatically generate a printable form.",
@@ -24,15 +27,18 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-8/24.jpg",
           "alt": "Image description",
-          "isClickable": false
+          "isClickable": false,
+          "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Clipboard, Pens & Calculator",
       "content": {
         "text": "The clipboard is essential for completing the test form in the field. The observer should always carry at least two pens in case one fails during the test. A calculator is used to average opacity readings and determine whether the source is compliant after the observations are completed.",
@@ -40,15 +46,18 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-8/19.jpg",
           "alt": "Image description",
-          "isClickable": false
+          "isClickable": false,
+          "width": "400px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-4",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Camera",
       "content": {
         "text": "A camera is helpful to indicate the observer’s position relative to the source.  It can also help identify equipment and record serial numbers.",
@@ -56,15 +65,18 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-8/20.jpg",
           "alt": "Image description",
-          "isClickable": false
+          "isClickable": false,
+          "width": "400px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-5",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Timer",
       "content": {
         "text": "EPA Method 9 observations are made every 15 seconds. A stopwatch, watch or phone app will be needed to keep track of the time between readings and record the start and stop time of the test.",
@@ -72,15 +84,18 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-8/21.jpg",
           "alt": "Image description",
-          "isClickable": false
+          "isClickable": false,
+          "width": "400px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-6",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Compass",
       "content": {
         "text": "A compass can be used to determine wind direction and direction between the observer and the emission point. A dedicated compass or compass app on a smartphone can be used.",
@@ -88,15 +103,18 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-8/22.jpg",
           "alt": "Image description",
-          "isClickable": false
+          "isClickable": false,
+          "width": "400px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-7",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Measuring Distance & Angle",
       "content": {
         "text": "The viewing angle between the observer and the emission point must be less than 18° (approximately 3 stack heights) to avoid the need for corrective calculations. To verify that the viewing angle is less than 18°, the observer can measure it with an inclinometer or a smartphone app, such as OpaciTool.\n\nIf measuring the viewing angle directly is not possible, it can be calculated by measuring the distance from the observer to the emission point and knowing the height of the emission point. Both the distance and height can be measured using a rangefinder. Once the measurements are obtained, the viewing angle can be calculated using the Law of Sines.",
@@ -104,15 +122,18 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-8/23.jpg",
           "alt": "Image description",
-          "isClickable": false
+          "isClickable": false,
+          "width": "400px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-8",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Weather Data",
       "content": {
         "text": "Using a smartphone, the observer can typically acquire wind direction, wind speed, temperature, and relative humidity. Alternatively, a handheld device can be used to measure current atmospheric conditions.\n\nWhen using weather data from a smartphone, the observer should ensure the station is located near the observation site.",
@@ -120,14 +141,17 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-8/24.jpg",
           "alt": "Image description",
-          "isClickable": false
+          "isClickable": false,
+          "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-9",
       "type": "image-grid",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Safety Equipment & Appropriate Clothing",
       "content": {
         "text": "Depending on the facility, observers may need a hardhat, steel-toe shoes, safety glasses, respirator and ear plugs.\n\nThe observer may not always have the option to postpone a test due to inclement weather. It is important to ensure that appropriate clothing is available to keep the observer dry and warm.",
@@ -136,11 +160,13 @@
           "images": [
             {
               "url": "/images/training/module-3/lecture-8/25.jpg",
-              "alt": "Image 1 description"
+              "alt": "Image 1 description",
+              "width": "80%"
             },
             {
               "url": "/images/training/module-3/lecture-8/26.jpg",
-              "alt": "Image 2 description"
+              "alt": "Image 2 description",
+              "width": "80%"
             }
           ]
         }

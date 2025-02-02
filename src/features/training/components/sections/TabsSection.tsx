@@ -2,6 +2,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import type { TabContent } from "../LectureContent";
 import { SplitSection } from "./SplitSection";
+import { SectionDivider } from "../SectionDivider";
 
 interface TabsSectionProps {
   title: string;
@@ -35,7 +36,7 @@ export function TabsSection({ title, content, bgColor }: TabsSectionProps) {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={clsx(
-                "px-4 py-2 text-sm font-medium border-b-2 -mb-px transition-colors",
+                "px-4 py-2 text-base font-medium border-b-2 -mb-px transition-colors",
                 activeTab === tab.id
                   ? "border-orange-600 text-orange-600 dark:text-orange-500"
                   : "border-transparent text-zinc-500 hover:text-zinc-700 hover:border-zinc-300 dark:text-zinc-400 dark:hover:text-zinc-300"
@@ -71,41 +72,41 @@ function TabContent({ content }: { content: TabContent }) {
       <p className="whitespace-pre-line text-lg text-zinc-900">{content.description}</p>
       
       {content.sections?.map((section, index) => {
-        if ('images' in section) {
-          return (
-            <div key={index} className="space-y-4">
-              <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
-                {section.title}
-              </h3>
-              <p className="whitespace-pre-line text-lg text-zinc-900">{section.description}</p>
-              <div className="flex gap-6">
-                {section.images.map((image, imgIndex) => (
-                  <figure key={imgIndex} className=" " style={image.width ? { width: image.width } : undefined}>
-                    <img 
-                      src={image.url} 
-                      alt={image.alt} 
-                      className="w-full rounded-lg" 
-                      
-                      
-                    />
-                    <figcaption className="mt-2 text-sm text-center text-zinc-500 dark:text-zinc-400">
-                      {image.caption}
-                    </figcaption>
-                  </figure>
-                ))}
-              </div>
+        const sectionContent = 'images' in section ? (
+          <div className="space-y-4">
+            <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
+              {section.title}
+            </h3>
+            <p className="whitespace-pre-line text-lg text-zinc-900">{section.description}</p>
+            <div className="flex gap-6">
+              {section.images.map((image, imgIndex) => (
+                <figure key={imgIndex} className=" " style={image.width ? { width: image.width } : undefined}>
+                  <img 
+                    src={image.url} 
+                    alt={image.alt} 
+                    className="w-full rounded-lg" 
+                  />
+                  <figcaption className="mt-2 text-sm text-center text-zinc-500 dark:text-zinc-400">
+                    {image.caption}
+                  </figcaption>
+                </figure>
+              ))}
             </div>
-          );
-        } else {
-          return (
-            <SplitSection
-              key={index}
-              title={section.title}
-              content={section.content}
-              layout={section.layout}
-            />
-          );
-        }
+          </div>
+        ) : (
+          <SplitSection
+            title={section.title}
+            content={section.content}
+            layout={section.layout}
+          />
+        );
+
+        return (
+          <div key={index}>
+            {sectionContent}
+            {section.divider && <SectionDivider className={section.dividerStyle} dividerStyleParent={section?.dividerStyleParent}/>}
+          </div>
+        );
       })}
     </div>
   );

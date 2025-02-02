@@ -50,7 +50,7 @@
           "type": "video",
           "url": "/images/training/module-1/video.mp4",
           "alt": "Opacity Measurement Video",
-          "width": "70%"
+          "width": "lg:w-[60%]"
         }
       }
     }

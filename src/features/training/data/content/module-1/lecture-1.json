@@ -19,7 +19,8 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500",
+      "classNameParent": "bg-[#E4EAED]"
     },
     {
       "id": "section-2",

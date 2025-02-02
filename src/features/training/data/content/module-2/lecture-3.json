@@ -8,6 +8,7 @@
       "type": "split",
       "layout": "text-left",
       "title": "Particulate Matter - What Makes a Plume Visible",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "Visible emissions consist of particles ranging from 0.1 µm (micrometer) to 200 µm. A micrometer is one-millionth of a meter. For reference, the average diameter of a human hair is 60 µm.\n\nIn the world of visible emissions and air pollution, you will often encounter terms such as PM, PM2.5 and PM10. PM stands for particulate matter and the number after references the size of the particulate matter. PM10 is particulate matter that is less than 10 µm in diameter or width. PM2.5 is particulate matter less than 2.5 µm.",
         "media": {
@@ -15,16 +16,19 @@
           "url": "/images/training/module-2/lecture-3/12.jpg",
           "alt": "Understanding Opacity Image",
           "isClickable": true,
-          "caption": "The size of particulate matter relative to a human hair."
+          "caption": "The size of particulate matter relative to a human hair.",
+          "width": "80%"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
       "title": "Health Effects of Particulate Matter",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "When inhaled, particulate matter can penetrate deep into the human lungs and even get into the bloodstream.  Exposure to particulate matter has been linked to:\n\n• Premature death in people with heart and lung disease\n• Irregular heartbeat\n• Increased heart attack frequency\n• Increased respiratory problems",
         "media": {
@@ -32,15 +36,18 @@
           "url": "/images/training/module-2/lecture-3/13.jpg",
           "alt": "Key Points Image",
           "isClickable": true,
-          "caption": "Particulate matter size and its effect on the body."
+          "caption": "Particulate matter size and its effect on the body.",
+          "width": "80%"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "image-grid",
       "title": "Environmental Effects of Particulate Matter",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "Particulate matter can travel long distances through the air, carried by wind. As it moves, settles on the ground, or deposits in water, it can negatively impact the environment in several ways:\n\n• Contributing to smog and haze, reducing visibility\n• Causing lakes and rivers to become acidic\n• Altering nutrient balances in waterways and oceans\n• Depleting nutrients in soil\n• Damaging forests and crops",
         "media": {
@@ -50,13 +57,15 @@
               "url": "/images/training/module-2/lecture-3/14.jpg",
               "alt": "Example 1",
               "isClickable": true,
-              "caption": "Particulate matter can settle in water and alter nutrients"
+              "caption": "Particulate matter can settle in water and alter nutrients",
+              "width": "80%"
             },
             {
               "url": "/images/training/module-2/lecture-3/15.jpg",
               "alt": "Example 2",
               "isClickable": true,
-              "caption": "Smog & haze caused by particulate matter"
+              "caption": "Smog & haze caused by particulate matter",
+              "width": "80%"
             }
           ]
         }

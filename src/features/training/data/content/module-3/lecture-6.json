@@ -7,32 +7,36 @@
       "id": "section-1",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Steam Plumes & Method 9",
       "content": {
         "text": "Steam, which is water in its gas phase, can significantly impact the opacity of a plume. EPA Method 9 specifically restricts opacity observations to areas of the plume where steam (water vapor) is absent. If steam is present, opacity observations must be conducted either before or after the section of the plume containing visible steam."
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
-      "type": "split",
+      "type": "video",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Identifying a Steam Plume",
       "content": {
-        "text": "An attached steam plume exhibits the following characteristics:\n\n- First bullet point goes here\n- Second bullet point goes here\n- Third bullet point goes here\n- Fourth bullet point goes here",
+        "text": "Steam plumes have multiple characteristics that aid in visual identification:\n\n• The color is usually white or light gray.\n• Their texture and appearance is similar to a cloud.\n• The edges of the plume disappear as the vapor cools.\n• As water vapor cools and condenses, the plume moves toward the ground.",
         "media": {
-          "type": "image",
-          "url": "/images/training/module-3/lecture-6/11.jpg",
-          "alt": "Steam Plume Characteristics",
-          "isClickable": false
+          "type": "video",
+          "url": "/images/training/module-3/lecture-6/video-4.mp4",
+          "alt": "Video"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "image-grid",
       "title": "Types of Steam Plumes",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "There are two types of steam plumes; attached and detached.",
         "media": {
@@ -51,12 +55,14 @@
           ]
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-4",
       "type": "image-grid",
       "title": "Reading Opacity When Steam is Present",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "The observer must take readings at a point in the plume where steam is absent. The type of steam plume will determine the appropriate observation point.",
         "media": {
@@ -66,12 +72,14 @@
               "url": "/images/training/module-3/lecture-6/13.jpg",
               "alt": "Detailed view 1",
               "isClickable": true,
+              "width": "80%",
               "caption": "Attached Steam Plume - Observe the plume at the greatest point of opacity after the steam dissipates."
             },
             {
               "url": "/images/training/module-3/lecture-6/14.jpg",
               "alt": "Detailed view 2",
               "isClickable": true,
+              "width": "80%",
               "caption": "Detached Steam Plume - Observe the plume at the greatest point of opacity before the formation of steam or after the point of dissipation.  "
             }
           ]

@@ -20,33 +20,41 @@ import { SectionDivider } from "./SectionDivider";
 import { ImageGridSection } from "./sections/ImageGridSection";
 import { VideoSection } from "./sections/VideoSection";
 
-export type TabContent = {
-  description: string;
-  sections?: Array<
-    | {
-        title: string;
-        description: string;
-        images: Array<{
+type TabSection = {
+  title: string;
+  divider?: boolean;
+  dividerStyle?: string;
+  dividerStyleParent?: string;
+} & (
+  | {
+      description: string;
+      images: Array<{
+        url: string;
+        alt: string;
+        caption: string;
+        width?: string;
+      }>;
+    }
+  | {
+      type: "split";
+      layout?: "text-left" | "text-right";
+      content: {
+        text: string;
+        media?: {
+          type: "image";
           url: string;
           alt: string;
-          caption: string;
+          isClickable?: boolean;
+          caption?: string;
           width?: string;
-        }>;
-      }
-    | {
-        title: string;
-        type: "split";
-        layout?: "text-left" | "text-right";
-        content: {
-          text: string;
-          media?: {
-            type: "image";
-            url: string;
-            alt?: string;
-          };
         };
-      }
-  >;
+      };
+    }
+);
+
+export type TabContent = {
+  description: string;
+  sections?: TabSection[];
 };
 
 type SplitSectionMedia = {
@@ -91,6 +99,26 @@ export type FlippableImageGridContent = {
   };
 };
 
+type VideoSection = {
+  id: string;
+  type: "video";
+  title: string;
+  layout?: "text-left" | "text-right" | "centered";
+  bgColor?: string;
+  content: {
+    text: string;
+    media: {
+      type: "video";
+      url: string;
+      alt: string;
+      width?: string;
+    };
+  };
+  divider?: boolean;
+  dividerStyle?: string;
+  dividerStyleParent?: string;
+};
+
 type LectureContent = {
   lectureId: string;
   moduleId: number;
@@ -101,6 +129,7 @@ type LectureContent = {
         type: "split";
         divider?: boolean;
         dividerStyle?: string;
+        dividerStyleParent?: string;
         layout?: "text-left" | "text-right";
         containerType?: "grid" | "flex-col";
         bgColor?: string;
@@ -115,6 +144,7 @@ type LectureContent = {
         type: "image-grid";
         divider?: boolean;
         dividerStyle?: string;
+        dividerStyleParent?: string;
         title: string;
         bgColor?: string;
         content: ImageGridContent | FlippableImageGridContent;
@@ -123,8 +153,11 @@ type LectureContent = {
         id: string;
         type: "video";
         divider?: boolean;
+        dividerStyle?: string;
+        dividerStyleParent?: string;
         title: string;
         bgColor?: string;
+        layout?: "text-left" | "text-right" | "centered";
         content: {
           text: string;
           media: {
@@ -141,6 +174,7 @@ type LectureContent = {
         type: "tabs";
         divider?: boolean;
         dividerStyle?: string;
+        dividerStyleParent?: string;
         title: string;
         bgColor?: string;
         content: {
@@ -148,6 +182,9 @@ type LectureContent = {
             id: string;
             label: string;
             content: TabContent;
+            divider?: boolean;
+            dividerStyle?: string;
+            dividerStyleParent?: string;
           }>;
         };
       }
@@ -362,7 +399,6 @@ export function LectureContent() {
   // Get lecture content
   const content = lectures[lectureSlug as keyof typeof lectures];
 
-  console.log('Lecture content:', content);
 
   if (!currentModule || !currentLecture) {
     return (
@@ -377,13 +413,13 @@ export function LectureContent() {
       <div className="">
         <div className="lg:flex justify-between items-center bg-zinc-900 py-8 px-4 lg:px-14 ">
           <div className="space-y-1">
-            <h3 className="text-2xl text-zinc-500">{currentModule.title}</h3>
+            <h3 className="text-2xl text-zinc-300">{currentModule.title}</h3>
             <h2 className="text-4xl font-bold text-white dark:text-white">{currentLecture.title}</h2>
           </div>
           <Tooltip content="Bookmark this lecture">
             <button
               onClick={handleBookmark}
-              className="flex items-center gap-2 lg:px-3 py-2 rounded-lg  dark:hover:bg-zinc-800 transition-colors"
+              className="flex items-center gap-2 lg:px-3 py-2 rounded-lg hover:text-white  dark:hover:bg-zinc-800 transition-colors"
               aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
             >
               {isBookmarked ? (
@@ -393,8 +429,8 @@ export function LectureContent() {
                 </>
               ) : (
                 <>
-                  <BookmarkOutlineIcon className="size-14 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300" />
-                  <span className="text-xl font-medium text-zinc-200 hover:text-zinc-600 dark:hover:text-zinc-300">Bookmark</span>
+                  <BookmarkOutlineIcon className="group size-14 text-zinc-400 hover:text-white dark:hover:text-zinc-300" />
+                  <span className="text-xl font-medium text-zinc-200 hover:text-white dark:hover:text-zinc-300">Bookmark</span>
                 </>
               )}
             </button>
@@ -420,6 +456,7 @@ export function LectureContent() {
                     {section.divider && (
                       <SectionDivider 
                         className={section.dividerStyle}
+                        dividerStyleParent={section?.dividerStyleParent}
                       />
                     )}
                   </div>
@@ -440,7 +477,7 @@ export function LectureContent() {
                         bgColor={section.bgColor}
                       />
                     )}
-                    {section.divider && <SectionDivider className={section.dividerStyle}/>}
+                    {section.divider && <SectionDivider className={section.dividerStyle}   dividerStyleParent={section?.dividerStyleParent}/>}
                   </div>
                 );
               case "video":
@@ -450,8 +487,9 @@ export function LectureContent() {
                       title={section.title}
                       content={section.content}
                       bgColor={section.bgColor}
+                      layout={section.layout}
                     />
-                    {section.divider && <SectionDivider />}
+                    {section.divider && <SectionDivider className={section.dividerStyle} dividerStyleParent={section?.dividerStyleParent}/>}
                   </div>
                 );
               case "tabs":
@@ -462,7 +500,7 @@ export function LectureContent() {
                       content={section.content}
                       bgColor={section.bgColor}
                     />
-                    {section.divider && <SectionDivider className={section.dividerStyle}/>}
+                    {section.divider && <SectionDivider className={section.dividerStyle} dividerStyleParent={section?.dividerStyleParent}/>}
                   </div>
                 );
               case "quiz":

@@ -9,7 +9,7 @@ interface FlippableImageGridProps {
   bgColor?: string;
 }
 
-export function FlippableImageGridSection({ title, content }: FlippableImageGridProps) {
+export function FlippableImageGridSection({ title, content, bgColor }: FlippableImageGridProps) {
   const [flippedCards, setFlippedCards] = useState<number[]>([]);
 
   const toggleCard = (index: number) => {
@@ -21,14 +21,17 @@ export function FlippableImageGridSection({ title, content }: FlippableImageGrid
   };
 
   return (
-    <div className="py-8 first:pt-0 last:pb-0">
+    <div className={clsx(
+      " py-8 px-4 lg:px-14",
+      bgColor,
+    )}>
       <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-6">
         {title}
       </h2>
-      <div className="prose prose-zinc dark:prose-invert max-w-none mb-8">
-        <Text className="whitespace-pre-line">{content.text}</Text>
+      <div className="text-lg text-zinc-900 dark:prose-invert max-w-none mb-8">
+        <p className="whitespace-pre-line">{content.text}</p>
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
         {content.media.images.map((image, index) => (
           <div 
             key={index}
@@ -66,7 +69,7 @@ export function FlippableImageGridSection({ title, content }: FlippableImageGrid
                   transform: "rotateY(180deg)"
                 }}
               >
-                <Text className="text-sm">{image.back.text}</Text>
+                <p className="text-xl text-zinc-900 dark:text-white">{image.back.text}</p>
               </div>
             </div>
           </div>
