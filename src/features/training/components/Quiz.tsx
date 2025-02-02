@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Text, Button } from "@/shared/ui";
+import { Text } from "@/shared/ui";
 import type { Quiz as QuizType } from "../types/quiz";
 import clsx from "clsx";
 

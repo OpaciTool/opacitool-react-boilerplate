@@ -1,4 +1,4 @@
-import { ThemeToggle } from "@/shared/ui/theme-toggle";
+
 import { ReactNode } from "react";
 
 interface TrainingLayoutProps {

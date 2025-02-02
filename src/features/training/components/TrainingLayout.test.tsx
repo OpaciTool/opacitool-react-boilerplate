@@ -32,9 +32,4 @@ describe("TrainingLayout", () => {
     const container = screen.getByTestId("outlet-content").closest('div[class*="relative isolate"]');
     expect(container).toHaveClass("dark:bg-zinc-900");
   });
-
-  it("renders theme toggle button", () => {
-    renderTrainingLayout();
-    expect(screen.getByRole("button", { name: /switch to dark theme/i })).toBeInTheDocument();
-  });
 }); 

@@ -89,19 +89,19 @@ describe("TrainingSidebar", () => {
   });
 
   it("highlights current lecture", () => {
-    renderWithRouter("welcome");
+    renderWithRouter();
     
     const currentLecture = screen.getByText("Welcome to OpaciTool");
-    expect(currentLecture).toHaveClass("text-orange-600");
+    expect(currentLecture).toHaveClass("text-teal-400");
     
     const otherLecture = screen.getByText("Getting Started");
-    expect(otherLecture).toHaveClass("text-zinc-600");
+    expect(otherLecture).toHaveClass("text-zinc-200");
   });
 
   it("renders back to homepage link", () => {
     renderWithRouter();
     
-    const backLink = screen.getByText("Back to Homepage");
+    const backLink = screen.getByText("Lecture Home");
     expect(backLink.closest("a")).toHaveAttribute("href", "/");
   });
 });

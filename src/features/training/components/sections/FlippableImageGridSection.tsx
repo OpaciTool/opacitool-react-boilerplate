@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Text } from "@/shared/ui";
 import clsx from "clsx";
 import type { FlippableImageGridContent } from "../LectureContent";
 
