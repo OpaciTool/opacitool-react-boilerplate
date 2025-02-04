@@ -1,0 +1,154 @@
+{
+  "lectureId": "module-5-quiz",
+  "moduleId": 5,
+  "title": "Module 5 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 5 Quiz",
+      "content": {
+        "moduleId": 5,
+        "title": "Module 5 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "When reading visible emissions from a rectangular stack:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q1_a",
+                "text": "Read the lowest point of opacity.",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_b",
+                "text": "Read across the shortest axis.",
+                "isCorrect": true
+              },
+              {
+                "id": "q1_c",
+                "text": "Read across the longest axis.",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_d",
+                "text": "None of the above",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "Which type of chart can determine if a steam plume is present?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q2_a",
+                "text": "Allegoric",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_b",
+                "text": "Atmospheric",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_c",
+                "text": "Psychrometric",
+                "isCorrect": true
+              },
+              {
+                "id": "q2_d",
+                "text": "None of the above.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "Sources with high opacity followed by low opacity or no emissions are considered:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q3_a",
+                "text": "Partial sources",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_b",
+                "text": "Temporary sources",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_c",
+                "text": "Continuous sources",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_d",
+                "text": "Intermittent sources",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "An observation angle greater than 18°, ___________ your visual path length and __________ the apparent opacity.",
+            "type": "single",
+            "options": [
+              {
+                "id": "q4_a",
+                "text": "Increases, Decreases",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_b",
+                "text": "Decreases, Decreases",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_c",
+                "text": "Increases, Increases",
+                "isCorrect": true
+              },
+              {
+                "id": "q4_d",
+                "text": "None of the above.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "text": "The Angle Correction Formula must be used if the viewing angle is:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q5_a",
+                "text": "17°",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_b",
+                "text": "18°",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_c",
+                "text": "8°",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_d",
+                "text": "None of the above.",
+                "isCorrect": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

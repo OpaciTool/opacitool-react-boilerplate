@@ -1,0 +1,154 @@
+{
+  "lectureId": "module-6-quiz",
+  "moduleId": 6,
+  "title": "Module 6 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 6 Quiz",
+      "content": {
+        "moduleId": 6,
+        "title": "Module 6 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "questions": [
+          {
+            "id": "q1",
+            "text": "Which of the following is not an alternative to Method 9?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q1_a",
+                "text": "Method 203a",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_b",
+                "text": "Method 22",
+                "isCorrect": true
+              },
+              {
+                "id": "q1_c",
+                "text": "Method 203b",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_d",
+                "text": "ALT-082",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "The observation interval for Method 203a is:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q2_a",
+                "text": "5 seconds",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_b",
+                "text": "10 seconds",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_c",
+                "text": "20 seconds",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_d",
+                "text": "None of the above.",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "What is the observation interval for a Method 203c test?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q3_a",
+                "text": "15 seconds",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_b",
+                "text": "1 minute",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_c",
+                "text": "5 seconds",
+                "isCorrect": true
+              },
+              {
+                "id": "q3_d",
+                "text": "None of the above",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "Which of the following test methods does not have an averaging time of 6 minutes?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q4_a",
+                "text": "Method 9",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_b",
+                "text": "Method 203c",
+                "isCorrect": true
+              },
+              {
+                "id": "q4_c",
+                "text": "Method 203b",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_d",
+                "text": "None of the above.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "text": "If a source had a time-exception period of 2 minutes in an hour, what is the maximum number of readings that can exceed the opacity limit while meeting compliance?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q5_a",
+                "text": "20",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_b",
+                "text": "6",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_c",
+                "text": "15",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_d",
+                "text": "8",
+                "isCorrect": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+} 

@@ -8,6 +8,7 @@
       "type": "split",
       "layout": "text-left",
       "title": "Health Impacts of Air Pollution",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "There are many health impacts associated with air pollution.  Opacity observations are one of the easiest and most effective ways to monitor and reduce air pollution.  By becoming a visible emissions observer, you are helping to reduce the deadliest form of pollution in the world.",
         "media": {
@@ -17,13 +18,15 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-white"
     },
     {
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
       "title": "Health Fact #1",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "92% of the world’s population lives in places where air pollution exceeds safe limits.",
         "media": {
@@ -34,13 +37,15 @@
           "caption": "Areas in yellow, red, orange and purple exceed the WHO’s safety limits for air pollution."
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-black"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-right",
       "title": "Health Fact #2",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "Air pollution is the fourth-largest threat to human health after high blood pressure, dietary risks and smoking.",
         "media": {
@@ -51,13 +56,15 @@
           "caption": ""
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-black"
     },
     {
       "id": "section-4",
       "type": "split",
       "layout": "text-left",
       "title": "Health Fact #3",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "In 2017, approximately 10% of all deaths worldwide were from air pollution related diseases.",
         "media": {
@@ -68,13 +75,15 @@
           "caption": ""
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-black"
     },
     {
       "id": "section-5",
       "type": "split",
       "layout": "text-right",
       "title": "Health Fact #4",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "In 2017, it is estimated that air pollution reduced worldwide life expectancy by an average of 20 months.",
         "media": {
@@ -85,13 +94,15 @@
           "caption": ""
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-black"
     },
     {
       "id": "section-6",
       "type": "split",
       "layout": "text-left",
       "title": "Health Fact #5",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "Countries with the highest air pollution levels might surprise you.",
         "media": {

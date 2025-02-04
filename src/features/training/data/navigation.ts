@@ -60,6 +60,7 @@ export const navigationData: Module[] = [
       { title: "Calculating Average Opacity", slug: "calculating-average-opacity" },
       { title: "Auditing the Form", slug: "auditing-form" },
       { title: "Legal Aspects", slug: "legal-aspects" },
+      { title: "Module 4 Quiz", slug: "module-4-quiz" },
     ],
   },
   {

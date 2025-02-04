@@ -7,16 +7,19 @@
       "id": "section-1",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Types of Particles in Visible Emissions",
       "content": {
         "text": "Particulate matter is a generalized term for all of the particles in air emissions.  Particulate matter can be further broken down into individual particle types.  One or more of the following particle types are found in air emissions."
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Dust",
       "content": {
         "text": "Dust is generally released into the air through mechanical agitation. Dust particles can range in size from 1 µm to 100 µm. ",
@@ -26,12 +29,14 @@
           "alt": "Example 1"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Soot",
       "content": {
         "text": "Soot forms during incomplete combustion and consists mostly of carbon.  Individual soot particles range from .006 µm to .03 µm in diameter but generally combine to form larger particles.",
@@ -41,12 +46,14 @@
           "alt": "Example 2"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-4",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Fly Ash",
       "content": {
         "text": "Fly ash is produced from burning coal.  Fly ash particles range from 0.5 µm to 300 µm in diameter.  Fly ash can contain trace concentrations of arsenic, hexavalent chromium, mercury and other elements which can be hazardous to human health.",
@@ -56,12 +63,14 @@
           "alt": "Example 3"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-5",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Vapor",
       "content": {
         "text": "Generally, vapors refer to the gas phase of something that is normally a liquid or solid.  A vapor can be condensed to a liquid or solid by increasing pressure without reducing temperature.",
@@ -71,12 +80,14 @@
           "alt": "Example 4"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-6",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Fumes",
       "content": {
         "text": "Fumes are dispersions of solid matter in gases. Fume particles generally consist of metals or metal oxides.  Fume particles are very small, ranging from 0.01 µm to 1 µm.",
@@ -86,12 +97,14 @@
           "alt": "Example 5"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-7",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Mist",
       "content": {
         "text": "Mist is the suspension of water droplets in air.  Atmospheric fog is comprised of mist.  Mist ranges from 2 µm to 15 µm.",
@@ -101,12 +114,14 @@
           "alt": "Example 6"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-8",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Gases",
       "content": {
         "text": "Gases do not occupy a specific shape or volume.  They are often present in air emissions.  Nitrogen dioxide is a reddish-brown gas and often found in smog.",

@@ -1,0 +1,15 @@
+{
+  "lectureId": "module-4-lecture-1",
+  "moduleId": 4,
+  "title": "Documentation Requirements",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "form",
+      "title": "Method 9 Form",
+      "content": {
+        "text": "Understanding the Method 9 form"
+      }
+    }
+  ]
+} 

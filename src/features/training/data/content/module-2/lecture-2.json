@@ -2,96 +2,113 @@
   "lectureId": "module-2-lecture-2",
   "moduleId": 2,
   "title": "Plume Shapes",
+
   "sections": [
     {
       "id": "section-1",
       "type": "split",
       "layout": "text-left",
       "title": "Plume Shapes",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "When documenting opacity observations, it's important to record the shape of the plume being observed. There are five possible plume shapes, which are typically influenced by the presence and position of an atmospheric inversion layer. Normally, air temperature decreases with increasing altitude. However, in an inversion layer, the temperature increases as altitude rises."
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
       "title": "Fanning Plume",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "When the ground is cooler than the air, inversion layers usually form near the ground surface.  The plume in this scenario is above the inversion layer and remains aloft as it disperses.",
         "media": {
           "type": "image",
           "url": "/images/training/module-2/lecture-2/7.jpg",
           "alt": "Image description",
-          "isClickable": true
+          "isClickable": true,
+          "width": "80%"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-right",
       "title": "Fumigating Plume",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "As the sun heats the ground, the inversion layer rises.  The plume in this scenario is under the inversion layer and higher concentrations within the plume are pushed towards the ground.",
         "media": {
           "type": "image",
           "url": "/images/training/module-2/lecture-2/8.jpg",
           "alt": "Image description",
-          "isClickable": true
+          "isClickable": true,
+          "width": "80%"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-4",
       "type": "split",
       "layout": "text-left",
       "title": "Coning Plume",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "As the sun continues to heat the ground, the air below the inversion layer becomes evenly mixed. The plume discharges below the inversion layer but rises and diffuses evenly. This shape can also occur during cloudy or windy observations.",
         "media": {
           "type": "image",
           "url": "/images/training/module-2/lecture-2/9.jpg",
           "alt": "Image description",
-          "isClickable": true
+          "isClickable": true,
+          "width": "80%"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-5",
       "type": "split",
       "layout": "text-right",
       "title": "Looping Plume",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "As the sun intensifies, air currents develop from ground heat. These currents cause plumes to move up and down in a looping pattern.",
         "media": {
           "type": "image",
           "url": "/images/training/module-2/lecture-2/10.jpg",
           "alt": "Image description",
-          "isClickable": true
+          "isClickable": true,
+          "width": "80%"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-6",
       "type": "split",
       "layout": "text-left",
       "title": "Lofting Plume",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "As the ground temperature decreases, another inversion layer forms near the ground. The inversion layer is weak and the plume is able to penetrate through it.  As the plume cools, it is unable to penetrate back down through the inversion layer and concentrates along the top of the inversion layer.",
         "media": {
           "type": "image",
           "url": "/images/training/module-2/lecture-2/11.jpg",
           "alt": "Image description",
-          "isClickable": true
+          "isClickable": true,
+          "width": "80%"
         }
       },
       "divider": true
     }
   ]
-} 
+}

@@ -1,0 +1,126 @@
+{
+  "lectureId": "module-4-lecture-2",
+  "moduleId": 4,
+  "title": "Calculating Average Opacity",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "title": "Calculating the Highest Average Opacity Period",
+      "content": {
+        "text": "EPA Method 9 states 'Opacity shall be determined as an average of 24 consecutive observations recorded at 15-second intervals.' Twenty-four readings at fifteen-second intervals equals six-minutes of observations.\n\nWhen opacity observations are complete, the highest six-minute average can be calculated. The best way to find the highest average is to use the “rolling average” method as shown in the following example."
+      },
+      "divider": true
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Calculating the Rolling Average - Step 1",
+      "content": {
+        "text": "For this example, 12 minutes of observations were performed. Method 9 does not set the duration of the opacity test, only the averaging time of 6 minutes. Test durations are set by the regulation affecting the source.\n\nTo expedite the process of determining the highest opacity, a spreadsheet is provided in the 'Reference Forms' section of this course.  OpaciTool can perform the calculation automatically.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-2/4.jpg",
+          "alt": "Certification Verification",
+          "width": "300px"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Step 2",
+      "content": {
+        "text": "Add the first 24 opacity values together to get a sum of 365. Divide 365 by 24 to determine the first average of 15.21%.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-2/5.jpg",
+          "alt": "Equipment Checklist",
+          "width": "300px"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Step 3",
+      "content": {
+        "text": "Move to the second box as the starting point of 24 consecutive values. From the previous sum of 365, subtract the value of the first reading (10) and add the value of the 25th reading (25). 365-10+25=380  Divide 380 by 24 to get an average of 15.83%.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-2/6.jpg",
+          "alt": "Source Information Review",
+          "width": "300px"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Step 4",
+      "content": {
+        "text": "This process will continue until your 24th reading is the last observation made. Draw a line around the highest 6-minute period on the test form. Compare the highest average to the source's opacity limit to determine compliance.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-2/7.jpg",
+          "alt": "Safety Equipment Check",
+          "width": "300px"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "title": "Example Calculation",
+      "content": {
+        "text": "Let's look at two examples of calculating the highest 6-minute average opacity and determining compliance with the opacity limit."
+      }
+    },
+    {
+      "id": "section-7",
+      "type": "two-column",
+      "title": "",
+      "content": {
+        "text": "",
+        "media": {
+          "columns": [
+            {
+              "image": {
+                "url": "/images/training/module-4/lecture-2/8.jpg",
+                "alt": "Example 1",
+                "width": "300px"
+              },
+              "title": "Uncontrolled",
+              "text": "If a reading was missed due to events outside of the observer’s control (wind gust, temporary interruption of view, etc.), a dash should be placed in the box. The missed reading can be skipped when calculating the rolling average but 24 valid consecutive readings are still needed."
+            },
+            {
+              "image": {
+                "url": "/images/training/module-4/lecture-2/9.jpg",
+                "alt": "Example 2",
+                "width": "300px"
+              },
+              "title": "Observer-Fault",
+              "text": "If a reading could have been taken but wasn’t (failure to watch the time, distracted, phone call, etc.), an X should be placed in the missed reading box. This type of missed reading breaks the rolling average. There must be 24 valid consecutive readings before or after the X."
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "section-8",
+      "type": "split",
+      "title": "",
+      "content": {
+        "text": "Always note the reason for a missed reading in the Comments section of the test form or on the back of the test form."
+      }
+    }
+  ]
+}

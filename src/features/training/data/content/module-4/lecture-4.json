@@ -1,0 +1,30 @@
+{
+  "lectureId": "module-4-lecture-4",
+  "moduleId": 4,
+  "title": "Legal Aspects",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Legal Aspects of EPA Method 9 Observations",
+      "content": {
+        "text": "Non-compliance with visible emission regulations, such as EPA Method 9, can result in significant costs. Daily fines can reach up to $37,500, and multiple violations may even lead to a forced shutdown. Understanding proper observation techniques and documentation procedures is essential to ensure that observations are defensible if challenged.\n\nThe following questions have been raised in court cases related to visible emissions observations.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-4/lecture-4/15.jpg",
+          "alt": "Slant Angle Diagram",
+          "width": "300px"
+        }
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "title": "",
+      "content": {
+        "text": "• Have you completed a training course known as \"smoke school\"? When were you certified?\n\n• Were you trained to assess black smoke? Were you trained to assess other colors of smoke?\n\n• Were you required to achieve a certain level of proficiency to obtain certification? Can you explain the certification process?\n\n• Why were you at the location where the visible emissions test was conducted?\n\n• Where were you when you first observed the emissions in question? What was your exact location?\n\n• Could you identify the source of the emissions? Please describe the source.\n\n• Describe the location from which you made your observations.\n\n• Describe the ambient conditions during your observation.\n\n• Describe the background during your observation. Did the background change during the test?\n\n• Were there any interruptions or interference during your observations? What was the cause?\n\n• Describe how you calculated the average opacity."
+      }
+    }
+  ]
+} 

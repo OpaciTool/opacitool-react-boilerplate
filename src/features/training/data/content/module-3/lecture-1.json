@@ -7,17 +7,20 @@
       "id": "section-1",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "EPA Method 9 - Observation Basics",
       "content": {
         "text": "EPA Method 9 is a test method found in Appendix A of 40 CFR Part 60 and is used to determine the opacity of emissions from stationary sources. As we learned earlier in this course, EPA Method 9 certification consists of a lecture course and a visual test.  When you have successfully completed the lecture and visual test, you will be certified to perform EPA Method 9 testing.\n\nThis section of the lecture teaches you how to properly perform opacity observations. A thorough understanding of observational procedures is essential before making opacity readings.\n\nBefore we cover some of the more technical observation principles, the following are basic requirements when performing an EPA Method 9 test."
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
       "title": "5% Increments",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "text": "When performing EPA Method 9 testing, the opacity of visible emissions are read and recorded in 5% increments from 0% to 100% opacity. If you believe the opacity value is between two numbers, such as 20% and 25%, round up.",
         "media": {
@@ -27,12 +30,14 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
       "title": "15 Second Intervals",
       "content": {
         "text": "During an EPA Method 9 test, opacity readings are taken every 15 seconds. Observe the emissions briefly for a few seconds before recording your reading. Prolonged observation can cause eye fatigue and may result in inaccurate readings.",
@@ -43,12 +48,14 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-4",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Determining Test Length",
       "content": {
         "text": "EPA Method 9 specifies the averaging period for opacity readings but does not define the test duration. The duration is determined by the regulation governing the source and is typically outlined in the facility’s air permit or provided by the regulatory agency. Test durations can vary from 6 minutes to 3 hours.",
@@ -59,12 +66,14 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-5",
       "type": "split",
       "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Determining the Opacity Limit",
       "content": {
         "text": "EPA Method 9 does not define opacity limits; instead, it is used to assess whether a facility complies with its specified opacity limit. The opacity limit for a source is determined by the applicable regulation and is typically detailed in the facility’s air permit or available from the governing regulatory agency.",

@@ -1,0 +1,413 @@
+{
+  "facilitySection": {
+    "title": "Facility & Source Info",
+    "fields": {
+      "facilityName": {
+        "title": "Facility & Source Info",
+        "content": "Indicate the complete name of the facility and the air permit number issued by the regulating agency.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/1.png",
+            "alt": "Example of correctly filled facility name and permit"
+          }
+        ]
+      },
+      "address": {
+        "title": "Facility Address",
+        "content": "Indicate the physical address of the facility not the mailing address.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/2.png",
+            "alt": "Correct address example"
+          }
+        ]
+      },
+      "facilityContact": {
+        "title": "Facility Contact",
+        "content": "Indicate the name and phone number of the designated facility contact.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/3.png",
+            "alt": "Correct address example"
+          }
+        ]
+      },
+      "sourceCoordinates": {
+        "title": "Source Coordinates",
+        "content": "If the observer has access to GPS, they should record the coordinates of the source being observed. For larger facilities, this can help distinguish the subject source from others.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/4.png",
+            "alt": "Correct Source Coordinates example"
+          }
+        ]
+      },
+      "sourceEquipmentDescription": {
+        "title": "Source Equipment Description",
+        "content": "Describe the source of the emissions being observed. This is not the stack or emission point - this is the equipment or process that is producing the emissions. Indicate the type of equipment, color, make, model and any other descriptive features.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/5.png",
+            "alt": "Correct Source Equipment Description example"
+          }
+        ]
+      },
+      "sourceEquipmentId": {
+        "title": "Source Equipment ID",
+        "content": "The facility’s air permit should contain an identification number (such as Emission Point #1 or EP-1) for the source. Alternatively, the facility may have an in-house ID for the source. If available, also record the serial number of the source equipment.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/6.png",
+            "alt": "Correct Source Equipment ID example"
+          }
+        ]
+      },
+      "sourceEquipmentMode": {
+        "title": "Source Equipment Mode",
+        "content": "Indicate the production or operational rate of the source equipment. This information can be acquired from the operator of the source. Have the operator record the production rate during the observation.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/7.png",
+            "alt": "Correct Source Equipment Mode example"
+          }
+        ]
+      },
+      "controlEquipmentDescription": {
+        "title": "Control Equipment Description",
+        "content": "Indicate the type of equipment or process which is used to control emissions from the source. This information can be obtained from the source operator. Examples include baghouses, scrubbers, thermal oxidizers and cyclones for point-source emissions. Examples for fugitive emissions include water spray, inherent rock moisture and sweeping for fugitive emissions.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/8.png",
+            "alt": "Correct Control Equipment Description example"
+          }
+        ]
+      },
+      "controlEquipmentOperatingMode": {
+        "title": "Control Equipment Operating Mode",
+        "content": "The capacity or performance of most modern control methods are monitored and recorded. This information can be obtained from the source operator. Different types of controls have different measuring methods. Baghouses measure pressure differential. A thermal oxidizer may measure the destruction efficiency of VOCs. Fugitive emission controls, such as water spray, are measured in gallons per hour.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/9.png",
+            "alt": "Correct Control Equipment Description example",
+            "width": "150px"
+          },
+          {
+            "url": "/images/training/module-4/lecture-1/control-mode.jpg",
+            "alt": "Correct Control Equipment Description example",
+            "caption": "Differential pressure gauages are often found on baghouses.",
+            "width": "300px"
+          }
+        ]
+      }
+    }
+  },
+  "observationSection": {
+    "title": "Observation Info",
+    "fields": {
+      "emissionPoint": {
+        "title": "Emission Point Description",
+        "content": "Indicate the physical characteristics of the emission point. Point source emissions usually have a stack or vent as their emission point. Describe the height, color and size of the emission point to ensure it can be distinguished from other points.\n\n The emission point of fugitive emissions can vary within the subject source equipment being observed. They do not have a defined emission point. Describe the point in the process where emissions are observed. Example: Tail pulley of subject conveyor",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/10.png",
+            "alt": "Example of emission point description"
+          }
+        ]
+      },
+      "observationPointHeight": {
+        "title": "Observation Point - Height",
+        "content": "This is the vertical height between the observer and the observation point. Please note: the observation point is not always the emission point. It is the point in the plume where opacity is highest and water vapor is not present. If there are no visible emissions, indicate the height of the stack exit.\n\nThere are “Start” and “End” fields because the observer may have to move during the observations or the observation point may change.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/11.png",
+            "alt": "Observation point measurements diagram"
+          }
+        ]
+      },
+      "observationPointDistance": {
+        "title": "Observation Point - Distance",
+        "content": "This is the horizontal distance between the observer and the observation point. Record the distance at the begging and end of the test. The distance may change if the observer moves or if the observation point changes.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/12.png",
+            "alt": "Observation Point - Distance example"
+          }
+        ]
+      },
+      "observationPointDirection": {
+        "title": "Observation Point - Direction",
+        "content": "This is the direction from the observer’s position to the observation point. Degrees (225°) should be used instead of cardinal directions (N, S, E, W). Record the direction at the beginning of the test and at the completion of the test. The direction may change during the test if the observer moves or if the observation point changes.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/13.png",
+            "alt": "Observation Point - Direction example"
+          }
+        ]
+      },
+      "observationPointAngle": {
+        "title": "Observation Point - Angle",
+        "content": "This is the vertical angle between the observer’s position and the observation point. The angle must be less than 18° to prevent performing a slant angle correction (this will be covered later). If the observer does not have a device to measure the angle, they must stand at least three times the height of the observation point. For example, if the observation point height is 50 feet, the observer's position must be at least 150 feet away to ensure the viewing angle is less than 18°.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/14.png",
+            "alt": "Observation Point - Angle example",
+            "width": "350px"
+          },
+          {
+            "url": "/images/training/module-4/lecture-1/observation-angle.jpg",
+            "alt": "Observation Point - Angle example",
+            "width": "350px",
+            "caption": "The observation angle should be less than 18°."
+          }
+        ]
+      },
+      "distanceBetweenEmissionPointAndObservationPoint": {
+        "title": "Distance Between Emission Point & Observation Point",
+        "content": "Indicate the estimated distance between the emission point (stack exit) to the observation point. For most plumes, the distance between the observation point and emission point is equal to the diameter of the emission point. If the emission point has a diameter of 6’, the observation point would be approximately 6’ from the emission point. The only time the observation point will be significantly further than 1 diameter is in the presence of an attached steam plume or reacting plume.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/15.png",
+            "alt": "Distance Between Emission Point & Observation Point example"
+          }
+        ]
+      },
+      "plumeShape": {
+        "title": "Plume Shape",
+        "content": "Indicate which of the five plume shapes most closely resembles the subject plume. If no visible emissions are present, write “NA” for 'Not Applicable'.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/16.png",
+            "alt": "Plume Shape example",
+            "width": "350px"
+          },
+          {
+            "url": "/images/training/module-4/lecture-1/plume-shape.jpg",
+            "alt": "Plume Shape example",
+            "caption": "Coning plume shape. Refer to previous section for other plume shapes.",
+            "width": "350px"
+          }
+        ]
+      },
+      "emissionType": {
+        "title": "Emission Type",
+        "content": "Indicate the type of emission from the subject source.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/17.png",
+            "alt": "Emission Type example"
+          }
+        ]
+      },
+      "emissionColor": {
+        "title": "Emission Color",
+        "content": "Indicate the color of the emission at the beginning and completion of the test. In certain situations, the color can change during the test. If there are no visible emissions, write “NA” in the fields.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/18.png",
+            "alt": "Emission Color example"
+          }
+        ]
+      },
+      "waterVaporPlume": {
+        "title": "Water Vapor Plume",
+        "content": "If there is water vapor (steam) plume present, indicate if it is attached or detached from the stack.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/19.png",
+            "alt": "Water vapor plume example"
+          }
+        ]
+      },
+      "backgroundAndColor": {
+        "title": "Background & Color",
+        "content": "Indicate what is being used as the background and the color of the background. Ideally, the background should have high-contrast with the emission color.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/20.png",
+            "alt": "Background contrast example"
+          }
+        ]
+      }
+    }
+  },
+  "atmosphericSection": {
+    "title": "Atmospheric Info",
+    "fields": {
+      "cloudCover": {
+        "title": "% Cloud Cover",
+        "content": "Indicate the amount of cloud cover at the beginning and at the completion of the test. Report cloud cover as a percentage. Cloudless skies are 0%. Overcast skies are 100%.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/21.png",
+            "alt": "Cloud Cover example"
+          }
+        ]
+      },
+      "ambientTemp": {
+        "title": "Ambient Temperature",
+        "content": "Indicate the temperature at the beginning and at the completion of the test.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/22.png",
+            "alt": "Ambient Temperature example"
+          }
+        ]
+      },
+      "windSpeed": {
+        "title": "Wind Speed",
+        "content": "Indicate the speed of the wind at the beginning and at the completion of the test.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/23.png",
+            "alt": "Wind Speed example"
+          }
+        ]
+      },
+      "windDirection": {
+        "title": "Wind Direction",
+        "content": "Indicate the direction from which the wind is blowing at the beginning and at the completion of the test.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/24.png",
+            "alt": "Wind Direction example"
+          }
+        ]
+      },
+      "relativeHumidity": {
+        "title": "Relative Humidity",
+        "content": "Indicate the relative humidity at the beginning of the test. This data can be acquired from a local weather station or with a handheld device.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/25.png",
+            "alt": "Relative Humidity example"
+          }
+        ]
+      },
+      "wetBulbTemp": {
+        "title": "Wet Bulb Temperature",
+        "content": "This field only needs to be completed if the observer is unsure if the plume contains water vapor. The wet bulb temperature will help determine the probability of a steam plume. This topic is discussed in a subsequent section.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/26.png",
+            "alt": "Wet Bulb Temperature example"
+          }
+        ]
+      }
+    }
+  },
+  "sourceLayoutSection": {
+    "title": "Source Layout Sketch",
+    "fields": {
+      "sketch": {
+        "title": "Source Layout Sketch",
+        "content": "Complete the source layout sketch at the end of the test. \n\n - The location of the sun relative to the observer’s position should be indicated on the “Draw Sun” line. \n\n - Using the key, draw the wind and plume symbols to indicate the direction of the wind and plume. \n\n - Using a compass, draw an arrow indicating North relative to your observation position.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/28.png",
+            "alt": "Source Layout Sketch example",
+            "width": "400px"
+          }
+        ]
+      }
+    }
+  },
+  "observerInfoSection": {
+    "title": "Observer Info & Details",
+    "fields": {
+      "general": {
+        "title": "Form #",
+        "content": "If the testing time for the source exceeds 60 minutes, multiple test forms may be needed. Remember - EPA Method 9 does not establish the duration of the test. Test durations are set by the regulation affecting the facility and are usually listed in the facility permit.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/29.png",
+            "alt": "",
+            "width": "200px"
+          }
+        ]
+      },
+      "observationDateAndTime": {
+        "title": "Observation Date & Time",
+        "content": "Indicate the date and start and end time of the test. We recommend using the 24-hour military time format.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/30.png",
+            "alt": "Observation date example"
+          }
+        ]
+      },
+      "observations": {
+        "title": "Observations",
+        "content": "Record observations in 5% increments every 15 seconds. The first recording occurs at the beginning of the test.\n\nAt least 6 minutes of continuous observations are needed to calculate a rolling average. Calculating opacity will be covered in a subsequent section.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/31.png",
+            "alt": "Observations example",
+            "width": "350px"
+          }
+        ]
+      },
+      "averageOpacity": {
+        "title": "Highest Average Opacity",
+        "content": "After the test is complete, calculate the highest rolling average and input the value in this field.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/32.png",
+            "alt": "Average opacity calculation example",
+            "width": "300px"
+          }
+        ]
+      },
+      "readingsAbove": {
+        "title": "Number of Readings Above",
+        "content": "Record the number of individual opacity readings that exceeded a specific opacity limit. The opacity limit is typically specified in the facility's permit.\n\nFor example: If the permit states 'No more than 3 readings above 20% opacity in one hour', you would write '20' in the first blank and the number of readings that exceeded 20% in the second blank.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/33.png",
+            "alt": "Readings above example",
+            "width": "300px"
+          }
+        ]
+      },
+      "observerNameAndSignature": {
+        "title": "Observer Name & Signature",
+        "content": "Print and sign your name as it appears on your certification.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/34.png",
+            "alt": "Observer name example"
+          }
+        ]
+      },
+      "organization": {
+        "title": "Company/Organization",
+        "content": "Indicate the company or organization you represent.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/35.png",
+            "alt": "Organization example"
+          }
+        ]
+      },
+      "certification": {
+        "title": "Certification",
+        "content": "Indicate the smoke school service provider who issued your certification and the date it was issued.  All EPA Method 9 certifications are valid for exactly 6 months.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/36.png",
+            "alt": "Certification details example"
+          }
+        ]
+      },
+      "comments": {
+        "title": "Comments",
+        "content": "Indicate events or situations that occurred during the test and affected the test. Examples include changes in atmospheric conditions, source malfunctions, other people present during the test and any conditions which affected the observations.The back of the test sheet or an additional piece of paper can also be used for comments.",
+        "images": [
+          {
+            "url": "/images/training/module-4/lecture-1/37.png",
+            "alt": "Comments section example"
+          }
+        ]
+      }
+    }
+  }
+}

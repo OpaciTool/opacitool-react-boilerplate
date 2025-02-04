@@ -8,22 +8,26 @@
       "type": "split",
       "layout": "text-left",
       "title": "What is Smoke School?",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "Most sources that produce air emissions have limitations on the opacity of their emissions.  To determine if a facility is in compliance with these limits, individuals can be trained and tested through a smoke school.  Smoke school is the process of being trained and certified to read the opacity of visible emissions using visual memory. ",
         "media": {
           "type": "image",
           "url": "/images/training/module-1/lecture-3/15.jpg",
           "alt": "Image",
+          "width": "500px",
           "caption": "Individuals trained at smoke school can perform opacity observations at any facility."
-        
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "tabs",
       "title": "About Smoke School",
+
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "tabs": [
           {
@@ -34,32 +38,39 @@
               "sections": [
                 {
                   "title": "The Lecture",
-                  "description": "A smoke school lecture can be completed online or in-person.  The lecture teaches how to properly observe and document visible emissions observations. Online lectures usually allow you to learn at your own pace and provide printable reference forms for observations.  ",
+                  "description": "A smoke school lecture can be completed online or in-person.  The lecture teaches how to properly observe and document visible emissions observations. Online lectures usually allow you to learn at your own pace and provide printable reference forms for observations.\n\n",
                   "images": [
                     {
                       "url": "/images/training/module-1/lecture-3/16.jpg",
                       "alt": "Classroom Training 1",
+                      "width": "500px",
                       "caption": "Online lectures are self-paced and completed at home or in the office. "
                     },
                     {
                       "url": "/images/training/module-1/lecture-3/17.jpg",
                       "alt": "Classroom Training 2",
+                      "width": "500px",
                       "caption": "In-person lectures are usually performed the day before the visual test."
                     }
-                  ]
+                  ],
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto mt-8",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "The Visual Test",
-                  "description": "The visual test can be performed with a virtual reality (VR) headset or by attending an in-person smoke school event. The visual test requires accurately assessing the opacity of 25 values of black smoke and 25 values of white smoke. Prior to the test, demonstrations of various opacity values are provided to ensure your eyes are calibrated. You must successfully pass both smoke colors to receive your certification. If you do not pass, you can retake the test.",
+                  "description": "The visual test can be performed with a virtual reality (VR) headset or by attending an in-person smoke school event. The visual test requires accurately assessing the opacity of 25 values of black smoke and 25 values of white smoke. Prior to the test, demonstrations of various opacity values are provided to ensure your eyes are calibrated. You must successfully pass both smoke colors to receive your certification. If you do not pass, you can retake the test.\n\n",
                   "images": [
                     {
                       "url": "/images/training/module-1/lecture-3/18.jpg",
                       "alt": "Field Training 1",
+                      "width": "500px",
                       "caption": "Students  at an In-person Smoke School"
                     },
                     {
                       "url": "/images/training/module-1/lecture-3/19.jpg",
                       "alt": "Field Training 2",
+                      "width": "500px",
                       "caption": "Student completing smoke school using a VR headset."
                     }
                   ]
@@ -84,7 +95,10 @@
                       "url": "/images/training/module-1/lecture-3/21.jpg",
                       "alt": "Environmental Professional"
                     }
-                  }
+                  },
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Regulatory Agencies",
@@ -97,7 +111,10 @@
                       "url": "/images/training/module-1/lecture-3/22.jpg",
                       "alt": "Regulatory Personnel"
                     }
-                  }
+                  },
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Environmental Consultants",
@@ -110,7 +127,10 @@
                       "url": "/images/training/module-1/lecture-3/23.jpg",
                       "alt": "Facility Operator"
                     }
-                  }
+                  },
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Community & Environmental Groups",
@@ -130,13 +150,15 @@
           }
         ]
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-left",
       "title": "EPA Method 9 Certification",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "When you successfully complete a smoke school, you are certified to perform USEPA Method 9 testing.\n\nUSEPA Method 9 is a federal test method and applies to all states.  However, each state can modify the method to be more stringent (not less) than the federal method.  For example, the USEPA recommends completing a smoke school lecture if you are being certified at an in-person smoke school.  It does not require it unless you are being trained using virtual reality.  However, multiple states require completion of the lecture at least once every three years even if you are certified in-person.  We strongly recommend completing the lecture every 3 years as a refresher course.\n\nUSEPA Method 9 also establishes the certification period as 6 months.  All states have adopted the same 6 month certification duration.",
         "media": {

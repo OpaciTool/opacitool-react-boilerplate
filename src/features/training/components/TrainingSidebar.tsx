@@ -37,7 +37,7 @@ export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarPro
   };
 
   return (
-    <Sidebar className="border-r border-zinc-950/5 dark:border-white/5 h-full lg:h-screen">
+    <Sidebar className="bg-zinc-900 border-r border-zinc-950/5 dark:border-white/5 h-full lg:h-screen">
       <SidebarHeader>
         {/* Close button - mobile only */}
         {onClose && (
@@ -51,23 +51,22 @@ export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarPro
         )}
 
         {/* Logo Section */}
-        <div className="flex items-center gap-2 mb-8">
-          <div className="w-[95%] lg:w-full">
-            <img 
-              src="/images/logo.png" 
-              alt="OpaciTool Logo" 
-              className="w-full"
-            />
-          </div>
+        <div className="flex items-center justify-center gap-2 mb-8">
+          <img 
+            src="/images/logo.png" 
+            alt="OpaciTool Logo" 
+            className="max-w-[300px] w-full"
+          />
         </div>
 
         {/* Dashboard Link */}
         <Link 
           to="/"
-          className="flex items-center gap-2 text-zinc-600 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-white transition-colors mb-1"
+          className="flex items-center gap-2 text-zinc-600 hover:text-zinc-300 dark:text-zinc-400 dark:hover:text-white transition-colors mb-1"
         >
-          <ArrowLeftIcon className="size-5" />
-          <span className="font-medium">Back to Homepage</span>
+          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-green-400"><ArrowLeftIcon className="size-5 text-black" /></div>
+          
+          <span className="font-medium text-white">Lecture Home</span>
         </Link>
 
       </SidebarHeader>
@@ -77,19 +76,19 @@ export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarPro
           <SidebarSection key={module.id}>
             <button 
               onClick={() => toggleModule(module.id)}
-              className="flex w-full items-center justify-between px-2 py-2 hover:bg-zinc-950/5 dark:hover:bg-white/5 rounded-lg"
+              className="flex w-full items-center justify-between px-2 py-2 hover:bg-zinc-950/5 dark:hover:bg-white/5 border-b border-zinc-100/20"
             >
               <div className="flex items-center gap-3 min-w-0 flex-1">
                 <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
                   {module.id}
                 </div>
-                <SidebarLabel className="text-sm font-semibold truncate text-zinc-900 dark:text-zinc-100">
+                <SidebarLabel className="text-sm font-semibold truncate text-white dark:text-zinc-100">
                   {module.title}
                 </SidebarLabel>
               </div>
               <ChevronDownIcon 
                 className={clsx(
-                  "size-5 text-zinc-500 transition-transform duration-200 shrink-0 ml-2",
+                  "size-5 text-white transition-transform duration-200 shrink-0 ml-2",
                   expandedModules[module.id] ? "rotate-180" : ""
                 )} 
               />
@@ -114,8 +113,8 @@ export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarPro
                     <SidebarLabel className={clsx(
                       "text-sm transition-colors",
                       lectureSlug === lecture.slug
-                        ? "text-orange-600 dark:text-white font-medium"
-                        : "text-zinc-600 dark:text-zinc-400"
+                        ? "text-teal-400 dark:text-white font-medium"
+                        : "text-zinc-200 dark:text-zinc-400"
                     )}>
                       {lecture.title}
                     </SidebarLabel>

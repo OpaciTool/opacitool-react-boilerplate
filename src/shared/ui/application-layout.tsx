@@ -225,7 +225,7 @@ export const SidebarItem = forwardRef(function SidebarItem(
     <span className={clsx(className, "relative")}>
       {current && (
         <motion.span
-          className="absolute inset-y-2 -left-4 w-0.5 rounded-full bg-orange-600 dark:bg-white"
+          className="absolute inset-y-2 -left-4 w-0.5 rounded-full bg-teal-400 dark:bg-white"
           layoutId="current-indicator"
         />
       )}

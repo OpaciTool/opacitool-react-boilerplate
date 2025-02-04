@@ -1,0 +1,23 @@
+{
+  "lectureId": "module-5-lecture-3",
+  "moduleId": 5,
+  "title": "Intermittent Emissions",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Observing Intermittent Emission Sources",
+      "content": {
+        "text": "Some sources and control devices can have periods of high opacity followed by periods of low or zero opacity. These sources are considered to have intermittent emissions.\n\nIf a source has intermittent emissions or a continuous emission period of less than 6 minutes, an alternative test method may be needed. Alternative test methods (described later in the course), allow for lower averaging times and decreased time intervals between observations. The source’s permit will usually state if an alternative test method should be used.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-5/lecture-3/4.jpg",
+          "alt": "Image",
+          "caption": "Baghouse emissions can change significantly during the purge cycle.",
+          "width": "400px"
+        }
+      }
+    }
+  ]
+} 

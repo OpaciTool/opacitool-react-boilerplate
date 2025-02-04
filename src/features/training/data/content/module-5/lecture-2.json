@@ -1,0 +1,46 @@
+{
+  "lectureId": "module-5-lecture-2",
+  "moduleId": 5,
+  "title": "Multiple Sources & Emission Points",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Single Emission Point for Multiple Sources ",
+      "content": {
+        "text": "When an emission point is shared with two or more sources, the subject source should be isolated. The non-subject sources should be shutdown during opacity observations if possible. If the non-subject sources cannot be shutdown, observe the emission point as normal and make a note that other sources were sharing the emission point.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-5/lecture-2/2.jpg",
+          "alt": "Opacity determination example",
+          "isClickable": true,
+          "caption": "Two sources with a single emission point"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Multiple Emission Points for a Single Source",
+      "content": {
+        "text": "When there are multiple emission points for a single source, observe all of the emission points simultaneously and apply a corrective formula to each reading.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-5/lecture-2/3.jpg",
+          "alt": "Opacity practice technique",
+          "isClickable": true,
+          "caption": "One source with two emission points."
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-3",
+      "type": "formula",
+      "title": "Multiple Emission Points Formula"
+    }
+  ]
+} 

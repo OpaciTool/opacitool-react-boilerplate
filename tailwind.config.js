@@ -58,9 +58,23 @@ export default {
   safelist: [
     "text-2xl",
     "text-zinc-400",
+    "bg-orange-500",
+    "bg-[#E4EAED]",
+    "bg-[#EEEEEE]",
+    "bg-white",
+    "bg-black",
+    "w-[80%]",
+    "lg:w-[60%]",
+    "mx-auto",
     {
       pattern: /^bg-opacity-/,
     },
+    {
+      pattern: /^w-/,
+    },
+    {
+      pattern: /^lg:w-/,
+    }
   ],
   darkMode: "class",
 };

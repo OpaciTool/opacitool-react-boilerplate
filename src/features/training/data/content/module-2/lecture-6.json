@@ -7,6 +7,7 @@
       "id": "section-1",
       "type": "image-grid",
       "title": "Controlling Air Emissions",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "The best way to control air emissions is to prevent them. The Pollution Prevention Act of 1990 tasked the Environmental Protection Agency (EPA) to establish a program to reduce pollution by modifying production processes, promoting the use of non-toxic or less toxic substances and implementing conservation techniques. The program, known as the Pollution Prevention (P2) Program, reduces millions of pounds of pollution every year.\n\nWhen air emissions can't be prevented, they must be controlled. Control devices attempt to reduce air emissions in one of the following ways:",
         "media": {
@@ -17,19 +18,22 @@
               "url": "/images/training/module-2/lecture-6/29.jpg",
               "alt": "Cyclone",
               "isClickable": true,
-              "caption": "Collection"
+              "caption": "Collection",
+              "width": "80%"
             },
             {
               "url": "/images/training/module-2/lecture-6/30.jpg",
               "alt": "Baghouse",
               "isClickable": true,
-              "caption": "Combustion"
+              "caption": "Combustion",
+              "width": "80%"
             },
             {
               "url": "/images/training/module-2/lecture-6/31.jpg",
               "alt": "ESP",
               "isClickable": true,
-              "caption": "Conversion"
+              "caption": "Conversion",
+              "width": "80%"
             }
           ]
         }
@@ -39,16 +43,19 @@
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "",
       "content": {
         "text": "Control devices for point sources are different than those used for fugitive emissions. Below we will review some of the most common control devices for each source type."
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "tabs",
       "title": "Control Devices",
+      "bgColor": "bg-[#EEEEEE]",
       "content": {
         "tabs": [
           {
@@ -70,7 +77,9 @@
                       "isClickable": true
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Cyclones",
@@ -85,7 +94,9 @@
                       "isClickable": true
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Electrostatic Precipitators",
@@ -100,7 +111,9 @@
                       "isClickable": true
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Scrubbers",
@@ -115,7 +128,9 @@
                       "isClickable": true
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Thermal Oxidizers",
@@ -130,7 +145,9 @@
                       "isClickable": true
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Catalytic Oxidizers",
@@ -145,7 +162,9 @@
                       "isClickable": true
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Selective Catalytic Reduction (SCR) Systems",
@@ -159,8 +178,7 @@
                       "alt": "Catalytic Converter Diagram",
                       "isClickable": true
                     }
-                  },
-                  "divider": true
+                  }
                 }
               ]
             }
@@ -183,7 +201,9 @@
                       "alt": "Dust Suppression"
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Sweeping",
@@ -197,7 +217,9 @@
                       "alt": "Wind Barriers"
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Suppressants",
@@ -211,7 +233,9 @@
                       "alt": "Enclosures"
                     }
                   },
-                  "divider": true
+                  "divider": true,
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
+                  "dividerStyleParent": "bg-[#EEEEEE]"
                 },
                 {
                   "title": "Inherent Moisture",

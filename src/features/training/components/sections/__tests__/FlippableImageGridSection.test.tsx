@@ -53,7 +53,7 @@ describe('FlippableImageGridSection', () => {
   it('renders images in a grid', () => {
     render(<FlippableImageGridSection {...defaultProps} />);
     const gridContainer = screen.getByAltText('Front Image 1').closest('.grid');
-    expect(gridContainer).toHaveClass('grid', 'grid-cols-3', 'gap-4');
+    expect(gridContainer).toHaveClass('grid', 'grid-cols-2', 'lg:grid-cols-3', 'gap-4');
   });
 
   // Flip Functionality Tests

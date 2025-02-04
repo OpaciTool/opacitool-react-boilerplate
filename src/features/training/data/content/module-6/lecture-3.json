@@ -1,0 +1,84 @@
+{
+  "lectureId": "module-6-lecture-3",
+  "moduleId": 6,
+  "title": "EPA ALT-082",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "EPA ALT-082 - The Digital Camera Opacity Technique (DCOT)",
+      "content": {
+        "text": "EPA ALT-082, approved by the EPA in 2011, is an alternative test method that imposes additional limitations on ASTM D7520. ASTM D7520 is a standardized test protocol for determining the opacity of visible emissions using a digital camera.\n\nThis protocol outlines the process for using a digital camera to capture observations, specifies the analysis software required to process the captured images, and defines the expected output of the software. Together, these components form the Digital Camera Opacity Technique (DCOT).",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-6/4.jpg",
+          "alt": "ALT-002 method example"
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-right",
+      "title": "ALT-082 Specifications & Requirements",
+      "content": {
+        "text": "• A DCOT operator must complete a smoke school lecture.\n\n• A DCOT operator must complete a separate training course provided by the DCOT manufacturer.\n\n• The camera and software configuration must be certified every 3.5 years. The configuration is certified by completing six runs at a smoke school.\n\n• Images are not analyzed instantly - they must be sent to a third party for analysis.\n\n• The DCOT cannot be used on emission points with internal diameters which exceed 7 feet.",
+        "media": {
+          "type": "image",
+          "url": "/images/training/module-6/5.jpg",
+          "alt": "ALT-002 method example",
+          "isClickable": true,
+          "caption": "Click the image to view the full text of ALT-082."
+        }
+      },
+      "divider": true
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Advantages & Limitations of DCOT",
+      "content": {
+        "text": "At the time of this writing, it appears that the DCOT system is no longer being sold or actively marketed. While the concept behind the DCOT could provide significant benefits to the regulatory community—such as using images as evidence of opacity violations—the questionable accuracy of the system likely made these images unsuitable for legal proceedings. Below is our analysis and opinion on the DCOT system."
+      }
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-left",
+      "title": "• Accuracy and Testing",
+      "content": {
+        "text": "The DCOT system was tested by the Virginia Department of Environmental Quality (DEQ) and was found to be both inaccurate and inconsistent. Details of this assessment are documented in a memo, which can be accessed here."
+      }
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "title": "• Image Analysis Process",
+      "content": {
+        "text": "The DCOT system does not allow for on-site analysis of captured images. Instead, the images must be sent to a third-party for analysis, introducing delays between observation and results. This delay undermines the ability to promptly determine whether opacity limits have been violated."
+      }
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-left",
+      "title": "• Operational Requirements",
+      "content": {
+        "text": "To use the DCOT system, operators were required to complete a training course, which appears to have been discontinued. Additionally, operators needed to purchase an approved camera model and maintain an annual software subscription, which reportedly ranged from $1,000 to $5,000 when the system was commercially available. Analysis of submitted images was an additional cost on top of the software subscription. However, updated information about pricing and availability is scarce."
+      }
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "• Technical Limitations",
+      "content": {
+        "text": "Proper operation of the DCOT system required precise control of camera settings, particularly the depth of field. If the depth of field was insufficient, the background in the images would appear blurry, leading to inaccurate analyses. This technical challenge further hindered the system’s reliability and effectiveness."
+      }
+    }
+  ]
+}

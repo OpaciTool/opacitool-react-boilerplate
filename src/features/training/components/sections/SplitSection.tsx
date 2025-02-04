@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Text } from "@/shared/ui";
 import clsx from "clsx";
 import { Dialog } from "@headlessui/react";
 import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
@@ -18,25 +17,36 @@ interface SplitSectionProps {
     };
   };
   layout?: "text-left" | "text-right";
+  containerType?: "grid" | "flex-col";
+  bgColor?: string;
 }
 
 export function SplitSection({
   title,
   content,
   layout = "text-left",
+  containerType = "grid",
+  bgColor
 }: SplitSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isTextLeft = layout === "text-left";
 
   return (
-    <div className="py-8 first:pt-0 last:pb-0">
+    <div className={clsx(
+      " py-8 px-4 lg:px-14",
+      bgColor,
+    )}>
       {/* Split Content Container */}
       <div
         className={clsx(
-          content.media 
-            ? "grid items-center gap-8 lg:grid-cols-2"
-            : "flex flex-col",
-          isTextLeft ? "lg:grid-flow-col" : "lg:grid-flow-col-dense",
+          containerType === "grid" 
+            ? clsx(
+                content.media 
+                  ? "grid items-center gap-8 lg:grid-cols-2"
+                  : "flex flex-col",
+                isTextLeft ? "lg:grid-flow-col" : "lg:grid-flow-col-dense",
+              )
+            : "flex flex-col gap-8"
         )}
       >
         {/* Text Content */}
@@ -51,8 +61,8 @@ export function SplitSection({
           <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
             {title}
           </h2>
-          <div className="prose prose-zinc dark:prose-invert max-w-none prose-p:text-base">
-            <Text className="whitespace-pre-line">{content.text}</Text>
+          <div className="dark:prose-invert text-lg text-zinc-900">
+            <p className="whitespace-pre-line">{content.text}</p>
           </div>
         </div>
 
@@ -62,7 +72,7 @@ export function SplitSection({
             <div className="relative">
               <div
                 className={clsx(
-                  "rounded-lg overflow-hidden bg-zinc-100 dark:bg-zinc-800",
+                  "rounded-lg overflow-hidden",
                   "flex items-center justify-center",
                   content.media?.isClickable && "cursor-pointer hover:opacity-90 transition-opacity"
                 )}
@@ -74,7 +84,7 @@ export function SplitSection({
                       src={content.media.url}
                       alt={content.media.alt || ""}
                       className={clsx(
-                        "w-full h-full object-contain",
+                        "w-full h-full object-contain rounded-lg",
                         content.media.isClickable && "cursor-pointer hover:opacity-90 transition-opacity"
                       )}
                       style={content.media.width ? { width: content.media.width } : undefined}
@@ -91,12 +101,6 @@ export function SplitSection({
                 {content.media?.caption && (
                   <p className="mt-2 text-sm text-center text-zinc-500 dark:text-zinc-400">
                     {content.media.caption}
-                  </p>
-                )}
-                {content.media?.isClickable && (
-                  <p className="text-xs text-center text-orange-600 dark:text-orange-500 flex items-center justify-center gap-1">
-                    <MagnifyingGlassIcon className="h-3.5 w-3.5" />
-                    Click to enlarge
                   </p>
                 )}
               </div>

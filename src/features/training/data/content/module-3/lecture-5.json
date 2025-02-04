@@ -7,47 +7,51 @@
       "id": "section-1",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Atmospheric Conditions & Method 9 Observations",
       "content": {
         "text": "Sky conditions and weather cannot be controlled but it is important to understand the effect they can have on EPA Method 9 observations."
-      }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
-      "type": "split",
+      "type": "video",
       "layout": "text-left",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Cloud Cover",
       "content": {
         "text": "Clear skies increase the luminescence of the plume and lead to positive bias in opacity readings. Cloudy skies decrease luminescence of the plume and lead to negative bias.\n\nClouds can also impact opacity observations by reducing contrast when using the sky as a background.",
         "media": {
-          "type": "image",
-          "url": "/images/training/module-3/lecture-5/10.jpg",
-          "alt": "Section 2 image",
-          "isClickable": false,
-          "caption": "Luminescence varying on a cloudy day."
+          "type": "video",
+          "url": "/images/training/module-3/lecture-5/video-1.mp4",
+          "alt": "Cloud Cover Video"
         }
       }
     },
     {
       "id": "section-3",
-      "type": "split",
+      "type": "video",
       "layout": "text-right",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "",
       "content": {
         "text": "When clouds obscure at least 95% of the sky, sky conditions are considered overcast. Overcast skies have the same impact on opacity readings as cloudy skies. However, the position of the sun becomes irrelevant and observers may be able to position themselves with a higher-contrasting background.",
         "media": {
-          "type": "image",
-          "url": "/images/training/module-3/lecture-5/10.jpg",
-          "alt": "Section 3 image",
-          "isClickable": false,
-          "caption": "Overcast Conditions"
+          "type": "video",
+          "url": "/images/training/module-3/lecture-5/video-2.mp4",
+          "alt": "Cloud Cover Video"
         }
-      }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-4",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "Wind",
       "content": {
         "text": "Wind can shift the direction of the plume, requiring the observer to reposition in order to maintain a perpendicular view to the plume's direction. Strong winds can also alter the shape of the plume and cause dilution. During high wind events, obtaining an accurate opacity reading becomes challenging. If possible, observations should be suspended until the wind calms.",
@@ -55,25 +59,27 @@
           "type": "image",
           "url": "/images/training/module-3/lecture-5/10.jpg",
           "alt": "Section 4 image",
-          "isClickable": false
+          "isClickable": false,
+          "width": "80%"
         }
-      }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-5",
-      "type": "split",
+      "type": "video",
       "layout": "text-right",
+      "bgColor": "bg-[#EEEEEE]",
       "title": "Rain, Snow, Mist and Fog",
       "content": {
         "text": "Rain, snow, fog, and mist can reduce visibility and contrast, making it difficult to accurately assess opacity. In extreme cases, opacity cannot be properly determined, and readings should be postponed. If opacity observations must be conducted during such weather conditions, the readings are likely to exhibit negative bias.",
         "media": {
-          "type": "image",
-          "url": "/images/training/module-3/lecture-5/10.jpg",
-          "alt": "Section 5 image",
-          "isClickable": false,
-          "caption": "Fog reducing visibility and contrast."
+          "type": "video",
+          "url": "/images/training/module-3/lecture-5/video-3.mp4",
+          "alt": "Video"
         }
       }
     }
   ]
-} 
+}
