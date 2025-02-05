@@ -14,22 +14,22 @@
           "type": "image-grid",
           "images": [
             {
-              "url": "/images/training/module-1/lecture-2/11.jpg",
+              "url": "module-1/lecture-2/11.jpg",
               "alt": "Opacity Example 1",
               "width": "500px"
             },
             {
-              "url": "/images/training/module-1/lecture-2/12.jpg",
+              "url": "module-1/lecture-2/12.jpg",
               "alt": "Opacity Example 2",
               "width": "500px"
             },
             {
-              "url": "/images/training/module-1/lecture-2/13.jpg",
+              "url": "module-1/lecture-2/13.jpg",
               "alt": "Opacity Example 3",
               "width": "500px"
             },
             {
-              "url": "/images/training/module-1/lecture-2/14.jpg",
+              "url": "module-1/lecture-2/14.jpg",
               "alt": "Opacity Example 4",
               "width": "500px"
             }
@@ -48,7 +48,7 @@
         "text": "Opacity is the degree to which matter obstructs the transmission of light.  The opacity of visible emissions is directly related to how much you can see through the emission.  For example, smoke with a 20% opacity would reduce your view of the background by 20%.  Watch this brief video to see the effect of opacity on a background.",
         "media": {
           "type": "video",
-          "url": "/images/training/module-1/video.mp4",
+          "url": "module-1/video.mp4",
           "alt": "Opacity Measurement Video",
           "width": "lg:w-[60%]"
         }

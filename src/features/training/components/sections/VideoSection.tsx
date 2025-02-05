@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { getLectureMediaUrl } from "../../lib/getLectureMedia";
 
 interface VideoSectionProps {
   title: string;
@@ -25,7 +26,7 @@ export function VideoSection({
   const videoElement = (
     <div className={clsx("rounded-lg", content.media.width)}>
       <video controls className="w-full rounded-lg">
-        <source src={content.media.url} type="video/mp4" />
+        <source src={getLectureMediaUrl(content.media.url)} type="video/mp4" />
         {content.media.alt}
       </video>
     </div>

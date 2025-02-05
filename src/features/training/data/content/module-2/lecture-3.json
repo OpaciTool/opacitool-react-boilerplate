@@ -13,7 +13,7 @@
         "text": "Visible emissions consist of particles ranging from 0.1 µm (micrometer) to 200 µm. A micrometer is one-millionth of a meter. For reference, the average diameter of a human hair is 60 µm.\n\nIn the world of visible emissions and air pollution, you will often encounter terms such as PM, PM2.5 and PM10. PM stands for particulate matter and the number after references the size of the particulate matter. PM10 is particulate matter that is less than 10 µm in diameter or width. PM2.5 is particulate matter less than 2.5 µm.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-3/12.jpg",
+          "url": "module-2/lecture-3/12.jpg",
           "alt": "Understanding Opacity Image",
           "isClickable": true,
           "caption": "The size of particulate matter relative to a human hair.",
@@ -33,7 +33,7 @@
         "text": "When inhaled, particulate matter can penetrate deep into the human lungs and even get into the bloodstream.  Exposure to particulate matter has been linked to:\n\n• Premature death in people with heart and lung disease\n• Irregular heartbeat\n• Increased heart attack frequency\n• Increased respiratory problems",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-3/13.jpg",
+          "url": "module-2/lecture-3/13.jpg",
           "alt": "Key Points Image",
           "isClickable": true,
           "caption": "Particulate matter size and its effect on the body.",
@@ -54,14 +54,14 @@
           "type": "image-grid",
           "images": [
             {
-              "url": "/images/training/module-2/lecture-3/14.jpg",
+              "url": "module-2/lecture-3/14.jpg",
               "alt": "Example 1",
               "isClickable": true,
               "caption": "Particulate matter can settle in water and alter nutrients",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-2/lecture-3/15.jpg",
+              "url": "module-2/lecture-3/15.jpg",
               "alt": "Example 2",
               "isClickable": true,
               "caption": "Smog & haze caused by particulate matter",

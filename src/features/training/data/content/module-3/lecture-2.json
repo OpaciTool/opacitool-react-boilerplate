@@ -13,7 +13,7 @@
         "text": "As previously mentioned, light interacts with particulate matter, and the position of the sun significantly influences the perceived opacity of emissions.\n\nEPA Method 9 requires the sun to be within a 140° sector behind the observer when taking opacity readings. If the sun is outside this range, light can reflect off the particles in the emissions, increasing the apparent opacity and introducing a positive bias to your readings.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-3/lecture-2/5.jpg",
+          "url": "module-3/lecture-2/5.jpg",
           "alt": "Sun Position Diagram",
           "isClickable": true,
           "caption": "",
@@ -32,7 +32,7 @@
           "text": "Depending on your geographic location and the time of year, the sun may be directly above you during mid-day hours. If possible, it is best to avoid this time when making opacity observations.",
           "media": {
             "type": "image",
-            "url": "/images/training/module-3/lecture-2/6.jpg",
+            "url": "module-3/lecture-2/6.jpg",
             "alt": "Sun Position Diagram",
             "isClickable": false,
             "caption": "",
@@ -49,7 +49,7 @@
         "text": "The following video shows the effect the sun has on the opacity of a plume.  The opacity in each clip is the same but the apparent opacity changes based on the angle of the sun, the presence of clouds and the location of the sun relative to the observer.",
         "media": {
           "type": "video",
-          "url": "/images/training/module-3/video.mp4",
+          "url": "module-3/video.mp4",
           "alt": "Sun Position Animation",
           "width": "70%"
         }

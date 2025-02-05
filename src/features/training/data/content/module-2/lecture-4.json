@@ -25,7 +25,7 @@
         "text": "Dust is generally released into the air through mechanical agitation. Dust particles can range in size from 1 µm to 100 µm. ",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-4/16.jpg",
+          "url": "module-2/lecture-4/16.jpg",
           "alt": "Example 1"
         }
       },
@@ -42,7 +42,7 @@
         "text": "Soot forms during incomplete combustion and consists mostly of carbon.  Individual soot particles range from .006 µm to .03 µm in diameter but generally combine to form larger particles.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-4/17.jpg",
+          "url": "module-2/lecture-4/17.jpg",
           "alt": "Example 2"
         }
       },
@@ -59,7 +59,7 @@
         "text": "Fly ash is produced from burning coal.  Fly ash particles range from 0.5 µm to 300 µm in diameter.  Fly ash can contain trace concentrations of arsenic, hexavalent chromium, mercury and other elements which can be hazardous to human health.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-4/18.jpg",
+          "url": "module-2/lecture-4/18.jpg",
           "alt": "Example 3"
         }
       },
@@ -76,7 +76,7 @@
         "text": "Generally, vapors refer to the gas phase of something that is normally a liquid or solid.  A vapor can be condensed to a liquid or solid by increasing pressure without reducing temperature.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-4/19.jpg",
+          "url": "module-2/lecture-4/19.jpg",
           "alt": "Example 4"
         }
       },
@@ -93,7 +93,7 @@
         "text": "Fumes are dispersions of solid matter in gases. Fume particles generally consist of metals or metal oxides.  Fume particles are very small, ranging from 0.01 µm to 1 µm.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-4/20.jpg",
+          "url": "module-2/lecture-4/20.jpg",
           "alt": "Example 5"
         }
       },
@@ -110,7 +110,7 @@
         "text": "Mist is the suspension of water droplets in air.  Atmospheric fog is comprised of mist.  Mist ranges from 2 µm to 15 µm.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-4/21.jpg",
+          "url": "module-2/lecture-4/21.jpg",
           "alt": "Example 6"
         }
       },
@@ -127,7 +127,7 @@
         "text": "Gases do not occupy a specific shape or volume.  They are often present in air emissions.  Nitrogen dioxide is a reddish-brown gas and often found in smog.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-4/22.jpg",
+          "url": "module-2/lecture-4/22.jpg",
           "alt": "Example 7"
         }
       },

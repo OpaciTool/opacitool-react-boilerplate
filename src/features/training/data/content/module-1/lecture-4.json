@@ -13,7 +13,7 @@
         "text": "There are many health impacts associated with air pollution.  Opacity observations are one of the easiest and most effective ways to monitor and reduce air pollution.  By becoming a visible emissions observer, you are helping to reduce the deadliest form of pollution in the world.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-1/lecture-4/25.png",
+          "url": "module-1/lecture-4/25.png",
           "alt": "VE Introduction",
           "width": "300px"
         }
@@ -31,7 +31,7 @@
         "text": "92% of the world’s population lives in places where air pollution exceeds safe limits.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-1/lecture-4/26.jpg",
+          "url": "module-1/lecture-4/26.jpg",
           "alt": "Example Image",
           "isClickable": true,
           "caption": "Areas in yellow, red, orange and purple exceed the WHO’s safety limits for air pollution."
@@ -50,7 +50,7 @@
         "text": "Air pollution is the fourth-largest threat to human health after high blood pressure, dietary risks and smoking.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-1/lecture-4/27.jpg",
+          "url": "module-1/lecture-4/27.jpg",
           "alt": "Example Image",
           "isClickable": true,
           "caption": ""
@@ -69,7 +69,7 @@
         "text": "In 2017, approximately 10% of all deaths worldwide were from air pollution related diseases.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-1/lecture-4/28.jpg",
+          "url": "module-1/lecture-4/28.jpg",
           "alt": "Example Image",
           "isClickable": true,
           "caption": ""
@@ -88,7 +88,7 @@
         "text": "In 2017, it is estimated that air pollution reduced worldwide life expectancy by an average of 20 months.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-1/lecture-4/29.jpg",
+          "url": "module-1/lecture-4/29.jpg",
           "alt": "Example Image",
           "isClickable": true,
           "caption": ""
@@ -107,7 +107,7 @@
         "text": "Countries with the highest air pollution levels might surprise you.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-1/lecture-4/30.jpg",
+          "url": "module-1/lecture-4/30.jpg",
           "alt": "Example Image",
           "isClickable": true,
           "caption": ""

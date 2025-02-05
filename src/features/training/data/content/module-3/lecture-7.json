@@ -24,22 +24,22 @@
           "type": "image-grid",
           "images": [
             {
-              "url": "/images/training/module-3/lecture-7/15.jpg",
+              "url": "module-3/lecture-7/15.jpg",
               "alt": "Detached Steam Plume Example 1",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-3/lecture-7/16.jpg",
+              "url": "module-3/lecture-7/16.jpg",
               "alt": "Detached Steam Plume Example 2",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-3/lecture-7/17.jpg",
+              "url": "module-3/lecture-7/17.jpg",
               "alt": "Detached Steam Plume Example 3",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-3/lecture-7/18.jpg",
+              "url": "module-3/lecture-7/18.jpg",
               "alt": "Detached Steam Plume Example 4",
               "width": "80%"
             }

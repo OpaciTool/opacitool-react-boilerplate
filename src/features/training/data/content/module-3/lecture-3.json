@@ -14,14 +14,14 @@
           "type": "image-grid",
           "images": [
             {
-              "url": "/images/training/module-3/lecture-3/7.jpg",
+              "url": "module-3/lecture-3/7.jpg",
               "alt": "Image 1",
               "isClickable": true,
               "caption": "Correct viewing path - perpendicular to the plume.",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-3/lecture-3/8.jpg",
+              "url": "module-3/lecture-3/8.jpg",
               "alt": "Image 2",
               "isClickable": true,
               "caption": "Incorrect viewing path - parallel to the plume.",
@@ -44,7 +44,7 @@
         "text": "The vertical path length through the plume must also be considered during observations. It should remain under 18° to prevent positive bias. This requires the observer to stand at least three stack heights away from the plume.\n\nWhile there is no maximum distance between the observer and the stack, the plume must remain clearly visible. In cases where closer proximity is not possible, binoculars may be used to ensure accurate observations.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-3/lecture-3/9.jpg",
+          "url": "module-3/lecture-3/9.jpg",
           "alt": "Image 3",
           "isClickable": true,
           "caption": "",
