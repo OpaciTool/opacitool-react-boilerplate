@@ -9,7 +9,11 @@ import {
 } from "@/shared/ui";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { ChevronDownIcon, ArrowLeftIcon, XMarkIcon } from "@heroicons/react/20/solid";
+import {
+  ChevronDownIcon,
+  ArrowLeftIcon,
+  XMarkIcon,
+} from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { getExpandedModuleId } from "@/helpers/getExpandedModuleId.helper";
@@ -20,80 +24,86 @@ interface TrainingSidebarProps {
   onLectureSelect?: () => void;
 }
 
-export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarProps) {
+export function TrainingSidebar({
+  onClose,
+  onLectureSelect,
+}: TrainingSidebarProps) {
   const { lectureSlug } = useParams();
 
   // Initialize expanded modules state
-  const [expandedModules, setExpandedModules] = useState<Record<number, boolean>>(() => ({
-    [getExpandedModuleId()]: true
+  const [expandedModules, setExpandedModules] = useState<
+    Record<number, boolean>
+  >(() => ({
+    [getExpandedModuleId()]: true,
   }));
 
   // Toggle module expansion
   const toggleModule = (moduleId: number) => {
-    setExpandedModules(prev => ({
+    setExpandedModules((prev) => ({
       ...prev,
-      [moduleId]: !prev[moduleId]
+      [moduleId]: !prev[moduleId],
     }));
   };
 
   return (
-    <Sidebar className="bg-zinc-900 border-r border-zinc-950/5 dark:border-white/5 h-full lg:h-screen">
+    <Sidebar className="h-full border-r border-zinc-950/5 bg-zinc-900 dark:border-white/5 lg:h-screen">
       <SidebarHeader>
         {/* Close button - mobile only */}
         {onClose && (
           <button
             onClick={onClose}
             aria-label="Close sidebar"
-            className="absolute top-4 right-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 lg:hidden"
+            className="absolute right-2 top-4 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 lg:hidden"
           >
             <XMarkIcon className="size-7" />
           </button>
         )}
 
         {/* Logo Section */}
-        <div className="flex items-center justify-center gap-2 mb-8">
-          <img 
-            src="/images/logo.png" 
-            alt="OpaciTool Logo" 
-            className="max-w-[300px] w-full"
+        <div className="mb-8 flex items-center justify-center gap-2">
+          <img
+            src="/images/Logo.png"
+            alt="OpaciTool Logo"
+            className="w-full max-w-[400px]"
           />
         </div>
 
         {/* Dashboard Link */}
-        <Link 
+        <Link
           to="/"
-          className="flex items-center gap-2 text-zinc-600 hover:text-zinc-300 dark:text-zinc-400 dark:hover:text-white transition-colors mb-1"
+          className="mb-1 flex items-center gap-2 text-zinc-600 transition-colors hover:text-zinc-300 dark:text-zinc-400 dark:hover:text-white"
         >
-          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-green-400"><ArrowLeftIcon className="size-5 text-black" /></div>
-          
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-400">
+            <ArrowLeftIcon className="size-5 text-black" />
+          </div>
+
           <span className="font-medium text-white">Lecture Home</span>
         </Link>
-
       </SidebarHeader>
 
       <SidebarBody className="[&>[data-slot=section]+[data-slot=section]]:mt-4">
         {navigationData.map((module: Module) => (
           <SidebarSection key={module.id}>
-            <button 
+            <button
               onClick={() => toggleModule(module.id)}
-              className="flex w-full items-center justify-between px-2 py-2 hover:bg-zinc-950/5 dark:hover:bg-white/5 border-b border-zinc-100/20"
+              className="flex w-full items-center justify-between border-b border-zinc-100/20 px-2 py-2 hover:bg-zinc-950/5 dark:hover:bg-white/5"
             >
-              <div className="flex items-center gap-3 min-w-0 flex-1">
+              <div className="flex min-w-0 flex-1 items-center gap-3">
                 <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
                   {module.id}
                 </div>
-                <SidebarLabel className="text-sm font-semibold truncate text-white dark:text-zinc-100">
+                <SidebarLabel className="truncate text-sm font-semibold text-white dark:text-zinc-100">
                   {module.title}
                 </SidebarLabel>
               </div>
-              <ChevronDownIcon 
+              <ChevronDownIcon
                 className={clsx(
-                  "size-5 text-white transition-transform duration-200 shrink-0 ml-2",
-                  expandedModules[module.id] ? "rotate-180" : ""
-                )} 
+                  "ml-2 size-5 shrink-0 text-white transition-transform duration-200",
+                  expandedModules[module.id] ? "rotate-180" : "",
+                )}
               />
             </button>
-            
+
             {expandedModules[module.id] && (
               <motion.div
                 initial={{ height: 0, opacity: 0 }}
@@ -110,12 +120,14 @@ export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarPro
                     className="relative py-1"
                     onClick={() => onLectureSelect?.()}
                   >
-                    <SidebarLabel className={clsx(
-                      "text-sm transition-colors",
-                      lectureSlug === lecture.slug
-                        ? "text-teal-400 dark:text-white font-medium"
-                        : "text-zinc-200 dark:text-zinc-400"
-                    )}>
+                    <SidebarLabel
+                      className={clsx(
+                        "text-sm transition-colors",
+                        lectureSlug === lecture.slug
+                          ? "font-medium text-teal-400 dark:text-white"
+                          : "text-zinc-200 dark:text-zinc-400",
+                      )}
+                    >
                       {lecture.title}
                     </SidebarLabel>
                   </SidebarItem>
@@ -124,7 +136,37 @@ export function TrainingSidebar({ onClose, onLectureSelect }: TrainingSidebarPro
             )}
           </SidebarSection>
         ))}
+
+        {/* History Link */}
+        <SidebarItem to="/training/history" className="relative py-1 border-b border-zinc-100/20">
+          <SidebarLabel className="text-zinc-200 dark:text-zinc-400 flex items-center gap-3 mt-4 ">
+            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
+              8
+            </div>
+            <span>History</span>
+          </SidebarLabel>
+        </SidebarItem>
+
+        {/* FAQ */}
+        <SidebarItem to="/training/faq" className="relative py-1 border-b border-zinc-100/20">
+          <SidebarLabel className="text-zinc-200 dark:text-zinc-400 flex items-center gap-3 mt-4 ">
+            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
+              9
+            </div>
+            <span>Frequently Asked Questions</span>
+          </SidebarLabel>
+        </SidebarItem>
+
+        {/* Resources and Downloads */}
+        <SidebarItem to="/training/resources" className="relative py-1 border-b border-zinc-100/20">
+          <SidebarLabel className="text-zinc-200 dark:text-zinc-400 flex items-center gap-3 mt-4 ">
+            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
+              10
+            </div>
+            <span>Resources and Downloads</span>
+          </SidebarLabel>
+        </SidebarItem>
       </SidebarBody>
     </Sidebar>
   );
-} 
+}
