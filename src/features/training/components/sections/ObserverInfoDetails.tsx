@@ -7,14 +7,14 @@ export default function ObserverInfoDetails() {
 
   return (
     <div className="w-full max-w-2xl mx-auto">
-      <div className="border border-gray-300">
+      <div className="border border-black">
         {/* Statistics Row */}
-        <div className="grid grid-cols-2 divide-x divide-gray-300">
+        <div className="grid grid-cols-2 divide-x divide-black">
           <div 
             className="p-2 cursor-pointer hover:bg-gray-50"
             onClick={() => openModal(fields.averageOpacity)}
           >
-            <div className="text-sm">Average Opacity for Highest Period</div>
+            <div className="text-sm font-medium mb-2 ">Average Opacity for Highest Period</div>
           </div>
           <div 
             className="p-2 cursor-pointer hover:bg-gray-50"
@@ -29,48 +29,48 @@ export default function ObserverInfoDetails() {
 
         {/* Observer Name */}
         <div 
-          className="border-t border-gray-300 p-2 cursor-pointer hover:bg-gray-50"
+          className="border-t border-black p-2 cursor-pointer hover:bg-gray-50"
           onClick={() => openModal(fields.observerNameAndSignature)}
         >
-          <div className="text-sm">Name of Observer</div>
+          <div className="text-sm font-medium mb-2">Name of Observer</div>
         </div>
 
         {/* Observer Signature */}
         <div 
-          className="border-t border-gray-300 p-2 cursor-pointer hover:bg-gray-50"
+          className="border-t border-black p-2 cursor-pointer hover:bg-gray-50"
           onClick={() => openModal(fields.observerNameAndSignature)}
         >
-          <div className="text-sm">Signature of Observer</div>
+          <div className="text-sm font-medium mb-2">Signature of Observer</div>
         </div>
 
         {/* Company/Organization */}
         <div 
-          className="border-t border-gray-300 p-2 cursor-pointer hover:bg-gray-50"
+          className="border-t border-black p-2 cursor-pointer hover:bg-gray-50"
           onClick={() => openModal(fields.organization)}
         >
-          <div className="text-sm">Company/Organization</div>
+          <div className="text-sm font-medium mb-2">Company/Organization</div>
         </div>
 
         {/* Certification and Date */}
         <div 
-          className="border-t border-gray-300 grid grid-cols-2 divide-x divide-gray-300 cursor-pointer hover:bg-gray-50"
+          className="border-t border-black grid grid-cols-2 divide-x divide-black cursor-pointer hover:bg-gray-50"
           onClick={() => openModal(fields.certification)}
         >
           <div className="p-2">
-            <div className="text-sm">Certification Issued By:</div>
+            <div className="text-sm font-medium mb-2">Certification Issued By:</div>
           </div>
           <div className="p-2">
-            <div className="text-sm">Date</div>
+            <div className="text-sm font-medium mb-2">Date</div>
           </div>
         </div>
 
         {/* Comments */}
         <div 
-          className="border-t border-gray-300 p-2 cursor-pointer hover:bg-gray-50"
+          className="border-t border-black p-2 cursor-pointer hover:bg-gray-50"
           onClick={() => openModal(fields.comments)}
         >
-          <div className="text-sm">Comments</div>
-          <div className="h-20"></div>
+          <div className="text-sm font-medium">Comments</div>
+          <div className="h-8"></div>
         </div>
       </div>
     </div>

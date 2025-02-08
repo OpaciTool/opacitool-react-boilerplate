@@ -5,6 +5,15 @@
   "sections": [
     {
       "id": "section-1",
+      "type": "split",
+      "title": "How to Complete the Visible Emissions Observation Form",
+      "content": {
+        "text": "Click on each field in the form below.  A printable copy of this observation form is located in the Resources Module."
+      },
+      "bgColor": "bg-[#E4EAED]"
+    },
+    {
+      "id": "section-v",
       "type": "form",
       "title": "Method 9 Form",
       "content": {
