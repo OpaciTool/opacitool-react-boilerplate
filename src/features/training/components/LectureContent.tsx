@@ -200,6 +200,7 @@ type LectureContent = {
         type: "two-column";
         divider?: boolean;
         title: string;
+        bgColor?: string;
         content: {
           text: string;
           media: {
@@ -519,6 +520,7 @@ export function LectureContent() {
                     <TwoColumnSection
                       title={section.title}
                       content={section.content}
+                      bgColor={section.bgColor}
                     />
                     {section.divider && <SectionDivider />}
                   </div>
