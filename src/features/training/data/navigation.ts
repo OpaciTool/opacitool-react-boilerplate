@@ -99,6 +99,7 @@ export const navigationData: Module[] = [
       { title: "Observation Procedure", slug: "method-22-observation" },
       { title: "Documentation Procedure", slug: "method-22-documentation" },
       { title: "Equipment Needed", slug: "method-22-equipment" },
+      { title: "Module 7 Quiz", slug: "module-7-quiz" },
     ],
   }
 ];

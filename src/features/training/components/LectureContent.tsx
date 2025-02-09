@@ -19,6 +19,9 @@ import MethodsComparison from "./MethodComparision";
 import { SectionDivider } from "./SectionDivider";
 import { ImageGridSection } from "./sections/ImageGridSection";
 import { VideoSection } from "./sections/VideoSection";
+import Method9Comparison from "./Method9Comparison";
+import EPAMethod22Procedure from "./sections/EPAMethod22Procedure";
+
 
 type TabSection = {
   title: string;
@@ -199,6 +202,8 @@ type LectureContent = {
         id: string;
         type: "two-column";
         divider?: boolean;
+        dividerStyle?: string;
+        dividerStyleParent?: string;
         title: string;
         bgColor?: string;
         content: {
@@ -239,6 +244,20 @@ type LectureContent = {
     | {
         id: string;
         type: "method-comparison";
+        title: string;
+        divider?: boolean;
+      }
+    | {
+        id: string;
+        type: "method-9-comparison";
+        title: string;
+        divider?: boolean;
+        dividerStyle?: string;
+        dividerStyleParent?: string;
+      }
+    | {
+        id: string;
+        type: "method-22-form";
         title: string;
         divider?: boolean;
       }
@@ -296,6 +315,15 @@ import lecture3Module6 from "../data/content/module-6/lecture-3.json";
 import lecture4Module6 from "../data/content/module-6/lecture-4.json";
 import quiz1Module6 from "../data/content/module-6/quiz.json";
 
+// Import module 7 lectures
+import lecture1Module7 from "../data/content/module-7/lecture-1.json";
+import lecture2Module7 from "../data/content/module-7/lecture-2.json";
+import lecture3Module7 from "../data/content/module-7/lecture-3.json";
+import lecture4Module7 from "../data/content/module-7/lecture-4.json";
+import quiz1Module7 from "../data/content/module-7/quiz.json";
+
+
+
 
 
 
@@ -351,6 +379,13 @@ const lectures = {
   "epa-alt-082": lecture3Module6 as LectureContent,
   "epa-alt-152": lecture4Module6 as LectureContent,
   "module-6-quiz": quiz1Module6 as LectureContent,
+
+  // Module 7
+  "method-22-intro": lecture1Module7 as LectureContent,
+  "method-22-observation": lecture2Module7 as LectureContent,
+  "method-22-documentation": lecture3Module7 as LectureContent,
+  "method-22-equipment": lecture4Module7 as LectureContent,
+  "module-7-quiz": quiz1Module7 as LectureContent,
 };
 
 // Add type guard function
@@ -522,7 +557,7 @@ export function LectureContent() {
                       content={section.content}
                       bgColor={section.bgColor}
                     />
-                    {section.divider && <SectionDivider />}
+                    {section.divider && <SectionDivider className={section.dividerStyle} dividerStyleParent={section?.dividerStyleParent} />}
                   </div>
                 );
               case "form":
@@ -550,6 +585,20 @@ export function LectureContent() {
                 return (
                   <div key={section.id}>
                     <MethodsComparison />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "method-9-comparison":
+                return (
+                  <div key={section.id}>
+                    <Method9Comparison />
+                    {section.divider && <SectionDivider className={section.dividerStyle} dividerStyleParent={section?.dividerStyleParent} />}
+                  </div>
+                );
+              case "method-22-form":
+                return (
+                  <div key={section.id}>
+                    <EPAMethod22Procedure />
                     {section.divider && <SectionDivider />}
                   </div>
                 );

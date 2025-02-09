@@ -1,0 +1,147 @@
+{
+  "method22Section": {
+    "title": "EPA Method 22 Form",
+    "fields": {
+      "facilityName": {
+        "title": "Facility Name",
+        "content": "Indicate the company name of the facility where observations will be made.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/1.png",
+            "alt": "Example of correctly filled facility name"
+          }
+        ]
+      },
+      "permit": {
+        "title": "Permit #",
+        "content": "Indicate the air permit number which covers the source being observed.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/2.png",
+            "alt": "Example of correctly filled permit number"
+          }
+        ]
+      },
+      "sourceUnit": {
+        "title": "Source Unit & ID",
+        "content": "Describe the source being observed and the ID indicated in the air permit. If the permit does not include an ID, check for a facility ID or serial number.",
+        "images": [
+          {
+          "url": "/images/training/module-7/module-7-modals/3.png",
+            "alt": "Source unit example"
+          }
+        ]
+      },
+      "address": {
+        "title": "Address",
+        "content": "Indicate the physical address of the facility, not the mailing address. GPS coordinates of the source are also advised.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/4.png",
+            "alt": "Address example"
+          }
+        ]
+      },
+      "facility_contact": {
+        "title": "Facility Contact",
+        "content": "Indicate the name and number of the facility representative.  ",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/5.png",
+            "alt": "Facility Contact example"
+          }
+        ]
+      },
+      "outdoor_temperature": {
+        "title": "Temperature",
+        "content": "For outdoor tests.  Indicate the ambient temperature at the start of the test.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/6.png",
+            "alt": "Temperature example"
+          }
+        ]
+      },
+      "cloud_cover": {
+        "title": "% Cloud Cover",
+        "content": "For outdoor tests. Indicate sky conditions at the beginning of the test. 0% is clear and 100% is completely overcast.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/7.png",
+            "alt": "% Cloud Cover example"
+          }
+        ]
+      },
+      "wind_speed_direction": {
+        "title": "Wind Speed & Direction",
+        "content": "For outdoor tests. Indicate the wind speed and the direction from which it originates.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/8.png",
+            "alt": "Wind Speed & Direction example"
+          }
+        ]
+      },
+      "precipitation": {
+        "title": "48 Hr Precipitation",
+        "content": "For outdoor tests. Indicate the amount of precipitation which has occurred in the past 48 hours. Past precipitation can affect the occurrence of visible emissions. If past precipitation is preventing a representative test, the test should be postponed.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/9.png",
+            "alt": "48 Hr Precipitation example"
+          }
+        ]
+      },
+      "light_type": {
+        "title": "Light Type",
+        "content": "For indoor tests.  Indicate the light type that is illuminating the area of observations.  Light source examples are natural, incandescent, fluorescent and LED.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/10.png",
+            "alt": "Light Type example"
+          }
+        ]
+      },
+      "illumination": {
+        "title": "Illumination (Lux)",
+        "content": "For indoor tests. The observed area should have illumination of at least 100 Lux to perform observations. For reference, a well-lit office is 400-500 Lux. Lux can be measured with a simple handheld light meter or phone app.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/11.png",
+            "alt": "Illumination (Lux) example"
+          }
+        ]
+      },
+      "observation_position_sketch": {
+        "title": "Observation Position Sketch",
+        "content": "Indicate your position relative to the source being observed. For large buildings, observations from multiple locations including the top of the building may be needed. Flares and small sources generally require one observation location. If more than three observation locations are needed, use additional forms. \n\n Be as detailed as possible in the sketch. Indicate North, your position relative to the source and any areas where visible emissions are observed. Mark emission areas with an X.",
+        "images": [
+          {
+            "url": "/images/training/module-7/module-7-modals/12.png",
+            "alt": "Observation Position Sketch example"
+          }
+        ]
+      },
+      "weatherConditions": {
+        "title": "Weather Conditions",
+        "content": "Record the cloud cover percentage, wind speed, wind direction, and precipitation from the last 48 hours.",
+        "images": [
+          {
+            "url": "/images/training/module-7/form/5.png",
+            "alt": "Weather conditions example"
+          }
+        ]
+      },
+      "indoorTest": {
+        "title": "Indoor Test",
+        "content": "For indoor observations, record the type of lighting and illumination level in lux.",
+        "images": [
+          {
+            "url": "/images/training/module-7/form/6.png",
+            "alt": "Indoor test information example"
+          }
+        ]
+      }
+    }
+  }
+} 

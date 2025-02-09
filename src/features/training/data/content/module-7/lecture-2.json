@@ -1,0 +1,117 @@
+{
+  "lectureId": "module-7-lecture-2",
+  "moduleId": 7,
+  "title": "Practice Techniques",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
+      "title": "Observation Procedure for EPA Method 22 Testing",
+      "content": {
+        "text": "EPA Method 22 testing is simpler and less restrictive than EPA Method 9 testing, as many of the factors that complicate Method 9 are not applicable to Method 22. The following steps outline how to conduct a proper Method 22 test:"
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#EEE]",
+      "title": "Step 1 - Positioning",
+      "content": {
+        "text": "Method 22 tests can be performed indoors or outdoors. If the source is multi-sided, such as a building, observations may be required from multiple locations during the test.  The observer’s position should have a clear view of the potential emission area and be between 15 ft and ¼ mile away.\n\nThe position of the sun does not matter for Method 22.  For indoor testing, there must be enough light (>100 lux) to determine if visible emissions are present.",
+        "media": {
+            "type": "image",
+            "url": "/images/training/module-7/3.jpg",
+            "alt": "Image",
+            "caption": "",
+            "width": "75%"
+          }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+        "id": "section-3",
+        "type": "split",
+        "layout": "text-right",
+        "bgColor": "bg-[#E4EAED]",
+        "title": "Step 2 - Record Conditions",
+        "content": {
+          "text": "Complete the top section of the Method 22 test form as well as a sketch of your location relative to the potential emission area. Details on how to complete the form are discussed in a subsequent module.",
+          "media": {
+              "type": "image",
+              "url": "/images/training/module-7/4.jpg",
+              "alt": "Image",
+              "caption": "",
+              "width": "75%",
+              "isClickable": true
+            }
+        },
+        "divider": true,
+        "dividerStyle": "h-1 bg-orange-500"
+      },
+      {
+        "id": "section-4",
+        "type": "split",
+        "layout": "text-left",
+        "bgColor": "bg-[#EEE]",
+        "title": "Step 3 - Begin Testing",
+        "content": {
+          "text": "Two stopwatches are required for Method 22 testing. The first stopwatch is started at the beginning of the test. The second stopwatch is started only if emissions are visible and stopped as soon as emissions are no longer visible. The second stopwatch may be started and stopped multiple times during the test. The total time on the second stopwatch will be the total emission time during the test.\n\n Method 22 requires a 5-10 minute rest break for every 20 minutes of continuous observations.",
+          "media": {
+              "type": "image",
+              "url": "/images/training/module-7/5.png",
+              "alt": "Image",
+              "caption": "",
+              "width": "75%"
+            }
+        },
+        "divider": true,
+        "dividerStyle": "h-1 bg-orange-500"
+      },
+      {
+        "id": "section-5",
+        "type": "split",
+        "layout": "text-right",
+        "bgColor": "bg-[#E4EAED]",
+        "title": "Step 4 - Change Positions (If Needed)",
+        "content": {
+          "text": "If the source observed is multi-sided or has the potential to release emissions from multiple locations, each potential emission area will need to be observed.  A site sketch is completed for each position.",
+          "media": {
+              "type": "image",
+              "url": "/images/training/module-7/6.jpg",
+              "alt": "Image",
+              "caption": "",
+              "width": "75%",
+              "isClickable": true
+            }
+        },
+        "divider": true,
+        "dividerStyle": "h-1 bg-orange-500"
+      },
+      {
+        "id": "section-4",
+        "type": "split",
+        "layout": "text-left",
+        "bgColor": "bg-[#EEE]",
+        "title": "Step 5 - Determine Compliance",
+        "content": {
+          "text": "When all potential emission areas have been observed, the emission frequency of the source can be calculated and compliance can be determined. Calculations will be discussed in a subsequent section.\n\n The duration of the observation and the emission frequency limit are established by the regulation affecting the source, not Method 22.",
+          "media": {
+              "type": "image",
+              "url": "/images/training/module-7/7.jpg",
+              "alt": "Image",
+              "caption": "",
+              "width": "75%",
+              "isClickable": true
+            }
+        },
+        "divider": true,
+        "dividerStyle": "h-1 bg-orange-500"
+      }
+  ]
+} 
