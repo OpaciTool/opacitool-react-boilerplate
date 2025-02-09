@@ -1,17 +1,17 @@
 export default function FormulaSection() {
     return (
-      <div className="w-full  mx-auto p-4">
-        <div className="border border-gray-300">
+      <div className="w-full py-8 px-4 lg:px-14  mx-auto p-4">
+        <div className="">
           {/* Header Grid */}
-          <div className="grid grid-cols-2 divide-x divide-gray-300 border-b border-gray-900">
+          <div className="grid grid-cols-2 ">
             <div className="p-2 text-center font-bold">FORMULA</div>
             <div className="p-2 text-center font-bold">KEY</div>
           </div>
   
           {/* Content Grid */}
-          <div className="grid grid-cols-2 divide-x divide-gray-300">
+          <div className="grid grid-cols-2 justify-items-center">
             {/* Formula Column */}
-            <div className="p-4 space-y-2 font-mono text-sm">
+            <div className="p-4 space-y-2 font-mono text-lg">
               <div>1-O₁/100 = T₁</div>
               <div>1-O₂/100 = T₂</div>
               <div>1-O₃/100 = T₃</div>
@@ -33,15 +33,15 @@ export default function FormulaSection() {
           </div>
   
           {/* Application Section */}
-          <div className="border-t border-gray-300 p-4">
+          <div className=" p-4">
             <div className="font-bold mb-4">Application & Calculation</div>
-            <div className="text-sm mb-4">
+            <div className="text-lg mb-4">
               Don&apos;t be intimidated by the formula - it&apos;s time-consuming but easy to use. Below is an example of
               a single source with two emission points.
             </div>
   
             {/* Example Calculations */}
-            <div className="space-y-2 font-mono text-sm">
+            <div className="space-y-2 font-mono text-lg">
               <div>Emission Point 1, Opacity Reading 1 = 25%</div>
               <div>Emission Point 2, Opacity Reading 1 = 35%</div>
               <div className="my-4"></div>
@@ -52,7 +52,7 @@ export default function FormulaSection() {
             </div>
   
             {/* Note */}
-            <div className="mt-4 text-sm italic">This calculation must be completed for each opacity reading.</div>
+            <div className="mt-4 text-lg italic">This calculation must be completed for each opacity reading.</div>
           </div>
         </div>
       </div>
