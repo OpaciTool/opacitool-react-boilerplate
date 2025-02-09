@@ -7,6 +7,7 @@
       "id": "section-1",
       "type": "split",
       "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
       "title": "What is an Alternative Test Method?",
       "content": {
         "text": "An Alternative Test Method is a protocol which differs from EPA Method 9 in procedure or certification to achieve the same or similar result. Alternative Test Methods must be approved by the U.S. EPA.\n\nAlternative Test Methods generally arise from advancements in technology or to accommodate sources which require modifications to the EPA Method 9 test protocol.",
@@ -14,7 +15,7 @@
           "type": "image",
           "url": "/images/training/module-6/1.png",
           "alt": "Alternative methods image",
-          "width": "75%"
+          "width": "100%"
         }
       }
     }

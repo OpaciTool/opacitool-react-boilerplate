@@ -118,9 +118,9 @@ export function SplitSection({
         >
           <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
           
-          <div className="fixed inset-0 flex items-center justify-center p-4">
-            <Dialog.Panel className="mx-auto max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-xl">
-              <div className="relative">
+          <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto max-h-screen">
+            <Dialog.Panel className="mx-auto max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-xl overflow-y-auto">
+              <div className="relative overflow-auto">
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="absolute top-4 right-4 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
@@ -130,7 +130,7 @@ export function SplitSection({
                 <img
                   src={content.media?.url}
                   alt={content.media?.alt || title}
-                  className="rounded-lg"
+                  className="rounded-lg max-h-[90vh]"
                 />
                 {content.media?.caption && (
                   <p className="p-4 text-sm text-center text-zinc-600 dark:text-zinc-300">

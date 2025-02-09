@@ -410,7 +410,7 @@ export function LectureContent() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-900">
+    <div className="min-h-screen bg-[#E4EAED] dark:bg-zinc-900">
       <div className="">
         <div className="lg:flex justify-between items-center bg-zinc-900 py-8 px-4 lg:px-14 ">
           <div className="space-y-1">
