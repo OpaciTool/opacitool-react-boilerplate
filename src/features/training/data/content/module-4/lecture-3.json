@@ -21,7 +21,7 @@
         "text": "This can be determined by ensuring the “Observation Point - Distance” field is at least three times the “Observation Point - Height” field and/or by measuring the angle and inputting it in the “Observation Point - Angle” field.\n\nIf the viewing angle is more than 18°, each reading will need to be corrected using the slant angle correction formula discussed in the next module.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/10.jpg",
+          "url": "module-4/lecture-3/10.jpg",
           "alt": "Uncontrolled Events Example"
         }
       },
@@ -36,7 +36,7 @@
         "text": "Sometimes readings are missed due to observer error or distraction. This includes being distracted by a phone call, failing to watch the time, or any other reason where the reading could have been taken but wasn't.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/11.jpg",
+          "url": "module-4/lecture-3/11.jpg",
           "alt": "Observer-Fault Example",
           "width": "300px"
         }
@@ -52,7 +52,7 @@
         "text": "Proper documentation of missed readings is essential. Use a dash (-) for uncontrolled events and an X for observer-fault events. This distinction is important as it affects how the rolling average is calculated.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/12.jpg",
+          "url": "module-4/lecture-3/12.jpg",
           "alt": "Marking Missed Readings"
         }
       },
@@ -67,7 +67,7 @@
         "text": "All missed readings must be documented in the Comments section of the test form. Include the time of the missed reading and the specific reason why it was missed. This documentation helps validate the test results.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/13.jpg",
+          "url": "module-4/lecture-3/13.jpg",
           "alt": "Documentation Example"
         }
       },
@@ -82,7 +82,7 @@
         "text": "Uncontrolled missed readings can be skipped in the rolling average calculation, but you still need 24 valid consecutive readings. Observer-fault missed readings break the rolling average - you must have 24 valid consecutive readings before or after the X.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/14.jpg",
+          "url": "module-4/lecture-3/14.jpg",
           "alt": "Calculation Impact",
           "width": "300px"
         }

@@ -12,7 +12,7 @@
         "text": "EPA ALT-082, approved by the EPA in 2011, is an alternative test method that imposes additional limitations on ASTM D7520. ASTM D7520 is a standardized test protocol for determining the opacity of visible emissions using a digital camera.\n\nThis protocol outlines the process for using a digital camera to capture observations, specifies the analysis software required to process the captured images, and defines the expected output of the software. Together, these components form the Digital Camera Opacity Technique (DCOT).",
         "media": {
           "type": "image",
-          "url": "/images/training/module-6/4.jpg",
+          "url": "module-6/4.jpg",
           "alt": "ALT-002 method example"
         }
       },
@@ -27,7 +27,7 @@
         "text": "• A DCOT operator must complete a smoke school lecture.\n\n• A DCOT operator must complete a separate training course provided by the DCOT manufacturer.\n\n• The camera and software configuration must be certified every 3.5 years. The configuration is certified by completing six runs at a smoke school.\n\n• Images are not analyzed instantly - they must be sent to a third party for analysis.\n\n• The DCOT cannot be used on emission points with internal diameters which exceed 7 feet.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-6/5.jpg",
+          "url": "module-6/5.jpg",
           "alt": "ALT-002 method example",
           "isClickable": true,
           "caption": "Click the image to view the full text of ALT-082."

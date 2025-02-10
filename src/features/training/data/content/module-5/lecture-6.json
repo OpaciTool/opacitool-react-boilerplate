@@ -12,7 +12,7 @@
         "text": "A reacting plume, or secondary plume, occurs when emissions contain chemicals that react upon contact with ambient air. The opacity of the plume increases as it exits the stack. Reacting plumes are commonly associated with processes involving sulfuric acid or with glass manufacturing facilities.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/12.jpg",
+          "url": "module-5/12.jpg",
           "alt": "Image",
           "caption": "Reacting plumes are limited to certain industries and do not dissipate quickly like a steam plume."
         }

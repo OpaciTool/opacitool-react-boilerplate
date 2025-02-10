@@ -11,7 +11,7 @@
         "text": "EPA Method 9 states “Opacity observations shall be made at the point of greatest opacity in that portion of the plume where condensed water vapor is not present.” If condensed water vapor (steam) is present, the observation point must be before the steam forms or after the steam dissipates.\n\nIt is generally easy to determine if a plume contains water vapor. The plume will appear billowy and white, similar to a cloud. Water vapor also “vanishes” at the tail of the plume - it doesn’t gradually fade like smoke.",
         "media": {
           "type": "video",
-          "url": "/images/training/module-5/video.mp4",
+          "url": "module-5/video.mp4",
           "alt": "Steam Plume Video",
           "caption": "A steam plume - notice how the tail of the plume appears to vanish.",
           "width": "75%"
@@ -46,7 +46,7 @@
         "text": "The wet-bulb temperature and dry-bulb temperature of the ambient air must be known to determine the ambient state. A sling psychrometer consists of a dry-bulb thermometer and a second thermometer with a cloth cover or wick. After wetting the cloth or wick, the thermometer is swung around to force the water to evaporate. As it evaporates, the temperature is lowered and the wet-bulb temperature is indicated.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/lecture-5/7.jpg",
+          "url": "module-5/lecture-5/7.jpg",
           "alt": "Stack gas temperature measurement",
           "caption": "Sling psychrometer with wet and dry bulb.",
           "width": "300px"
@@ -62,7 +62,7 @@
         "text": "The dry-bulb temperature and moisture content of the stack gas must be known to determine the stack gas state. Stack gas conditions can be provided by the plant manager and are usually monitored in real-time.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/lecture-5/8.jpg",
+          "url": "module-5/lecture-5/8.jpg",
           "alt": "Stack gas moisture measurement",
           "caption": "Stack gas conditions are usually monitored.",
           "width": "400px"
@@ -78,7 +78,7 @@
         "text": "The ambient state is determined using the dry-bulb and wet-bulb temperatures measured by a sling psychrometer and a psychrometric chart.\n\nExample Ambient Data:\nDry-bulb temperature = 80°FF\nWet-bulb temperature: 72°F\n\nLocate the dry bulb temperature (70°F) and find where it intersects the wet-bulb temperature (65°F) line. The point of intersection is the ambient state point.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/lecture-5/9.jpg",
+          "url": "module-5/lecture-5/9.jpg",
           "alt": "Ambient temperature measurement",
           "isClickable": true,
           "width": "75%"
@@ -94,7 +94,7 @@
         "text": "The stack gas state point is determined from the dry-bulb temperature and moisture content of the stack gas.\n\n Example Stack Data:\nDry-bulb temperature = 160°F\nMoisture content = 26%\n\nLocate the dry-bulb temperature (160°F) and find where it intersects with the moisture content (26%) line. The point of intersection is the stack gas state point.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/lecture-5/10.jpg",
+          "url": "module-5/lecture-5/10.jpg",
           "alt": "Relative humidity measurement",
           "isClickable": true,
           "width": "75%"
@@ -110,7 +110,7 @@
         "text": "Draw a straight line between the ambient state point and the stack-gas state point. If the line crosses the chart curve, there is a high-probability for water vapor to be present in the plume. If the plotted line does not cross the curve, there is a low-probability of water vapor being present.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/lecture-5/11.jpg",
+          "url": "module-5/lecture-5/11.jpg",
           "alt": "Psychrometric chart example",
           "isClickable": true,
           "caption": "The line crosses the curve which indicates a high probability of a steam plume.",

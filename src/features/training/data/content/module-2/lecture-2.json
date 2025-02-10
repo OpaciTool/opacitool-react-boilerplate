@@ -26,7 +26,7 @@
         "text": "When the ground is cooler than the air, inversion layers usually form near the ground surface.  The plume in this scenario is above the inversion layer and remains aloft as it disperses.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-2/7.jpg",
+          "url": "module-2/lecture-2/7.jpg",
           "alt": "Image description",
           "isClickable": true,
           "width": "80%"
@@ -45,7 +45,7 @@
         "text": "As the sun heats the ground, the inversion layer rises.  The plume in this scenario is under the inversion layer and higher concentrations within the plume are pushed towards the ground.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-2/8.jpg",
+          "url": "module-2/lecture-2/8.jpg",
           "alt": "Image description",
           "isClickable": true,
           "width": "80%"
@@ -64,7 +64,7 @@
         "text": "As the sun continues to heat the ground, the air below the inversion layer becomes evenly mixed. The plume discharges below the inversion layer but rises and diffuses evenly. This shape can also occur during cloudy or windy observations.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-2/9.jpg",
+          "url": "module-2/lecture-2/9.jpg",
           "alt": "Image description",
           "isClickable": true,
           "width": "80%"
@@ -83,7 +83,7 @@
         "text": "As the sun intensifies, air currents develop from ground heat. These currents cause plumes to move up and down in a looping pattern.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-2/10.jpg",
+          "url": "module-2/lecture-2/10.jpg",
           "alt": "Image description",
           "isClickable": true,
           "width": "80%"
@@ -102,7 +102,7 @@
         "text": "As the ground temperature decreases, another inversion layer forms near the ground. The inversion layer is weak and the plume is able to penetrate through it.  As the plume cools, it is unable to penetrate back down through the inversion layer and concentrates along the top of the inversion layer.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-2/11.jpg",
+          "url": "module-2/lecture-2/11.jpg",
           "alt": "Image description",
           "isClickable": true,
           "width": "80%"
