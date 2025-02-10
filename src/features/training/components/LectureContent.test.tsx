@@ -1,7 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { LectureContent } from "./LectureContent";
 import { MemoryRouter, Route, Routes } from "react-router-dom";
-import { navigationData } from "../data/navigation";
 import { toast } from "react-hot-toast";
 import { vi } from 'vitest'
 
@@ -75,11 +74,11 @@ describe("LectureContent", () => {
   it("renders lecture content correctly", () => {
     renderWithRouter();
     
-    // Check if module title is rendered
-    expect(screen.getByText(navigationData[0].title)).toBeInTheDocument();
+    // Check if module title is rendered (using the h3 element)
+    expect(screen.getByRole('heading', { level: 3, name: "Introduction" })).toBeInTheDocument();
     
     // Check if lecture title is rendered
-    expect(screen.getByText(navigationData[0].lectures[0].title)).toBeInTheDocument();
+    expect(screen.getByText("Welcome to OpaciTool")).toBeInTheDocument();
   });
 
   it("handles bookmark toggling", async () => {
