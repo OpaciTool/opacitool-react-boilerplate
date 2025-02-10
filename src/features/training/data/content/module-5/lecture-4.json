@@ -12,7 +12,7 @@
         "text": "For opacity observations, the distance between the observer and the emission point should always be at least three times the height relative to the observer’s position. For example, if the emission point is 60 vertical feet from the observer, their position should be at least 180 horizontal feet away. This distance ensures that the viewing angle remains less than 18°, as required by EPA Method 9.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/lecture-4/5.jpg",
+          "url": "module-5/lecture-4/5.jpg",
           "alt": "Image",
           "isClickable": true,
           "caption": "A viewing angle of 18° or less minimizes your visual path through the plume."
@@ -28,7 +28,7 @@
         "text": "In some situations, particularly with tall stacks, the observer may not be able to position themselves far enough away from the emission point. When the viewing angle exceeds 18°, the visual path through the plume increases, leading to an overestimation of the opacity.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-5/lecture-4/6.jpg",
+          "url": "module-5/lecture-4/6.jpg",
           "alt": "Image",
           "isClickable": true,
           "caption": "A viewing angle greater than 18° increases the visual path through the plume.  "

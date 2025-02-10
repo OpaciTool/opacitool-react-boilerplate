@@ -48,7 +48,7 @@
         "text": "The following video shows the same opacity value with a low-contrasting background and a high-contrasting background.  Notice the effect the background has on the apparent opacity.\n\n",
         "media": {
           "type": "video",
-          "url": "/images/training/module-3/video.mp4",
+          "url": "module-3/video.mp4",
           "alt": "Background Selection Video",
           "width": "lg:w-[60%]"
         }

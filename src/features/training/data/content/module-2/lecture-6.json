@@ -15,21 +15,21 @@
           "grid": "grid-cols-1 md:grid-cols-3",
           "images": [
             {
-              "url": "/images/training/module-2/lecture-6/29.jpg",
+              "url": "module-2/lecture-6/29.jpg",
               "alt": "Cyclone",
               "isClickable": true,
               "caption": "Collection",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-2/lecture-6/30.jpg",
+              "url": "module-2/lecture-6/30.jpg",
               "alt": "Baghouse",
               "isClickable": true,
               "caption": "Combustion",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-2/lecture-6/31.jpg",
+              "url": "module-2/lecture-6/31.jpg",
               "alt": "ESP",
               "isClickable": true,
               "caption": "Conversion",
@@ -72,7 +72,7 @@
                     "text": "Baghouses are air pollution control devices that use fabric filters, typically shaped like bags, to capture particulates from an emission stream. As air flows through the baghouse, particulates accumulate on the filter's surface. This buildup enhances the system's efficiency, enabling it to capture even smaller particles. Baghouses are highly effective, capable of removing up to 99.9% of particulate matter from the emission stream.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/32.jpg",
+                      "url": "module-2/lecture-6/32.jpg",
                       "alt": "Cyclone Diagram",
                       "isClickable": true
                     }
@@ -89,7 +89,7 @@
                     "text": "Cyclones are used to remove dry particulate matter from emission streams. As the emission stream enters the cyclone chamber, it is directed into a spiral path, creating a cyclonic motion. This motion forces particulates toward the chamber walls using centrifugal force. Cyclones are particularly effective at capturing larger particulate matter and are often paired with baghouses to efficiently remove smaller particles.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/33.jpg",
+                      "url": "module-2/lecture-6/33.jpg",
                       "alt": "Baghouse Diagram",
                       "isClickable": true
                     }
@@ -106,7 +106,7 @@
                     "text": "Electrostatic precipitators (ESPs) are devices designed to remove particulate matter from emission streams using electrical charges. Particulates are attracted to and captured on collection plates, which are periodically cleaned to transfer the collected material to a hopper. ESPs equipped with multiple collection plates can achieve a collection efficiency of up to 99%.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/34.jpg",
+                      "url": "module-2/lecture-6/34.jpg",
                       "alt": "ESP Diagram",
                       "isClickable": true
                     }
@@ -123,7 +123,7 @@
                     "text": "Wet scrubbers use water or a liquid chemical agent to remove or neutralize pollutants in an emission stream. This is achieved by either passing the emission stream through the liquid solution or injecting the solution directly into the stream.\n\nDry scrubbers, on the other hand, use dry chemicals, such as sodium bicarbonate, to chemically react with and neutralize pollutants in the emission stream.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/35.jpg",
+                      "url": "module-2/lecture-6/35.jpg",
                       "alt": "Wet Scrubber Diagram",
                       "isClickable": true
                     }
@@ -140,7 +140,7 @@
                     "text": "Thermal oxidizers are a type of incinerator. The emission stream encounters extremely high temperatures in the combustion chamber of the thermal oxidizer and pollutants are oxidized to form CO2 and water. Thermal oxidizers can achieve 99.99% destruction efficiency for volatile organic compounds (VOCs) and hydrocarbon compounds.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/36.jpg",
+                      "url": "module-2/lecture-6/36.jpg",
                       "alt": "Thermal Oxidizer Diagram",
                       "isClickable": true
                     }
@@ -157,7 +157,7 @@
                     "text": "Catalytic oxidizers are similar to thermal oxidizers but use a catalyst to lower temperatures required for initiating oxidation. They are used to break down VOCs and hydrocarbon compounds in an emission stream.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/37.jpg",
+                      "url": "module-2/lecture-6/37.jpg",
                       "alt": "Flare Diagram",
                       "isClickable": true
                     }
@@ -174,7 +174,7 @@
                     "text": "SCRs are typically used to control nitrogen oxide (NOX) produced by burning fossil fuels. Ammonia is first injected into the emission stream and the mixture contacts a catalyst to transform the NOX into nitrogen and water. SCRs can reduce NOX emissions by 95%.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/38.jpg",
+                      "url": "module-2/lecture-6/38.jpg",
                       "alt": "Catalytic Converter Diagram",
                       "isClickable": true
                     }
@@ -197,7 +197,7 @@
                     "text": "Wash systems can be used to clean dirty tires and prevent particulates from becoming airborne.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/39.jpg",
+                      "url": "module-2/lecture-6/39.jpg",
                       "alt": "Dust Suppression"
                     }
                   },
@@ -213,7 +213,7 @@
                     "text": "Solid surfaces where particulates accumulate can be swept and collected using sweeper trucks.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/40.jpg",
+                      "url": "module-2/lecture-6/40.jpg",
                       "alt": "Wind Barriers"
                     }
                   },
@@ -229,7 +229,7 @@
                     "text": "Dusty roads and material storage piles can be sprayed with water or chemical suppressants to prevent particulates from becoming airborne. Water must be reapplied frequently to be effective whereas salt compounds, such as magnesium chloride, are effective for longer durations.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/41.jpg",
+                      "url": "module-2/lecture-6/41.jpg",
                       "alt": "Enclosures"
                     }
                   },
@@ -245,7 +245,7 @@
                     "text": "Certain rock types naturally contain high levels of moisture, which can help prevent particulates from becoming airborne during processing. Similarly, in crop harvesting, the inherent moisture in plants and soil can reduce the likelihood of particulates becoming airborne.",
                     "media": {
                       "type": "image",
-                      "url": "/images/training/module-2/lecture-6/42.jpg",
+                      "url": "module-2/lecture-6/42.jpg",
                       "alt": "Work Practices"
                     }
                   },

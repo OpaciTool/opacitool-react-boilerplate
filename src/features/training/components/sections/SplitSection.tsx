@@ -2,6 +2,7 @@ import { useState } from "react";
 import clsx from "clsx";
 import { Dialog } from "@headlessui/react";
 import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import { getLectureMediaUrl } from "../../lib/getLectureMedia";
 
 
 interface SplitSectionProps {
@@ -34,27 +35,24 @@ export function SplitSection({
   content,
   layout = "text-left",
   containerType = "grid",
-  bgColor
+  bgColor,
 }: SplitSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const isTextLeft = layout === "text-left";
 
   return (
-    <div className={clsx(
-      " py-8 px-4 lg:px-14",
-      bgColor,
-    )}>
+    <div className={clsx("px-4 py-8 lg:px-14", bgColor)}>
       {/* Split Content Container */}
       <div
         className={clsx(
-          containerType === "grid" 
+          containerType === "grid"
             ? clsx(
-                content.media 
+                content.media
                   ? "grid items-center gap-8 lg:grid-cols-2"
                   : "flex flex-col",
                 isTextLeft ? "lg:grid-flow-col" : "lg:grid-flow-col-dense",
               )
-            : "flex flex-col gap-8"
+            : "flex flex-col gap-8",
         )}
       >
         {/* Text Content */}
@@ -85,25 +83,33 @@ export function SplitSection({
             <div className="relative">
               <div
                 className={clsx(
-                  "rounded-lg overflow-hidden",
+                  "overflow-hidden rounded-lg",
                   "flex items-center justify-center",
-                  content.media?.isClickable && "cursor-pointer hover:opacity-90 transition-opacity"
+                  content.media?.isClickable &&
+                    "cursor-pointer transition-opacity hover:opacity-90",
                 )}
-                onClick={() => content.media?.isClickable && setIsModalOpen(true)}
+                onClick={() =>
+                  content.media?.isClickable && setIsModalOpen(true)
+                }
               >
                 {content.media?.type === "image" && (
                   <>
                     <img
-                      src={content.media.url}
+                      src={getLectureMediaUrl(content.media.url)}
                       alt={content.media.alt || ""}
                       className={clsx(
-                        "w-full h-full object-contain rounded-lg",
-                        content.media.isClickable && "cursor-pointer hover:opacity-90 transition-opacity"
+                        "h-full w-full rounded-lg object-contain",
+                        content.media.isClickable &&
+                          "cursor-pointer transition-opacity hover:opacity-90",
                       )}
-                      style={content.media.width ? { width: content.media.width } : undefined}
+                      style={
+                        content.media.width
+                          ? { width: content.media.width }
+                          : undefined
+                      }
                     />
                     {content.media.isClickable && (
-                      <div className="absolute bottom-2 right-2 p-1.5 rounded-full bg-orange-600">
+                      <div className="absolute bottom-2 right-2 rounded-full bg-orange-600 p-1.5">
                         <MagnifyingGlassIcon className="h-5 w-5 text-white" />
                       </div>
                     )}
@@ -112,7 +118,7 @@ export function SplitSection({
               </div>
               <div className="space-y-1">
                 {content.media?.caption && (
-                  <p className="mt-2 text-sm text-center text-zinc-500 dark:text-zinc-400">
+                  <p className="mt-2 text-center text-sm text-zinc-500 dark:text-zinc-400">
                     {content.media.caption}
                   </p>
                 )}
@@ -136,17 +142,17 @@ export function SplitSection({
               <div className="relative overflow-auto">
                 <button
                   onClick={() => setIsModalOpen(false)}
-                  className="absolute top-4 right-4 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+                  className="absolute right-4 top-4 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
                 >
                   <XMarkIcon className="h-6 w-6" />
                 </button>
                 <img
-                  src={content.media?.url}
+                  src={getLectureMediaUrl(content.media?.url || "")}
                   alt={content.media?.alt || title}
                   className="rounded-lg max-h-[90vh]"
                 />
                 {content.media?.caption && (
-                  <p className="p-4 text-sm text-center text-zinc-600 dark:text-zinc-300">
+                  <p className="p-4 text-center text-sm text-zinc-600 dark:text-zinc-300">
                     {content.media.caption}
                   </p>
                 )}

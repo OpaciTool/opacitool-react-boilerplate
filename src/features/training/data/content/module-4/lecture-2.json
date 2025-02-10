@@ -24,7 +24,7 @@
         "text": "For this example, 12 minutes of observations were performed. Method 9 does not set the duration of the opacity test, only the averaging time of 6 minutes. Test durations are set by the regulation affecting the source.\n\nTo expedite the process of determining the highest opacity, a spreadsheet is provided in the 'Reference Forms' section of this course.  OpaciTool can perform the calculation automatically.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-2/4.jpg",
+          "url": "module-4/lecture-2/4.jpg",
           "alt": "Certification Verification",
           "width": "300px"
         }
@@ -42,7 +42,7 @@
         "text": "Add the first 24 opacity values together to get a sum of 365. Divide 365 by 24 to determine the first average of 15.21%.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-2/5.jpg",
+          "url": "module-4/lecture-2/5.jpg",
           "alt": "Equipment Checklist",
           "width": "300px"
         }
@@ -60,7 +60,7 @@
         "text": "Move to the second box as the starting point of 24 consecutive values. From the previous sum of 365, subtract the value of the first reading (10) and add the value of the 25th reading (25). 365-10+25=380  Divide 380 by 24 to get an average of 15.83%.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-2/6.jpg",
+          "url": "module-4/lecture-2/6.jpg",
           "alt": "Source Information Review",
           "width": "300px"
         }
@@ -78,7 +78,7 @@
         "text": "This process will continue until your 24th reading is the last observation made. Draw a line around the highest 6-minute period on the test form. Compare the highest average to the source's opacity limit to determine compliance.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-2/7.jpg",
+          "url": "module-4/lecture-2/7.jpg",
           "alt": "Safety Equipment Check",
           "width": "300px"
         }
@@ -107,7 +107,7 @@
           "columns": [
             {
               "image": {
-                "url": "/images/training/module-4/lecture-2/8.jpg",
+                "url": "module-4/lecture-2/8.jpg",
                 "alt": "Example 1",
                 "width": "300px"
               },
@@ -116,7 +116,7 @@
             },
             {
               "image": {
-                "url": "/images/training/module-4/lecture-2/9.jpg",
+                "url": "module-4/lecture-2/9.jpg",
                 "alt": "Example 2",
                 "width": "300px"
               },

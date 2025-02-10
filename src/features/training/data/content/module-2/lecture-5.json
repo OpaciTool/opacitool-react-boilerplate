@@ -13,7 +13,7 @@
         "text": "The average human eye can perceive light with wavelengths ranging from 380 nm to 700 nm, known as the \"visible spectrum.\" Particles that interact with light in this range can influence the opacity of visible emissions. Factors such as a particle's shape, color, composition, and size can all affect how it interacts with light.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-5/23.jpg",
+          "url": "module-2/lecture-5/23.jpg",
           "alt": "Opacity Range Introduction",
           "isClickable": true,
           "width": "80%"
@@ -46,12 +46,12 @@
           "type": "image-grid",
           "images": [
             {
-              "url": "/images/training/module-2/lecture-5/24.jpg",
+              "url": "module-2/lecture-5/24.jpg",
               "alt": "Example 1",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-2/lecture-5/25.jpg",
+              "url": "module-2/lecture-5/25.jpg",
               "alt": "Example 2",
               "width": "80%"
             }
@@ -73,12 +73,12 @@
           "type": "image-grid",
           "images": [
             {
-              "url": "/images/training/module-2/lecture-5/26.jpg",
+              "url": "module-2/lecture-5/26.jpg",
               "alt": "Example 3",
               "width": "80%"
             },
             {
-              "url": "/images/training/module-2/lecture-5/27.jpg",
+              "url": "module-2/lecture-5/27.jpg",
               "alt": "Example 4",
               "width": "80%"
             }
@@ -99,7 +99,7 @@
         "text": "Absorption occurs when light strikes a particle and is converted into thermal energy. This happens when the frequency of the incoming light matches the resonant frequency of the particle's electrons, causing the light to be absorbed.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-2/lecture-5/28.jpg",
+          "url": "module-2/lecture-5/28.jpg",
           "alt": "Final Image",
           "width": "80%"
         }

@@ -24,7 +24,7 @@
         "text": "This can be determined by ensuring the “Observation Point - Distance” field is at least three times the “Observation Point - Height” field and/or by measuring the angle and inputting it in the “Observation Point - Angle” field.\n\nIf the viewing angle is more than 18°, each reading will need to be corrected using the slant angle correction formula discussed in the next module.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/10.jpg",
+          "url": "module-4/lecture-3/10.jpg",
           "alt": "Uncontrolled Events Example"
         }
       },
@@ -41,7 +41,7 @@
         "text": "Backgrounds with high contrast to the plume color are best but not always available. If the observer is unable to use a high-contrast background, the reason should be noted in the Comments section or on the back of the test sheet.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/11.jpg",
+          "url": "module-4/lecture-3/11.jpg",
           "alt": "Observer-Fault Example",
           "width": "300px"
         }
@@ -59,7 +59,7 @@
         "text": "Remember the Observation Point is the point in the plume where the opacity is highest and water vapor is not present. It is usually found within 1 stack diameter of the stack exit.  The emission point is the stack exit (or point where emissions are discharged) and not always the observation point.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/12.jpg",
+          "url": "module-4/lecture-3/12.jpg",
           "alt": "Marking Missed Readings"
         }
       },
@@ -76,7 +76,7 @@
         "text": "The sketch must indicate North from the observation position. An arrow indicating the direction of the wind must also be included and must match the “Wind Direction” field.\n The position of the sun must also be indicated. If skies are overcast, write “Overcast” on the “Draw Sun” line.\n The plume direction must be indicated and must show that observations were made across the narrow axis of the plume. ",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/13.jpg",
+          "url": "module-4/lecture-3/13.jpg",
           "alt": "Documentation Example"
         }
       },
@@ -93,7 +93,7 @@
         "text": "All readings must be in 5% increments.",
         "media": {
           "type": "image",
-          "url": "/images/training/module-4/lecture-3/14.jpg",
+          "url": "module-4/lecture-3/14.jpg",
           "alt": "Calculation Impact",
           "width": "300px"
         }
