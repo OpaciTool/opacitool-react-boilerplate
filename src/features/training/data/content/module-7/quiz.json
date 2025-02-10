@@ -1,0 +1,155 @@
+{
+  "lectureId": "module-7-quiz",
+  "moduleId": 7,
+  "title": "Module 7 Quiz",
+  "sections": [
+    {
+      "id": "quiz-section",
+      "type": "quiz",
+      "title": "Module 7 Quiz",
+      "content": {
+        "moduleId": 7,
+        "title": "Module 7 Quiz",
+        "description": "Quiz questions are designed to help you prepare for the comprehension test. Your responses are not recorded.",
+        "passingScore": 80,
+        "questions": [
+          {
+            "id": "q1",
+            "text": "Method 22 testing measures the _____________ of visible emissions.",
+            "type": "single",
+            "options": [
+              {
+                "id": "q1_a",
+                "text": "Frequency",
+                "isCorrect": true
+              },
+              {
+                "id": "q1_b",
+                "text": "Quantity",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_c",
+                "text": "Opacity",
+                "isCorrect": false
+              },
+              {
+                "id": "q1_d",
+                "text": "Composition",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "text": "Method 22 is commonly used on which of the following sources?",
+            "type": "single",
+            "options": [
+              {
+                "id": "q2_a",
+                "text": "Smoke stacks",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_b",
+                "text": "Point sources",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_c",
+                "text": "Baghouses",
+                "isCorrect": false
+              },
+              {
+                "id": "q2_d",
+                "text": "Flares",
+                "isCorrect": true
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "text": "If significant precipitation has occurred before an outdoor Method 22 test:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q3_a",
+                "text": "You should perform a Method 9 test instead.",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_b",
+                "text": "You should observe the source for a longer duration.",
+                "isCorrect": false
+              },
+              {
+                "id": "q3_c",
+                "text": "You should postpone the test until drier conditions.",
+                "isCorrect": true
+              },
+              {
+                "id": "q3_d",
+                "text": "All of the above.",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q4",
+            "text": "Which of the following test methods does not require certification:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q4_a",
+                "text": "Method 9",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_b",
+                "text": "Method 22",
+                "isCorrect": true
+              },
+              {
+                "id": "q4_c",
+                "text": "Method 203a",
+                "isCorrect": false
+              },
+              {
+                "id": "q4_d",
+                "text": "Method 203c",
+                "isCorrect": false
+              }
+            ]
+          },
+          {
+            "id": "q5",
+            "text": "When performing a Method 22 test, which of the following is not required:",
+            "type": "single",
+            "options": [
+              {
+                "id": "q5_a",
+                "text": "Having a clear view of the potential emission point",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_b",
+                "text": "Using two stopwatches",
+                "isCorrect": false
+              },
+              {
+                "id": "q5_c",
+                "text": "Keeping the sun at your back",
+                "isCorrect": true
+              },
+              {
+                "id": "q5_d",
+                "text": "Taking a rest break every 20 minutes",
+                "isCorrect": false
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+} 

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Text } from "@/shared/ui";
 import type { Quiz as QuizType } from "../types/quiz";
 import clsx from "clsx";
 
@@ -74,7 +73,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
   };
 
   return (
-    <div className="mx-auto w-[90%] pt-10 lg:w-[50%]">
+    <div className="mx-auto w-[90%] pt-10 lg:w-[50%] pb-10">
       <div className="mb-8 space-y-4">
         <h1 className="text-2xl font-semibold text-zinc-900 dark:text-white">
           {quiz.title}
@@ -85,7 +84,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
       <form className="space-y-8">
         {quiz.questions.map((question, index) => (
           <div key={question.id} className="space-y-4">
-            <p className="text-base font-medium text-zinc-900">
+            <p className="text-lg font-semibold text-zinc-900">
               {index + 1}. {question.text}
             </p>
 
@@ -128,7 +127,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
                       disabled={submitted}
                       className="text-brand-blue-800"
                     />
-                    <Text>{option.text}</Text>
+                    <p className="text-lg">{option.text}</p>
                   </label>
                 );
               })}

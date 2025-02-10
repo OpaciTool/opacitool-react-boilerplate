@@ -3,7 +3,7 @@
     "title": "Facility & Source Info",
     "fields": {
       "facilityName": {
-        "title": "Facility & Source Info",
+        "title": "Facility & Permit Number",
         "content": "Indicate the complete name of the facility and the air permit number issued by the regulating agency.",
         "images": [
           {

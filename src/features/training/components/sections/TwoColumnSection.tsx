@@ -16,11 +16,12 @@ interface TwoColumnSectionProps {
       }>;
     };
   };
+  bgColor?: string;
 }
 
-export function TwoColumnSection({ title, content }: TwoColumnSectionProps) {
+export function TwoColumnSection({ title, content, bgColor }: TwoColumnSectionProps) {
   return (
-    <div className="py-8 first:pt-0 last:pb-0">
+    <div className={`py-8 px-4 lg:px-14 ${bgColor}`}>
       {title && (
         <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
           {title}
@@ -45,7 +46,9 @@ export function TwoColumnSection({ title, content }: TwoColumnSectionProps) {
                 style={{ width: column.image.width }}
               />
             </div>
-            <p className="text-zinc-600 dark:text-zinc-400">{column.text}</p>
+            <p className="text-zinc-900 dark:text-zinc-400 text-lg">
+              {column.text}
+            </p>
           </div>
         ))}
       </div>

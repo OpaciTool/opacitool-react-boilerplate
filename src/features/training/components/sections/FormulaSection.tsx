@@ -1,62 +1,191 @@
 export default function FormulaSection() {
-    return (
-      <div className="w-full  mx-auto p-4">
-        <div className="border border-gray-300">
-          {/* Header Grid */}
-          <div className="grid grid-cols-2 divide-x divide-gray-300 border-b border-gray-900">
-            <div className="p-2 text-center font-bold">FORMULA</div>
-            <div className="p-2 text-center font-bold">KEY</div>
+  return (
+    <div className="mx-auto w-full p-4 px-4 py-8 lg:px-14">
+      <div className="">
+        {/* Header Grid */}
+        <div className="grid grid-cols-2">
+          <div className="p-2 text-center font-bold">FORMULA</div>
+          <div className="p-2 text-center font-bold">KEY</div>
+        </div>
+
+        {/* Content Grid */}
+        <div className="grid grid-cols-2 justify-items-center">
+          {/* Formula Column */}
+          <div className="space-y-2 p-4 font-mono text-lg">
+            <div className="flex items-baseline space-x-1">
+              <span>1-O</span>
+              <span className="align-bottom text-[10px]">1</span>
+              <span>/100 = T</span>
+              <span className="align-bottom text-[10px]">1</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>1-O</span>
+              <span className="align-bottom text-[10px]">2</span>
+              <span>/100 = T</span>
+              <span className="align-bottom text-[10px]">2</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>1-O</span>
+              <span className="align-bottom text-[10px]">N</span>
+              <span>/100 = T</span>
+              <span className="align-bottom text-[10px]">N</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>T</span>
+              <span className="align-bottom text-[10px]">1</span>
+              <span>× T</span>
+              <span className="align-bottom text-[10px]">2</span>
+              <span>× T</span>
+              <span className="align-bottom text-[10px]">N</span>
+              <span>= T</span>
+              <span className="align-bottom text-[10px]">T</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>100 × (1-T) = O</span>
+              <span className="align-bottom text-[10px]">T</span>
+            </div>
           </div>
-  
-          {/* Content Grid */}
-          <div className="grid grid-cols-2 divide-x divide-gray-300">
-            {/* Formula Column */}
-            <div className="p-4 space-y-2 font-mono text-sm">
-              <div>1-O₁/100 = T₁</div>
-              <div>1-O₂/100 = T₂</div>
-              <div>1-O₃/100 = T₃</div>
-              <div>T₁ x T₂ x T₃ = T</div>
-              <div>100 x (1-T) = O</div>
+
+          {/* Key Column */}
+          <div className="space-y-2 p-4 text-sm">
+            <div className="flex items-baseline space-x-1">
+              <span>O</span>
+              <span className="align-bottom text-[10px]">1</span>
+              <span>= % opacity of 1</span>
+              <span className="align-bottom text-[10px]">st</span>
+              <span>plume</span>
             </div>
-  
-            {/* Key Column */}
-            <div className="p-4 space-y-2 text-sm">
-              <div>O₁ = % opacity of 1st plume</div>
-              <div>O₂ = % opacity of 2nd plume</div>
-              <div>O₃ = % opacity of N₃ plume</div>
-              <div>T₁ = Transmittance of 1st plume</div>
-              <div>T₂ = Transmittance of 2nd plume</div>
-              <div>T₃ = Transmittance of N₃ plume</div>
-              <div>T = Total Transmittance</div>
-              <div>O = % Total Opacity</div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>O</span>
+              <span className="align-bottom text-[10px]">2</span>
+              <span>= % opacity of 2</span>
+              <span className="align-bottom text-[10px]">nd</span>
+              <span>plume</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>O</span>
+              <span className="align-bottom text-[10px]">N</span>
+              <span>= % opacity of N</span>
+              <span className="align-bottom text-[10px]">th</span>
+              <span>plume</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>T</span>
+              <span className="align-bottom text-[10px]">1</span>
+              <span>= Transmittance of 1</span>
+              <span className="align-bottom text-[10px]">st</span>
+              <span>plume</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>T</span>
+              <span className="align-bottom text-[10px]">2</span>
+              <span>= Transmittance of 2</span>
+              <span className="align-bottom text-[10px]">nd</span>
+              <span>plume</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>T</span>
+              <span className="align-bottom text-[10px]">N</span>
+              <span>= Transmittance of N</span>
+              <span className="align-bottom text-[10px]">th</span>
+              <span>plume</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>T </span>
+              <span className="align-bottom text-[10px]">T</span>
+              <span>= Total Transmittance</span>
+            </div>
+
+            <div className="flex items-baseline space-x-1">
+              <span>O</span>
+              <span className="align-bottom text-[10px]">T</span>
+              <span>= % Total Opacity</span>
             </div>
           </div>
-  
-          {/* Application Section */}
-          <div className="border-t border-gray-300 p-4">
-            <div className="font-bold mb-4">Application & Calculation</div>
-            <div className="text-sm mb-4">
-              Don&apos;t be intimidated by the formula - it&apos;s time-consuming but easy to use. Below is an example of
-              a single source with two emission points.
+        </div>
+
+        {/* Application Section */}
+        <div className="p-4">
+          <div className="mb-4 font-bold">Application & Calculation</div>
+          <div className="mb-4 text-lg">
+            Don&apos;t be intimidated by the formula - it&apos;s time-consuming
+            but easy to use. Below is an example of a single source with two
+            emission points.
+          </div>
+
+          {/* Example Calculations */}
+          <div className="space-y-2 font-mono text-lg">
+            <div className="flex items-baseline">
+              <div className="flex items-baseline space-x-1">
+                <span>1-O</span>
+                <span className="align-bottom text-[10px]">1</span>
+                <span>/100 = T</span>
+                <span className="align-bottom text-[10px]">1</span>
+              </div>
+              <span className="mx-2 text-gray-400">---------</span>
+              <div className="flex items-baseline space-x-1">
+                <span>1-(25%/100) = 0.75</span>
+              </div>
             </div>
-  
-            {/* Example Calculations */}
-            <div className="space-y-2 font-mono text-sm">
-              <div>Emission Point 1, Opacity Reading 1 = 25%</div>
-              <div>Emission Point 2, Opacity Reading 1 = 35%</div>
-              <div className="my-4"></div>
-              <div>1-O₁/100 = T₁ ------------ 1-(25/100) = 0.75</div>
-              <div>1-O₂/100 = T₂ ------------ 1-(35/100) = 0.65</div>
-              <div>T₁ x T₂ = T -------------- 0.75 x 0.65 = 0.4875</div>
-              <div>100 x (1-T) = O ---------- 100 x (1-0.4875) = 51.25%</div>
+
+            <div className="flex items-baseline">
+              <div className="flex items-baseline space-x-1">
+                <span>1-O</span>
+                <span className="align-bottom text-[10px]">2</span>
+                <span>/100 = T</span>
+                <span className="align-bottom text-[10px]">2</span>
+              </div>
+              <span className="mx-2 text-gray-400">---------</span>
+              <div className="flex items-baseline space-x-1">
+                <span>1-(35%/100) = 0.65</span>
+              </div>
             </div>
-  
-            {/* Note */}
-            <div className="mt-4 text-sm italic">This calculation must be completed for each opacity reading.</div>
+
+            <div className="flex items-baseline">
+              <div className="flex items-baseline space-x-1">
+                <span>T</span>
+                <span className="align-bottom text-[10px]">1</span>
+                <span>× T</span>
+                <span className="align-bottom text-[10px]">2</span>
+                <span>= T</span>
+                <span className="align-bottom text-[10px]">T</span>
+              </div>
+              <span className="mx-2 text-gray-400">---------</span>
+              <div className="flex items-baseline space-x-1">
+                <span>0.75 × 0.65 = 0.4875</span>
+              </div>
+            </div>
+
+            <div className="flex items-baseline">
+              <div className="flex items-baseline space-x-1">
+                <span>100 × (1-</span>
+                <span>T</span>
+                <span className="align-bottom text-[10px]">T</span>)
+   
+              </div>
+              <span className="mx-2 text-gray-400">---------</span>
+              <div className="flex items-baseline space-x-1">
+                <span>100 × (1-0.4875) = 51.25%</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Note */}
+          <div className="mt-4 text-lg italic">
+            This calculation must be completed for each opacity reading.
           </div>
         </div>
       </div>
-    )
-  }
-  
-  
+    </div>
+  );
+}

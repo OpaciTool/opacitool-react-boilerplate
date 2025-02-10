@@ -22,8 +22,11 @@ export function ImageGridSection({
   } | null>(null);
 
   return (
-    <div className={clsx("px-4 py-8 last:pb-0 lg:px-14", bgColor)}>
-      <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
+    <div className={clsx(
+      "py-8 px-4 lg:px-14  ",
+      bgColor
+    )}>
+      <h2 className="text-2xl font-semibold text-zinc-900 dark:text-white mb-6">
         {title}
       </h2>
       <div className="dark:prose-invert mb-8 text-lg text-zinc-900">
@@ -65,7 +68,7 @@ export function ImageGridSection({
               )}
             </div>
             {image.caption && (
-              <p className="mt-2 text-center text-sm text-zinc-500 dark:text-zinc-400">
+              <p className="mt-2 text-lg text-center text-zinc-900 dark:text-zinc-400">
                 {image.caption}
               </p>
             )}

@@ -73,7 +73,7 @@
             "options": [
               {
                 "id": "q3_a",
-                "text": "10%°",
+                "text": "10%",
                 "isCorrect": false
               },
               {
@@ -83,12 +83,12 @@
               },
               {
                 "id": "q3_c",
-                "text": "5%°",
+                "text": "5%",
                 "isCorrect": true
               },
               {
                 "id": "q3_d",
-                "text": "7%°",
+                "text": "7%",
                 "isCorrect": false
               }
             ]
@@ -127,7 +127,7 @@
             "options": [
               {
                 "id": "q5_a",
-                "text": "Water vapor°",
+                "text": "Water vapor",
                 "isCorrect": true
               },
               {
@@ -138,7 +138,7 @@
               {
                 "id": "q5_c",
                 "text": "Soot",
-                "isCorrect": true
+                "isCorrect": false
               },
               {
                 "id": "q5_d",

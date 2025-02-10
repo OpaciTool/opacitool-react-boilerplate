@@ -51,7 +51,7 @@
           "type": "video",
           "url": "module-3/video.mp4",
           "alt": "Sun Position Animation",
-          "width": "70%"
+          "width": "lg:w-[60%]"
         }
       },
       "divider": true,

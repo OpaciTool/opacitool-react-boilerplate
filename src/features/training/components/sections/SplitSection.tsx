@@ -4,6 +4,7 @@ import { Dialog } from "@headlessui/react";
 import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { getLectureMediaUrl } from "../../lib/getLectureMedia";
 
+
 interface SplitSectionProps {
   title: string;
   content: {
@@ -20,6 +21,13 @@ interface SplitSectionProps {
   layout?: "text-left" | "text-right";
   containerType?: "grid" | "flex-col";
   bgColor?: string;
+}
+
+function convertLinksToAnchors(text: string) {
+  const linkRegex = /\[(.*?)\]\((.*?)\)/g;
+  return text.replace(linkRegex, (_, linkText, url) => 
+    `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${linkText}</a>`
+  );
 }
 
 export function SplitSection({
@@ -60,7 +68,12 @@ export function SplitSection({
             {title}
           </h2>
           <div className="dark:prose-invert text-lg text-zinc-900">
-            <p className="whitespace-pre-line">{content.text}</p>
+            <p 
+              className="whitespace-pre-line"
+              dangerouslySetInnerHTML={{ 
+                __html: convertLinksToAnchors(content.text) 
+              }}
+            />
           </div>
         </div>
 
@@ -123,10 +136,10 @@ export function SplitSection({
           className="relative z-50"
         >
           <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
-
-          <div className="fixed inset-0 flex items-center justify-center p-4">
-            <Dialog.Panel className="mx-auto max-w-4xl rounded-lg bg-white shadow-xl dark:bg-zinc-900">
-              <div className="relative">
+          
+          <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto max-h-screen">
+            <Dialog.Panel className="mx-auto max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-xl overflow-y-auto">
+              <div className="relative overflow-auto">
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="absolute right-4 top-4 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
@@ -136,7 +149,7 @@ export function SplitSection({
                 <img
                   src={getLectureMediaUrl(content.media?.url || "")}
                   alt={content.media?.alt || title}
-                  className="rounded-lg"
+                  className="rounded-lg max-h-[90vh]"
                 />
                 {content.media?.caption && (
                   <p className="p-4 text-center text-sm text-zinc-600 dark:text-zinc-300">
