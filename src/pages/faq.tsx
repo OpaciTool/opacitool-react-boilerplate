@@ -6,8 +6,10 @@ import { Tooltip } from "@/shared/ui";
 import { BookmarkIcon as BookmarkOutlineIcon } from "@heroicons/react/24/outline";
 import { BookmarkIcon as BookmarkFilledIcon } from "@heroicons/react/24/solid";
 import { TrainingSidebar } from "@/features/training/components/TrainingSidebar";
-import { SectionDivider } from "@/features/training/components/SectionDivider";
 import FAQAccordion from "@/features/training/components/FAQAccordion";
+import { LectureNavigation } from "@/features/training/components/LectureNavigation";
+import { ScrollToTop } from "@/shared/components/ScrollToTop";
+import QuestionMarkTooltip from "@/features/training/components/QuestionMarkTooltip";
 
 export function FAQ() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -69,41 +71,47 @@ export function FAQ() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 ">
+      <div className="flex-1">
         <div className="items-center justify-between bg-zinc-900 px-4 py-8 lg:flex lg:px-14">
           <div className="space-y-1">
             <h3 className="text-2xl text-zinc-300">Module 9</h3>
             <h2 className="text-4xl font-bold text-white dark:text-white">
-            Frequently Asked Questions
+              Frequently Asked Questions
             </h2>
           </div>
-          <Tooltip content="Bookmark this lecture">
-            <button
-              onClick={handleBookmark}
-              className="flex items-center gap-2 rounded-lg py-2 transition-colors hover:text-white dark:hover:bg-zinc-800 lg:px-3"
-              aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
-            >
-              {isBookmarked ? (
-                <>
-                  <BookmarkFilledIcon className="size-14 text-teal-400" />
-                  <span className="text-xl font-medium text-teal-400">
-                    Bookmarked
-                  </span>
-                </>
-              ) : (
-                <>
-                  <BookmarkOutlineIcon className="group size-14 text-zinc-400 hover:text-white dark:hover:text-zinc-300" />
-                  <span className="text-xl font-medium text-zinc-200 hover:text-white dark:hover:text-zinc-300">
-                    Bookmark
-                  </span>
-                </>
-              )}
-            </button>
-          </Tooltip>
+          <div>
+            <QuestionMarkTooltip />
+
+            <Tooltip content="Bookmark this lecture">
+              <button
+                onClick={handleBookmark}
+                className="flex items-center gap-2 rounded-lg pt-1 transition-colors hover:text-white dark:hover:bg-zinc-800"
+                aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+              >
+                {isBookmarked ? (
+                  <>
+                    <BookmarkFilledIcon className="size-10 text-teal-400" />
+                    <span className="text-lg font-medium text-teal-400">
+                      Bookmarked
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <BookmarkOutlineIcon className="group size-10 text-zinc-400 hover:text-white dark:hover:text-zinc-300" />
+                    <span className="text-lg font-medium text-zinc-200 hover:text-white dark:hover:text-zinc-300">
+                      Bookmark
+                    </span>
+                  </>
+                )}
+              </button>
+            </Tooltip>
+          </div>
         </div>
 
         <FAQAccordion />
-
+        {/* Add the navigation component */}
+        <LectureNavigation />
+        <ScrollToTop />
       </div>
     </div>
   );

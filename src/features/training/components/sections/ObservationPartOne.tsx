@@ -9,7 +9,7 @@ export default function ObservationPartOne() {
     <>
       <h2 onClick={() => openModal(fields.general)} className="cursor-pointer hover:bg-gray-50 text-right text-xl font-medium">Form #_____ of ______</h2>
 
-      <div className="pt-4">
+      <div className="">
         {" "}
         <div onClick={() => openModal(fields.observationDateAndTime)} className="cursor-pointer hover:bg-gray-50 grid grid-cols-6 divide-x divide-black border border-black p-2">
           <div
@@ -29,7 +29,7 @@ export default function ObservationPartOne() {
           </div>
         </div>
         <div onClick={() => openModal(fields.observations)} className="cursor-pointer hover:bg-gray-50">
-          <div className="mx-auto w-full max-w-2xl">
+          <div className="mx-auto w-full ">
             <div className="border border-black">
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
@@ -44,10 +44,10 @@ export default function ObservationPartOne() {
                                 "linear-gradient(to top right, transparent calc(50% - 1px), black, transparent calc(50% + 1px))",
                             }}
                           />
-                          <div className="absolute bottom-1 left-1 text-sm">
+                          <div className="absolute bottom-1 left-1 text-[10px] lg:text-xs">
                             MIN.
                           </div>
-                          <div className="absolute right-1 top-1 text-sm">
+                          <div className="absolute right-1 top-1 text-[10px] lg:text-xs">
                             SEC.
                           </div>
                         </div>
@@ -65,10 +65,10 @@ export default function ObservationPartOne() {
                                 "linear-gradient(to top right, transparent calc(50% - 1px), black, transparent calc(50% + 1px))",
                             }}
                           />
-                          <div className="absolute bottom-1 left-1 text-sm">
+                          <div className="absolute bottom-1 left-1 text-[10px] lg:text-xs">
                             SEC.
                           </div>
-                          <div className="absolute right-1 top-1 text-sm">
+                          <div className="absolute right-1 top-1 text-[10px] lg:text-xs">
                             MIN.
                           </div>
                         </div>

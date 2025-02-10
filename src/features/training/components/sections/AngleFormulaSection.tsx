@@ -62,7 +62,7 @@ export default function AngleFormulaSection() {
   
             {/* Note */}
             <div className="mt-4 text-lg italic">
-              The formula must be applied to each reading where the viewing angle exceeded 15°. An angle correction sheet,
+              The formula must be applied to each reading where the viewing angle exceeded 18°. An angle correction sheet,
               found in the Resources module, can also be used.
             </div>
           </div>

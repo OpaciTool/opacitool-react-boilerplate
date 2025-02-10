@@ -23,17 +23,17 @@
     },
     {
       "id": "section-2",
-      "type": "split",
-      "layout": "text-right",
+      "type": "pdf-link",
+      "layout": "text-left",
       "bgColor": "bg-[#EEE]",
-      "title": "ALT-082 Specifications & Requirements",
+      "title": "EPA ALT-082",
       "content": {
-        "text": "• A DCOT operator must complete a smoke school lecture.\n\n• A DCOT operator must complete a separate training course provided by the DCOT manufacturer.\n\n• The camera and software configuration must be certified every 3.5 years. The configuration is certified by completing six runs at a smoke school.\n\n• Images are not analyzed instantly - they must be sent to a third party for analysis.\n\n• The DCOT cannot be used on emission points with internal diameters which exceed 7 feet.",
+        "text": "EPA ALT-082 allows the use of digital cameras to document visible emissions. The digital camera must be capable of capturing and storing images with a date and time stamp. The images must be stored in a format that cannot be altered.",
         "media": {
-          "type": "image",
-          "url": "/images/training/module-6/5.jpg",
-          "alt": "ALT-002 method example",
-          "isClickable": true,
+          "type": "pdf",
+          "url": "/images/training/module-6/ALT-082.pdf",
+          "alt": "EPA ALT-082 Document",
+          "thumbnail": "/images/training/module-6/5.jpg",
           "caption": "Click the image to view the full text of ALT-082."
         }
       },
@@ -56,7 +56,7 @@
       "layout": "text-left",
       "title": "• Accuracy and Testing",
       "content": {
-        "text": "The DCOT system was tested by the Virginia Department of Environmental Quality (DEQ) and was found to be both inaccurate and inconsistent. Details of this assessment are documented in a memo, which can be accessed here."
+        "text": "The DCOT system was tested by the Virginia Department of Environmental Quality (DEQ) and was found to be both inaccurate and inconsistent. Details of this assessment are documented in a memo, [which can be accessed here](/images/training/module-6/virginia-DEQ-test.pdf)."
       }
     },
     {

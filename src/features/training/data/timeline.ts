@@ -31,7 +31,7 @@ export const events: TimelineEventInterface[] = [
     year: "1945",
     title: "Equivalent Opacity",
     description:
-      "Ringelmann cards were originally designed to be used on coal-fired sources with black smoke. In 1945, the city of Los Angeles decided the Ringelmann cards could also be used to determine the “equivalent opacity” from sources producing white smoke..",
+      "Ringelmann cards were originally designed to be used on coal-fired sources with black smoke. In 1945, the city of Los Angeles decided the Ringelmann cards could also be used to determine the “equivalent opacity” from sources producing white smoke.",
     image: "/images/training/module-8/4.jpg",
   },
   {

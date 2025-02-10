@@ -36,9 +36,9 @@
       "type": "split",
       "layout": "text-right",
       "bgColor": "bg-[#E4EAED]",
-      "title": "Observer-Fault Events",
+      "title": "Was There Sufficient Contrast Between the Plume & Background?",
       "content": {
-        "text": "Sometimes readings are missed due to observer error or distraction. This includes being distracted by a phone call, failing to watch the time, or any other reason where the reading could have been taken but wasn't.",
+        "text": "Backgrounds with high contrast to the plume color are best but not always available. If the observer is unable to use a high-contrast background, the reason should be noted in the Comments section or on the back of the test sheet.",
         "media": {
           "type": "image",
           "url": "/images/training/module-4/lecture-3/11.jpg",

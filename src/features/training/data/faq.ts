@@ -49,12 +49,12 @@ export const faqData: FAQCategory[] = [
       {
         question: "Is completion of the lecture required?",
         answer:
-          "Yes, completion of the lecture portion is mandatory before taking the certification test. It covers essential theory and methodology.",
+          "For In-Person smoke school: Not at the federal level. The text of EPA Method 9 recommends completion of a lecture but does not require it. Florida and Texas require the lecture to be completed at least once every 3 years.  We strongly recommend completing the lecture every 3 years to refresh your observation and documentation skills. For Virtual Reality smoke school:  Yes, the lecture is required for initial certification and every 3 years as a refresher.  ",
       },
       {
         question: "Is my certification valid in another state?",
         answer:
-          "Certification reciprocity varies by state. Some states accept certifications from other jurisdictions, while others require their own certification process.",
+          "Most states honor smoke school certifications that were earned in other states.  However,  it is good practice to check with the governing state regulatory agency before making observations in another state.",
       },
     ],
   },

@@ -6,7 +6,7 @@ export default function ObserverInfoDetails() {
   const { fields } = formContent.observerInfoSection;
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
+    <div className="w-full mx-auto">
       <div className="border border-black">
         {/* Statistics Row */}
         <div className="grid grid-cols-2 divide-x divide-black">

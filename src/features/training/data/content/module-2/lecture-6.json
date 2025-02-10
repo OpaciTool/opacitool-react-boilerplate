@@ -103,7 +103,7 @@
                   "type": "split",
                   "layout": "text-left",
                   "content": {
-                    "text": "Electrostatic precipitators (ESPs) are devices designed to remove particulate matter from emission streams using electrical charges. Particulates are attracted to and captured on collection plates, which are periodically cleaned to transfer the collected material to a hopper. ESPs equipped with multiple collection plates can achieve a collection efficiency of up to 99%..",
+                    "text": "Electrostatic precipitators (ESPs) are devices designed to remove particulate matter from emission streams using electrical charges. Particulates are attracted to and captured on collection plates, which are periodically cleaned to transfer the collected material to a hopper. ESPs equipped with multiple collection plates can achieve a collection efficiency of up to 99%.",
                     "media": {
                       "type": "image",
                       "url": "/images/training/module-2/lecture-6/34.jpg",

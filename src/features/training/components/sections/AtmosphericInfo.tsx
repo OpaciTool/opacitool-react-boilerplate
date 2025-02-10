@@ -6,7 +6,7 @@ export default function AtmosphericInfo() {
   const { fields } = formContent.atmosphericSection;
 
   return (
-    <div className="mx-auto w-full max-w-2xl p-4">
+    <div className="mx-auto w-full max-w-2xl ">
       <div className="border border-black">
         {/* Header */}
         <div className="bg-gray-900 p-2 font-semibold text-white text-center">

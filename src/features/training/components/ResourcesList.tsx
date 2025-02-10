@@ -33,7 +33,7 @@ export default function ResourcesList() {
         {resources.map((resource) => (
           <div
             key={resource.id}
-            className="group flex items-start gap-4 rounded-lg border border-gray-200 p-4 transition-colors hover:bg-gray-50"
+            className="group flex items-start gap-4  border-t border-gray-800 p-4 transition-colors hover:bg-gray-50"
           >
             <button
               onClick={() => handleThumbnailClick(resource)}

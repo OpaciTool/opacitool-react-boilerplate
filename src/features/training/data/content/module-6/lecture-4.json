@@ -23,21 +23,23 @@
     },
     {
       "id": "section-2",
-      "type": "split",
-      "layout": "text-right",
-      "title": "ALT-152 Advantages & Limitations ",
+      "type": "pdf-link",
+      "layout": "text-left",
       "bgColor": "bg-[#EEE]",
+      "title": "ALT-152 Advantages & Limitations ",
       "content": {
-        "text": "Virtual reality (VR) smoke school offers several advantages over traditional in-person smoke school by providing consistent and repeatable testing conditions free from variables like wind, inclement weather, or poor backgrounds. Key benefits of VR smoke school include:\n\n• Flexible Scheduling: Students can take the certification test at any time without waiting for a scheduled session.\n\n• Cost Savings: No travel expenses or time associated with attending in-person training.\n\n• Standardized Difficulty: Consistent test conditions ensure uniform difficulty, regardless of time or location.\n\n• Standardized Difficulty: Consistent test conditions ensure uniform difficulty, regardless of time or location.\n\n• Increased Accessibility: Greater convenience allows more individuals to pursue and obtain certification\n\nHowever, similar to in-person smoke school, lighting conditions can still influence the perceived opacity compared to the measured opacity. While VR makes this factor more controllable, it remains a consideration.\n\nIt is important to note that not all states have approved ALT-152, the alternative test method used in VR smoke school. Although ALT-152 is Federally approved, states are not required to adopt it.",
+        "text": "Virtual reality (VR) smoke school offers several advantages over traditional in-person smoke school by providing consistent and repeatable testing conditions free from variables like wind, inclement weather, or poor backgrounds. Key benefits of VR smoke school include:\n\n • Flexible Scheduling: Students can take the certification test at any time without waiting for a scheduled session.\n\n• Cost Savings: No travel expenses or time associated with attending in-person training.\n\n• Standardized Difficulty: Consistent test conditions ensure uniform difficulty, regardless of time or location.\n\n• Increased Accessibility: Greater convenience allows more individuals to pursue and obtain certification\n\nHowever, similar to in-person smoke school, lighting conditions can still influence the perceived opacity compared to the measured opacity. While VR makes this factor more controllable, it remains a consideration.\n\nIt is important to note that not all states have approved ALT-152, the alternative test method used in VR smoke school. Although ALT-152 is Federally approved, states are not required to adopt it.",
         "media": {
-          "type": "image",
-          "url": "/images/training/module-6/7.jpg",
-          "alt": "ALT-003 method example",
-          "isClickable": true,
-          "caption": "Click the image to view the full text of ALT-152.",
-          "width": "75%"
+          "type": "pdf",
+          "url": "/images/training/module-6/ALT-152.pdf",
+          "alt": "EPA ALT-082 Document",
+          "thumbnail": "/images/training/module-6/7.jpg",
+          "caption": "Click the image to view the full text of ALT-152."
         }
-      }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     }
+
   ]
 }

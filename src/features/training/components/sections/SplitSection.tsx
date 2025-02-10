@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { Dialog } from "@headlessui/react";
 import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
+
 interface SplitSectionProps {
   title: string;
   content: {
@@ -19,6 +20,13 @@ interface SplitSectionProps {
   layout?: "text-left" | "text-right";
   containerType?: "grid" | "flex-col";
   bgColor?: string;
+}
+
+function convertLinksToAnchors(text: string) {
+  const linkRegex = /\[(.*?)\]\((.*?)\)/g;
+  return text.replace(linkRegex, (_, linkText, url) => 
+    `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${linkText}</a>`
+  );
 }
 
 export function SplitSection({
@@ -62,7 +70,12 @@ export function SplitSection({
             {title}
           </h2>
           <div className="dark:prose-invert text-lg text-zinc-900">
-            <p className="whitespace-pre-line">{content.text}</p>
+            <p 
+              className="whitespace-pre-line"
+              dangerouslySetInnerHTML={{ 
+                __html: convertLinksToAnchors(content.text) 
+              }}
+            />
           </div>
         </div>
 
