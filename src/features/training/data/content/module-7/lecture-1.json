@@ -25,7 +25,7 @@
           "columns": [
             {
               "image": {
-                "url": "/images/training/module-7/1.jpg",
+                "url": "module-7/1.jpg",
                 "alt": "Example 1",
                 "width": "430px"
               },
@@ -34,7 +34,7 @@
             },
             {
               "image": {
-                "url": "/images/training/module-7/2.jpg",
+                "url": "module-7/2.jpg",
                 "alt": "Example 2"
               },
               "title": "",

@@ -57,7 +57,7 @@
       "layout": "text-left",
       "title": "• Accuracy and Testing",
       "content": {
-        "text": "The DCOT system was tested by the Virginia Department of Environmental Quality (DEQ) and was found to be both inaccurate and inconsistent. Details of this assessment are documented in a memo, [which can be accessed here](/images/training/module-6/virginia-DEQ-test.pdf)."
+        "text": "The DCOT system was tested by the Virginia Department of Environmental Quality (DEQ) and was found to be both inaccurate and inconsistent. Details of this assessment are documented in a memo, [which can be accessed here](module-6/virginia-DEQ-test.pdf)."
       }
     },
     {

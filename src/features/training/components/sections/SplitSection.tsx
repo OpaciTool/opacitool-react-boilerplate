@@ -3,7 +3,7 @@ import clsx from "clsx";
 import { Dialog } from "@headlessui/react";
 import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { getLectureMediaUrl } from "../../lib/getLectureMedia";
-
+import { ImageLoader } from "@/shared/components/ImageLoader";
 
 interface SplitSectionProps {
   title: string;
@@ -25,8 +25,10 @@ interface SplitSectionProps {
 
 function convertLinksToAnchors(text: string) {
   const linkRegex = /\[(.*?)\]\((.*?)\)/g;
-  return text.replace(linkRegex, (_, linkText, url) => 
-    `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${linkText}</a>`
+  return text.replace(
+    linkRegex,
+    (_, linkText, url) =>
+      `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${linkText}</a>`,
   );
 }
 
@@ -38,6 +40,7 @@ export function SplitSection({
   bgColor,
 }: SplitSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isImageLoading, setIsImageLoading] = useState(true);
   const isTextLeft = layout === "text-left";
 
   return (
@@ -68,10 +71,10 @@ export function SplitSection({
             {title}
           </h2>
           <div className="dark:prose-invert text-lg text-zinc-900">
-            <p 
+            <p
               className="whitespace-pre-line"
-              dangerouslySetInnerHTML={{ 
-                __html: convertLinksToAnchors(content.text) 
+              dangerouslySetInnerHTML={{
+                __html: convertLinksToAnchors(content.text),
               }}
             />
           </div>
@@ -81,6 +84,7 @@ export function SplitSection({
         {content.media && (
           <div className={clsx(!isTextLeft && "lg:order-1")}>
             <div className="relative">
+              <ImageLoader isLoading={isImageLoading}>
               <div
                 className={clsx(
                   "overflow-hidden rounded-lg",
@@ -102,6 +106,8 @@ export function SplitSection({
                         content.media.isClickable &&
                           "cursor-pointer transition-opacity hover:opacity-90",
                       )}
+                      onLoad={() => setIsImageLoading(false)} // Set loading to false once image is loaded
+                      onError={() => setIsImageLoading(false)} // Handle potential errors
                       style={
                         content.media.width
                           ? { width: content.media.width }
@@ -116,6 +122,7 @@ export function SplitSection({
                   </>
                 )}
               </div>
+              </ImageLoader>
               <div className="space-y-1">
                 {content.media?.caption && (
                   <p className="mt-2 text-center text-sm text-zinc-500 dark:text-zinc-400">
@@ -136,9 +143,9 @@ export function SplitSection({
           className="relative z-50"
         >
           <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
-          
-          <div className="fixed inset-0 flex items-center justify-center p-4 overflow-y-auto max-h-screen">
-            <Dialog.Panel className="mx-auto max-w-4xl bg-white dark:bg-zinc-900 rounded-lg shadow-xl overflow-y-auto">
+
+          <div className="fixed inset-0 flex max-h-screen items-center justify-center overflow-y-auto p-4">
+            <Dialog.Panel className="mx-auto max-w-4xl overflow-y-auto rounded-lg bg-white shadow-xl dark:bg-zinc-900">
               <div className="relative overflow-auto">
                 <button
                   onClick={() => setIsModalOpen(false)}
@@ -149,7 +156,7 @@ export function SplitSection({
                 <img
                   src={getLectureMediaUrl(content.media?.url || "")}
                   alt={content.media?.alt || title}
-                  className="rounded-lg max-h-[90vh]"
+                  className="max-h-[90vh] rounded-lg"
                 />
                 {content.media?.caption && (
                   <p className="p-4 text-center text-sm text-zinc-600 dark:text-zinc-300">

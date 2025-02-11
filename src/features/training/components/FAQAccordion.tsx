@@ -12,7 +12,7 @@ function AccordionItem({ question, answer }: { question: string; answer: string 
     <div className="border-b border-gray-200">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex w-full items-center justify-between bg-gray-50 px-6 py-4 text-left hover:bg-gray-100"
+        className="flex w-full items-center border-t border-gray-200 justify-between bg-gray-100 px-6 py-4 text-left hover:bg-gray-300"
         aria-expanded={isOpen}
       >
         <span className="text-lg font-medium text-gray-900">{question}</span>

@@ -18,8 +18,6 @@ export function History() {
   const location = useLocation();
   const pathname = location.pathname;
 
-  console.log("location", pathname);
-
   const [isBookmarked, setIsBookmarked] = useState(
     () => localStorage.getItem("lastVisitedLecture") === pathname,
   );

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { events, TimelineEventInterface } from "../data/timeline";
+import { getLectureMediaUrl } from "../lib/getLectureMedia";
 
 function TimelineEvent({
   event,
@@ -88,7 +89,7 @@ function TimelineEvent({
           className={`aspect-video relative overflow-hidden rounded-lg ${isEven ? "md:order-2" : "md:order-1"}`}
         >
           <img
-            src={event.image || "/placeholder.svg"}
+            src={getLectureMediaUrl(event.image) || "/placeholder.svg"}
             alt={event.title}
             className="object-cover transition-transform duration-300 hover:scale-105"
           />

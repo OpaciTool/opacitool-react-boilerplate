@@ -1,3 +1,5 @@
+import { getLectureMediaUrl } from "../../lib/getLectureMedia";
+
 type PDFLinkSectionProps = {
   title: string;
   content: {
@@ -25,13 +27,13 @@ export function PDFLinkSection({
       <div className="grid items-center gap-4 lg:grid-cols-2">
         <div className="text-center">
           <a
-            href={content.media.url}
+            href={getLectureMediaUrl(content.media.url)}
             target="_blank"
             rel="noopener noreferrer"
             className="block cursor-pointer transition-opacity hover:opacity-90"
           >
             <img
-              src={content.media.thumbnail}
+              src={getLectureMediaUrl(content.media.thumbnail)}
               alt={content.media.alt}
               className="mx-auto w-[80%]"
             />

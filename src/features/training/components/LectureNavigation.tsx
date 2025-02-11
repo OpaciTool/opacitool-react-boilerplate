@@ -57,7 +57,7 @@ export function LectureNavigation() {
       : null;
 
     return (
-      <div className="lg:h-40 bg-black mt-20">
+      <div className="lg:h-40 bg-black">
         <div className="mx-auto h-full max-w-7xl">
           <div className="flex h-full items-center justify-between px-4 py-6">
             <button

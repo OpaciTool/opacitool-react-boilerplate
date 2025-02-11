@@ -587,9 +587,7 @@ export function LectureContent() {
                   <div key={section.id}>
                     <Quiz
                       quiz={section.content}
-                      onComplete={(score) =>
-                        console.log(`Quiz completed with score: ${score}`)
-                      }
+
                     />
                     {section.divider && <SectionDivider />}
                   </div>

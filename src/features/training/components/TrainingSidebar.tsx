@@ -18,6 +18,7 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { getExpandedModuleId } from "@/helpers/getExpandedModuleId.helper";
 import { Link } from "react-router-dom";
+import { getLectureMediaUrl } from "../lib/getLectureMedia";
 
 interface TrainingSidebarProps {
   onClose?: () => void;
@@ -62,7 +63,7 @@ export function TrainingSidebar({
         {/* Logo Section */}
         <div className="mb-8 flex items-center justify-center gap-2">
           <img
-            src="/images/Logo.svg"
+            src={getLectureMediaUrl("Logo.svg")}
             alt="OpaciTool Logo"
             className="w-full max-w-[400px]"
           />

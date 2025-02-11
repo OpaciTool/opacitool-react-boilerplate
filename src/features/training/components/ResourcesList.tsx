@@ -1,4 +1,5 @@
 import { Resource, resources } from "../data/resources";
+import { getLectureMediaUrl } from "../lib/getLectureMedia";
 
 export default function ResourcesList() {
   // const handleThumbnailClick = (pdfUrl: string) => {
@@ -7,10 +8,10 @@ export default function ResourcesList() {
 
   const handleThumbnailClick = (resource: Resource) => {
     if (resource.fileType === "pdf") {
-      window.open(resource.fileUrl, "_blank", "noopener,noreferrer");
+      window.open(getLectureMediaUrl(resource.fileUrl), "_blank", "noopener,noreferrer");
     } else if (resource.fileType === "excel") {
       const link = document.createElement("a");
-      link.href = resource.fileUrl;
+      link.href = getLectureMediaUrl(resource.fileUrl);
       link.download = `${resource.title}.xlsx`;
       document.body.appendChild(link);
       link.click();
@@ -42,8 +43,8 @@ export default function ResourcesList() {
             >
               <img
                 src={
-                  resource.thumbnail ||
-                  "/images/training/module-10/download.svg"
+                  getLectureMediaUrl(resource.thumbnail) ||
+                  "module-10/download.svg"
                 }
                 alt={resource.title}
                 className="object-cover"
@@ -51,7 +52,7 @@ export default function ResourcesList() {
               <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-colors group-hover:bg-black/5">
                 <div className="hidden h-full w-full items-center justify-center bg-gray-300/80 group-hover:flex">
                   <img
-                    src="/images/training/module-10/download.svg"
+                    src={getLectureMediaUrl("module-10/download.svg")}
                     alt="Download"
                     className="h-6 w-6 text-transparent transition-colors"
                   />
