@@ -1,17 +1,17 @@
 export default function AngleFormulaSection() {
     return (
-      <div className="w-full mx-auto p-4">
-        <div className="border border-gray-300">
+      <div className="w-full px-4 lg:px-14 mx-auto p-4">
+        <div className="">
           {/* Header Grid */}
-          <div className="grid grid-cols-2 divide-x divide-gray-300 border-b border-gray-900">
+          <div className="grid grid-cols-2 ">
             <div className="p-2 text-center font-bold">FORMULA</div>
             <div className="p-2 text-center font-bold">KEY</div>
           </div>
   
           {/* Content Grid */}
-          <div className="grid grid-cols-2 divide-x divide-gray-300">
+          <div className="grid grid-cols-2 justify-items-center">
             {/* Formula Column */}
-            <div className="p-4 space-y-2 font-mono text-sm">
+            <div className="p-4 space-y-2 font-mono text-2xl font-bold">
               <div>1-(Oo/100) = T</div>
               <div>
                 (1-T<sup>f</sup>) x 100 = Oc
@@ -20,11 +20,11 @@ export default function AngleFormulaSection() {
   
             {/* Key Column */}
             <div className="p-4 space-y-2 text-sm">
-              <div>Oo = Observed Opacity</div>
-              <div>T = Observed Transmittance</div>
-              <div>F = Cosine of Viewing Angle*</div>
-              <div>Oc = Corrected Opacity</div>
-              <div className="text-xs italic mt-4">
+              <div className="font-bold text-2xl text-center">Oo = Observed Opacity</div>
+              <div className="font-bold text-2xl text-center">T = Observed Transmittance</div>
+              <div className="font-bold text-2xl text-center">F = Cosine of Viewing Angle*</div>
+              <div className="font-bold text-2xl text-center">Oc = Corrected Opacity</div>
+              <div className="text-base text-center italic mt-4">
                 *Viewing angle is the angle between the observer&apos;s position and the observation point. Viewing angles
                 can be measured using a smartphone app, rangefinder or clinometer.
               </div>
@@ -32,17 +32,17 @@ export default function AngleFormulaSection() {
           </div>
   
           {/* Application Section */}
-          <div className="border-t border-gray-300 p-4">
-            <div className="font-bold mb-4">Application & Calculation</div>
+          <div className="p-4">
+            <div className="font-bold mb-4 text-lg">Application & Calculation</div>
   
             {/* Initial Values */}
-            <div className="text-sm mb-4">
+            <div className="text-lg mb-4">
               <div>Viewing Angle: 25°</div>
               <div>Observed Opacity Reading: 30%</div>
             </div>
   
             {/* Steps */}
-            <div className="space-y-3 text-sm">
+            <div className="space-y-3 text-lg">
               <div>
                 <div className="font-semibold">Step 1: Calculate cosine of 25° = 0.906</div>
               </div>
@@ -61,8 +61,8 @@ export default function AngleFormulaSection() {
             </div>
   
             {/* Note */}
-            <div className="mt-4 text-sm italic">
-              The formula must be applied to each reading where the viewing angle exceeded 15°. An angle correction sheet,
+            <div className="mt-4 text-lg italic">
+              The formula must be applied to each reading where the viewing angle exceeded 18°. An angle correction sheet,
               found in the Resources module, can also be used.
             </div>
           </div>

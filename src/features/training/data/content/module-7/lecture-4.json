@@ -1,0 +1,171 @@
+{
+  "lectureId": "module-7-lecture-4",
+  "moduleId": 7,
+  "title": "Equipment Needed for EPA Method 22",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
+      "title": "Equipment Needed to Complete EPA Method 22 Testing",
+      "content": {
+        "text": "EPA Method 22 tests are relatively simple and don’t require complicated equipment. The following items may be needed depending on the location of the test."
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#EEE]",
+      "title": "Stopwatches",
+      "content": {
+        "text": "Two stopwatches or other time-recording devices are needed for a Method 22 test. The devices must be able to display seconds.",
+        "media": {
+          "type": "image",
+          "url": "module-7/8.png",
+          "alt": "Image",
+          "caption": "",
+          "width": "50%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
+      "title": "Clipboard, Pens & Calculator",
+      "content": {
+        "text": "Bring a clipboard and plenty of Method 22 test forms. A calculator will be needed to determine the emission frequency and ultimately, compliance with the regulation affecting the source.",
+        "media": {
+          "type": "image",
+          "url": "module-7/9.png",
+          "alt": "Image",
+          "caption": "",
+          "width": "50%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#EEE]",
+      "title": "Safety Equipment",
+      "content": {
+        "text": "Depending on the facility and observation location, observers may need a hard hat, earplugs, hard-toes shoes, safety vest and safety glasses.",
+        "media": {
+          "type": "image",
+          "url": "module-7/10.jpg",
+          "alt": "Image",
+          "caption": "",
+          "width": "50%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-right",
+      "bgColor": "bg-[#E4EAED]",
+      "title": "Local Weather Information",
+      "content": {
+        "text": "For outdoor Method 22 tests, the ambient temperature, wind speed and wind direction should be recorded at the beginning of the test.  Additionally, the amount of precipitation which has occurred during the past 48 hours should also be noted.  The best source for this information is an online local weather source.",
+        "media": {
+          "type": "image",
+          "url": "module-7/11.JPG",
+          "alt": "Image",
+          "caption": "",
+          "width": "50%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#EEE]",
+      "title": "Compass",
+      "content": {
+        "text": "For outdoor tests, the direction should be indicated in the sketches. A compass or smartphone app can be used.",
+        "media": {
+          "type": "image",
+          "url": "module-7/12.jpg",
+          "alt": "Image",
+          "caption": "",
+          "width": "50%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+        "id": "section-7",
+        "type": "split",
+        "layout": "text-right",
+        "bgColor": "bg-[#E4EAED]",
+        "title": "Camera",
+        "content": {
+          "text": "Taking a photo of the source from your observation position is a great way to supplement your sketches and confirm the exact observation position.",
+          "media": {
+            "type": "image",
+            "url": "module-7/13.jpg",
+            "alt": "Image",
+            "caption": "",
+            "width": "50%"
+          }
+        },
+        "divider": true,
+        "dividerStyle": "h-1 bg-orange-500"
+      },
+      {
+        "id": "section-8",
+        "type": "split",
+        "layout": "text-left",
+        "bgColor": "bg-[#EEE]",
+        "title": "Weather Appropriate Gear",
+        "content": {
+          "text": "For outdoor tests, weather conditions may change during the test. Dress appropriately and ensure the test form is protected from the elements.",
+          "media": {
+            "type": "image",
+            "url": "module-7/14.jpg",
+            "alt": "Image",
+            "caption": "",
+            "width": "50%"
+          }
+        },
+        "divider": true,
+        "dividerStyle": "h-1 bg-orange-500"
+      },
+      {
+        "id": "section-9",
+        "type": "split",
+        "layout": "text-right",
+        "bgColor": "bg-[#E4EAED]",
+        "title": "Light Meter",
+        "content": {
+          "text": "For indoor tests, there must be sufficient light (100 Lux) to make observations. A handheld light meter can instantly measure the illumination of the building or an app can be used which uses the camera of your phone to measure light.",
+          "media": {
+            "type": "image",
+            "url": "module-7/15.jpeg",
+            "alt": "Image",
+            "caption": "",
+            "width": "50%"
+          }
+        },
+        "divider": true,
+        "dividerStyle": "h-1 bg-orange-500"
+      }
+  ]
+}

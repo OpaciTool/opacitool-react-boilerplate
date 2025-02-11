@@ -7,16 +7,19 @@
       "id": "section-1",
       "type": "split",
       "title": "Calculating the Highest Average Opacity Period",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "EPA Method 9 states 'Opacity shall be determined as an average of 24 consecutive observations recorded at 15-second intervals.' Twenty-four readings at fifteen-second intervals equals six-minutes of observations.\n\nWhen opacity observations are complete, the highest six-minute average can be calculated. The best way to find the highest average is to use the “rolling average” method as shown in the following example."
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-2",
       "type": "split",
       "layout": "text-left",
       "title": "Calculating the Rolling Average - Step 1",
+      "bgColor": "bg-[#EEE]",
       "content": {
         "text": "For this example, 12 minutes of observations were performed. Method 9 does not set the duration of the opacity test, only the averaging time of 6 minutes. Test durations are set by the regulation affecting the source.\n\nTo expedite the process of determining the highest opacity, a spreadsheet is provided in the 'Reference Forms' section of this course.  OpaciTool can perform the calculation automatically.",
         "media": {
@@ -26,13 +29,15 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-right",
       "title": "Step 2",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "Add the first 24 opacity values together to get a sum of 365. Divide 365 by 24 to determine the first average of 15.21%.",
         "media": {
@@ -42,13 +47,15 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-4",
       "type": "split",
       "layout": "text-left",
       "title": "Step 3",
+      "bgColor": "bg-[#EEE]",
       "content": {
         "text": "Move to the second box as the starting point of 24 consecutive values. From the previous sum of 365, subtract the value of the first reading (10) and add the value of the 25th reading (25). 365-10+25=380  Divide 380 by 24 to get an average of 15.83%.",
         "media": {
@@ -58,13 +65,15 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-5",
       "type": "split",
       "layout": "text-right",
       "title": "Step 4",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "This process will continue until your 24th reading is the last observation made. Draw a line around the highest 6-minute period on the test form. Compare the highest average to the source's opacity limit to determine compliance.",
         "media": {
@@ -74,22 +83,26 @@
           "width": "300px"
         }
       },
-      "divider": true
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
     },
     {
       "id": "section-6",
       "type": "split",
-      "title": "Example Calculation",
+      "title": "Missed Readings",
+      "bgColor": "bg-[#EEE]",
       "content": {
-        "text": "Let's look at two examples of calculating the highest 6-minute average opacity and determining compliance with the opacity limit."
+        "text": "It’s not unusual to miss a reading during a Method 9 test. The reason for the missed reading determines if it can be skipped in the rolling average or if it breaks the rolling average.  There are two types of missed readings; uncontrolled and observer-fault."
       }
     },
     {
       "id": "section-7",
       "type": "two-column",
       "title": "",
+      "bgColor": "bg-[#EEE]",
       "content": {
         "text": "",
+        "bgColor": "bg-[#EEE]",
         "media": {
           "columns": [
             {
@@ -117,6 +130,7 @@
     {
       "id": "section-8",
       "type": "split",
+      "bgColor": "bg-[#EEE]",
       "title": "",
       "content": {
         "text": "Always note the reason for a missed reading in the Comments section of the test form or on the back of the test form."

@@ -6,7 +6,7 @@ export default function SourceLayoutSketch() {
   const { fields } = formContent.sourceLayoutSection;
 
   return (
-    <div className="mx-auto w-full max-w-2xl p-4">
+    <div className="mx-auto w-full max-w-2xl">
       <div className="border border-gray-300">
         {/* Header */}
         <div className="bg-gray-900 p-2 font-semibold text-white">
@@ -19,7 +19,7 @@ export default function SourceLayoutSketch() {
           onClick={() => openModal(fields.sketch)}
         >
           <img 
-            src="/images/training/module-4/lecture-1/27.png" 
+            src="module-4/lecture-1/38.png" 
             alt="Source Layout Sketch" 
             className="h-auto w-full hover:opacity-90 transition-opacity"
           />

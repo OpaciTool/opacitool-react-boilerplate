@@ -1,0 +1,67 @@
+{
+  "lectureId": "module-7-lecture-1",
+  "moduleId": 7,
+  "title": "EPA Method 22 - Observing the Frequency of Visible Emissions",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
+      "title": "EPA Method 22 - Observing the Frequency of Visible Emissions",
+      "content": {
+        "text": "US EPA Test Method 22 is used to determine the frequency of visible emissions from fugitive sources and flares. Opacity is not determined using Method 22 - only the presence or absence of visible emissions.\n\nMethod 22 can be used for the following applications:\n • Visible emissions which cross a property boundary.\n • Flares used for the combustion of natural gas and other gaseous waste.\n • Visible emissions which escape a building which are not vented and collected.\n • Visible emissions inside a building which are not vented and collected."
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "two-column",
+      "title": "",
+      "bgColor": "bg-[#EEE]",
+      "content": {
+        "text": "",
+        "bgColor": "bg-[#EEE]",
+        "media": {
+          "columns": [
+            {
+              "image": {
+                "url": "module-7/1.jpg",
+                "alt": "Example 1",
+                "width": "430px"
+              },
+              "title": "",
+              "text": "Gas flares usually burn clean but may have visible emissions if not functioning correctly."
+            },
+            {
+              "image": {
+                "url": "module-7/2.jpg",
+                "alt": "Example 2"
+              },
+              "title": "",
+              "text": "Method 22 can be used to observe the frequency of visible emissions inside or outside a building."
+            }
+          ]
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
+      "title": "Method 9 Compared to Method 22",
+      "content": {
+        "text": "Method 22 simply determines whether emissions are present or absent. Method 9 determines the opacity of the emissions present. Some sources can have both a Method 22 and Method 9 testing requirement on the same source. For example: If a Method 22 test detects visible emissions, the test may stop and a Method 9 test may be initiated to determine the opacity of the emissions.\n\nMethod 22 recommends completing a smoke school lecture course and at least one visual test. However, there is no certification requirement for Method 22."
+      }
+    },
+    {
+      "id": "section-4",
+      "type": "method-9-comparison",
+      "title": "Method Comparison",
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500"
+    }
+  ]
+}

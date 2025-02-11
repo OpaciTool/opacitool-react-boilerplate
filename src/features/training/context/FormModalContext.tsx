@@ -30,6 +30,7 @@ const FormModalContext = createContext<FormModalContextType | undefined>(
 export function FormModalProvider({ children }: { children: React.ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [fieldInfo, setFieldInfo] = useState<FieldInfo | null>(null);
+  
 
   const openModal = (info: FieldInfo) => {
     setFieldInfo(info);

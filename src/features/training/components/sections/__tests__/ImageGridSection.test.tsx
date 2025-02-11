@@ -1,5 +1,11 @@
 import { render, screen, fireEvent, act, within } from '@testing-library/react';
 import { ImageGridSection } from '../ImageGridSection';
+import { vi } from 'vitest';
+
+// Mock the getLectureMediaUrl function
+vi.mock("../../../lib/getLectureMedia", () => ({
+  getLectureMediaUrl: (url: string) => url,
+}));
 
 describe('ImageGridSection', () => {
   const defaultProps = {
@@ -23,6 +29,7 @@ describe('ImageGridSection', () => {
         ],
       },
     },
+    bgColor: 'bg-white',
   };
 
   // Basic Rendering Tests
@@ -48,8 +55,8 @@ describe('ImageGridSection', () => {
   // Grid Layout Tests
   it('renders images in a grid with default layout', () => {
     render(<ImageGridSection {...defaultProps} />);
-    const gridContainer = screen.getByAltText('Test Image 1').closest('.grid');
-    expect(gridContainer).toHaveClass('grid-cols-1', 'md:grid-cols-2');
+    const gridContainer = screen.getByRole('list');
+    expect(gridContainer).toHaveClass('grid', 'grid-cols-1', 'md:grid-cols-2');
   });
 
   it('renders images in a custom grid layout when specified', () => {
@@ -64,7 +71,7 @@ describe('ImageGridSection', () => {
       },
     };
     render(<ImageGridSection {...propsWithCustomGrid} />);
-    const gridContainer = screen.getByAltText('Test Image 1').closest('.grid');
+    const gridContainer = screen.getByRole('list');
     expect(gridContainer).toHaveClass('grid-cols-1', 'md:grid-cols-3');
   });
 
@@ -114,13 +121,28 @@ describe('ImageGridSection', () => {
   // Magnifying Glass Icon Tests
   it('shows magnifying glass icon on clickable images', () => {
     render(<ImageGridSection {...defaultProps} />);
-    const clickableImageContainer = screen.getByAltText('Test Image 1').closest('div');
-    expect(clickableImageContainer?.querySelector('svg')).toBeInTheDocument();
+    const magnifyingGlassIcon = screen.getByTestId('magnifying-glass-icon-0');
+    expect(magnifyingGlassIcon).toBeInTheDocument();
   });
 
   it('does not show magnifying glass icon on non-clickable images', () => {
-    render(<ImageGridSection {...defaultProps} />);
-    const nonClickableImageContainer = screen.getByAltText('Test Image 2').closest('div');
-    expect(nonClickableImageContainer?.querySelector('svg')).not.toBeInTheDocument();
+    const propsWithNonClickableImage = {
+      ...defaultProps,
+      content: {
+        ...defaultProps.content,
+        media: {
+          ...defaultProps.content.media,
+          images: [
+            {
+              ...defaultProps.content.media.images[0],
+              isClickable: false,
+            },
+          ],
+        },
+      },
+    };
+    render(<ImageGridSection {...propsWithNonClickableImage} />);
+    const magnifyingGlassIcon = screen.queryByTestId('magnifying-glass-icon-0');
+    expect(magnifyingGlassIcon).not.toBeInTheDocument();
   });
 }); 

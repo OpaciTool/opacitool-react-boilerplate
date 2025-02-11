@@ -1,0 +1,25 @@
+{
+  "lectureId": "module-7-lecture-3",
+  "moduleId": 7,
+  "title": "EPA Method 22 Form",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
+      "title": "Understanding the EPA Method 22 Form",
+      "content": {
+        "text": "Click on each field in the form below to learn more about how to properly complete an EPA Method 22 test form."
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "method-22-form",
+      "title": "EPA Method 22 Form",
+      "content": {
+        "text": "Understanding the Method 22 form"
+      }
+    }
+  ]
+} 

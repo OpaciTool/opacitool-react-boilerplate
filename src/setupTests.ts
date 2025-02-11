@@ -20,8 +20,12 @@ const localStorageMock = (() => {
 
 Object.defineProperty(window, 'localStorage', { value: localStorageMock });
 
+// Mock window.scrollTo
+window.scrollTo = vi.fn();
+
 // Mock matchMedia
 Object.defineProperty(window, 'matchMedia', {
+  writable: true,
   value: vi.fn().mockImplementation(query => ({
     matches: false,
     media: query,

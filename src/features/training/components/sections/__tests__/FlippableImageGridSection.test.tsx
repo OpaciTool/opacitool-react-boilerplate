@@ -1,5 +1,11 @@
 import { render, screen, fireEvent, act } from '@testing-library/react';
 import { FlippableImageGridSection } from '../FlippableImageGridSection';
+import { vi } from 'vitest';
+
+// Mock the getLectureMediaUrl function
+vi.mock('../../../lib/getLectureMedia', () => ({
+  getLectureMediaUrl: (url: string) => url,
+}));
 
 describe('FlippableImageGridSection', () => {
   const defaultProps = {
@@ -11,22 +17,22 @@ describe('FlippableImageGridSection', () => {
         images: [
           {
             front: {
-              url: '/test-front-1.jpg',
+              url: 'test-front-1.jpg',
               alt: 'Front Image 1',
             },
             back: {
-              url: '/test-back-1.jpg',
+              url: 'test-back-1.jpg',
               alt: 'Back Image 1',
               text: 'Back Text 1',
             },
           },
           {
             front: {
-              url: '/test-front-2.jpg',
+              url: 'test-front-2.jpg',
               alt: 'Front Image 2',
             },
             back: {
-              url: '/test-back-2.jpg',
+              url: 'test-back-2.jpg',
               alt: 'Back Image 2',
               text: 'Back Text 2',
             },
@@ -34,6 +40,7 @@ describe('FlippableImageGridSection', () => {
         ],
       },
     },
+    bgColor: 'bg-white',
   };
 
   // Basic Rendering Tests
@@ -45,44 +52,30 @@ describe('FlippableImageGridSection', () => {
 
   it('renders all front images initially', () => {
     render(<FlippableImageGridSection {...defaultProps} />);
-    expect(screen.getByAltText('Front Image 1')).toBeInTheDocument();
-    expect(screen.getByAltText('Front Image 2')).toBeInTheDocument();
+    const images = screen.getAllByRole('img');
+    expect(images).toHaveLength(2);
+    expect(images[0]).toHaveAttribute('alt', 'Front Image 1');
+    expect(images[1]).toHaveAttribute('alt', 'Front Image 2');
   });
 
   // Grid Layout Tests
   it('renders images in a grid', () => {
     render(<FlippableImageGridSection {...defaultProps} />);
-    const gridContainer = screen.getByAltText('Front Image 1').closest('.grid');
-    expect(gridContainer).toHaveClass('grid', 'grid-cols-2', 'lg:grid-cols-3', 'gap-4');
+    const grid = screen.getByRole('list');
+    expect(grid).toHaveClass('grid', 'grid-cols-2', 'lg:grid-cols-3');
   });
 
   // Flip Functionality Tests
-  it('shows back content when card is clicked', async () => {
+  it('flips card when clicked', async () => {
     render(<FlippableImageGridSection {...defaultProps} />);
     
-    // Click first card
-    const card = screen.getByAltText('Front Image 1').closest('.cursor-pointer');
-    expect(card).toBeInTheDocument();
-    
-    await act(async () => {
-      fireEvent.click(card!);
-    });
-    
-    // Back content should be visible
-    expect(screen.getByText('Back Text 1')).toBeInTheDocument();
-  });
-
-  it('maintains independent card states', async () => {
-    render(<FlippableImageGridSection {...defaultProps} />);
-    
-    // Click first card
-    const firstCard = screen.getByAltText('Front Image 1').closest('.cursor-pointer');
+    const firstCard = screen.getByAltText('Front Image 1').closest('[role="listitem"]');
+    expect(firstCard).toBeInTheDocument();
     
     await act(async () => {
       fireEvent.click(firstCard!);
     });
     
-    // First card should show back, second card should still show front
     expect(screen.getByText('Back Text 1')).toBeInTheDocument();
     expect(screen.getByAltText('Front Image 2')).toBeInTheDocument();
   });

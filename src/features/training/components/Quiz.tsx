@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
-import { Text } from "@/shared/ui";
 import type { Quiz as QuizType } from "../types/quiz";
 import clsx from "clsx";
 
 interface QuizProps {
   quiz: QuizType;
-  onComplete: (score: number) => void;
 }
 
-export function Quiz({ quiz, onComplete }: QuizProps) {
+export function Quiz({ quiz }: QuizProps) {
   const [answers, setAnswers] = useState<Record<string, string[]>>({});
   const [submitted, setSubmitted] = useState(false);
 
@@ -41,31 +39,8 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
     });
   };
 
-  const calculateScore = () => {
-    let correctAnswers = 0;
-    quiz.questions.forEach((question) => {
-      const selectedAnswers = answers[question.id] || [];
-      const correctOptions = question.options.filter((opt) => opt.isCorrect);
-
-      if (question.type === "single") {
-        if (selectedAnswers[0] === correctOptions[0]?.id) {
-          correctAnswers++;
-        }
-      } else {
-        const isCorrect =
-          selectedAnswers.length === correctOptions.length &&
-          correctOptions.every((opt) => selectedAnswers.includes(opt.id));
-        if (isCorrect) correctAnswers++;
-      }
-    });
-
-    return (correctAnswers / quiz.questions.length) * 100;
-  };
-
   const handleSubmit = () => {
-    const finalScore = calculateScore();
     setSubmitted(true);
-    onComplete(finalScore);
   };
 
   const handleReset = () => {
@@ -74,7 +49,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
   };
 
   return (
-    <div className="mx-auto w-[90%] pt-10 lg:w-[50%]">
+    <div className="mx-auto w-[90%] pb-10 pt-10 lg:w-[50%]">
       <div className="mb-8 space-y-4">
         <h1 className="text-2xl font-semibold text-zinc-900 dark:text-white">
           {quiz.title}
@@ -85,7 +60,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
       <form className="space-y-8">
         {quiz.questions.map((question, index) => (
           <div key={question.id} className="space-y-4">
-            <p className="text-base font-medium text-zinc-900">
+            <p className="text-lg font-semibold text-zinc-900">
               {index + 1}. {question.text}
             </p>
 
@@ -128,7 +103,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
                       disabled={submitted}
                       className="text-brand-blue-800"
                     />
-                    <Text>{option.text}</Text>
+                    <p className="text-lg">{option.text}</p>
                   </label>
                 );
               })}
@@ -145,7 +120,7 @@ export function Quiz({ quiz, onComplete }: QuizProps) {
             Submit Quiz
           </button>
         ) : (
-          <div className="w-full rounded-[50px] bg-orange-500 p-3 text-lg text-white  lg:w-[30%] text-center">
+          <div className="w-full rounded-[50px] bg-orange-500 p-3 text-center text-lg text-white lg:w-[30%]">
             <button onClick={handleReset}>Take Again</button>
           </div>
         )}

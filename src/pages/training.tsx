@@ -37,10 +37,10 @@ export function TrainingPage() {
 
       {/* Sidebar */}
       <div className={`
-        fixed inset-y-0 left-0 z-50 w-full sm:w-auto bg-white dark:bg-zinc-900
+        fixed inset-y-0 left-0  z-50 w-full sm:w-auto bg-white dark:bg-zinc-900
         transform transition-transform duration-300 ease-in-out
         border-r border-zinc-950/5 dark:border-white/5
-        lg:translate-x-0 lg:h-screen lg:sticky lg:top-0
+        lg:translate-x-0 lg:h-screen lg:sticky lg:top-0 lg:w-[25%] xl:w-auto
         overflow-y-auto
         [&::-webkit-scrollbar]:w-1.5
         [&::-webkit-scrollbar-track]:bg-transparent

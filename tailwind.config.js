@@ -71,9 +71,6 @@ export default {
     },
     {
       pattern: /^w-/,
-    },
-    {
-      pattern: /^lg:w-/,
     }
   ],
   darkMode: "class",

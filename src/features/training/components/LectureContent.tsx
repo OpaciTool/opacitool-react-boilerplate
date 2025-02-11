@@ -19,6 +19,11 @@ import MethodsComparison from "./MethodComparision";
 import { SectionDivider } from "./SectionDivider";
 import { ImageGridSection } from "./sections/ImageGridSection";
 import { VideoSection } from "./sections/VideoSection";
+import Method9Comparison from "./Method9Comparison";
+import EPAMethod22Procedure from "./sections/EPAMethod22Procedure";
+import { LectureNavigation } from "./LectureNavigation";
+import { ScrollToTop } from "@/shared/components/ScrollToTop";
+import { PDFLinkSection } from "./sections/PDFLinkSection";
 
 type TabSection = {
   title: string;
@@ -199,7 +204,10 @@ type LectureContent = {
         id: string;
         type: "two-column";
         divider?: boolean;
+        dividerStyle?: string;
+        dividerStyleParent?: string;
         title: string;
+        bgColor?: string;
         content: {
           text: string;
           media: {
@@ -240,6 +248,40 @@ type LectureContent = {
         type: "method-comparison";
         title: string;
         divider?: boolean;
+      }
+    | {
+        id: string;
+        type: "method-9-comparison";
+        title: string;
+        divider?: boolean;
+        dividerStyle?: string;
+        dividerStyleParent?: string;
+      }
+    | {
+        id: string;
+        type: "method-22-form";
+        title: string;
+        divider?: boolean;
+      }
+    | {
+        id: string;
+        type: "pdf-link";
+        divider?: boolean;
+        dividerStyle?: string;
+        dividerStyleParent?: string;
+
+        title: string;
+        layout?: "text-left" | "text-right";
+        bgColor?: string;
+        content: {
+          text: string;
+          media: {
+            type: "pdf";
+            url: string;
+            alt: string;
+            thumbnail: string;
+          };
+        };
       }
   >;
 };
@@ -295,8 +337,13 @@ import lecture3Module6 from "../data/content/module-6/lecture-3.json";
 import lecture4Module6 from "../data/content/module-6/lecture-4.json";
 import quiz1Module6 from "../data/content/module-6/quiz.json";
 
-
-
+// Import module 7 lectures
+import lecture1Module7 from "../data/content/module-7/lecture-1.json";
+import lecture2Module7 from "../data/content/module-7/lecture-2.json";
+import lecture3Module7 from "../data/content/module-7/lecture-3.json";
+import lecture4Module7 from "../data/content/module-7/lecture-4.json";
+import quiz1Module7 from "../data/content/module-7/quiz.json";
+import QuestionMarkTooltip from "./QuestionMarkTooltip";
 
 // Add type assertion after imports
 const lectures = {
@@ -306,7 +353,7 @@ const lectures = {
   "smoke-school": lecture3 as LectureContent,
   "ve-observations-importance": lecture4 as LectureContent,
   "module-1-quiz": quiz1 as LectureContent,
-  
+
   // Module 2
   "air-emission-types": lecture1Module2 as LectureContent,
   "plume-shapes": lecture2Module2 as LectureContent,
@@ -315,7 +362,7 @@ const lectures = {
   "particles-and-light": lecture5Module2 as LectureContent,
   "emission-controls": lecture6Module2 as LectureContent,
   "module-2-quiz": quiz1Module2 as LectureContent,
-  
+
   // Module 3
   "method-9-basics": lecture1Module3 as LectureContent,
   "sun-position": lecture2Module3 as LectureContent,
@@ -330,7 +377,7 @@ const lectures = {
   // Module 4
   "documentation-procedure": lecture1Module4 as LectureContent,
   "calculating-average-opacity": lecture2Module4 as LectureContent,
-  "auditing-form": lecture3Module4 as LectureContent, 
+  "auditing-form": lecture3Module4 as LectureContent,
   "legal-aspects": lecture4Module4 as LectureContent,
   "module-4-quiz": quiz1Module4 as LectureContent,
 
@@ -350,24 +397,33 @@ const lectures = {
   "epa-alt-082": lecture3Module6 as LectureContent,
   "epa-alt-152": lecture4Module6 as LectureContent,
   "module-6-quiz": quiz1Module6 as LectureContent,
+
+  // Module 7
+  "method-22-intro": lecture1Module7 as LectureContent,
+  "method-22-observation": lecture2Module7 as LectureContent,
+  "method-22-documentation": lecture3Module7 as LectureContent,
+  "method-22-equipment": lecture4Module7 as LectureContent,
+  "module-7-quiz": quiz1Module7 as LectureContent,
 };
 
 // Add type guard function
-function isFlippableGrid(content: ImageGridContent | FlippableImageGridContent): content is FlippableImageGridContent {
+function isFlippableGrid(
+  content: ImageGridContent | FlippableImageGridContent,
+): content is FlippableImageGridContent {
   return content.media.type === "flippable-image-grid";
 }
 
 export function LectureContent() {
   const { moduleSlug, lectureSlug } = useParams();
   const lecturePath = `/training/${moduleSlug}/${lectureSlug}`;
-  
-  const [isBookmarked, setIsBookmarked] = useState(() => 
-    localStorage.getItem('lastVisitedLecture') === lecturePath
+
+  const [isBookmarked, setIsBookmarked] = useState(
+    () => localStorage.getItem("lastVisitedLecture") === lecturePath,
   );
 
   // Update bookmark state when route changes
   useEffect(() => {
-    setIsBookmarked(localStorage.getItem('lastVisitedLecture') === lecturePath);
+    setIsBookmarked(localStorage.getItem("lastVisitedLecture") === lecturePath);
   }, [moduleSlug, lectureSlug, lecturePath]);
 
   // Add this useEffect to scroll to top when route changes
@@ -377,28 +433,27 @@ export function LectureContent() {
 
   const handleBookmark = () => {
     if (isBookmarked) {
-      localStorage.removeItem('lastVisitedLecture');
+      localStorage.removeItem("lastVisitedLecture");
       setIsBookmarked(false);
-      toast.success('Bookmark removed');
+      toast.success("Bookmark removed");
     } else {
-      localStorage.setItem('lastVisitedLecture', lecturePath);
+      localStorage.setItem("lastVisitedLecture", lecturePath);
       setIsBookmarked(true);
-      toast.success('Lecture bookmarked');
+      toast.success("Lecture bookmarked");
     }
   };
 
   // Find current module and lecture
   const currentModule = navigationData.find(
-    (module) => module.slug === moduleSlug
+    (module) => module.slug === moduleSlug,
   );
 
   const currentLecture = currentModule?.lectures.find(
-    (lecture) => lecture.slug === lectureSlug
+    (lecture) => lecture.slug === lectureSlug,
   );
 
   // Get lecture content
   const content = lectures[lectureSlug as keyof typeof lectures];
-
 
   if (!currentModule || !currentLecture) {
     return (
@@ -409,39 +464,48 @@ export function LectureContent() {
   }
 
   return (
-    <div className="min-h-screen bg-white dark:bg-zinc-900">
+    <div className="relative min-h-svh bg-[#E4EAED]">
       <div className="">
-        <div className="lg:flex justify-between items-center bg-zinc-900 py-8 px-4 lg:px-14 ">
+        <div className="items-center justify-between bg-zinc-900 px-4 py-8 lg:flex lg:px-14">
           <div className="space-y-1">
             <h3 className="text-2xl text-zinc-300">{currentModule.title}</h3>
-            <h2 className="text-4xl font-bold text-white dark:text-white">{currentLecture.title}</h2>
+            <h2 className="text-4xl font-bold text-white dark:text-white">
+              {currentLecture.title}
+            </h2>
           </div>
-          <Tooltip content="Bookmark this lecture">
-            <button
-              onClick={handleBookmark}
-              className="flex items-center gap-2 lg:px-3 py-2 rounded-lg hover:text-white  dark:hover:bg-zinc-800 transition-colors"
-              aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
-            >
-              {isBookmarked ? (
-                <>
-                  <BookmarkFilledIcon className="size-14 text-teal-400" />
-                  <span className="text-xl font-medium text-teal-400">Bookmarked</span>
-                </>
-              ) : (
-                <>
-                  <BookmarkOutlineIcon className="group size-14 text-zinc-400 hover:text-white dark:hover:text-zinc-300" />
-                  <span className="text-xl font-medium text-zinc-200 hover:text-white dark:hover:text-zinc-300">Bookmark</span>
-                </>
-              )}
-            </button>
-          </Tooltip>
+          <div>
+            <QuestionMarkTooltip />
+
+            <Tooltip content="Bookmark this lecture">
+              <button
+                onClick={handleBookmark}
+                className="flex items-center gap-2 rounded-lg transition-colors hover:text-white dark:hover:bg-zinc-800 pt-1"
+                aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+              >
+                {isBookmarked ? (
+                  <>
+                    <BookmarkFilledIcon className="size-10 text-teal-400" />
+                    <span className="text-lg font-medium text-teal-400">
+                      Bookmarked
+                    </span>
+                  </>
+                ) : (
+                  <>
+                    <BookmarkOutlineIcon className="group size-10 text-zinc-400 hover:text-white dark:hover:text-zinc-300" />
+                    <span className="text-lg font-medium text-zinc-200 hover:text-white dark:hover:text-zinc-300">
+                      Bookmark
+                    </span>
+                  </>
+                )}
+              </button>
+            </Tooltip>
+          </div>
         </div>
-        <Divider className=" h-1 bg-black  " />
-        
+        <Divider className="h-1 bg-black" />
+
         {/* Render lecture sections */}
         <div className="">
           {content?.sections.map((section) => {
-            
             switch (section.type) {
               case "split":
                 return (
@@ -454,7 +518,7 @@ export function LectureContent() {
                       bgColor={section.bgColor}
                     />
                     {section.divider && (
-                      <SectionDivider 
+                      <SectionDivider
                         className={section.dividerStyle}
                         dividerStyleParent={section?.dividerStyleParent}
                       />
@@ -477,7 +541,12 @@ export function LectureContent() {
                         bgColor={section.bgColor}
                       />
                     )}
-                    {section.divider && <SectionDivider className={section.dividerStyle}   dividerStyleParent={section?.dividerStyleParent}/>}
+                    {section.divider && (
+                      <SectionDivider
+                        className={section.dividerStyle}
+                        dividerStyleParent={section?.dividerStyleParent}
+                      />
+                    )}
                   </div>
                 );
               case "video":
@@ -489,7 +558,12 @@ export function LectureContent() {
                       bgColor={section.bgColor}
                       layout={section.layout}
                     />
-                    {section.divider && <SectionDivider className={section.dividerStyle} dividerStyleParent={section?.dividerStyleParent}/>}
+                    {section.divider && (
+                      <SectionDivider
+                        className={section.dividerStyle}
+                        dividerStyleParent={section?.dividerStyleParent}
+                      />
+                    )}
                   </div>
                 );
               case "tabs":
@@ -500,7 +574,12 @@ export function LectureContent() {
                       content={section.content}
                       bgColor={section.bgColor}
                     />
-                    {section.divider && <SectionDivider className={section.dividerStyle} dividerStyleParent={section?.dividerStyleParent}/>}
+                    {section.divider && (
+                      <SectionDivider
+                        className={section.dividerStyle}
+                        dividerStyleParent={section?.dividerStyleParent}
+                      />
+                    )}
                   </div>
                 );
               case "quiz":
@@ -508,7 +587,7 @@ export function LectureContent() {
                   <div key={section.id}>
                     <Quiz
                       quiz={section.content}
-                      onComplete={(score) => console.log(`Quiz completed with score: ${score}`)}
+
                     />
                     {section.divider && <SectionDivider />}
                   </div>
@@ -519,8 +598,14 @@ export function LectureContent() {
                     <TwoColumnSection
                       title={section.title}
                       content={section.content}
+                      bgColor={section.bgColor}
                     />
-                    {section.divider && <SectionDivider />}
+                    {section.divider && (
+                      <SectionDivider
+                        className={section.dividerStyle}
+                        dividerStyleParent={section?.dividerStyleParent}
+                      />
+                    )}
                   </div>
                 );
               case "form":
@@ -551,12 +636,53 @@ export function LectureContent() {
                     {section.divider && <SectionDivider />}
                   </div>
                 );
+              case "method-9-comparison":
+                return (
+                  <div key={section.id}>
+                    <Method9Comparison />
+                    {section.divider && (
+                      <SectionDivider
+                        className={section.dividerStyle}
+                        dividerStyleParent={section?.dividerStyleParent}
+                      />
+                    )}
+                  </div>
+                );
+              case "method-22-form":
+                return (
+                  <div key={section.id}>
+                    <EPAMethod22Procedure />
+                    {section.divider && <SectionDivider />}
+                  </div>
+                );
+              case "pdf-link":
+                return (
+                  <div key={section.id}>
+                    <PDFLinkSection
+                      title={section.title}
+                      content={section.content}
+                      bgColor={section.bgColor}
+                    />
+                    {section.divider && (
+                      <SectionDivider
+                        className={section.dividerStyle}
+                        dividerStyleParent={section?.dividerStyleParent}
+                      />
+                    )}
+                  </div>
+                );
               default:
                 return null;
             }
           })}
         </div>
       </div>
+
+      {/* Add the navigation component */}
+      <LectureNavigation />
+
+      {/* Add ScrollToTop component */}
+      <ScrollToTop />
     </div>
   );
-} 
+}

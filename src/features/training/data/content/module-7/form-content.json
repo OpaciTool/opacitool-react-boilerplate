@@ -1,0 +1,207 @@
+{
+  "method22Section": {
+    "title": "EPA Method 22 Form",
+    "fields": {
+      "facilityName": {
+        "title": "Facility Name",
+        "content": "Indicate the company name of the facility where observations will be made.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/1.png",
+            "alt": "Example of correctly filled facility name"
+          }
+        ]
+      },
+      "permit": {
+        "title": "Permit #",
+        "content": "Indicate the air permit number which covers the source being observed.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/2.png",
+            "alt": "Example of correctly filled permit number"
+          }
+        ]
+      },
+      "sourceUnit": {
+        "title": "Source Unit & ID",
+        "content": "Describe the source being observed and the ID indicated in the air permit. If the permit does not include an ID, check for a facility ID or serial number.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/3.png",
+            "alt": "Source unit example"
+          }
+        ]
+      },
+      "address": {
+        "title": "Address",
+        "content": "Indicate the physical address of the facility, not the mailing address. GPS coordinates of the source are also advised.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/4.png",
+            "alt": "Address example"
+          }
+        ]
+      },
+      "facility_contact": {
+        "title": "Facility Contact",
+        "content": "Indicate the name and number of the facility representative.  ",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/5.png",
+            "alt": "Facility Contact example"
+          }
+        ]
+      },
+      "outdoor_temperature": {
+        "title": "Temperature",
+        "content": "For outdoor tests.  Indicate the ambient temperature at the start of the test.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/6.png",
+            "alt": "Temperature example"
+          }
+        ]
+      },
+      "cloud_cover": {
+        "title": "% Cloud Cover",
+        "content": "For outdoor tests. Indicate sky conditions at the beginning of the test. 0% is clear and 100% is completely overcast.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/7.png",
+            "alt": "% Cloud Cover example"
+          }
+        ]
+      },
+      "wind_speed_direction": {
+        "title": "Wind Speed & Direction",
+        "content": "For outdoor tests. Indicate the wind speed and the direction from which it originates.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/8.png",
+            "alt": "Wind Speed & Direction example"
+          }
+        ]
+      },
+      "precipitation": {
+        "title": "48 Hr Precipitation",
+        "content": "For outdoor tests. Indicate the amount of precipitation which has occurred in the past 48 hours. Past precipitation can affect the occurrence of visible emissions. If past precipitation is preventing a representative test, the test should be postponed.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/9.png",
+            "alt": "48 Hr Precipitation example"
+          }
+        ]
+      },
+      "light_type": {
+        "title": "Light Type",
+        "content": "For indoor tests.  Indicate the light type that is illuminating the area of observations.  Light source examples are natural, incandescent, fluorescent and LED.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/10.png",
+            "alt": "Light Type example"
+          }
+        ]
+      },
+      "illumination": {
+        "title": "Illumination (Lux)",
+        "content": "For indoor tests. The observed area should have illumination of at least 100 Lux to perform observations. For reference, a well-lit office is 400-500 Lux. Lux can be measured with a simple handheld light meter or phone app.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/11.png",
+            "alt": "Illumination (Lux) example"
+          }
+        ]
+      },
+      "observation_position_sketch": {
+        "title": "Observation Position Sketch",
+        "content": "Indicate your position relative to the source being observed. For large buildings, observations from multiple locations including the top of the building may be needed. Flares and small sources generally require one observation location. If more than three observation locations are needed, use additional forms. \n\n Be as detailed as possible in the sketch. Indicate North, your position relative to the source and any areas where visible emissions are observed. Mark emission areas with an X.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/12.png",
+            "alt": "Observation Position Sketch example"
+          }
+        ]
+      },
+      "observation_test_date": {
+        "title": "Date",
+        "content": "Indicate the date of the observations.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/13.png",
+            "alt": "Observation Date example"
+          }
+        ]
+      },
+      "clock_time": {
+        "title": "Clock Time Column",
+        "content": "Indicate the time the observations began and ended. Use 24-hour time format.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/14.png",
+            "alt": "Clock Time Column example"
+          }
+        ]
+      },
+      "observation_duration_column": {
+        "title": "Observation Duration Column",
+        "content": "Record the total observation time from each location. This is the total time which has elapsed on the first stopwatch. If the observations are interrupted, the first stopwatch should be stopped until testing can resume. The observation duration is established by the regulation affecting the source and can usually be found in the air permit.\n\nNote: Method 22 requires a 5-10 minute rest break for every 20 minutes of continuous observations.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/15.png",
+            "alt": "Observation Duration Column example"
+          }
+        ]
+      },
+      "emission_duration_column": {
+        "title": "Emission Duration Column",
+        "content": "This is the total time during which visible emissions were present. When observing the source, the second stopwatch is started when any emissions are visible. When they are not visible, the second stopwatch is stopped. At the end of the test, the second stopwatch will have recorded the total time emissions were present at each observation location.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/16.png",
+            "alt": "Emission Duration Column example"
+          }
+        ]
+      },
+      "observation_duration_total": {
+        "title": "Observation Duration Total",
+        "content": "Record the sum of observation times in the Observation Duration Total box. The total time should be equal to or greater than the test time specified by the regulating affecting the source.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/17.png",
+            "alt": "Observation Duration Total example"
+          }
+        ]
+      },
+      "emission_duration_total": {
+        "title": "Emission Duration Total",
+        "content": "Record the sum of the emission durations in the Emission Duration Total box. This is the sum of all the time visible emissions were present during the test. ",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/18.png",
+            "alt": "Emission Duration Total example"
+          }
+        ]
+      },
+      "emission_frequency": {
+        "title": "Emission Frequency",
+        "content": "This is the percentage of time visible emissions were present during the test.  To calculate: \n\n Step 1: Convert the observation duration total (45:00) to seconds = 2700 seconds \n\n Step 2: Convert the emission duration total (4:26) to seconds = 266 seconds \n\n Step 3: Divide the total emission duration (266) by the total observation duration (2700) = 0.0985 \n\n Step 4: Multiply by 100% to get an Emission Frequency of 9.85%. \n\nStep 5: Compare the calculated emission frequency with the emission frequency limit of the source to determine compliance. ",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/19.png",
+            "alt": "Emission Frequency example"
+          }
+        ]
+      },
+      "observer_name_company": {
+        "title": "Observer Name & Company",
+        "content": "Print and sign your name and indicate the company/organization you represent.",
+        "images": [
+          {
+            "url": "module-7/module-7-modals/20.png",
+            "alt": "Observer Name & Company example"
+          }
+        ]
+      }
+    }
+  }
+}
