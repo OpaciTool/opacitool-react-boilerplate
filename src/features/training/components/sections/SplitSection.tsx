@@ -44,7 +44,7 @@ export function SplitSection({
   const isTextLeft = layout === "text-left";
 
   return (
-    <div className={clsx("px-4 py-8 lg:px-14", bgColor)}>
+    <div className={clsx("px-4 py-8 lg:px-14 dark:bg-zinc-900 dark:text-zinc-300", bgColor)}>
       {/* Split Content Container */}
       <div
         className={clsx(
@@ -67,10 +67,10 @@ export function SplitSection({
           )}
         >
           {/* Section Title */}
-          <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
+          <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
             {title}
           </h2>
-          <div className="dark:prose-invert text-lg text-zinc-900">
+          <div className="dark:prose-invert text-lg text-zinc-900 dark:text-zinc-400">
             <p
               className="whitespace-pre-line"
               dangerouslySetInnerHTML={{
@@ -82,50 +82,50 @@ export function SplitSection({
 
         {/* Media Content - Only render if media exists */}
         {content.media && (
-          <div className={clsx(!isTextLeft && "lg:order-1")}>
-            <div className="relative">
+          <div className={clsx("flex justify-center",!isTextLeft && "lg:order-1")}>
+            <div
+              className="relative"
+              style={
+                content.media.width ? { width: content.media.width } : undefined
+              }
+            >
               <ImageLoader isLoading={isImageLoading}>
-              <div
-                className={clsx(
-                  "overflow-hidden rounded-lg",
-                  "flex items-center justify-center",
-                  content.media?.isClickable &&
-                    "cursor-pointer transition-opacity hover:opacity-90",
-                )}
-                onClick={() =>
-                  content.media?.isClickable && setIsModalOpen(true)
-                }
-              >
-                {content.media?.type === "image" && (
-                  <>
-                    <img
-                      src={getLectureMediaUrl(content.media.url)}
-                      alt={content.media.alt || ""}
-                      className={clsx(
-                        "h-full w-full rounded-lg object-contain",
-                        content.media.isClickable &&
-                          "cursor-pointer transition-opacity hover:opacity-90",
+                <div
+                  className={clsx(
+                    "overflow-hidden rounded-lg",
+                    "flex items-center justify-center",
+                    content.media?.isClickable &&
+                      "cursor-pointer transition-opacity hover:opacity-90",
+                  )}
+                  onClick={() =>
+                    content.media?.isClickable && setIsModalOpen(true)
+                  }
+                >
+                  {content.media?.type === "image" && (
+                    <>
+                      <img
+                        src={getLectureMediaUrl(content.media.url)}
+                        alt={content.media.alt || ""}
+                        className={clsx(
+                          "h-full w-full rounded-lg object-contain",
+                          content.media.isClickable &&
+                            "cursor-pointer transition-opacity hover:opacity-90",
+                        )}
+                        onLoad={() => setIsImageLoading(false)} // Set loading to false once image is loaded
+                        onError={() => setIsImageLoading(false)} // Handle potential errors
+                      />
+                      {content.media.isClickable && (
+                        <div className="absolute bottom-2 right-2 rounded-full bg-orange-600 p-1.5">
+                          <MagnifyingGlassIcon className="h-5 w-5 text-white" />
+                        </div>
                       )}
-                      onLoad={() => setIsImageLoading(false)} // Set loading to false once image is loaded
-                      onError={() => setIsImageLoading(false)} // Handle potential errors
-                      style={
-                        content.media.width
-                          ? { width: content.media.width }
-                          : undefined
-                      }
-                    />
-                    {content.media.isClickable && (
-                      <div className="absolute bottom-2 right-2 rounded-full bg-orange-600 p-1.5">
-                        <MagnifyingGlassIcon className="h-5 w-5 text-white" />
-                      </div>
-                    )}
-                  </>
-                )}
-              </div>
+                    </>
+                  )}
+                </div>
               </ImageLoader>
               <div className="space-y-1">
                 {content.media?.caption && (
-                  <p className="mt-2 text-center text-sm text-zinc-500 dark:text-zinc-400">
+                  <p className="mt-2 text-center italic text-sm text-zinc-500 dark:text-zinc-400">
                     {content.media.caption}
                   </p>
                 )}
@@ -159,7 +159,7 @@ export function SplitSection({
                   className="max-h-[90vh] rounded-lg"
                 />
                 {content.media?.caption && (
-                  <p className="p-4 text-center text-sm text-zinc-600 dark:text-zinc-300">
+                  <p className="p-4 text-center italic text-sm text-zinc-500 dark:text-zinc-300">
                     {content.media.caption}
                   </p>
                 )}

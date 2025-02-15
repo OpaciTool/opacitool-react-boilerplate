@@ -14,7 +14,7 @@ export default function AngleFormulaSection() {
             <div className="p-4 space-y-2 font-mono text-2xl font-bold">
               <div>1-(Oo/100) = T</div>
               <div>
-                (1-T<sup>f</sup>) x 100 = Oc
+                (1-T<sup>F</sup>) x 100 = Oc
               </div>
             </div>
   

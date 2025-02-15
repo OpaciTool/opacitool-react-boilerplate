@@ -24,6 +24,10 @@ import EPAMethod22Procedure from "./sections/EPAMethod22Procedure";
 import { LectureNavigation } from "./LectureNavigation";
 import { ScrollToTop } from "@/shared/components/ScrollToTop";
 import { PDFLinkSection } from "./sections/PDFLinkSection";
+import Timeline from "./TimelineEvent";
+import FAQAccordion from "./FAQAccordion";
+import lecture1Module10 from "../data/content/module-10/lecture-1.json";
+import ResourcesList from "./ResourcesList";
 
 type TabSection = {
   title: string;
@@ -283,6 +287,21 @@ type LectureContent = {
           };
         };
       }
+    | {
+        id: string;
+        type: "timeline";
+        title: string;
+      }
+    | {
+        id: string;
+        type: "faq";
+        title: string;
+      }
+    | {
+        id: string;
+        type: "resources";
+        title: string;
+      }
   >;
 };
 
@@ -345,6 +364,12 @@ import lecture4Module7 from "../data/content/module-7/lecture-4.json";
 import quiz1Module7 from "../data/content/module-7/quiz.json";
 import QuestionMarkTooltip from "./QuestionMarkTooltip";
 
+// Import module 8 lectures
+import lecture1Module8 from "../data/content/module-8/lecture-1.json";
+
+// Import module 9 lectures
+import lecture1Module9 from "../data/content/module-9/lecture-1.json";
+
 // Add type assertion after imports
 const lectures = {
   // Module 1
@@ -404,6 +429,16 @@ const lectures = {
   "method-22-documentation": lecture3Module7 as LectureContent,
   "method-22-equipment": lecture4Module7 as LectureContent,
   "module-7-quiz": quiz1Module7 as LectureContent,
+
+  // Module 8
+  "history-of-visible-emissions-observations":
+    lecture1Module8 as LectureContent,
+
+  // Module 9
+  "frequently-asked-questions": lecture1Module9 as LectureContent,
+
+  // Module 10
+  "resources-and-downloads": lecture1Module10 as LectureContent,
 };
 
 // Add type guard function
@@ -466,10 +501,10 @@ export function LectureContent() {
   return (
     <div className="relative min-h-svh bg-[#E4EAED]">
       <div className="">
-        <div className="items-center justify-between bg-zinc-900 px-4 py-8 lg:flex lg:px-14">
+        <div className="items-center justify-between bg-zinc-900 dark:bg-black px-4 py-8 lg:flex lg:px-14">
           <div className="space-y-1">
             <h3 className="text-2xl text-zinc-300">{currentModule.title}</h3>
-            <h2 className="text-4xl font-bold text-white dark:text-white">
+            <h2 className="text-4xl font-bold text-white dark:text-zinc-300">
               {currentLecture.title}
             </h2>
           </div>
@@ -479,7 +514,7 @@ export function LectureContent() {
             <Tooltip content="Bookmark this lecture">
               <button
                 onClick={handleBookmark}
-                className="flex items-center gap-2 rounded-lg transition-colors hover:text-white dark:hover:bg-zinc-800 pt-1"
+                className="flex items-center gap-2 rounded-lg pt-1 transition-colors hover:text-white dark:hover:bg-zinc-800"
                 aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
               >
                 {isBookmarked ? (
@@ -585,10 +620,7 @@ export function LectureContent() {
               case "quiz":
                 return (
                   <div key={section.id}>
-                    <Quiz
-                      quiz={section.content}
-
-                    />
+                    <Quiz quiz={section.content} />
                     {section.divider && <SectionDivider />}
                   </div>
                 );
@@ -671,6 +703,12 @@ export function LectureContent() {
                     )}
                   </div>
                 );
+              case "timeline":
+                return <Timeline key={section.id} />;
+              case "faq":
+                return <FAQAccordion key={section.id} />;
+              case "resources":
+                return <ResourcesList key={section.id} />;
               default:
                 return null;
             }

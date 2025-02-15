@@ -26,9 +26,9 @@
       "type": "pdf-link",
       "layout": "text-left",
       "bgColor": "bg-[#EEE]",
-      "title": "EPA ALT-082",
+      "title": "ALT-082 Specifications & Requirements",
       "content": {
-        "text": "EPA ALT-082 allows the use of digital cameras to document visible emissions. The digital camera must be capable of capturing and storing images with a date and time stamp. The images must be stored in a format that cannot be altered.",
+        "text": "• A DCOT operator must complete a smoke school lecture.\n\n• A DCOT operator must complete a separate training course provided by the DCOT manufacturer.\n\n• The camera and software configuration must be certified every 3.5 years. The configuration is certified by completing six runs at a smoke school.\n\n• Images are not analyzed instantly - they must be sent to a third party for analysis.\n\n• The DCOT cannot be used on emission points with internal diameters which exceed 7 feet.",
         "media": {
           "type": "pdf",
           "url": "module-6/ALT-082.pdf",

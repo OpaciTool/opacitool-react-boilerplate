@@ -9,9 +9,6 @@ import { queryClient } from "@/shared/lib";
 import { ApplicationLayout } from "@/shared/ui";
 import { TrainingLayout } from "@/features/training/components/TrainingLayout";
 import { TrainingRedirect } from "@/features/training/components/TrainingRedirect";
-import { History } from "@/pages/history";
-import { FAQ } from "@/pages/faq";
-import { Resources } from "@/pages/resources";
 
 const router = createBrowserRouter([
   {
@@ -61,18 +58,6 @@ const router = createBrowserRouter([
             <TrainingPage />
           </TrainingLayout>
         ),
-      },
-      {
-        path: "/training/history",
-        element: <History />,
-      },
-      {
-        path: "/training/faq",
-        element: <FAQ />,
-      },
-      {
-        path: "/training/resources",
-        element: <Resources />,
       },
     ],
   },

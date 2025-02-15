@@ -21,7 +21,7 @@
       "title": "Calculating the Rolling Average - Step 1",
       "bgColor": "bg-[#EEE]",
       "content": {
-        "text": "For this example, 12 minutes of observations were performed. Method 9 does not set the duration of the opacity test, only the averaging time of 6 minutes. Test durations are set by the regulation affecting the source.\n\nTo expedite the process of determining the highest opacity, a spreadsheet is provided in the 'Reference Forms' section of this course.  OpaciTool can perform the calculation automatically.",
+        "text": "For this example, 12 minutes of observations were performed. Method 9 does not set the duration of the opacity test, only the averaging time of 6 minutes. Test durations are set by the regulation affecting the source.\n\nTo expedite the process of determining the highest opacity, a spreadsheet is provided in the 'Resources and Downloads' section of this course.  OpaciTool can perform the calculation automatically.",
         "media": {
           "type": "image",
           "url": "module-4/lecture-2/4.jpg",
@@ -57,7 +57,7 @@
       "title": "Step 3",
       "bgColor": "bg-[#EEE]",
       "content": {
-        "text": "Move to the second box as the starting point of 24 consecutive values. From the previous sum of 365, subtract the value of the first reading (10) and add the value of the 25th reading (25). 365-10+25=380  Divide 380 by 24 to get an average of 15.83%.",
+        "text": "Move to the second box as the starting point of 24 consecutive values. From the previous sum of 365, subtract the value of the first reading (10) and add the value of the 25th reading (25). 365-10+25=380. Divide 380 by 24 to get an average of 15.83%.",
         "media": {
           "type": "image",
           "url": "module-4/lecture-2/6.jpg",

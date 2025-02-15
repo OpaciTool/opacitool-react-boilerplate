@@ -50,9 +50,13 @@ export function PDFLinkSection({
               {title}
             </h2>
           )}
-          <p className="whitespace-pre-line text-lg text-zinc-900">{content.text}</p>
+          <div 
+            className="whitespace-pre-line text-lg text-zinc-900"
+            dangerouslySetInnerHTML={{ __html: content.text }}
+          />
         </div>
       </div>
     </div>
   );
 }
+

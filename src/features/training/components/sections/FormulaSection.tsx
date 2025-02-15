@@ -45,9 +45,16 @@ export default function FormulaSection() {
             </div>
 
             <div className="flex items-baseline space-x-1">
+              <span>100 × (1-</span>
+              <span>T</span>
+              <span className="align-bottom text-[10px]">T</span>)
+              <span>= O</span>
+            </div>
+
+            {/* <div className="flex items-baseline space-x-1">
               <span>100 × (1-T) = O</span>
               <span className="align-bottom text-[10px]">T</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Key Column */}
@@ -171,7 +178,6 @@ export default function FormulaSection() {
                 <span>100 × (1-</span>
                 <span>T</span>
                 <span className="align-bottom text-[10px]">T</span>)
-   
               </div>
               <span className="mx-2 text-gray-400">---------</span>
               <div className="flex items-baseline space-x-1">

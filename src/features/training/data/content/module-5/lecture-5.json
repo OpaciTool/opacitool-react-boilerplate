@@ -81,7 +81,7 @@
       "bgColor": "bg-[#EEE]",
       "title": "Step 3: Plot the Ambient State Point",
       "content": {
-        "text": "The ambient state is determined using the dry-bulb and wet-bulb temperatures measured by a sling psychrometer and a psychrometric chart.\n\nExample Ambient Data:\nDry-bulb temperature = 80°FF\nWet-bulb temperature: 72°F\n\nLocate the dry bulb temperature (70°F) and find where it intersects the wet-bulb temperature (65°F) line. The point of intersection is the ambient state point.",
+        "text": "The ambient state is determined using the dry-bulb and wet-bulb temperatures measured by a sling psychrometer and a psychrometric chart.\n\nExample Ambient Data:\nDry-bulb temperature = 80°F\nWet-bulb temperature: 72°F\n\nLocate the dry bulb temperature (70°F) and find where it intersects the wet-bulb temperature (65°F) line. The point of intersection is the ambient state point.",
         "media": {
           "type": "image",
           "url": "module-5/lecture-5/9.jpg",

@@ -1,0 +1,12 @@
+{
+  "lectureId": "frequently-asked-questions",
+  "moduleId": 9,
+  "title": "Frequently Asked Questions",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "faq",
+      "title": "Frequently Asked Questions"
+    }
+  ]
+} 
