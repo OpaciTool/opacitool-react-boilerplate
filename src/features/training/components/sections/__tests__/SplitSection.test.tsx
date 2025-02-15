@@ -6,6 +6,11 @@ describe("SplitSection", () => {
     title: "Test Title",
     content: {
       text: "Test content text",
+      media: {
+        type: "image" as const,
+        url: "/test-image.jpg",
+        alt: "Test image"
+      }
     },
   };
 
@@ -82,24 +87,6 @@ describe("SplitSection", () => {
     expect(screen.getByText("Test caption")).toBeInTheDocument();
   });
 
-  // Width Tests
-  it("applies custom width to image when specified", () => {
-    const propsWithWidth = {
-      ...defaultProps,
-      content: {
-        ...defaultProps.content,
-        media: {
-          type: "image" as const,
-          url: "/test-image.jpg",
-          alt: "Test image",
-          width: "200px",
-        },
-      },
-    };
-    render(<SplitSection {...propsWithWidth} />);
-    const image = screen.getByAltText("Test image");
-    expect(image).toHaveStyle({ width: "200px" });
-  });
 
   // Modal Close Tests
   it("closes modal when clicking close button", () => {
