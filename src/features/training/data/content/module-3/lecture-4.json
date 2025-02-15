@@ -13,7 +13,7 @@
         "text": "The opacity of visible emissions is determined by visually evaluating how much the background is obscured when viewing through the plume. The contrast between the plume's color and the background will significantly influence the opacity readings."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -25,7 +25,7 @@
         "text": "If possible, the observer should position themselves to view the plume against a high-contrast background. A dark background is ideal when observing a white plume, while dark or black plumes are best viewed against blue skies or other light-colored backgrounds.\n\nHigh-contrast backgrounds may introduce positive bias in the readings, meaning the opacity readings could be higher than the actual opacity. It is generally preferable to have positive bias in the readings than negative bias, as the latter can result in underestimating the opacity."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",
@@ -37,7 +37,7 @@
         "text": "At times, the observer may not have control over the background and must observe the plume against a low-contrast background. Low-contrast backgrounds typically result in negative bias, where the opacity readings are lower than the actual opacity. Negative bias can lead to a facility appearing to comply with an opacity limit, even when it is actually exceeding the limit."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-4",

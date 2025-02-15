@@ -13,7 +13,7 @@
         "text": "EPA Method 9 is a test method found in Appendix A of 40 CFR Part 60 and is used to determine the opacity of emissions from stationary sources. As we learned earlier in this course, EPA Method 9 certification consists of a lecture course and a visual test.  When you have successfully completed the lecture and visual test, you will be certified to perform EPA Method 9 testing.\n\nThis section of the lecture teaches you how to properly perform opacity observations. A thorough understanding of observational procedures is essential before making opacity readings.\n\nBefore we cover some of the more technical observation principles, the following are basic requirements when performing an EPA Method 9 test."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -31,7 +31,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",
@@ -49,7 +49,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-4",
@@ -67,7 +67,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-5",

@@ -13,7 +13,7 @@
         "text": "Air pollution, often thought of as a modern issue, has been a concern since ancient times. During the Roman Empire, large cities experienced 'graioris caeli,' or 'heavy heaven,' the term used to describe smog-like conditions.\n\n As history progressed, expanding cities, evolving agricultural practices, and industrialization transformed air pollution from a minor inconvenience to a significant nuisance and, ultimately, a public health crisis.\n\nIn response, the Environmental Protection Agency (EPA) was established, and the visible emission observation methods we’ve discussed—such as EPA Method 9 and Method 22—were developed to help monitor and reduce emissions. Below is a brief timeline highlighting key events that led to the creation of these methods."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",

@@ -28,7 +28,7 @@
         "text": "In some circumstances, it may be difficult to visually determine if a plume contains water vapor. Or an observer may be certain water vapor is present, but wants to prove it beyond visual identification. In either scenario, the presence of water vapor can be determined by using a psychrometric chart."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",

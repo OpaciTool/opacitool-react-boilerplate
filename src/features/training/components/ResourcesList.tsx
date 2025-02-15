@@ -2,9 +2,7 @@ import { Resource, resources } from "../data/resources";
 import { getLectureMediaUrl } from "../lib/getLectureMedia";
 
 export default function ResourcesList() {
-  // const handleThumbnailClick = (pdfUrl: string) => {
-  //   window.open(pdfUrl, "_blank", "noopener,noreferrer")
-  // }
+
 
   const handleThumbnailClick = (resource: Resource) => {
     if (resource.fileType === "pdf") {
@@ -20,13 +18,13 @@ export default function ResourcesList() {
   };
 
   return (
-    <div className="px-4 py-8  lg:px-14">
+    <div className="px-4 py-8  lg:px-14 dark:bg-zinc-900">
       <div className="mb-4 flex items-center justify-between">
-        <h2 className="text-xl font-semibold">
+        <h2 className="text-xl font-semibold text-zinc-900 dark:text-zinc-300">
           Resources & Downloads for Visible Emissions Observations
         </h2>
       </div>
-      <p className="text-lg text-zinc-900 mb-4">
+      <p className="text-lg text-zinc-900 dark:text-zinc-400  mb-4">
         The forms and calculator below can be downloaded for student use.
       </p>
 
@@ -34,7 +32,7 @@ export default function ResourcesList() {
         {resources.map((resource) => (
           <div
             key={resource.id}
-            className="group flex items-start gap-4  border-t border-gray-800 p-4 transition-colors hover:bg-gray-50"
+            className="group flex items-start gap-4  border-t border-gray-800 p-4 transition-colors hover:bg-gray-50 dark:hover:bg-zinc-800"
           >
             <button
               onClick={() => handleThumbnailClick(resource)}
@@ -63,7 +61,7 @@ export default function ResourcesList() {
             </button>
             <div className="flex-1">
               <h3 className="font-bold text-2xl text-[#ff6b6b]">{resource.title}</h3>
-              <p className="mt-1 text-lg text-gray-600">
+              <p className="mt-1 text-lg text-gray-600 dark:text-zinc-400">
                 {resource.description}
               </p>
             </div>

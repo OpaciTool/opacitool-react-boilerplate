@@ -28,7 +28,7 @@ function convertLinksToAnchors(text: string) {
   return text.replace(
     linkRegex,
     (_, linkText, url) =>
-      `<a href="${url}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${linkText}</a>`,
+      `<a href="${getLectureMediaUrl(url)}" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">${linkText}</a>`,
   );
 }
 

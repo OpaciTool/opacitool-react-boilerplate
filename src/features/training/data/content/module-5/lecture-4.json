@@ -44,8 +44,8 @@
         "text": "To correct for this increased path through the plume, observations must be mathematically-corrected."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-      "dividerStyleParent": "bg-[#E4EAED]"
+      "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+      "dividerStyleParent": "bg-[#E4EAED] dark:bg-zinc-900"
     },
 
     {

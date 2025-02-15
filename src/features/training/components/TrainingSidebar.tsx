@@ -47,7 +47,7 @@ export function TrainingSidebar({
   };
 
   return (
-    <Sidebar className="h-full border-r border-zinc-950/5 bg-zinc-900 dark:bg-black dark:border-white/5 lg:h-screen">
+    <Sidebar className="h-full pb-6 border-r border-zinc-950/5 bg-zinc-900 dark:bg-black dark:border-white/5 lg:h-screen">
       <SidebarHeader>
         {/* Close button - mobile only */}
         {onClose && (

@@ -49,7 +49,7 @@
         "text": "Control devices for point sources are different than those used for fugitive emissions. Below we will review some of the most common control devices for each source type."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",
@@ -78,8 +78,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Cyclones",
@@ -95,8 +95,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Electrostatic Precipitators",
@@ -112,8 +112,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Scrubbers",
@@ -129,8 +129,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Thermal Oxidizers",
@@ -146,8 +146,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Catalytic Oxidizers",
@@ -163,8 +163,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Selective Catalytic Reduction (SCR) Systems",
@@ -202,8 +202,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Sweeping",
@@ -218,8 +218,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Suppressants",
@@ -234,8 +234,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Inherent Moisture",

@@ -1,9 +1,12 @@
 export default function MethodsComparison() {
-    return (
-      <div className="w-full max-w-4xl mx-auto p-4">
+  return (
+    <div className="dark:bg-zinc-900">
+      <div className="mx-auto w-full max-w-4xl p-4 ">
         {/* Headline */}
-        <h2 className="text-xl font-bold text-center mb-6">Comparison of Method 203-series and Method 9</h2>
-  
+        <h2 className="mb-6 text-center text-xl font-bold text-zinc-900 dark:text-zinc-300">
+          Comparison of Method 203-series and Method 9
+        </h2>
+
         <div className="grid grid-cols-5 gap-1 bg-pink-100">
           {/* Header Row */}
           <div className="bg-[#FF9999] p-4"></div>
@@ -19,7 +22,7 @@ export default function MethodsComparison() {
           <div className="bg-[#FF9999] p-4">
             <div className="text-center font-medium">Method 203c</div>
           </div>
-  
+
           {/* Averaging Period Row */}
           <div className="bg-[#FFCDCD] p-4">
             <div className="font-medium">Averaging Period</div>
@@ -36,7 +39,7 @@ export default function MethodsComparison() {
           <div className="bg-[#FFE3E3] p-4">
             <div className="text-center">1 minute</div>
           </div>
-  
+
           {/* Observation Interval Row */}
           <div className="bg-[#FFCDCD] p-4">
             <div className="font-medium">Observation Interval</div>
@@ -53,7 +56,7 @@ export default function MethodsComparison() {
           <div className="bg-[#FFE3E3] p-4">
             <div className="text-center">5 seconds</div>
           </div>
-  
+
           {/* Test Form Row */}
           <div className="bg-[#FFCDCD] p-4">
             <div className="font-medium">Test Form</div>
@@ -70,7 +73,7 @@ export default function MethodsComparison() {
           <div className="bg-[#FFE3E3] p-4">
             <div className="text-center">Method 203c Form</div>
           </div>
-  
+
           {/* Certification Method Row */}
           <div className="bg-[#FFCDCD] p-4">
             <div className="font-medium">Certification Method</div>
@@ -89,7 +92,6 @@ export default function MethodsComparison() {
           </div>
         </div>
       </div>
-    )
-  }
-  
-  
+    </div>
+  );
+}

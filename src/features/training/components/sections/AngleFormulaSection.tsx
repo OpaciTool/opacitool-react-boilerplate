@@ -1,15 +1,15 @@
 export default function AngleFormulaSection() {
     return (
-      <div className="w-full px-4 lg:px-14 mx-auto p-4">
+      <div className="w-full px-4 lg:px-14 mx-auto p-4 dark:bg-zinc-900">
         <div className="">
           {/* Header Grid */}
           <div className="grid grid-cols-2 ">
-            <div className="p-2 text-center font-bold">FORMULA</div>
-            <div className="p-2 text-center font-bold">KEY</div>
+            <div className="p-2 text-center font-bold text-zinc-900 dark:text-zinc-300">FORMULA</div>
+            <div className="p-2 text-center font-bold text-zinc-900 dark:text-zinc-300  ">KEY</div>
           </div>
   
           {/* Content Grid */}
-          <div className="grid grid-cols-2 justify-items-center">
+          <div className="grid grid-cols-2 justify-items-center dark:text-zinc-400">
             {/* Formula Column */}
             <div className="p-4 space-y-2 font-mono text-2xl font-bold">
               <div>1-(Oo/100) = T</div>
@@ -33,16 +33,16 @@ export default function AngleFormulaSection() {
   
           {/* Application Section */}
           <div className="p-4">
-            <div className="font-bold mb-4 text-lg">Application & Calculation</div>
+            <div className="font-bold mb-4 text-lg text-zinc-900 dark:text-zinc-300">Application & Calculation</div>
   
             {/* Initial Values */}
-            <div className="text-lg mb-4">
+            <div className="text-lg mb-4 text-zinc-900 dark:text-zinc-400">
               <div>Viewing Angle: 25°</div>
               <div>Observed Opacity Reading: 30%</div>
             </div>
   
             {/* Steps */}
-            <div className="space-y-3 text-lg">
+            <div className="space-y-3 text-lg text-zinc-900 dark:text-zinc-400">
               <div>
                 <div className="font-semibold">Step 1: Calculate cosine of 25° = 0.906</div>
               </div>
@@ -61,7 +61,7 @@ export default function AngleFormulaSection() {
             </div>
   
             {/* Note */}
-            <div className="mt-4 text-lg italic">
+            <div className="mt-4 text-lg italic text-zinc-900 dark:text-zinc-400">
               The formula must be applied to each reading where the viewing angle exceeded 18°. An angle correction sheet,
               found in the Resources module, can also be used.
             </div>

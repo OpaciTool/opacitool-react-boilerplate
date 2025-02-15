@@ -90,8 +90,8 @@ export function LectureNavigation() {
                 <ChevronLeftIcon className="h-8 w-8 text-white transition-colors duration-300 group-hover:text-[#80E0D0]" />
               </div>
               <div className="text-center">
-                <div className="text-lg lg:text-2xl font-bold text-white">{prevLecture.moduleTitle}</div>
-                <div className="text-lg lg:text-2xl text-white">{prevLecture.lectureTitle}</div>
+                <div className="text-lg lg:text-2xl font-bold text-white dark:text-zinc-300">{prevLecture.moduleTitle}</div>
+                <div className="text-lg lg:text-2xl text-white  dark:text-zinc-400">{prevLecture.lectureTitle}</div>
               </div>
             </div>
           )}
@@ -112,8 +112,8 @@ export function LectureNavigation() {
                 <ChevronRightIcon className="h-8 w-8 text-[#40E0D0] transition-colors duration-300 group-hover:text-[#20B2AA]" />
               </div>
               <div className="text-center">
-                <div className="text-lg lg:text-2xl font-bold text-white">{nextLecture.moduleTitle}</div>
-                <div className="text-lg lg:text-2xl text-white">{nextLecture.lectureTitle}</div>
+                <div className="text-lg lg:text-2xl font-bold text-white dark:text-zinc-300">{nextLecture.moduleTitle}</div>
+                <div className="text-lg lg:text-2xl text-white dark:text-zinc-400">{nextLecture.lectureTitle}</div>
               </div>
             </div>
           )}
