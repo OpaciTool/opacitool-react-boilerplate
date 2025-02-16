@@ -49,82 +49,84 @@ export function Quiz({ quiz }: QuizProps) {
   };
 
   return (
-    <div className="mx-auto w-[90%] pb-10 pt-10 lg:w-[50%]">
-      <div className="mb-8 space-y-4">
-        <h1 className="text-2xl font-semibold text-zinc-900 dark:text-white">
-          {quiz.title}
-        </h1>
-        <p className="text-zinc-900 dark:text-zinc-400">{quiz.description}</p>
-      </div>
+    <div className="dark:bg-zinc-900">
+      <div className="mx-auto w-[90%] pb-10 pt-10  lg:w-[50%]">
+        <div className="mb-8 space-y-4">
+          <h1 className="text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
+            {quiz.title}
+          </h1>
+          <p className="text-zinc-900 dark:text-zinc-400">{quiz.description}</p>
+        </div>
 
-      <form className="space-y-8">
-        {quiz.questions.map((question, index) => (
-          <div key={question.id} className="space-y-4">
-            <p className="text-lg font-semibold text-zinc-900">
-              {index + 1}. {question.text}
-            </p>
+        <form className="space-y-8">
+          {quiz.questions.map((question, index) => (
+            <div key={question.id} className="space-y-4">
+              <p className="text-lg font-semibold text-zinc-900 dark:text-zinc-300">
+                {index + 1}. {question.text}
+              </p>
 
-            <div className="space-y-2">
-              {question.options.map((option) => {
-                const isSelected = (answers[question.id] || []).includes(
-                  option.id,
-                );
-                const showCorrect = submitted && option.isCorrect;
-                const showIncorrect =
-                  submitted && isSelected && !option.isCorrect;
+              <div className="space-y-2">
+                {question.options.map((option) => {
+                  const isSelected = (answers[question.id] || []).includes(
+                    option.id,
+                  );
+                  const showCorrect = submitted && option.isCorrect;
+                  const showIncorrect =
+                    submitted && isSelected && !option.isCorrect;
 
-                return (
-                  <label
-                    key={option.id}
-                    className={clsx(
-                      "flex cursor-pointer items-center gap-3 rounded-lg border p-3 text-zinc-900",
-                      !submitted && "hover:bg-zinc-50 dark:hover:bg-zinc-800",
-                      isSelected &&
-                        !submitted &&
-                        "border-brand-blue-800 bg-orange-50 dark:bg-orange-900/20",
-                      showCorrect &&
-                        "border-green-600 bg-green-50 dark:bg-green-900/20",
-                      showIncorrect &&
-                        "border-red-600 bg-red-50 dark:bg-red-900/20",
-                    )}
-                  >
-                    <input
-                      type={question.type === "single" ? "radio" : "checkbox"}
-                      name={question.id}
-                      value={option.id}
-                      checked={isSelected}
-                      onChange={() =>
-                        handleOptionSelect(
-                          question.id,
-                          option.id,
-                          question.type,
-                        )
-                      }
-                      disabled={submitted}
-                      className="text-brand-blue-800"
-                    />
-                    <p className="text-lg">{option.text}</p>
-                  </label>
-                );
-              })}
+                  return (
+                    <label
+                      key={option.id}
+                      className={clsx(
+                        "flex cursor-pointer items-center gap-3 rounded-lg border p-3 text-zinc-900",
+                        !submitted && "hover:bg-zinc-50 dark:hover:bg-zinc-700 ",
+                        isSelected &&
+                          !submitted &&
+                          "border-brand-blue-800 bg-orange-50 dark:bg-blue-100/35",
+                        showCorrect &&
+                          "border-green-600 bg-green-50 dark:bg-green-900/20",
+                        showIncorrect &&
+                          "border-red-600 bg-red-50 dark:bg-red-900/20",
+                      )}
+                    >
+                      <input
+                        type={question.type === "single" ? "radio" : "checkbox"}
+                        name={question.id}
+                        value={option.id}
+                        checked={isSelected}
+                        onChange={() =>
+                          handleOptionSelect(
+                            question.id,
+                            option.id,
+                            question.type,
+                          )
+                        }
+                        disabled={submitted}
+                        className="text-brand-blue-800"
+                      />
+                      <p className="text-lg dark:text-zinc-400 ">{option.text}</p>
+                    </label>
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
 
-        {!submitted ? (
-          <button
-            onClick={handleSubmit}
-            disabled={Object.keys(answers).length !== quiz.questions.length}
-            className="w-full rounded-[50px] bg-orange-500 p-3 text-lg text-white disabled:bg-orange-300 lg:w-[30%]"
-          >
-            Submit Quiz
-          </button>
-        ) : (
-          <div className="w-full rounded-[50px] bg-orange-500 p-3 text-center text-lg text-white lg:w-[30%]">
-            <button onClick={handleReset}>Take Again</button>
-          </div>
-        )}
-      </form>
+          {!submitted ? (
+            <button
+              onClick={handleSubmit}
+              disabled={Object.keys(answers).length !== quiz.questions.length}
+              className="w-full rounded-[50px] bg-orange-500 p-3 text-lg text-white disabled:bg-orange-300 lg:w-[30%]"
+            >
+              Submit Quiz
+            </button>
+          ) : (
+            <div className="w-full rounded-[50px] bg-orange-500 p-3 text-center text-lg text-white lg:w-[30%]">
+              <button onClick={handleReset}>Take Again</button>
+            </div>
+          )}
+        </form>
+      </div>
     </div>
   );
 }

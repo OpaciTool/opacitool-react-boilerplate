@@ -13,7 +13,7 @@
         "text": "Sky conditions and weather cannot be controlled but it is important to understand the effect they can have on EPA Method 9 observations."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -45,7 +45,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-4",
@@ -64,7 +64,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-5",

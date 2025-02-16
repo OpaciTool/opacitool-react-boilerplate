@@ -1,15 +1,15 @@
 export default function FormulaSection() {
   return (
-    <div className="mx-auto w-full p-4 px-4 py-8 lg:px-14">
+    <div className="mx-auto w-full p-4 px-4 py-8 lg:px-14 dark:bg-zinc-900">
       <div className="">
         {/* Header Grid */}
         <div className="grid grid-cols-2">
-          <div className="p-2 text-center font-bold">FORMULA</div>
-          <div className="p-2 text-center font-bold">KEY</div>
+          <div className="p-2 text-center font-bold text-zinc-900 dark:text-zinc-300">FORMULA</div>
+          <div className="p-2 text-center font-bold text-zinc-900 dark:text-zinc-300">KEY</div>
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-2 justify-items-center">
+        <div className="grid grid-cols-2 justify-items-center dark:text-zinc-400">
           {/* Formula Column */}
           <div className="space-y-2 p-4 font-mono text-lg">
             <div className="flex items-baseline space-x-1">
@@ -45,8 +45,10 @@ export default function FormulaSection() {
             </div>
 
             <div className="flex items-baseline space-x-1">
-              <span>100 × (1-T) = O</span>
-              <span className="align-bottom text-[10px]">T</span>
+              <span>100 × (1-</span>
+              <span>T</span>
+              <span className="align-bottom text-[10px]">T</span>)
+              <span>= O</span>
             </div>
           </div>
 
@@ -115,8 +117,8 @@ export default function FormulaSection() {
         </div>
 
         {/* Application Section */}
-        <div className="p-4">
-          <div className="mb-4 font-bold">Application & Calculation</div>
+        <div className="p-4 dark:text-zinc-400">
+          <div className="mb-4 font-bold text-zinc-900 dark:text-zinc-300">Application & Calculation</div>
           <div className="mb-4 text-lg">
             Don&apos;t be intimidated by the formula - it&apos;s time-consuming
             but easy to use. Below is an example of a single source with two
@@ -171,7 +173,6 @@ export default function FormulaSection() {
                 <span>100 × (1-</span>
                 <span>T</span>
                 <span className="align-bottom text-[10px]">T</span>)
-   
               </div>
               <span className="mx-2 text-gray-400">---------</span>
               <div className="flex items-baseline space-x-1">

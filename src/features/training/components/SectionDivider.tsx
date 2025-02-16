@@ -7,6 +7,7 @@ interface SectionDividerProps {
 
 export function SectionDivider({ className, dividerStyleParent }: SectionDividerProps) {
 
+
   return (
     <div className={clsx(
       // Default styles including height and background

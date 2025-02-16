@@ -36,22 +36,22 @@ export function ImageGridSection({
     new Array(content.media.images.length).fill(true),
   );
 
-    // Handle the image loading completion
-    const handleImageLoad = (index: number) => {
-      setLoadingImages((prev) => {
-        const updated = [...prev];
-        updated[index] = false;
-        return updated;
-      });
-    };
+  // Handle the image loading completion
+  const handleImageLoad = (index: number) => {
+    setLoadingImages((prev) => {
+      const updated = [...prev];
+      updated[index] = false;
+      return updated;
+    });
+  };
 
   return (
-    <div className={clsx("px-4 py-8 lg:px-14", bgColor)}>
-      <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
+    <div className={clsx("px-4 py-8 lg:px-14 dark:bg-zinc-900", bgColor)}>
+      <h2 className="mb-6 text-2xl font-semibold d dark:text-zinc-300">
         {title}
       </h2>
       {content.text && (
-        <div className="mb-8 text-lg text-zinc-900 dark:prose-invert">
+        <div className="dark:prose-invert mb-8 text-lg text-zinc-900 dark:text-zinc-400">
           <p className="whitespace-pre-line">{content.text}</p>
         </div>
       )}
@@ -63,11 +63,7 @@ export function ImageGridSection({
         )}
       >
         {content.media.images.map((image, index) => (
-          <div 
-            key={index} 
-            className="relative"
-            role="listitem"
-          >
+          <div key={`image-${index}`} className="relative" role="listitem">
             <div
               className={clsx(
                 "overflow-hidden rounded-lg",
@@ -77,7 +73,10 @@ export function ImageGridSection({
               )}
               onClick={() => image.isClickable && setSelectedImage(image)}
             >
-              <div className="relative">
+              <div
+                className="relative"
+                style={image.width ? { width: image.width } : undefined}
+              >
                 {loadingImages[index] && (
                   <div className="absolute inset-0 flex items-center justify-center bg-zinc-100 dark:bg-zinc-800">
                     <div className="flex flex-col items-center gap-2">
@@ -97,7 +96,6 @@ export function ImageGridSection({
                   )}
                   onLoad={() => handleImageLoad(index)}
                   onError={() => handleImageLoad(index)}
-                  style={image.width ? { width: image.width } : undefined}
                 />
                 {image.isClickable && (
                   <div
@@ -110,7 +108,7 @@ export function ImageGridSection({
               </div>
             </div>
             {image.caption && (
-              <p className="mt-2 text-center text-lg text-zinc-900 dark:text-zinc-400">
+              <p className="mt-2 text-center italic text-sm text-zinc-500 dark:text-zinc-400">
                 {image.caption}
               </p>
             )}
@@ -141,7 +139,7 @@ export function ImageGridSection({
                   className="max-h-[80vh] rounded-lg"
                 />
                 {selectedImage.caption && (
-                  <p className="p-4 text-center text-sm text-zinc-600 dark:text-zinc-300">
+                  <p className="mt-2 text-center italic text-sm text-zinc-500 dark:text-zinc-400">
                     {selectedImage.caption}
                   </p>
                 )}

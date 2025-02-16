@@ -67,8 +67,8 @@ function TimelineEvent({
           className={`flex items-center ${isEven ? "md:order-1" : "md:order-2"}`}
         >
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold tracking-tight">{event.title}</h3>
-            <p className="text-muted-foreground">{event.description}</p>
+            <h3 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-300">{event.title}</h3>
+            <p className="text-muted-foreground text-zinc-900 dark:text-zinc-400">{event.description}</p>
           </div>
         </motion.div>
 
@@ -101,8 +101,8 @@ function TimelineEvent({
 
 export default function Timeline() {
   return (
-    <div className="bg-[#EEE] px-4 py-8 lg:px-14">
-      <h2 className="my-16 text-center text-4xl font-bold tracking-tight">
+    <div className="bg-[#EEE] px-4 py-8 lg:px-14 dark:bg-zinc-900">
+      <h2 className="my-16 text-center text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-300">
         Timeline of Events
       </h2>
       <div className="relative">

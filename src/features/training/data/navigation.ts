@@ -101,5 +101,30 @@ export const navigationData: Module[] = [
       { title: "Equipment Needed", slug: "method-22-equipment" },
       { title: "Module 7 Quiz", slug: "module-7-quiz" },
     ],
+  },
+  {
+    id: 8,
+    title: "History",
+    slug: "history",
+    lectures: [
+      { title: "History of Visible Emissions Observations", slug: "history-of-visible-emissions-observations" }
+    ],
+  },
+  {
+    id: 9,
+    title: "FAQs",
+    slug: "faq",
+    lectures: [
+      { title: "Frequently Asked Questions", slug: "frequently-asked-questions" }
+    ],
+  },
+  {
+    id: 10,
+    title: "Resources",
+    slug: "resources",
+    lectures: [
+      { title: "Resources & Downloads", slug: "resources-and-downloads" }
+
+    ],
   }
 ];

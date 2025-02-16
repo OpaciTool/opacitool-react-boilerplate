@@ -12,7 +12,7 @@
         "text": "Accuracy and proper adherence to EPA Method 9 procedures are critical to ensure a complete and legally-defensible test form. Below are some key questions an observer should address after each observation."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -29,7 +29,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",
@@ -47,7 +47,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-4",
@@ -64,7 +64,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-5",
@@ -81,7 +81,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-6",
@@ -99,7 +99,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-7",

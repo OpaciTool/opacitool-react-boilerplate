@@ -13,7 +13,7 @@
         "text": "EPA Method 22 testing is simpler and less restrictive than EPA Method 9 testing, as many of the factors that complicate Method 9 are not applicable to Method 22. The following steps outline how to conduct a proper Method 22 test:"
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -32,7 +32,7 @@
           }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
         "id": "section-3",
@@ -52,7 +52,7 @@
             }
         },
         "divider": true,
-        "dividerStyle": "h-1 bg-orange-500"
+        "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
       },
       {
         "id": "section-4",
@@ -67,11 +67,11 @@
               "url": "module-7/5.png",
               "alt": "Image",
               "caption": "",
-              "width": "75%"
+              "width": "60%"
             }
         },
         "divider": true,
-        "dividerStyle": "h-1 bg-orange-500"
+        "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
       },
       {
         "id": "section-5",
@@ -91,7 +91,7 @@
             }
         },
         "divider": true,
-        "dividerStyle": "h-1 bg-orange-500"
+        "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
       },
       {
         "id": "section-4",
@@ -111,7 +111,7 @@
             }
         },
         "divider": true,
-        "dividerStyle": "h-1 bg-orange-500"
+        "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
       }
   ]
 } 

@@ -20,7 +20,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -32,8 +32,8 @@
         "text": "Emissions are composed of numerous particle types with each having a different chemical or physical composition.  Light may be absorbed, reflected and transmitted by different particles within the same plume."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-      "dividerStyleParent": "bg-[#EEEEEE]"
+      "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+      "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
     },
     {
       "id": "section-3",
@@ -59,8 +59,8 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-      "dividerStyleParent": "bg-[#EEEEEE]"
+      "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+      "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
     },
     {
       "id": "section-4",
@@ -86,8 +86,8 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-      "dividerStyleParent": "bg-[#EEEEEE]"
+      "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+      "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
     },
     {
       "id": "section-5",

@@ -19,7 +19,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-white"
+      "dividerStyle": "h-1 bg-white dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -38,7 +38,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black"
+      "dividerStyle": "h-1 bg-black dark:bg-zinc-800"
     },
     {
       "id": "section-3",
@@ -57,7 +57,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black"
+      "dividerStyle": "h-1 bg-black dark:bg-zinc-800"
     },
     {
       "id": "section-4",
@@ -76,7 +76,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black"
+      "dividerStyle": "h-1 bg-black dark:bg-zinc-800"
     },
     {
       "id": "section-5",
@@ -95,7 +95,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-black"
+      "dividerStyle": "h-1 bg-black dark:bg-zinc-800"
     },
     {
       "id": "section-6",

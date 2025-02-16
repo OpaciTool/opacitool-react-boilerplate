@@ -22,7 +22,7 @@ export default function ObserverInfoDetails() {
           >
             <div className="text-sm gap-1">
               <p>Number of Readings Above</p>
-              <p className="mt-1">_________%Were_______</p>
+              <p className="mt-1">_________% Were_______</p>
             </div>
           </div>
         </div>

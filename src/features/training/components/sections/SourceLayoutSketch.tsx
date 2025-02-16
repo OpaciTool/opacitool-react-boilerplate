@@ -1,5 +1,6 @@
 import { useFormModal } from "../../context/FormModalContext";
 import formContent from "../../data/content/module-4/form-content.json";
+import { getLectureMediaUrl } from "../../lib/getLectureMedia";
 
 export default function SourceLayoutSketch() {
   const { openModal } = useFormModal();
@@ -14,17 +15,17 @@ export default function SourceLayoutSketch() {
         </div>
 
         {/* Image Container */}
-        <div 
+        <div
           className="relative cursor-pointer"
           onClick={() => openModal(fields.sketch)}
         >
-          <img 
-            src="module-4/lecture-1/38.png" 
-            alt="Source Layout Sketch" 
-            className="h-auto w-full hover:opacity-90 transition-opacity"
+          <img
+            src={getLectureMediaUrl("module-4/lecture-1/38.png")}
+            alt="Source Layout Sketch"
+            className="h-auto w-full transition-opacity hover:opacity-90"
           />
         </div>
       </div>
     </div>
   );
-} 
+}

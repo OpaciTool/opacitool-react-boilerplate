@@ -21,9 +21,9 @@ interface TwoColumnSectionProps {
 
 export function TwoColumnSection({ title, content, bgColor }: TwoColumnSectionProps) {
   return (
-    <div className={`py-8 px-4 lg:px-14 ${bgColor}`}>
+    <div className={`py-8 px-4 lg:px-14 dark:bg-zinc-900 ${bgColor}`}>
       {title && (
-        <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
+        <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
           {title}
         </h2>
       )}
@@ -34,8 +34,8 @@ export function TwoColumnSection({ title, content, bgColor }: TwoColumnSectionPr
 
       <div className="flex gap-8">
         {content.media.columns.map((column, index) => (
-          <div key={index} className="flex-1">
-            <h3 className="mb-4 text-lg font-semibold text-zinc-900 dark:text-white lg:text-center">
+          <div key={`column-${index}`} className="flex-1">
+            <h3 className="mb-4 text-lg font-semibold text-zinc-900 dark:text-zinc-300 lg:text-center">
               {column.title}
             </h3>
             <div className="lg:flex lg:justify-center">

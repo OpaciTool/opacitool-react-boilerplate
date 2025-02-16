@@ -17,7 +17,7 @@
       "id": "section-2",
       "type": "two-column",
       "title": "",
-      "bgColor": "bg-[#EEE]",
+      "bgColor": "bg-[#E4EAED]",
       "content": {
         "text": "",
         "bgColor": "bg-[#EEE]",
@@ -27,15 +27,17 @@
               "image": {
                 "url": "module-7/1.jpg",
                 "alt": "Example 1",
-                "width": "430px"
+                "width": "500px"
+
               },
               "title": "",
               "text": "Gas flares usually burn clean but may have visible emissions if not functioning correctly."
             },
             {
               "image": {
-                "url": "module-7/2.jpg",
-                "alt": "Example 2"
+                "url": "module-7/2.png",
+                "alt": "Example 2",
+                      "width": "500px"
               },
               "title": "",
               "text": "Method 22 can be used to observe the frequency of visible emissions inside or outside a building."
@@ -44,7 +46,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",
@@ -61,7 +63,7 @@
       "type": "method-9-comparison",
       "title": "Method Comparison",
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     }
   ]
 }

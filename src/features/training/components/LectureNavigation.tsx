@@ -1,100 +1,12 @@
-import { useNavigate, useParams, useLocation } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import { navigationData } from "../data/navigation";
 
-const SPECIAL_ROUTES = [
-  "/training/epa-method-22/module-7-quiz",
-  "/training/history",
-  "/training/faq",
-  "/training/resources",
-];
-
-const SPECIAL_ROUTES_TITLES = {
-  "/training/epa-method-22/module-7-quiz": {
-    moduleTitle: "EPA Method 22",
-    lectureTitle: "Module 7 Quiz",
-  },
-  "/training/history": {
-    moduleTitle: "Module 8",
-    lectureTitle: "History of Air Pollution",
-  },
-  "/training/faq": {
-    moduleTitle: "Module 9",
-    lectureTitle: "Frequently Asked Questions",
-  },
-  "/training/resources": {
-    moduleTitle: "Module 10",
-    lectureTitle: "Resources & Downloads",
-  },
-} as const;
-
-// type SpecialRoute = typeof SPECIAL_ROUTES[number];
 
 export function LectureNavigation() {
   const { moduleSlug, lectureSlug } = useParams();
   const navigate = useNavigate();
-  const location = useLocation();
-  const currentPath = location.pathname;
 
-  // Handle special routes
-  if (SPECIAL_ROUTES.includes(currentPath)) {
-    const currentIndex = SPECIAL_ROUTES.indexOf(currentPath);
-    const prevPath =
-      currentIndex === 0
-        ? "/training/epa-method-22/method-22-equipment"
-        : SPECIAL_ROUTES[currentIndex - 1];
-    const nextPath =
-      currentIndex < SPECIAL_ROUTES.length - 1
-        ? SPECIAL_ROUTES[currentIndex + 1]
-        : null;
-
-    // Get current, prev and next titles
-    const prevTitles = currentIndex === 0 
-      ? { moduleTitle: "EPA Method 22", lectureTitle: "Equipment Needed" }
-      : SPECIAL_ROUTES_TITLES[prevPath as keyof typeof SPECIAL_ROUTES_TITLES];
-    const nextTitles = nextPath 
-      ? SPECIAL_ROUTES_TITLES[nextPath as keyof typeof SPECIAL_ROUTES_TITLES]
-      : null;
-
-    return (
-      <div className="lg:h-40 bg-black">
-        <div className="mx-auto h-full max-w-7xl">
-          <div className="flex h-full items-center justify-between px-4 py-6">
-            <button
-              onClick={() => navigate(prevPath)}
-              className="group flex cursor-pointer flex-col items-center space-x-2"
-            >
-              <div className="flex transition-transform duration-300 ease-in-out group-hover:-translate-x-2">
-                <ChevronLeftIcon className="h-8 w-8 text-[#40E0D0] transition-colors duration-300 group-hover:text-[#20B2AA]" />
-                <ChevronLeftIcon className="h-8 w-8 text-[#80E0D0] transition-colors duration-300 group-hover:text-[#40E0D0]" />
-                <ChevronLeftIcon className="h-8 w-8 text-white transition-colors duration-300 group-hover:text-[#80E0D0]" />
-              </div>
-              <div className="text-center">
-                <div className="text-lg lg:text-2xl font-bold text-white">{prevTitles.moduleTitle}</div>
-                <div className="text-lg lg:text-2xl text-white">{prevTitles.lectureTitle}</div>
-              </div>
-            </button>
-            {nextPath && (
-              <button
-                onClick={() => navigate(nextPath)}
-                className="group flex cursor-pointer flex-col items-center space-x-2"
-              >
-                <div className="flex transition-transform duration-300 ease-in-out group-hover:translate-x-2">
-                  <ChevronRightIcon className="h-8 w-8 text-white transition-colors duration-300 group-hover:text-[#80E0D0]" />
-                  <ChevronRightIcon className="h-8 w-8 text-[#80E0D0] transition-colors duration-300 group-hover:text-[#40E0D0]" />
-                  <ChevronRightIcon className="h-8 w-8 text-[#40E0D0] transition-colors duration-300 group-hover:text-[#20B2AA]" />
-                </div>
-                <div className="text-center">
-                  <div className="text-lg lg:text-2xl font-bold text-white">{nextTitles?.moduleTitle}</div>
-                  <div className="text-lg lg:text-2xl text-white">{nextTitles?.lectureTitle}</div>
-                </div>
-              </button>
-            )}
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   // Regular lecture navigation logic
   const currentModule = navigationData.find((m) => m.slug === moduleSlug);
@@ -178,8 +90,8 @@ export function LectureNavigation() {
                 <ChevronLeftIcon className="h-8 w-8 text-white transition-colors duration-300 group-hover:text-[#80E0D0]" />
               </div>
               <div className="text-center">
-                <div className="text-lg lg:text-2xl font-bold text-white">{prevLecture.moduleTitle}</div>
-                <div className="text-lg lg:text-2xl text-white">{prevLecture.lectureTitle}</div>
+                <div className="text-lg lg:text-2xl font-bold text-white dark:text-zinc-300">{prevLecture.moduleTitle}</div>
+                <div className="text-lg lg:text-2xl text-white  dark:text-zinc-400">{prevLecture.lectureTitle}</div>
               </div>
             </div>
           )}
@@ -200,8 +112,8 @@ export function LectureNavigation() {
                 <ChevronRightIcon className="h-8 w-8 text-[#40E0D0] transition-colors duration-300 group-hover:text-[#20B2AA]" />
               </div>
               <div className="text-center">
-                <div className="text-lg lg:text-2xl font-bold text-white">{nextLecture.moduleTitle}</div>
-                <div className="text-lg lg:text-2xl text-white">{nextLecture.lectureTitle}</div>
+                <div className="text-lg lg:text-2xl font-bold text-white dark:text-zinc-300">{nextLecture.moduleTitle}</div>
+                <div className="text-lg lg:text-2xl text-white dark:text-zinc-400">{nextLecture.lectureTitle}</div>
               </div>
             </div>
           )}

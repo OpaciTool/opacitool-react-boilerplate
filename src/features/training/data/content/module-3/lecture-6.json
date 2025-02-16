@@ -13,7 +13,7 @@
         "text": "Steam, which is water in its gas phase, can significantly impact the opacity of a plume. EPA Method 9 specifically restricts opacity observations to areas of the plume where steam (water vapor) is absent. If steam is present, opacity observations must be conducted either before or after the section of the plume containing visible steam."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -30,7 +30,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",
@@ -56,7 +56,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-4",

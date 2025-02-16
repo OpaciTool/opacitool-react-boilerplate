@@ -21,8 +21,8 @@ export function TabsSection({ title, content, bgColor }: TabsSectionProps) {
   const [activeTab, setActiveTab] = useState(content.tabs[0].id);
 
   return (
-    <div className={clsx("px-4 py-8 last:pb-0 lg:px-14", bgColor)}>
-      <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
+    <div className={clsx("px-4 py-8 last:pb-0 lg:px-14 dark:bg-zinc-900", bgColor)}>
+      <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
         {title}
       </h2>
 
@@ -67,7 +67,7 @@ export function TabsSection({ title, content, bgColor }: TabsSectionProps) {
 function TabContent({ content }: { content: TabContent }) {
   return (
     <div className="space-y-8">
-      <p className="whitespace-pre-line text-lg text-zinc-900">
+      <p className="whitespace-pre-line text-lg text-zinc-900 dark:text-zinc-400">
         {content.description}
       </p>
 
@@ -75,10 +75,10 @@ function TabContent({ content }: { content: TabContent }) {
         const sectionContent =
           "images" in section ? (
             <div className="space-y-4">
-              <h3 className="text-xl font-semibold text-zinc-900 dark:text-white">
+              <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-300">
                 {section.title}
               </h3>
-              <p className="whitespace-pre-line text-lg text-zinc-900">
+              <p className="whitespace-pre-line text-lg text-zinc-900 dark:text-zinc-400">
                 {section.description}
               </p>
               <div className="flex gap-6">

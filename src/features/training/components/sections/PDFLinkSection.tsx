@@ -23,7 +23,7 @@ export function PDFLinkSection({
   bgColor = "bg-white",
 }: PDFLinkSectionProps) {
   return (
-    <div className={`px-4 py-8 lg:px-14 ${bgColor}`}>
+    <div className={`px-4 py-8 lg:px-14 dark:bg-zinc-900 ${bgColor}`}>
       <div className="grid items-center gap-4 lg:grid-cols-2">
         <div className="text-center">
           <a
@@ -46,13 +46,17 @@ export function PDFLinkSection({
         </div>
         <div>
           {title && (
-            <h2 className="mb-4 text-2xl font-semibold text-zinc-900">
+            <h2 className="mb-4 text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
               {title}
             </h2>
           )}
-          <p className="whitespace-pre-line text-lg text-zinc-900">{content.text}</p>
+          <div 
+            className="whitespace-pre-line text-lg text-zinc-900 dark:text-zinc-400"
+            dangerouslySetInnerHTML={{ __html: content.text }}
+          />
         </div>
       </div>
     </div>
   );
 }
+

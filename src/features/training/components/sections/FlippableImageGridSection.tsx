@@ -25,11 +25,11 @@ export function FlippableImageGridSection({
   };
 
   return (
-    <div className={clsx("px-4 py-8 lg:px-14", bgColor)}>
-      <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
+    <div className={clsx("px-4 py-8 lg:px-14 dark:bg-zinc-900", bgColor)}>
+      <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
         {title}
       </h2>
-      <div className="dark:prose-invert mb-8 max-w-none text-lg text-zinc-900">
+      <div className="dark:prose-invert mb-8 max-w-none text-lg text-zinc-900 dark:text-zinc-400">
         <p className="whitespace-pre-line">{content.text}</p>
       </div>
       <div role="list" className="grid grid-cols-2 gap-4 lg:grid-cols-3">

@@ -13,7 +13,7 @@
         "text": "EPA Method 203a, 203b and 203c are alternatives to EPA Method 9 and were approved by the US EPA in 2006. The 203-series test methods were developed to accommodate sources that didn’t fit the exact testing protocol of EPA Method 9."
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -32,14 +32,14 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",
       "type": "split",
       "layout": "text-right",
       "bgColor": "bg-[#E4EAED]",
-      "title": "EPA Method 203a - The Time-Averaged Method",
+      "title": "EPA Method 203b - The Time-Exception Method",
       "content": {
         "text": "EPA Method 203b differs from Method 9 by allowing an exception for high-opacity periods. Method 203b allows a period of time that can exceed the opacity limit. This method is useful for sources which have high 'blips' of opacity due to characteristics of the process or control device.\n\nExample:\n\nAssume a source has an opacity limit of 10% with an exception period of two minutes during fifteen minutes of observations. After observing the source for fifteen minutes, the number of opacity readings which exceed 10% are counted and it is determined that there were seven occurrences.\n\nSeven is then divided by four (because there are four readings in a minute) to determine the time period which exceeded 10%. The source exceeded 10% for 1.75 minutes which is compliant with the 2-minute limit.",
         "media": {
@@ -51,7 +51,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-4",
@@ -70,14 +70,14 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-5",
       "type": "method-comparison",
       "title": "Method Comparison",
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     }
   ]
 }

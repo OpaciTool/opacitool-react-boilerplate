@@ -20,7 +20,7 @@
         }
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-2",
@@ -54,8 +54,8 @@
                     }
                   ],
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto mt-8",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto mt-8 dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "The Visual Test",
@@ -97,8 +97,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Regulatory Agencies",
@@ -113,8 +113,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Environmental Consultants",
@@ -129,8 +129,8 @@
                     }
                   },
                   "divider": true,
-                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto",
-                  "dividerStyleParent": "bg-[#EEEEEE]"
+                  "dividerStyle": "h-1 bg-black w-[80%] mx-auto dark:bg-zinc-800",
+                  "dividerStyleParent": "bg-[#EEEEEE] dark:bg-zinc-900"
                 },
                 {
                   "title": "Community & Environmental Groups",
@@ -151,7 +151,7 @@
         ]
       },
       "divider": true,
-      "dividerStyle": "h-1 bg-orange-500"
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
       "id": "section-3",

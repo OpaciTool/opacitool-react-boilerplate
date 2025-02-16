@@ -47,7 +47,7 @@ export function TrainingSidebar({
   };
 
   return (
-    <Sidebar className="h-full border-r border-zinc-950/5 bg-zinc-900 dark:border-white/5 lg:h-screen">
+    <Sidebar className="h-full pb-6 border-r border-zinc-950/5 bg-zinc-900 dark:bg-black dark:border-white/5 lg:h-screen">
       <SidebarHeader>
         {/* Close button - mobile only */}
         {onClose && (
@@ -78,7 +78,7 @@ export function TrainingSidebar({
             <ArrowLeftIcon className="size-5 text-black" />
           </div>
 
-          <span className="font-medium text-white">Lecture Home</span>
+          <span className="font-medium text-white dark:text-zinc-300">Lecture Home</span>
         </Link>
       </SidebarHeader>
 
@@ -93,7 +93,7 @@ export function TrainingSidebar({
                 <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
                   {module.id}
                 </div>
-                <SidebarLabel className="truncate text-sm font-semibold text-white dark:text-zinc-100">
+                <SidebarLabel className="truncate text-sm font-semibold text-white dark:text-zinc-300">
                   {module.title}
                 </SidebarLabel>
               </div>
@@ -137,36 +137,6 @@ export function TrainingSidebar({
             )}
           </SidebarSection>
         ))}
-
-        {/* History Link */}
-        <SidebarItem to="/training/history" className="relative py-1 border-b border-zinc-100/20">
-          <SidebarLabel className="text-zinc-200 dark:text-zinc-400 flex items-center gap-3 mt-4 ">
-            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
-              8
-            </div>
-            <span>History</span>
-          </SidebarLabel>
-        </SidebarItem>
-
-        {/* FAQ */}
-        <SidebarItem to="/training/faq" className="relative py-1 border-b border-zinc-100/20">
-          <SidebarLabel className="text-zinc-200 dark:text-zinc-400 flex items-center gap-3 mt-4 ">
-            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
-              9
-            </div>
-            <span>Frequently Asked Questions</span>
-          </SidebarLabel>
-        </SidebarItem>
-
-        {/* Resources and Downloads */}
-        <SidebarItem to="/training/resources" className="relative py-1 border-b border-zinc-100/20">
-          <SidebarLabel className="text-zinc-200 dark:text-zinc-400 flex items-center gap-3 mt-4 ">
-            <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-teal-400 text-sm font-medium text-zinc-900 dark:bg-teal-400 dark:text-zinc-900">
-              10
-            </div>
-            <span>Resources and Downloads</span>
-          </SidebarLabel>
-        </SidebarItem>
       </SidebarBody>
     </Sidebar>
   );
