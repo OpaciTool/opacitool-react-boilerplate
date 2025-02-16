@@ -38,13 +38,13 @@ export function BulletedSplitSection({
         const [bullet, ...rest] = paragraph.split(':');
         if (rest.length > 0) {
           return (
-            <p key={index} className="mb-4">
+            <p key={`paragraph-${index}`} className="mb-4">
               {bullet}:<span className="font-bold">{rest.join(':')}</span>
             </p>
           );
         }
       }
-      return <p key={index} className="mb-4">{paragraph}</p>;
+      return <p key={`paragraph-${index}`} className="mb-4">{paragraph}</p>;
     });
   };
 

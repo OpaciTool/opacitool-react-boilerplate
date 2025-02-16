@@ -34,7 +34,7 @@ export function TwoColumnSection({ title, content, bgColor }: TwoColumnSectionPr
 
       <div className="flex gap-8">
         {content.media.columns.map((column, index) => (
-          <div key={index} className="flex-1">
+          <div key={`column-${index}`} className="flex-1">
             <h3 className="mb-4 text-lg font-semibold text-zinc-900 dark:text-zinc-300 lg:text-center">
               {column.title}
             </h3>

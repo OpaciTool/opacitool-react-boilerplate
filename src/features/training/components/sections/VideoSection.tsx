@@ -30,7 +30,7 @@ export function VideoSection({
         Your browser does not support the video tag.
       </video>
       {content.media.caption && (
-        <p className="mt-2 text-center text-sm italic text-zinc-300">
+        <p className="mt-2 text-center text-sm italic text-zinc-900 dark:text-zinc-300">
           {content.media.caption}
         </p>
       )}

@@ -63,7 +63,7 @@ export function ImageGridSection({
         )}
       >
         {content.media.images.map((image, index) => (
-          <div key={index} className="relative" role="listitem">
+          <div key={`image-${index}`} className="relative" role="listitem">
             <div
               className={clsx(
                 "overflow-hidden rounded-lg",

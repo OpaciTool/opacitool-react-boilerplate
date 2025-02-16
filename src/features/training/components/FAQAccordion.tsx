@@ -35,12 +35,12 @@ function AccordionItem({ question, answer }: { question: string; answer: string 
 export default function FAQAccordion() {
   return (
     <div className="px-4 py-8 lg:px-14 dark:bg-zinc-900">
-      {faqData.map((category, categoryIndex) => (
-        <div key={categoryIndex} className="mb-8">
+      {faqData.map((category) => (
+        <div key={category?.id} className="mb-8">
           <h2 className="mb-4 text-xl font-semibold text-[#ff6b6b]">{category.title}</h2>
           <div className="overflow-hidden rounded-lg border border-gray-200 dark:border-zinc-800">
-            {category.questions.map((item, itemIndex) => (
-              <AccordionItem key={itemIndex} question={item.question} answer={item.answer} />
+            {category.questions.map((item) => (
+              <AccordionItem key={item.id} question={item.question} answer={item.answer} />
             ))}
           </div>
         </div>

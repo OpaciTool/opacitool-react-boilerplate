@@ -112,7 +112,7 @@ export const navigationData: Module[] = [
   },
   {
     id: 9,
-    title: "FAQ",
+    title: "FAQs",
     slug: "faq",
     lectures: [
       { title: "Frequently Asked Questions", slug: "frequently-asked-questions" }
@@ -120,7 +120,7 @@ export const navigationData: Module[] = [
   },
   {
     id: 10,
-    title: "Recourses",
+    title: "Resources",
     slug: "resources",
     lectures: [
       { title: "Resources & Downloads", slug: "resources-and-downloads" }

@@ -501,7 +501,7 @@ export function LectureContent() {
   return (
     <div className="relative min-h-svh bg-[#E4EAED]">
       <div className="">
-        <div className="items-center justify-between bg-zinc-900 dark:bg-black px-4 py-8 lg:flex lg:px-14">
+        <div className="items-center justify-between bg-zinc-900 px-4 py-8 dark:bg-black lg:flex lg:px-14 relative">
           <div className="space-y-1">
             <h3 className="text-2xl text-zinc-300">{currentModule.title}</h3>
             <h2 className="text-4xl font-bold text-white dark:text-zinc-300">
