@@ -27,15 +27,17 @@
               "image": {
                 "url": "module-7/1.jpg",
                 "alt": "Example 1",
-                "width": "430px"
+                "width": "500px"
+
               },
               "title": "",
               "text": "Gas flares usually burn clean but may have visible emissions if not functioning correctly."
             },
             {
               "image": {
-                "url": "module-7/2.jpg",
-                "alt": "Example 2"
+                "url": "module-7/2.png",
+                "alt": "Example 2",
+                      "width": "500px"
               },
               "title": "",
               "text": "Method 22 can be used to observe the frequency of visible emissions inside or outside a building."
