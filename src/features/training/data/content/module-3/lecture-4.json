@@ -45,7 +45,7 @@
       "title": "Video Demonstrating Contrast",
       "bgColor": "bg-[#EEEEEE]",
       "content": {
-        "text": "The following video shows the same opacity value with a low-contrasting background and a high-contrasting background.  Notice the effect the background has on the apparent opacity.\n\n",
+        "text": "The following video shows the effect of both low and high-contrasting backgrounds. Notice the difficulty in determining the opacity against the low-contrast background.\n\n",
         "media": {
           "type": "video",
           "url": "module-3/video.mp4",

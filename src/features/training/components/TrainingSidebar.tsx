@@ -63,7 +63,7 @@ export function TrainingSidebar({
         {/* Logo Section */}
         <div className="mb-8 flex items-center justify-center gap-2">
           <img
-            src={getLectureMediaUrl("Logo.svg")}
+            src="/images/Logo.svg"
             alt="OpaciTool Logo"
             className="w-full max-w-[400px]"
           />

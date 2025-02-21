@@ -18,45 +18,30 @@
           "isClickable": true,
           "caption": "",
           "width": "80%"
-          
         }
       }
     },
     {
-        "id": "section-2",
-        "type": "split",
-        "layout": "text-right",
-        "bgColor": "bg-[#E4EAED]",
-        "title": "",
-        "content": {
-          "text": "Depending on your geographic location and the time of year, the sun may be directly above you during mid-day hours. If possible, it is best to avoid this time when making opacity observations.",
-          "media": {
-            "type": "image",
-            "url": "module-3/lecture-2/6.jpg",
-            "alt": "Sun Position Diagram",
-            "isClickable": false,
-            "caption": "",
-            "width": "80%"
-          }
-        }
-      },
-    {
-      "id": "section-3",
-      "type": "video",
-      "title": "",
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-right",
       "bgColor": "bg-[#E4EAED]",
+      "title": "",
       "content": {
-        "text": "The following video shows the effect the sun has on the opacity of a plume.  The opacity in each clip is the same but the apparent opacity changes based on the angle of the sun, the presence of clouds and the location of the sun relative to the observer.",
+        "text": "Depending on your geographic location and the time of year, the sun may be directly above you during mid-day hours. If possible, it is best to avoid this time when making opacity observations.",
         "media": {
-          "type": "video",
-          "url": "module-3/video.mp4",
-          "alt": "Sun Position Animation",
-          "width": "lg:w-[60%]"
+          "type": "image",
+          "url": "module-3/lecture-2/6.jpg",
+          "alt": "Sun Position Diagram",
+          "isClickable": false,
+          "caption": "",
+          "width": "80%"
         }
       },
       "divider": true,
       "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
+
     {
       "id": "section-4",
       "type": "split",
@@ -68,4 +53,4 @@
       }
     }
   ]
-} 
+}
