@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import { getExpandedModuleId } from "@/helpers/getExpandedModuleId.helper";
 import { Link } from "react-router-dom";
-import { getLectureMediaUrl } from "../lib/getLectureMedia";
+
 
 interface TrainingSidebarProps {
   onClose?: () => void;
