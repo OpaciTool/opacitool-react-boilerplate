@@ -19,7 +19,7 @@ export default function QuestionMarkTooltip() {
             ?
           </text>
         </svg>
-        <p className="text-white text-lg">Support</p>
+        <p className="text-white text-base lg:text-lg">Support</p>
   
         {/* <div className="absolute z-30 lg:w-80 top-10 right-0 hidden group-hover:block bg-teal-400 text-black p-2 rounded-lg shadow-lg text-xs lg:text-sm">
           <p>Here goes text with more info about support</p>

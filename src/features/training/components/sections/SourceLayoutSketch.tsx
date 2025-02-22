@@ -20,7 +20,7 @@ export default function SourceLayoutSketch() {
           onClick={() => openModal(fields.sketch)}
         >
           <img
-            src={getLectureMediaUrl("module-4/lecture-1/38.png")}
+            src={getLectureMediaUrl("module-4/lecture-1/38.jpg")}
             alt="Source Layout Sketch"
             className="h-auto w-full transition-opacity hover:opacity-90"
           />
