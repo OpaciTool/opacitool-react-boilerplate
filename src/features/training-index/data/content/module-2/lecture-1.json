@@ -1,0 +1,102 @@
+{
+  "lectureId": "module-2-lecture-1",
+  "moduleId": 2,
+  "title": "Using the App",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Reference Mode Overview",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Reference Mode allows you to quickly compare visible emissions to the OpaciTool reference scale.  Screenshots are manually taken by the user. Screenshots and opacity data are uploaded to your Dashboard where they can be viewed.\n\n Reference Mode is best used when you do not plan to create a report in the Dashboard or if you are recording observations on a paper form and want to supplement your report with referenced screenshots.  A report can be created in your Dashboard when you use Reference Mode, but you will need to input most of the data manually from your paper form.",
+        "media": {
+          "type": "image",
+          "url": "training-index/13.png",
+          "alt": "Reference Mode Overview"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Setup",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "You can hand-hold your device or place it in a tripod when using Reference Mode. Screenshots are recorded manually. You will need to setup in a location that meets the observation requirements for the test method you are performing (EPA Method 9, Method 22, Method 203 a-c).",
+        "media": {
+          "type": "image",
+          "url": "training-index/14.png",
+          "alt": "Proper Device Orientation",
+          "width": "50%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-3",
+      "type": "list-split",
+      "title": "Settings & Tools",
+      "description": "Tapping the ellipsis will open the Settings & Tools menu.\n Not all features are available on all devices.",
+      "bgColor": "bg-[#E4EAED]",
+      "layout": "text-left",
+      "content": {
+        "items": [
+          {
+            "text": "The brightness button allows you to adjust the screen brightness.",
+            "image": {
+              "url": "training-index/16.svg",
+              "alt": "Open App Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "The angle button will allow you to measure the viewing angle between you and the emission point.",
+            "image": {
+              "url": "training-index/17.svg",
+              "alt": "Position Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "If your phone is equipped with a compass, selecting this button will allow you to determine the direction to the emission point.",
+            "image": {
+              "url": "training-index/18.svg",
+              "alt": "Adjust Scale Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "Some devices allow you to select from multiple cameras.  If available, you can select the camera with the best view.",
+            "image": {
+              "url": "training-index/19.svg",
+              "alt": "Camera Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "When the exit button is selected, you can choose to save your data and submit it to your Dashboard or exit and discard your data.",
+            "image": {
+              "url": "training-index/20.svg",
+              "alt": "Review Icon",
+              "width": "w-10"
+            }
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/15.png",
+          "alt": "Reference Mode Interface",
+          "width": "w-full"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    }
+  ]
+}
