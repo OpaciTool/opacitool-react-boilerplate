@@ -14,7 +14,9 @@
         "media": {
           "type": "image",
           "url": "training-index/4.png",
-          "alt": "Logo Image"
+          "alt": "App Image",
+          "width": "30%"
+
         }
       },
       "divider": true,
@@ -33,12 +35,14 @@
           "images": [
             {
               "url": "training-index/5.png",
-              "alt": "OpaciTool Scale Light Background"
+              "alt": "Apple Logo",
+              "width": "w-1/3"
 
             },
             {
               "url": "training-index/6.png",
-              "alt": "OpaciTool Scale Dark Background"
+              "alt": "Google Play Logo",
+              "width": "w-1/3"
 
             }
           ]
@@ -97,7 +101,8 @@
         "media": {
           "type": "image",
           "url": "training-index/8.png",
-          "alt": "Image"
+          "alt": "Image",
+          "width": "w-2/3 xl:w-3/4"
         }
       },
       "divider": true,
@@ -124,10 +129,10 @@
       "id": "section-6",
       "type": "split",
       "layout": "text-left",
-      "title": "Observations",
+      "title": "OpaciTool Modes",
       "bgColor": "bg-[#E4EAED]",
       "content": {
-        "text": "You can view averages and data from previous observations under this section.  This is especially useful if you need to know the highest average immediately after the test. All of the data found under the Observations section is also available in your online Dashboard.\n\n If a test was accidentally stopped due to an application crash, power failure or unintentional exit, you can find and resume the interrupted test under the Observations section.\n\n You can also upload observations that were saved on your device when no internet connection was available.",
+        "text": "There are two modes you can select from when using the OpaciTool app.  Both modes allow you to use the OpaciTool scale for visual reference but they differ in operation.",
         "media": {
           "type": "image",
           "url": "training-index/10.png",

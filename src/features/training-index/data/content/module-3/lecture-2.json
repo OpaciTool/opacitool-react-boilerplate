@@ -1,0 +1,244 @@
+{
+  "lectureId": "module-3-lecture-2",
+  "moduleId": 3,
+  "title": "Performing a Test",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "list-split",
+      "title": "Settings & Tools",
+      "description": "Tapping the ellipsis will open the Settings & Tools menu.\n\n <p class='italic'><strong>Not all features are available on all devices.</strong></p>",
+      "bgColor": "bg-[#E4EAED]",
+      "layout": "text-left",
+      "content": {
+        "items": [
+          {
+            "text": "The brightness button allows you to adjust the screen brightness.",
+            "image": {
+              "url": "training-index/45.svg",
+              "alt": "Open App Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "Some devices allow you to select from multiple cameras.  If available, you can select the camera with the best view.",
+            "image": {
+              "url": "training-index/46.svg",
+              "alt": "Camera Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "When the exit button is selected, you can choose to save your data and submit it to your Dashboard or exit and discard your data.",
+            "image": {
+              "url": "training-index/47.svg",
+              "alt": "Review Icon",
+              "width": "w-10"
+            }
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/44.png",
+          "alt": "Settings & Tools Menu",
+          "width": "w-full"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-4",
+      "type": "subsection-split",
+      "title": "Reference Scale Adjustment",
+      "description": "The reference scale can be adjusted by tapping the ellipsis in the lower left part of the screen.",
+      "bgColor": "bg-[#EEEEEE]",
+      "layout": "text-right",
+      "flexLayout": true,
+      "content": {
+        "subsections": [
+          {
+            "heading": "Color.",
+            "description": "The color slider adjusts the greyscale color of the reference scale between white and black to match the color of the emissions being observed."
+          },
+          {
+            "heading": "Scale.",
+            "description": "The scale slider adjusts the size of the reference scale."
+          },
+          {
+            "heading": "Greyscale.",
+            "description": "The greyscale button changes the entire scene to black and white.  For some observations, greyscale makes it easier to compare the reference scale to the emissions."
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/48.png",
+          "alt": "Image of Reference Scale, Timer & Capture",
+          "width": "w-full"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Using Test Mode",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "<p class='w-1/2'>Using Test Mode is simple and intuitive. Below are the basic steps to get you started.</p>"
+      }
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Step 1 - Move the Reference Scale Next to the Emissions",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Using your finger, drag the Reference Scale next to the emissions to be observed.  Try to place it over a background similar to the one behind the subject emissions.  You can pinch to zoom in the live scene if needed.",
+        "media": {
+          "type": "image",
+          "url": "training-index/49.png",
+          "alt": "Reference Scale"
+        }
+      }
+    },
+    {
+      "id": "section-7",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Step 2 - Adjust the Size and Color of the Reference Scale",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Open the tray to adjust the size of the Reference Scale and the color.  Try to match the color of the scale to the color of the subject emissions.",
+        "media": {
+          "type": "image",
+          "url": "training-index/50.png",
+          "alt": "Size and Color of the Reference Scale"
+        }
+      }
+    },
+    {
+      "id": "section-8",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Step 3 - Match the Opacity & Begin Test",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Move the Reference Scale up and down next to the subject emissions until you find the closest matching opacity.  Tap the block to indicate the selected opacity. The selected opacity will be displayed at the top of the screen and recorded at the observation frequency.\n\n When you have matched the opacity and are ready to begin the test, press the Play button. A screenshot will be taken and the timers will indicate the test time remaining and the time until the next reading.",
+        "media": {
+          "type": "image",
+          "url": "training-index/51.png",
+          "alt": "Match the Opacity & Begin Test"
+        }
+      }
+    },
+    {
+      "id": "section-9",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Step 4 - Adjust Accordingly",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "The opacity of the emissions may change during the test. If it changes, move the reference scale and tap the closest matching opacity before the next reading is made.",
+        "media": {
+          "type": "image",
+          "url": "training-index/52.png",
+          "alt": "Adjust Accordingly"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-10",
+      "type": "subsection-split",
+      "title": "Pausing the Test",
+      "description": "If you need to pause the test, simply press the Pause button next to the timer to go to the Pause screen. There are two types of pauses and they affect your test observations differently.",
+      "bgColor": "bg-[#EEEEEE]",
+      "layout": "text-right",
+      "content": {
+        "subsections": [
+          {
+            "heading": "Uncontrollable Pause",
+            "description": "If you are forced to pause the test due to visibility, facility malfunction or extreme wind or any other reason outside of your control, select this option. Uncontrollable pauses are included when calculating the highest opacity average.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Intentional Pause",
+            "description": "If you choose to pause the test to take a break, take a phone call or any other reason that is within your control, select this option.  Intentional pauses are not included when calculating the highest opacity average.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Notes",
+            "description": "Regardless of the reason for the pause, it’s good practice to provide details in the Notes field.  Notes will be uploaded to your Dashboard.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Add Time",
+            "description": "If you intentionally pause the test, the pause will stop the averaging period.  For an EPA Method 9 test, you need at least 6 minutes of data in your average. If there is not at least 6 minutes of data before or after an intentional pause, you can add more time to the test duration.",
+            "headingStyle": "font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/53.png",
+          "alt": "Pausing the Test",
+           "width": "w-2/3"
+        }
+      }
+    },
+    {
+      "id": "section-11",
+      "type": "split",
+      "layout": "text-left",
+      "title": "",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "When you return to the test screen, you must tap the Play button to resume the test."
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-12",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Post Test Atmospheric Data",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "When the test duration has lapsed, the Post Test Atmospheric Data screen will appear.  Enter the current atmospheric data or select “Autofill” to retrieve the data from a local weather station.",
+        "media": {
+          "type": "image",
+          "url": "training-index/54.png",
+          "alt": "Post Test Atmospheric Data"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-12",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Notes & Upload",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "Enter any notes in the field.  When you are finished, complete the test.  Test data will be uploaded to your Dashboard for review and editing.",
+        "media": {
+          "type": "image",
+          "url": "training-index/55.png",
+          "alt": "Post Test Atmospheric Data"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    }
+  ]
+}

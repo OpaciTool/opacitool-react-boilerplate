@@ -8,7 +8,7 @@ import {
   SidebarSection,
 } from "@/shared/ui";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   ChevronDownIcon,
   ArrowLeftIcon,
@@ -16,10 +16,8 @@ import {
 } from "@heroicons/react/20/solid";
 import { motion } from "framer-motion";
 import clsx from "clsx";
-import { getExpandedModuleId } from "@/helpers/getExpandedModuleId.helper";
 import { Link } from "react-router-dom";
 import { navigationIndexData } from "../data/navigation-index-data";
-
 
 interface TrainingSidebarProps {
   onClose?: () => void;
@@ -32,12 +30,25 @@ export function TrainingIndexSidebar({
 }: TrainingSidebarProps) {
   const { lectureSlug } = useParams();
 
+  // Find active module based on current lecture
+  const activeModule = navigationIndexData.find((module) =>
+    module.lectures.some((lecture) => lecture.slug === lectureSlug)
+  );
+
   // Initialize expanded modules state
-  const [expandedModules, setExpandedModules] = useState<
-    Record<number, boolean>
-  >(() => ({
-    [getExpandedModuleId()]: true,
-  }));
+  const [expandedModules, setExpandedModules] = useState<Record<number, boolean>>(
+    {}
+  );
+
+  // Update expanded modules when active module changes
+  useEffect(() => {
+    if (activeModule) {
+      setExpandedModules((prev) => ({
+        ...prev,
+        [activeModule.id]: true,
+      }));
+    }
+  }, [activeModule?.id]);
 
   // Toggle module expansion
   const toggleModule = (moduleId: number) => {
@@ -78,8 +89,9 @@ export function TrainingIndexSidebar({
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-green-400">
             <ArrowLeftIcon className="size-5 text-black" />
           </div>
-
-          <span className="font-medium text-white dark:text-zinc-300">Training Index</span>
+          <span className="font-medium text-white dark:text-zinc-300">
+            Training Index
+          </span>
         </Link>
       </SidebarHeader>
 

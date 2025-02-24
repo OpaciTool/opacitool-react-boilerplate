@@ -1,22 +1,27 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import { navigationData } from "../data/navigation";
+import { Module } from "../data/navigation";
+
+interface LectureNavigationProps {
+  data: Module[];
+  path: string;
+}
 
 
-export function LectureNavigation() {
+export function LectureNavigation({ data, path }: LectureNavigationProps) {
   const { moduleSlug, lectureSlug } = useParams();
   const navigate = useNavigate();
 
 
   // Regular lecture navigation logic
-  const currentModule = navigationData.find((m) => m.slug === moduleSlug);
+  const currentModule = data.find((m) => m.slug === moduleSlug);
   const currentLectureIndex = currentModule?.lectures.findIndex(
     (l) => l.slug === lectureSlug,
   );
 
   if (!currentModule || currentLectureIndex === undefined) return null;
 
-  const currentModuleIndex = navigationData.findIndex(
+  const currentModuleIndex = data.findIndex(
     (m) => m.slug === moduleSlug,
   );
   const isFirstLecture = currentModuleIndex === 0 && currentLectureIndex === 0;
@@ -36,7 +41,7 @@ export function LectureNavigation() {
         lectureSlug: currentModule.lectures[currentLectureIndex - 1].slug,
       };
     } else {
-      const prevModule = navigationData[currentModuleIndex - 1];
+      const prevModule = data[currentModuleIndex - 1];
       if (prevModule) {
         prevLecture = {
           moduleTitle: prevModule.title,
@@ -58,7 +63,7 @@ export function LectureNavigation() {
         lectureSlug: currentModule.lectures[currentLectureIndex + 1].slug,
       };
     } else {
-      const nextModule = navigationData[currentModuleIndex + 1];
+      const nextModule = data[currentModuleIndex + 1];
       if (nextModule) {
         nextLecture = {
           moduleTitle: nextModule.title,
@@ -80,7 +85,7 @@ export function LectureNavigation() {
               className="group flex cursor-pointer flex-col items-center space-x-2"
               onClick={() =>
                 navigate(
-                  `/training/${prevLecture.moduleSlug}/${prevLecture.lectureSlug}`,
+                  `/${path}/${prevLecture.moduleSlug}/${prevLecture.lectureSlug}`,
                 )
               }
             >
@@ -102,7 +107,7 @@ export function LectureNavigation() {
               className="group flex cursor-pointer flex-col items-center space-x-2"
               onClick={() =>
                 navigate(
-                  `/training/${nextLecture.moduleSlug}/${nextLecture.lectureSlug}`,
+                  `/${path}/${nextLecture.moduleSlug}/${nextLecture.lectureSlug}`,
                 )
               }
             >

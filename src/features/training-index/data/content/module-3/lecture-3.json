@@ -1,0 +1,123 @@
+{
+  "lectureId": "module-3-lecture-3",
+  "moduleId": 3,
+  "title": "Test Mode Results",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Test Mode - Dashboard",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Each time you use Reference Mode or Test Mode in the OpaciTool app, an entry is created in your dashboard.  The entry is called an “Observation” and can be found by selecting the “Observations” button in the Dashboard.\n\n Selecting the observation you created using Test Mode allows you to view all of your saved data and screenshots and generate reports to print or download.",
+        "media": {
+          "type": "image",
+          "url": "training-index/56.png",
+          "alt": "Reference Mode - Dashboard",
+          "width": "75%"
+        }
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "image",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "media": {
+          "url": "training-index/57.png",
+          "alt": "Observation Dashboard",
+          "width": "w-full"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Viewing Data & Creating Reports",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": ""
+      }
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Facility & Test Data",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "Any information you entered during your observation is automatically uploaded to the respective field of the report page. Data can be edited at anytime. To view an explanation of what should be input in a field, hover over the ? icon.",
+        "media": {
+          "type": "image",
+          "url": "training-index/58.png",
+          "alt": "Facility & Test Data"
+        }
+      }
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Observation Data",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "All opacity readings are recorded.  If a reading contained a screenshot, you can select the reading to view the screenshot.",
+        "media": {
+          "type": "image",
+          "url": "training-index/59.png",
+          "alt": "Observation Data"
+        }
+      }
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Screenshots",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "When an opacity reading with a screenshot is selected, you will see the screenshot, date, time and opacity.  The opacity can be updated if needed.  You can also select which screenshots to include with the report.",
+        "media": {
+          "type": "image",
+          "url": "training-index/60.png",
+          "alt": "Screenshots"
+        }
+      }
+    },
+    {
+      "id": "section-7",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Pauses",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "If a pause or pauses occurred during the test, they will be represented by pause icons in the opacity readings. “Uncontrollable” pauses, indicated with a green icon, are included in the rolling average. “Intentional” pauses, indicated with a red icon, are not included in the rolling average. The type of pause can be changed in the Dashboard if needed.",
+        "media": {
+          "type": "image",
+          "url": "training-index/61.png",
+          "alt": "Pauses"
+        }
+      }
+    },
+    {
+      "id": "section-8",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Print or Download Report",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "Selecting Print will allow you to print or download the report as a .pdf.  You can change the data in the report at anytime.",
+        "media": {
+          "type": "image",
+          "url": "training-index/62.png",
+          "alt": "Print or Download Report",
+          "width": "50%"
+        }
+      }
+    }
+  ]
+}

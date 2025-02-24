@@ -55,8 +55,8 @@ export function ListSplitSection({
               </h2>
             )}
             {description && (
-              <p className="mb-6 text-base text-zinc-700 dark:text-zinc-300">
-                {description}
+              <p className="mb-6 text-lg text-zinc-900 dark:text-zinc-400" dangerouslySetInnerHTML={{ __html: description }}>
+                
               </p>
             )}
             <ul className="space-y-6">
@@ -70,7 +70,7 @@ export function ListSplitSection({
                       item.image.width || "w-12"
                     )}
                   />
-                  <p className="text-base text-zinc-700 dark:text-zinc-300">
+                  <p className="text-lg text-zinc-900 dark:text-zinc-400">
                     {item.text}
                   </p>
                 </li>

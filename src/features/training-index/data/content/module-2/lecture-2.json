@@ -1,0 +1,157 @@
+{
+  "lectureId": "module-2-lecture-2",
+  "moduleId": 2,
+  "title": "Using the Dashboard",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Reference Mode - Dashboard",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Each time you use Reference Mode or Test Mode in the OpaciTool app, an entry is created in your dashboard.  The entry is called an “Observation” and can be found by selecting the “Observations” button in the Dashboard.\n\n Selecting the observation you created using Reference Mode allows you to view any screenshots that were captured and allows you to input data to create a report. ",
+        "media": {
+          "type": "image",
+          "url": "training-index/29.png",
+          "alt": "Reference Mode - Dashboard",
+          "width": "75%"
+        }
+      }
+    },
+    {
+      "id": "section-2",
+      "type": "image",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "media": {
+          "url": "training-index/30.png",
+          "alt": "Reference Mode Dashboard Interface",
+          "width": "w-full"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Viewing Screenshots",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "Under the “Images” section, click the View button to see all of the screenshots taken during the Reference Mode session.",
+        "media": {
+          "type": "image",
+          "url": "training-index/31.png",
+          "alt": "Screenshots View"
+        }
+      }
+    },
+    {
+      "id": "section-3",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Screenshot Detail",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "Selecting a screenshot will display the screenshot, GPS location of the device and the date and time of the screenshot.\n\n The opacity that was selected on the Reference Scale will also be listed.  The opacity can be updated if needed.\n\n If you intend to develop a report, you can choose to include the screenshot in the report.",
+        "media": {
+          "type": "image",
+          "url": "training-index/32.png",
+          "alt": "Screenshots View"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-4",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Creating a Report",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": ""
+      }
+    },
+    {
+      "id": "section-5",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Enter Data",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "In Reference Mode, the fields of the report are blank.  Enter your data in the fields.  You can hover over the ? icon next to a field to view an explanation of what should be input.",
+        "media": {
+          "type": "image",
+          "url": "training-index/33.png",
+          "alt": "Enter Data"
+        }
+      }
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Enter Observations",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Enter the opacity readings you recorded during the test."
+      }
+    },
+    {
+      "id": "section-7",
+      "type": "image",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "media": {
+          "url": "training-index/34.png",
+          "alt": "Enter Observations",
+          "width": "w-full"
+        }
+      }
+    },
+    {
+      "id": "section-8",
+      "type": "split",
+      "layout": "text-left",
+      "title": "",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "The Observation Frequency, Averaging Period and observation times can be changed as needed.  The highest average is calculated based on the averaging period and is highlighted in the table of readings."
+      }
+    },
+    {
+      "id": "section-9",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Select Screenshots to Include",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "To include screenshots in the report, open a screenshot and select 'Include with Report.'",
+        "media": {
+          "type": "image",
+          "url": "training-index/35.png",
+          "alt": "Select Screenshots "
+        }
+      }
+    },
+    {
+      "id": "section-10",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Print or Download Report",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Selecting Print will allow you to print or download the report as a .pdf.  You can change the data in the report at anytime.",
+        "media": {
+          "type": "image",
+          "url": "training-index/36.png",
+          "alt": "Print or Download Report",
+          "width": "40%"
+        }
+      }
+    }
+  ]
+}

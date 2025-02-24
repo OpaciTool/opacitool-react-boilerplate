@@ -54,7 +54,7 @@ export function SplitSectionTwoImages({
             </h2>
             <div className="prose prose-zinc dark:prose-invert">
               {content.text.split("\n\n").map((paragraph, index) => (
-                <p key={index} className="text-base text-zinc-700 dark:text-zinc-300">
+                <p key={index} className="text-lg text-zinc-900 dark:text-zinc-400">
                   {paragraph}
                 </p>
               ))}
@@ -67,7 +67,7 @@ export function SplitSectionTwoImages({
               <div
                 key={index}
                 className={clsx(
-                  "flex justify-center",
+                  "flex justify-center gap-4",
                   image.width ? image.width : "w-full"
                 )}
               >

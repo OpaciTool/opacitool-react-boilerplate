@@ -5,8 +5,10 @@ import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { getLectureMediaUrl } from "../../lib/getLectureMedia";
 import { ImageLoader } from "@/shared/components/ImageLoader";
 
+
 interface SplitSectionProps {
   title: string;
+  titleStyle?: string;
   content: {
     text: string;
     media?: {
@@ -34,6 +36,7 @@ function convertLinksToAnchors(text: string) {
 
 export function SplitSection({
   title,
+  titleStyle,
   content,
   layout = "text-left",
   containerType = "grid",
@@ -50,7 +53,7 @@ export function SplitSection({
         className={clsx(
           containerType === "grid"
             ? clsx(
-                content.media
+                content?.media
                   ? "grid items-center gap-8 lg:grid-cols-2"
                   : "flex flex-col",
                 isTextLeft ? "lg:grid-flow-col" : "lg:grid-flow-col-dense",
@@ -67,11 +70,14 @@ export function SplitSection({
           )}
         >
           {/* Section Title */}
-          <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
+          <h2 className={clsx(
+            "text-2xl font-semibold text-zinc-900 dark:text-white mb-4",
+            titleStyle
+          )}>
             {title}
           </h2>
           <div className="dark:prose-invert text-lg text-zinc-900 dark:text-zinc-400">
-            <p
+            <div
               className="whitespace-pre-line"
               dangerouslySetInnerHTML={{
                 __html: convertLinksToAnchors(content.text),

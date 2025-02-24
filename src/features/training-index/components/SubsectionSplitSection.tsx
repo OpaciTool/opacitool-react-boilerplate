@@ -11,6 +11,7 @@ interface Subsection {
 interface SubsectionSplitSectionProps {
   title?: string;
   description?: string;
+  titleStyle?: string;
   content: {
     subsections: Subsection[];
     media?: {
@@ -26,54 +27,72 @@ interface SubsectionSplitSectionProps {
   layout?: "text-left" | "text-right";
   divider?: boolean;
   dividerStyle?: string;
+  flexLayout?: boolean;
 }
 
 export function SubsectionSplitSection({
   title,
+  description,
+  titleStyle,
   content,
   bgColor,
   layout = "text-left",
   divider,
   dividerStyle,
-  description
+  flexLayout = false,
 }: SubsectionSplitSectionProps) {
 
 
   return (
-    <div className={clsx("w-full dark:bg-zinc-900 dark:text-zinc-300", bgColor)}>
-      <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 dark:bg-zinc-900 dark:text-zinc-300">
-        <div
-          className={clsx(
-            "grid grid-cols-1 gap-8 lg:grid-cols-2",
-            layout === "text-right" && "lg:[&>*:first-child]:order-2"
-          )}
-        >
-          {/* Text Content with Subsections */}
-          <div className="flex flex-col justify-center">
+    <div className={clsx("pt-12 dark:bg-zinc-900 dark:text-zinc-300", bgColor)}>
+      <div className=" px-4 py-8 lg:px-14">
+        <div className={clsx(
+          "grid gap-8",
+          layout === "text-left" ? "lg:grid-cols-[1.5fr,1fr]" : "lg:grid-cols-[1fr,1.5fr]",
+          layout === "text-right" && "lg:[&>div:first-child]:order-2"
+        )}>
+          <div>
             {title && (
-              <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-white">
+              <h2 className={clsx(
+                "mb-6 text-2xl font-semibold text-zinc-900 dark:text-white",
+                titleStyle
+              )}>
                 {title}
               </h2>
             )}
             {description && (
-              <p className="mb-6 text-base text-zinc-900 dark:text-zinc-300">
+              <p className="mb-8 text-lg text-zinc-900 dark:text-zinc-400">
                 {description}
               </p>
             )}
-            <div className="space-y-6">
+            <div className="space-y-8">
               {content.subsections.map((subsection, index) => (
-                <div key={index} className="space-y-2">
-                  <h3 
-                    className={clsx(
-                      "text-lg font-medium text-zinc-900 dark:text-white",
-                      subsection.headingStyle
-                    )}
-                  >
-                    {subsection.heading}
-                  </h3>
-                  <p className="text-base text-zinc-700 dark:text-zinc-300">
-                    {subsection.description}
-                  </p>
+                <div key={index}>
+                  {flexLayout ? (
+                    <div className="">
+                      <strong className={clsx(
+                        "text-zinc-900 dark:text-white mr-1",
+                        subsection.headingStyle
+                      )}>
+                        {subsection.heading}
+                      </strong>
+                      <span className="text-lg text-zinc-900 dark:text-zinc-400">
+                        {subsection.description}
+                      </span>
+                    </div>
+                  ) : (
+                    <>
+                      <h3 className={clsx(
+                        "mb-2 font-semibold text-zinc-900 dark:text-white",
+                        subsection.headingStyle
+                      )}>
+                        {subsection.heading}
+                      </h3>
+                      <p className="text-lg text-zinc-900 dark:text-zinc-400">
+                        {subsection.description}
+                      </p>
+                    </>
+                  )}
                 </div>
               ))}
             </div>
@@ -82,17 +101,12 @@ export function SubsectionSplitSection({
           {/* Media Content */}
           {content.media && (
             <div className="flex items-center justify-center">
-              <div 
-                className={clsx(
-                  "relative",
-                  content.media.width ? content.media.width : "w-full"
-                )}
-              >
+              <div className={clsx("relative", content.media.width)}>
                 <img
                   src={getLectureMediaUrl(content.media.url)}
                   alt={content.media.alt}
                   className={clsx(
-                    "h-auto w-full rounded-lg",
+                    " w-full rounded-lg",
                     content.media.isClickable && "cursor-pointer"
                   )}
                 />
@@ -106,7 +120,6 @@ export function SubsectionSplitSection({
           )}
         </div>
       </div>
-
 
       {/* Divider */}
       {divider && dividerStyle && (

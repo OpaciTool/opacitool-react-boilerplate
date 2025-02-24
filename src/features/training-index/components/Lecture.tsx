@@ -9,6 +9,12 @@ import { ScrollToTop } from "@/shared/components/ScrollToTop";
 // Import lecture content
 import lecture1 from "../data/content/module-1/lecture-1.json";
 import lecture2 from "../data/content/module-2/lecture-1.json";
+import lecture3 from "../data/content/module-2/lecture-2.json";
+import lecture4 from "../data/content/module-3/lecture-1.json";
+import lecture5 from "../data/content/module-3/lecture-2.json";
+import lecture6 from "../data/content/module-3/lecture-3.json";
+
+
 import { navigationIndexData } from "../data/navigation-index-data";
 import { LectureNavigation } from "@/features/training/components/LectureNavigation";
 import { SplitSection } from "@/features/training/components/sections/SplitSection";
@@ -18,6 +24,8 @@ import { SubsectionSplitSection } from "./SubsectionSplitSection";
 import { TwoColumnDividerSection } from "./TwoColumnDividerSection";
 import { SplitSectionTwoImages } from "./SplitSectionTwoImages";
 import { ListSplitSection } from "./ListSplitSection";
+import { ImageContentSplitSection } from "./ImageContentSplitSection";
+import { ImageSection } from "./ImageSection";
 
 type SplitSectionMedia = {
   type: "image" | "video" | "pdf";
@@ -49,6 +57,7 @@ type LectureContent = {
         containerType?: "grid" | "flex-col";
         bgColor?: string;
         title: string;
+        titleStyle?: string;
         content: {
           text: string;
           media?: SplitSectionMedia;
@@ -84,6 +93,7 @@ type LectureContent = {
         divider?: boolean;
         dividerStyle?: string;
         layout?: "text-left" | "text-right";
+        flexLayout?: boolean;
         bgColor?: string;
         content: {
           subsections: SubsectionContent[];
@@ -182,6 +192,47 @@ type LectureContent = {
           };
         };
       }
+    | {
+        id: string;
+        type: "image-content-split";
+        title?: string;
+        titleStyle?: string;
+        content: {
+          text: string;
+          contentImage: {
+            url: string;
+            alt: string;
+            width?: string;
+          };
+          media?: {
+            type: string;
+            url: string;
+            alt: string;
+            caption?: string;
+            width?: string;
+          };
+        };
+        layout?: "text-left" | "text-right";
+        divider?: boolean;
+        dividerStyle?: string;
+        bgColor?: string;
+      }
+    | {
+        id: string;
+        type: "image";
+        content: {
+          media: {
+            url: string;
+            alt: string;
+            width?: string;
+            caption?: string;
+          };
+        };
+        imageClassName?: string;
+        bgColor?: string;
+        divider?: boolean;
+        dividerStyle?: string;
+      }
   >;
 };
 
@@ -192,6 +243,12 @@ const lectures = {
 
   // Module 2
   "reference-mode-using-the-app": lecture2 as LectureContent,
+  "reference-mode-using-the-dashboard": lecture3 as LectureContent,
+
+  // Module 3
+  "test-mode-using-the-app": lecture4 as LectureContent,
+  "test-mode-performing-a-test": lecture5 as LectureContent,
+  "test-mode-using-the-dashboard": lecture6 as LectureContent,
 };
 
 export function Lecture() {
@@ -259,29 +316,6 @@ export function Lecture() {
           <div>
             <QuestionMarkTooltip />
 
-            <Tooltip content="Bookmark this lecture">
-              <button
-                onClick={handleBookmark}
-                className="flex items-center gap-2 rounded-lg pt-1 transition-colors hover:text-white dark:hover:bg-zinc-800"
-                aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
-              >
-                {isBookmarked ? (
-                  <>
-                    <BookmarkFilledIcon className="size-10 text-teal-400" />
-                    <span className="text-base font-medium text-teal-400 lg:text-lg">
-                      Bookmarked
-                    </span>
-                  </>
-                ) : (
-                  <>
-                    <BookmarkOutlineIcon className="group size-10 text-zinc-400 hover:text-white dark:hover:text-zinc-300" />
-                    <span className="text-lg font-medium text-zinc-200 hover:text-white dark:hover:text-zinc-300">
-                      Bookmark
-                    </span>
-                  </>
-                )}
-              </button>
-            </Tooltip>
           </div>
         </div>
         <Divider className="h-1 bg-black" />
@@ -295,6 +329,7 @@ export function Lecture() {
                   <div key={section.id}>
                     <SplitSection
                       title={section.title}
+                      titleStyle={section.titleStyle}
                       content={section.content}
                       layout={section.layout}
                       containerType={section.containerType}
@@ -317,6 +352,7 @@ export function Lecture() {
                       description={section.description}
                       content={section.content}
                       layout={section.layout}
+                      flexLayout={section.flexLayout}
                       bgColor={section.bgColor}
                       divider={section.divider}
                       dividerStyle={section.dividerStyle}
@@ -378,6 +414,39 @@ export function Lecture() {
                   </div>
                 );
 
+              case "image-content-split":
+                return (
+                  <div key={section.id}>
+                    <ImageContentSplitSection
+                      title={section.title}
+                      titleStyle={section.titleStyle}
+                      content={section.content}
+                      layout={section.layout}
+                      bgColor={section.bgColor}
+                      divider={section.divider}
+                      dividerStyle={section.dividerStyle}
+                    />
+                    {section.divider && (
+                      <SectionDivider
+                        className={section.dividerStyle}
+                      />
+                    )}
+                  </div>
+                );
+
+              case "image":
+                return (
+                  <div key={section.id}>
+                    <ImageSection
+                      content={section.content}
+                      imageClassName={section.imageClassName}
+                      bgColor={section.bgColor}
+                      divider={section.divider}
+                      dividerStyle={section.dividerStyle}
+                    />
+                  </div>
+                );
+
               default:
                 return null;
             }
@@ -386,7 +455,7 @@ export function Lecture() {
       </div>
 
       {/* Add the navigation component */}
-      <LectureNavigation />
+      <LectureNavigation data={navigationIndexData} path="training-index" />
 
       {/* Add ScrollToTop component */}
       <ScrollToTop />

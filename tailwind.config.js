@@ -65,6 +65,7 @@ export default {
     "bg-black",
     "w-[80%]",
     "lg:w-[60%]",
+    "xl:w-3/4",
     "mx-auto",
     {
       pattern: /^bg-opacity-/,

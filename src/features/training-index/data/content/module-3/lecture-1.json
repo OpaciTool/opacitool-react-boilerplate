@@ -1,0 +1,247 @@
+{
+  "lectureId": "module-3-lecture-1",
+  "moduleId": 3,
+  "title": "Using the Appe",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Test Mode Overview",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Test Mode allows you to perform timed opacity observations. You can set the duration of the test and the observation frequency.  A screenshot and the associated opacity data will automatically be recorded based on the frequency you set. Test Mode also allows you to input details that will be needed to create a test report such as atmospheric data, facility information and observation location.\n\n Test Mode is best used when you plan to use the data to create a test report.  All data entered will be uploaded to your Dashboard and a report can be generated.",
+        "media": {
+          "type": "image",
+          "url": "training-index/37.png",
+          "alt": "Test Mode Overview"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Setup",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "When you begin the test, the OpaciTool app will take screenshots at a pre-defined frequency.  A tripod should be used to hold your device to ensure consistent images.\n\n You will need to setup in a location that meets the observation requirements for the test method you are performing (EPA Method 9, Method 22, Method 203 a-c).",
+        "media": {
+          "type": "image",
+          "url": "training-index/38.png",
+          "alt": "Setup Image",
+          "width": "60%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-3",
+      "type": "subsection-split",
+      "title": "Facility & Source Info",
+      "description": "In Test Mode, you can input data that will automatically be input into a report in your Dashboard. You can always edit the data in your Dashboard.",
+      "bgColor": "bg-[#E4EAED]",
+      "layout": "text-left",
+      "content": {
+        "subsections": [
+          {
+            "heading": "Facility Name",
+            "description": "Enter the name of the facility where you are performing observations.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Process Equipment ID",
+            "description": "Usually found in the facility’s air permit, enter the ID of the equipment that is producing air emissions.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Process Equipment Operating Mode",
+            "description": "Indicate the production or operational rate of the source equipment.  You may need to acquire this information from the operator of the equipment. This is usually expressed as units per time (ex. 250 tons/hour).",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Control Equipment ID",
+            "description": "Usually found in the facility’s permit, enter the ID and the type of equipment that is controlling air emissions.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Control Equipment Operating Mode",
+            "description": "The capacity or performance of most control methods are monitored and recorded.  This information can be obtained from the operator. ",
+            "headingStyle": "font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/39.png",
+          "alt": "Image",
+          "width": "w-2/3 xl:w-3/4"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-4",
+      "type": "subsection-split",
+      "title": "Side View Layout",
+      "description": "The highest opacity area of the emissions is the observation point. The viewing angle to the observation point should be 18° or less.  If it is more than 18°, you will be looking through too much of the emissions and your data may need to be corrected.",
+      "bgColor": "bg-[#EEEEEE]",
+      "layout": "text-right",
+      "content": {
+        "subsections": [
+          {
+            "heading": "Observation Point - Viewing Angle",
+            "description": "If your phone has an inclinometer, you can measure the viewing angle by tapping the “Measure” button and following the prompts.  You can also enter the value manually if you have a separate device.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Observation Point - Height Relative to Observer",
+            "description": "Estimate or measure the distance between the height at eye level and the height of the Observation Point.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Observation Point - Distance from Observer",
+            "description": "Estimate or measure the distance between you and the Observation Point.  You should stand at least 3x the distance of the Height Relative to Observer to ensure your viewing angle is less than 18°.",
+            "headingStyle": "font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/40.png",
+          "alt": "Image",
+          "width": "w-2/3 xl:w-3/4"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-5",
+      "type": "subsection-split",
+      "title": "Top View Layout",
+      "description": "The top view layout is an overhead view to indicate the position of the sun and your location relative to the observation point.",
+      "bgColor": "bg-[#E4EAED]",
+      "layout": "text-left",
+      "content": {
+        "subsections": [
+          {
+            "heading": "Drag Sun to Correct Position",
+            "description": "Using your finger, move the sun icon to indicate the position relative to you.\n\n The sun should always be within a 140° sector to your back when making observations.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Observation Point - Direction from Observer",
+            "description": "If your phone has a compass, you can measure the direction to the observation point by tapping the “Measure” button and following the prompts.\n\n Alternatively, you can input the direction from a compass.  It is suggested to use a numeric direction (Ex. 249°) instead of a cardinal direction (N, S, E, W).",
+            "headingStyle": "font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/41.png",
+          "alt": "Image",
+          "width": "w-2/3 xl:w-3/4"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-6",
+      "type": "subsection-split",
+      "title": "Atmospheric Data",
+      "description": "It is important to note the atmospheric conditions before and after your test.\n\n ",
+      "bgColor": "bg-[#EEEEEE]",
+      "layout": "text-right",
+      "content": {
+        "subsections": [
+          {
+            "heading": "",
+            "description": "If your phone has an internet connection, you can pull local weather data by tapping the “Autofill” button.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Cloud Cover",
+            "description": "Indicate the amount of cloud cover as a percentage. Fully overcast is 100% cloud cover.  Clear skies are 0% cloud cover.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Ambient Temperature",
+            "description": "Indicate the current temperature in °F.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Wind Speed",
+            "description": "Indicate the wind speed in mph.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Wind Direction",
+            "description": "Indicate the direction from which the wind is blowing.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Relative Humidity",
+            "description": "Indicate the relative humidity.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Wet Bulb Temperature",
+            "description": "This is usually only needed when you are trying to determine if a water vapor plume is present.  The wet bulb temperature can be determined by using a sling psychrometer or acquired from the facility operator.",
+            "headingStyle": "font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/42.png",
+          "alt": "Image",
+          "width": "w-2/3 xl:w-3/4"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-7",
+      "type": "subsection-split",
+      "title": "Test Details",
+      "description": "The facility’s air permit will usually state the duration and observation frequency of the visible emissions test. ",
+      "bgColor": "bg-[#E4EAED]",
+      "layout": "text-left",
+      "content": {
+        "subsections": [
+          {
+            "heading": "Test Duration",
+            "description": "The duration is how long the test timer will run.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Observation Frequency",
+            "description": "The observation frequency is the frequency of the opacity readings.  For EPA Method 9 tests, 15 seconds is the standard observation frequency. The opacity value indicated on the screen is recorded at the frequency selected.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Screenshot Frequency",
+            "description": "The screenshot frequency determines how often a screenshot is recorded with an observation. Recording a screenshot for each observation can create very large files.",
+            "headingStyle": "font-semibold"
+          },
+          {
+            "heading": "Averaging Period",
+            "description": "The averaging period is the number of readings that will be averaged and displayed during the test. For EPA Method 9, the averaging period is 6 minutes (24 readings).",
+            "headingStyle": "font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/43.png",
+          "alt": "Image",
+          "width": "w-2/3 xl:w-3/4"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    }
+  ]
+}
