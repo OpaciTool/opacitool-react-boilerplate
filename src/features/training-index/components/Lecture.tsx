@@ -1,10 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Divider, Text } from "@/shared/ui";
-import { BookmarkIcon as BookmarkOutlineIcon } from "@heroicons/react/24/outline";
-import { BookmarkIcon as BookmarkFilledIcon } from "@heroicons/react/24/solid";
-import { toast } from "react-hot-toast";
-import { Tooltip } from "@/shared/ui";
-import { useState, useEffect } from "react";
+import {  useEffect } from "react";
 import { ScrollToTop } from "@/shared/components/ScrollToTop";
 // Import lecture content
 import lecture1 from "../data/content/module-1/lecture-1.json";
@@ -253,33 +249,12 @@ const lectures = {
 
 export function Lecture() {
   const { moduleSlug, lectureSlug } = useParams();
-  const lecturePath = `/training-index/${moduleSlug}/${lectureSlug}`;
-
-  const [isBookmarked, setIsBookmarked] = useState(
-    () => localStorage.getItem("lastVisitedLecture") === lecturePath,
-  );
-
-  // Update bookmark state when route changes
-  useEffect(() => {
-    setIsBookmarked(localStorage.getItem("lastVisitedLecture") === lecturePath);
-  }, [moduleSlug, lectureSlug, lecturePath]);
 
   // Add this useEffect to scroll to top when route changes
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [moduleSlug, lectureSlug]); // Dependencies ensure this runs on route change
 
-  const handleBookmark = () => {
-    if (isBookmarked) {
-      localStorage.removeItem("lastVisitedLecture");
-      setIsBookmarked(false);
-      toast.success("Bookmark removed");
-    } else {
-      localStorage.setItem("lastVisitedLecture", lecturePath);
-      setIsBookmarked(true);
-      toast.success("Lecture bookmarked");
-    }
-  };
 
   // Find current module and lecture
   const currentModule = navigationIndexData.find(

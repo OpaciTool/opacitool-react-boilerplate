@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { navigationData } from "@/features/training/data/navigation";
-import { TrainingSidebar } from "@/features/training/components/TrainingSidebar";
-import { LectureContent } from "@/features/training/components/LectureContent";
 import { Bars3Icon } from "@heroicons/react/24/outline";
 import { TrainingIndexSidebar } from "@/features/training-index/components/TrainingIndexSidebar";
 import { Lecture } from "@/features/training-index/components/Lecture";

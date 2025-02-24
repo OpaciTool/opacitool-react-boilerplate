@@ -35,8 +35,6 @@ export function ListSplitSection({
   content,
   bgColor,
   layout = "text-left",
-  divider,
-  dividerStyle,
 }: ListSplitSectionProps) {
   return (
     <div className={clsx("w-full dark:bg-zinc-900 dark:text-zinc-300", bgColor)}>

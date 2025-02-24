@@ -1,4 +1,7 @@
+import { useState } from "react";
 import clsx from "clsx";
+import { Dialog } from "@headlessui/react";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 import { getLectureMediaUrl } from "@/features/training/lib/getLectureMedia";
 
 
@@ -41,14 +44,16 @@ export function SubsectionSplitSection({
   dividerStyle,
   flexLayout = false,
 }: SubsectionSplitSectionProps) {
-
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <div className={clsx("pt-12 dark:bg-zinc-900 dark:text-zinc-300", bgColor)}>
       <div className=" px-4 py-8 lg:px-14">
         <div className={clsx(
           "grid gap-8",
-          layout === "text-left" ? "lg:grid-cols-[1.5fr,1fr]" : "lg:grid-cols-[1fr,1.5fr]",
+          layout === "text-left" 
+            ? "lg:grid-cols-[1.5fr,1fr]" 
+            : "lg:grid-cols-[1fr,1.5fr]",
           layout === "text-right" && "lg:[&>div:first-child]:order-2"
         )}>
           <div>
@@ -106,9 +111,10 @@ export function SubsectionSplitSection({
                   src={getLectureMediaUrl(content.media.url)}
                   alt={content.media.alt}
                   className={clsx(
-                    " w-full rounded-lg",
+                    "w-full rounded-lg",
                     content.media.isClickable && "cursor-pointer"
                   )}
+                  onClick={() => content.media?.isClickable && setIsModalOpen(true)}
                 />
                 {content.media.caption && (
                   <p className="mt-2 text-center text-sm text-zinc-600 dark:text-zinc-400">
@@ -119,6 +125,41 @@ export function SubsectionSplitSection({
             </div>
           )}
         </div>
+
+        {/* Image Modal */}
+        {content.media?.isClickable && (
+          <Dialog
+            open={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            className="relative z-50"
+          >
+            <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
+
+            <div className="fixed inset-0 flex max-h-screen items-center justify-center overflow-y-auto p-4">
+              <Dialog.Panel className="mx-auto max-w-4xl overflow-y-auto rounded-lg bg-white shadow-xl dark:bg-zinc-900">
+                <div className="relative overflow-auto">
+                  <button
+                    onClick={() => setIsModalOpen(false)}
+                    className="absolute right-4 top-4 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+                    aria-label="Close modal"
+                  >
+                    <XMarkIcon className="h-6 w-6" />
+                  </button>
+                  <img
+                    src={getLectureMediaUrl(content.media.url)}
+                    alt={content.media.alt}
+                    className="max-h-[90vh] rounded-lg"
+                  />
+                  {content.media.caption && (
+                    <p className="p-4 text-center italic text-sm text-zinc-500 dark:text-zinc-300">
+                      {content.media.caption}
+                    </p>
+                  )}
+                </div>
+              </Dialog.Panel>
+            </div>
+          </Dialog>
+        )}
       </div>
 
       {/* Divider */}

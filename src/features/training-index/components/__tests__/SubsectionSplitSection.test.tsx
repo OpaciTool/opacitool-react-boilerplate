@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { SubsectionSplitSection } from "../SubsectionSplitSection";
-import { vi } from 'vitest';
+import { vi } from "vitest";
 
 // Mock the getLectureMediaUrl function
 vi.mock("@/features/training/lib/getLectureMedia", () => ({
@@ -8,69 +8,86 @@ vi.mock("@/features/training/lib/getLectureMedia", () => ({
 }));
 
 describe("SubsectionSplitSection", () => {
-  const defaultProps = {
+  const mockProps = {
     title: "Test Title",
     content: {
       subsections: [
         {
           heading: "First Subsection",
           description: "First subsection description",
-          headingStyle: "text-blue-500"
+          headingStyle: "text-blue-500",
         },
         {
           heading: "Second Subsection",
-          description: "Second subsection description"
-        }
+          description: "Second subsection description",
+        },
       ],
       media: {
         type: "image",
         url: "/test-image.jpg",
         alt: "Test image",
-        isClickable: true
-      }
-    }
+        isClickable: true,
+      },
+    },
   };
 
-  it("renders title and subsections correctly", () => {
-    render(<SubsectionSplitSection {...defaultProps} />);
-    
+  // Mock window.scrollTo
+  beforeAll(() => {
+    window.scrollTo = vi.fn();
+  });
+
+  it("renders title correctly", () => {
+    render(<SubsectionSplitSection {...mockProps} />);
     expect(screen.getByText("Test Title")).toBeInTheDocument();
+  });
+
+  it("renders subsections correctly", () => {
+    render(<SubsectionSplitSection {...mockProps} />);
     expect(screen.getByText("First Subsection")).toBeInTheDocument();
     expect(screen.getByText("First subsection description")).toBeInTheDocument();
     expect(screen.getByText("Second Subsection")).toBeInTheDocument();
     expect(screen.getByText("Second subsection description")).toBeInTheDocument();
   });
 
-  it("applies custom heading styles", () => {
-    render(<SubsectionSplitSection {...defaultProps} />);
+  it("applies custom heading style", () => {
+    render(<SubsectionSplitSection {...mockProps} />);
+    const heading = screen.getByText("First Subsection");
+    expect(heading).toHaveClass("text-blue-500");
+  });
+
+  it("renders media content", () => {
+    render(<SubsectionSplitSection {...mockProps} />);
+    const image = screen.getByAltText("Test image");
+    expect(image).toBeInTheDocument();
+    expect(image).toHaveAttribute("src", "/test-image.jpg");
+  });
+
+  it("handles image click when isClickable is true", async () => {
+    render(<SubsectionSplitSection {...mockProps} />);
+    const image = screen.getByAltText("Test image");
     
-    const firstHeading = screen.getByText("First Subsection");
-    expect(firstHeading).toHaveClass("text-blue-500");
+    // Add act to handle state updates
+    await fireEvent.click(image);
+    
+    // Check if dialog is present in the document
+    const dialog = await screen.findByRole("dialog");
+    expect(dialog).toBeInTheDocument();
   });
 
   it("renders with right layout when specified", () => {
-    render(<SubsectionSplitSection {...defaultProps} layout="text-right" />);
+    render(<SubsectionSplitSection {...mockProps} layout="text-right" />);
     
     const container = screen.getByText("First Subsection").closest(".grid");
-    expect(container?.firstElementChild).toHaveClass("lg:[&>*:first-child]:order-2");
-  });
-
-  it("opens modal when clicking clickable image", () => {
-    render(<SubsectionSplitSection {...defaultProps} />);
-    
-    const image = screen.getByAltText("Test image");
-    fireEvent.click(image);
-    
-    expect(screen.getByRole("dialog")).toBeInTheDocument();
+    expect(container).toHaveClass("lg:[&>div:first-child]:order-2");
   });
 
   it("renders image caption when provided", () => {
     const propsWithCaption = {
-      ...defaultProps,
+      ...mockProps,
       content: {
-        ...defaultProps.content,
+        ...mockProps.content,
         media: {
-          ...defaultProps.content.media,
+          ...mockProps.content.media,
           caption: "Test caption"
         }
       }

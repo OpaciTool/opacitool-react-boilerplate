@@ -23,6 +23,8 @@ interface SplitSectionProps {
   layout?: "text-left" | "text-right";
   containerType?: "grid" | "flex-col";
   bgColor?: string;
+  divider?: boolean;
+  dividerStyle?: string;
 }
 
 function convertLinksToAnchors(text: string) {
@@ -41,6 +43,7 @@ export function SplitSection({
   layout = "text-left",
   containerType = "grid",
   bgColor,
+
 }: SplitSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isImageLoading, setIsImageLoading] = useState(true);
@@ -156,6 +159,7 @@ export function SplitSection({
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="absolute right-4 top-4 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+                  aria-label="Close modal"
                 >
                   <XMarkIcon className="h-6 w-6" />
                 </button>
