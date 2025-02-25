@@ -84,9 +84,8 @@
           {
             "text": "When the exit button is selected, you can choose to save your data and submit it to your Dashboard or exit and discard your data.",
             "image": {
-              "url": "training-index/20.svg",
-              "alt": "Review Icon",
-              "width": "w-10"
+              "url": "training-index/20.png",
+              "alt": "Review Icon"
             }
           }
         ],
