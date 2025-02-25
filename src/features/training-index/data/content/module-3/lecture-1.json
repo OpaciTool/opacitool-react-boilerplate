@@ -14,7 +14,9 @@
         "media": {
           "type": "image",
           "url": "training-index/37.png",
-          "alt": "Test Mode Overview"
+          "alt": "Test Mode Overview",
+          "isClickable": true,
+          "width": "30%"
         }
       },
       "divider": true,
@@ -224,7 +226,7 @@
           },
           {
             "heading": "Screenshot Frequency",
-            "description": "The screenshot frequency determines how often a screenshot is recorded with an observation. Recording a screenshot for each observation can create very large files.",
+            "description": "The screenshot frequency determines how often a screenshot is recorded with an observation. Recording a screenshot for each observation can create very large files. Selecting one screenshot for every 4 readings with a 15-second Observation Frequency will produce one screenshot per minute.",
             "headingStyle": "font-semibold"
           },
           {

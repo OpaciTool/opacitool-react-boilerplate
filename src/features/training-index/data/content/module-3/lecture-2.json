@@ -41,7 +41,7 @@
           "type": "image",
           "url": "training-index/44.png",
           "alt": "Settings & Tools Menu",
-          "width": "w-full"
+          "width": "w-1/2"
         }
       },
       "divider": true,
@@ -74,7 +74,7 @@
           "type": "image",
           "url": "training-index/48.png",
           "alt": "Image of Reference Scale, Timer & Capture",
-          "width": "w-full"
+          "width": "w-2/3"
         }
       },
       "divider": true,
@@ -87,7 +87,7 @@
       "title": "Using Test Mode",
       "bgColor": "bg-[#E4EAED]",
       "content": {
-        "text": "<p class='w-1/2'>Using Test Mode is simple and intuitive. Below are the basic steps to get you started.</p>"
+        "text": "<p class='lg:w-1/2'>Using Test Mode is simple and intuitive. Below are the basic steps to get you started.</p>"
       }
     },
     {
@@ -102,7 +102,8 @@
         "media": {
           "type": "image",
           "url": "training-index/49.png",
-          "alt": "Reference Scale"
+          "alt": "Reference Scale",
+          "width": "60%"
         }
       }
     },
@@ -118,7 +119,8 @@
         "media": {
           "type": "image",
           "url": "training-index/50.png",
-          "alt": "Size and Color of the Reference Scale"
+          "alt": "Size and Color of the Reference Scale",
+          "width": "60%"
         }
       }
     },
@@ -134,7 +136,8 @@
         "media": {
           "type": "image",
           "url": "training-index/51.png",
-          "alt": "Match the Opacity & Begin Test"
+          "alt": "Match the Opacity & Begin Test",
+          "width": "60%"
         }
       }
     },
@@ -150,7 +153,8 @@
         "media": {
           "type": "image",
           "url": "training-index/52.png",
-          "alt": "Adjust Accordingly"
+          "alt": "Adjust Accordingly",
+          "width": "60%"
         }
       },
       "divider": true,
@@ -190,7 +194,7 @@
           "type": "image",
           "url": "training-index/53.png",
           "alt": "Pausing the Test",
-           "width": "w-2/3"
+          "width": "w-3/4"
         }
       }
     },
@@ -217,7 +221,9 @@
         "media": {
           "type": "image",
           "url": "training-index/54.png",
-          "alt": "Post Test Atmospheric Data"
+          "alt": "Post Test Atmospheric Data",
+          "isClickable": true,
+          "width": "40%"
         }
       },
       "divider": true,
@@ -234,7 +240,9 @@
         "media": {
           "type": "image",
           "url": "training-index/55.png",
-          "alt": "Post Test Atmospheric Data"
+          "alt": "Post Test Atmospheric Data",
+          "isClickable": true,
+          "width": "40%"
         }
       },
       "divider": true,

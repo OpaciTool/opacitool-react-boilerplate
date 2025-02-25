@@ -62,7 +62,7 @@ export function SplitSectionTwoImages({
           </div>
 
           {/* Images Content */}
-          <div className="flex items-center">
+          <div className="flex items-end gap-6">
             {content.media.images.map((image, index) => (
               <div
                 key={index}

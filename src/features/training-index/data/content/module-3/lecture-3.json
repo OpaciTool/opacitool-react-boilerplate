@@ -40,7 +40,7 @@
       "title": "Viewing Data & Creating Reports",
       "bgColor": "bg-[#EEEEEE]",
       "content": {
-        "text": ""
+        "text": "<p class='lg:w-1/2'>Observation data you collected in the OpaciTool app can be viewed and edited in your Dashboard and test reports can be generated.</p>"
       }
     },
     {
@@ -69,7 +69,8 @@
         "media": {
           "type": "image",
           "url": "training-index/59.png",
-          "alt": "Observation Data"
+          "alt": "Observation Data",
+          "isClickable": true
         }
       }
     },

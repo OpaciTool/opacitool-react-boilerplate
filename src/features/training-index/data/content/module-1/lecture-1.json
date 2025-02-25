@@ -15,7 +15,8 @@
           "type": "image",
           "url": "training-index/4.png",
           "alt": "App Image",
-          "width": "30%"
+          "width": "30%",
+          "isClickable": true
 
         }
       },
@@ -62,7 +63,9 @@
         "media": {
           "type": "image",
           "url": "training-index/7.png",
-          "alt": "Image"
+          "alt": "Image",
+          "width": "30%",
+          "isClickable": true
         }
       },
       "divider": true,
@@ -119,7 +122,9 @@
         "media": {
           "type": "image",
           "url": "training-index/9.png",
-          "alt": "Image"
+          "alt": "Image",
+          "width": "35%",
+          "isClickable": true
         }
       },
       "divider": true,
@@ -136,6 +141,8 @@
         "media": {
           "type": "image",
           "url": "training-index/10.png",
+          "isClickable": true,
+          "width": "30%",
           "alt": "Image"
         }
       },

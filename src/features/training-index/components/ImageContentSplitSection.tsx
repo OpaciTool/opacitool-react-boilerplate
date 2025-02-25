@@ -37,21 +37,27 @@ export function ImageContentSplitSection({
   return (
     <div className={clsx("py-12 dark:bg-zinc-900 dark:text-zinc-400", bgColor)}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className={clsx(
-          "grid gap-8",
-          layout === "text-left" ? "lg:grid-cols-[1.5fr,1fr]" : "lg:grid-cols-[1fr,1.5fr]",
-          layout === "text-right" && "lg:[&>div:first-child]:order-2"
-        )}>
+        <div
+          className={clsx(
+            "grid gap-8",
+            layout === "text-left"
+              ? "lg:grid-cols-[1.5fr,1fr]"
+              : "lg:grid-cols-[1fr,1.5fr]",
+            layout === "text-right" && "lg:[&>div:first-child]:order-2",
+          )}
+        >
           <div>
             {title && (
-              <h2 className={clsx(
-                "mb-6 text-2xl font-semibold text-zinc-900 dark:text-white",
-                titleStyle
-              )}>
+              <h2
+                className={clsx(
+                  "mb-6 text-2xl font-semibold text-zinc-900 dark:text-white",
+                  titleStyle,
+                )}
+              >
                 {title}
               </h2>
             )}
-            
+
             {/* Content Image */}
             <div className="mb-6 flex items-start gap-2">
               <img
@@ -59,33 +65,37 @@ export function ImageContentSplitSection({
                 alt={content.contentImage.alt}
                 className={clsx(
                   "h-auto rounded-lg",
-                  content.contentImage.width || "w-full"
+                  content.contentImage.width || "w-full",
                 )}
               />
-          
 
-            {/* Text Content */}
-            <div className="text-lg text-zinc-900 dark:text-zinc-400">
-              <div
-                className="whitespace-pre-line"
-                dangerouslySetInnerHTML={{
-                  __html: content.text
-                }}
-              />
-            </div>
+              {/* Text Content */}
+              <div className="text-lg text-zinc-900 dark:text-zinc-400">
+                <div
+                  className="whitespace-pre-line"
+                  dangerouslySetInnerHTML={{
+                    __html: content.text,
+                  }}
+                />
+              </div>
             </div>
           </div>
 
           {/* Media Content */}
           {content.media && (
             <div className="flex items-center justify-center">
-              <div className="relative">
+              <div
+                className={clsx(
+                  "relative test",
+                  content.media.width,
+                )}
+              >
                 <img
                   src={getLectureMediaUrl(content.media.url)}
                   alt={content.media.alt}
                   className={clsx(
-                    "h-auto w-full rounded-lg",
-                    content.media.width
+                    " w-full rounded-lg",
+                    
                   )}
                 />
                 {content.media.caption && (
@@ -107,4 +117,4 @@ export function ImageContentSplitSection({
       )}
     </div>
   );
-} 
+}
