@@ -70,6 +70,8 @@
           "type": "image",
           "url": "training-index/59.png",
           "alt": "Observation Data",
+          "width": "100%",
+          "modalWidth": "max-w-5xl",
           "isClickable": true
         }
       }

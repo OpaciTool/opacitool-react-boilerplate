@@ -111,15 +111,18 @@
         "subsections": [
           {
             "heading": "Color.",
-            "description": "The color slider adjusts the greyscale color of the reference scale between white and black to match the color of the emissions being observed."
+            "description": "The color slider adjusts the greyscale color of the reference scale between white and black to match the color of the emissions being observed.",
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Scale.",
-            "description": "The scale slider adjusts the size of the reference scale."
+            "description": "The scale slider adjusts the size of the reference scale.",
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Greyscale.",
-            "description": "The greyscale button changes the entire scene to black and white.  For some observations, greyscale makes it easier to compare the reference scale to the emissions."
+            "description": "The greyscale button changes the entire scene to black and white.  For some observations, greyscale makes it easier to compare the reference scale to the emissions.",
+            "headingStyle": "text-black text-xl font-semibold"
           }
         ],
         "media": {
@@ -142,15 +145,18 @@
         "subsections": [
           {
             "heading": "Select Opacity.",
-            "description": "Tapping the box of the reference scale with the closest opacity will select and display the numeric opacity at the top of the screen."
+            "description": "Tapping the box of the reference scale with the closest opacity will select and display the numeric opacity at the top of the screen.",
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Capture.",
-            "description": "The capture button takes a screenshot of everything on your screen including the selected opacity, reference scale and time."
+            "description": "The capture button takes a screenshot of everything on your screen including the selected opacity, reference scale and time.",
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Timer.",
-            "description": "The timer can be used to measure the time between observations."
+            "description": "The timer can be used to measure the time between observations.",
+            "headingStyle": "text-black text-xl  font-semibold"
           }
         ],
         "media": {
@@ -251,7 +257,6 @@
           "url": "training-index/28.svg",
           "alt": "",
           "width": "w-20"
-
         },
         "text": "When you are finished using Reference Mode, tap the Exit button under the Settings & Tools menu. A prompt will appear that allows you to save or discard any data from the Reference Mode session.\n\n If you choose to save the data from your session, screenshots and GPS data will be uploaded to your Dashboard when an internet connection is available.  Screenshots can be viewed and reports can be created in your Dashboard.",
         "media": {
@@ -261,7 +266,6 @@
           "width": "w-2/3"
         }
       }
-
     }
   ]
 }

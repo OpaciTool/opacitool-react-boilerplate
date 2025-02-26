@@ -58,15 +58,18 @@
         "subsections": [
           {
             "heading": "Color.",
-            "description": "The color slider adjusts the greyscale color of the reference scale between white and black to match the color of the emissions being observed."
+            "description": "The color slider adjusts the greyscale color of the reference scale between white and black to match the color of the emissions being observed.",
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Scale.",
-            "description": "The scale slider adjusts the size of the reference scale."
+            "description": "The scale slider adjusts the size of the reference scale.",
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Greyscale.",
-            "description": "The greyscale button changes the entire scene to black and white.  For some observations, greyscale makes it easier to compare the reference scale to the emissions."
+            "description": "The greyscale button changes the entire scene to black and white.  For some observations, greyscale makes it easier to compare the reference scale to the emissions.",
+            "headingStyle": "text-black text-xl  font-semibold"
           }
         ],
         "media": {
@@ -171,22 +174,22 @@
           {
             "heading": "Uncontrollable Pause",
             "description": "If you are forced to pause the test due to visibility, facility malfunction or extreme wind or any other reason outside of your control, select this option. Uncontrollable pauses are included when calculating the highest opacity average.",
-            "headingStyle": "font-semibold"
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Intentional Pause",
             "description": "If you choose to pause the test to take a break, take a phone call or any other reason that is within your control, select this option.  Intentional pauses are not included when calculating the highest opacity average.",
-            "headingStyle": "font-semibold"
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Notes",
             "description": "Regardless of the reason for the pause, it’s good practice to provide details in the Notes field.  Notes will be uploaded to your Dashboard.",
-            "headingStyle": "font-semibold"
+            "headingStyle": "text-black text-xl  font-semibold"
           },
           {
             "heading": "Add Time",
             "description": "If you intentionally pause the test, the pause will stop the averaging period.  For an EPA Method 9 test, you need at least 6 minutes of data in your average. If there is not at least 6 minutes of data before or after an intentional pause, you can add more time to the test duration.",
-            "headingStyle": "font-semibold"
+            "headingStyle": "text-black text-xl  font-semibold"
           }
         ],
         "media": {

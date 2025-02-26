@@ -57,6 +57,7 @@ type LectureContent = {
         content: {
           text: string;
           media?: SplitSectionMedia;
+          modalWidth?: string;
         };
       }
     | {

@@ -83,22 +83,22 @@
           {
             "heading": "Permissions",
             "description": "OpaciTool will use your camera, GPS, compass and storage.  You must grant permission for each.",
-            "headingStyle": "text-black dark:text-teal-400 italic font-semibold"
+            "headingStyle": "text-black text-xl dark:text-teal-400 italic font-semibold"
           },
           {
             "heading": "Data Usage",
             "description": "Observation files can be large, especially with numerous screenshots. Observation files are uploaded to your dashboard using an internet connection. You can choose to upload these files over Wi-Fi only to minimize cellular data usage.",
-            "headingStyle": "text-black dark:text-teal-400 italic font-semibold"
+            "headingStyle": "text-black text-xl dark:text-teal-400 italic font-semibold"
           },
           {
             "heading": "Storage",
             "description": "By default, OpaciTool will save to a local folder on your device.  If you would like to save data to an SD card or a different folder, you can select  a new location. This feature is only available on Android devices.",
-            "headingStyle": "text-black dark:text-teal-400 italic font-semibold"
+            "headingStyle": "text-black text-xl dark:text-teal-400 italic font-semibold"
           },
           {
             "heading": "Help",
             "description": "Tap the question mark at the top to open the contact form.  Our Midwest-based team can help you with OpaciTool and Method 9 observations questions.",
-            "headingStyle": "text-black dark:text-teal-400 italic font-semibold"
+            "headingStyle": "text-black text-xl dark:text-teal-400 italic font-semibold"
           }
         ],
         "media": {
