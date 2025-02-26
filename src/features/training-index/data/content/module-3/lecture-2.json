@@ -232,7 +232,7 @@
       "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
     },
     {
-      "id": "section-12",
+      "id": "section-13",
       "type": "split",
       "layout": "text-left",
       "title": "Notes & Upload",
@@ -242,7 +242,7 @@
         "media": {
           "type": "image",
           "url": "training-index/55.png",
-          "alt": "Post Test Atmospheric Data",
+          "alt": "Notes & Upload",
           "isClickable": true,
           "width": "40%"
         }
