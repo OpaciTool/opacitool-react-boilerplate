@@ -155,7 +155,6 @@ export function SplitSection({
           <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
 
           <div className="fixed inset-0 flex max-h-screen items-center justify-center overflow-y-auto p-4">
-            {/* <Dialog.Panel className="mx-auto max-w-4xl overflow-y-auto rounded-lg bg-white shadow-xl dark:bg-zinc-900"> */}
             <Dialog.Panel className={clsx("mx-auto overflow-y-auto rounded-lg bg-white shadow-xl dark:bg-zinc-900", content.media?.modalWidth || "max-w-4xl")}>
 
               <div className="relative overflow-auto">

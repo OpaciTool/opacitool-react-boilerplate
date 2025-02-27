@@ -10,7 +10,7 @@
       "title": "Welcome!",
       "bgColor": "bg-[#E4EAED]",
       "content": {
-        "text": "Thank you for choosing OpaciTool to assist with your visible emissions observations. and reporting. OpaciTool provides a visual reference tool when performing visible emissions observations. Additionally, OpaciTool can record observation data and screenshots for use in reports.\n\n This tutorial will explain the settings of the OpaciTool application and the difference between the two modes of OpaciTool; Test Mode and Reference Mode. ",
+        "text": "Thank you for choosing OpaciTool to assist with your visible emissions observations and reporting. OpaciTool provides a visual reference tool when performing visible emissions observations. Additionally, OpaciTool can record observation data and screenshots for use in reports.\n\n This tutorial will explain the settings of the OpaciTool application and the difference between the two modes of OpaciTool; Test Mode and Reference Mode. ",
         "media": {
           "type": "image",
           "url": "training-index/4.png",
