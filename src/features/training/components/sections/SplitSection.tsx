@@ -5,8 +5,10 @@ import { XMarkIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import { getLectureMediaUrl } from "../../lib/getLectureMedia";
 import { ImageLoader } from "@/shared/components/ImageLoader";
 
+
 interface SplitSectionProps {
   title: string;
+  titleStyle?: string;
   content: {
     text: string;
     media?: {
@@ -16,11 +18,14 @@ interface SplitSectionProps {
       isClickable?: boolean;
       caption?: string;
       width?: string;
+      modalWidth?: string;
     };
   };
   layout?: "text-left" | "text-right";
   containerType?: "grid" | "flex-col";
   bgColor?: string;
+  divider?: boolean;
+  dividerStyle?: string;
 }
 
 function convertLinksToAnchors(text: string) {
@@ -34,10 +39,12 @@ function convertLinksToAnchors(text: string) {
 
 export function SplitSection({
   title,
+  titleStyle,
   content,
   layout = "text-left",
   containerType = "grid",
   bgColor,
+
 }: SplitSectionProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isImageLoading, setIsImageLoading] = useState(true);
@@ -50,7 +57,7 @@ export function SplitSection({
         className={clsx(
           containerType === "grid"
             ? clsx(
-                content.media
+                content?.media
                   ? "grid items-center gap-8 lg:grid-cols-2"
                   : "flex flex-col",
                 isTextLeft ? "lg:grid-flow-col" : "lg:grid-flow-col-dense",
@@ -67,11 +74,14 @@ export function SplitSection({
           )}
         >
           {/* Section Title */}
-          <h2 className="mb-6 text-2xl font-semibold text-zinc-900 dark:text-zinc-300">
+          <h2 className={clsx(
+            "text-2xl font-semibold text-zinc-900 dark:text-white mb-4",
+            titleStyle
+          )}>
             {title}
           </h2>
           <div className="dark:prose-invert text-lg text-zinc-900 dark:text-zinc-400">
-            <p
+            <div
               className="whitespace-pre-line"
               dangerouslySetInnerHTML={{
                 __html: convertLinksToAnchors(content.text),
@@ -145,11 +155,13 @@ export function SplitSection({
           <div className="fixed inset-0 bg-black/70" aria-hidden="true" />
 
           <div className="fixed inset-0 flex max-h-screen items-center justify-center overflow-y-auto p-4">
-            <Dialog.Panel className="mx-auto max-w-4xl overflow-y-auto rounded-lg bg-white shadow-xl dark:bg-zinc-900">
+            <Dialog.Panel className={clsx("mx-auto overflow-y-auto rounded-lg bg-white shadow-xl dark:bg-zinc-900", content.media?.modalWidth || "max-w-4xl")}>
+
               <div className="relative overflow-auto">
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="absolute right-4 top-4 text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+                  aria-label="Close modal"
                 >
                   <XMarkIcon className="h-6 w-6" />
                 </button>

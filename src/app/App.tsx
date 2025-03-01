@@ -4,11 +4,13 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "@/shared/context/ThemeContext";
 
-import { Dashboard, ObservationsPage, SupportPage, TrainingPage } from "@/pages";
+import { ObservationsPage, SupportPage, TrainingPage } from "@/pages";
 import { queryClient } from "@/shared/lib";
 import { ApplicationLayout } from "@/shared/ui";
 import { TrainingLayout } from "@/features/training/components/TrainingLayout";
 import { TrainingRedirect } from "@/features/training/components/TrainingRedirect";
+import { DashboardTrainingIndex } from "@/pages/dashboard-training-index";
+import { TrainingIndexPage } from "@/pages/training-index";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +29,7 @@ const router = createBrowserRouter([
         path: "/",
         element: (
           <ApplicationLayout>
-            <Dashboard />
+            <DashboardTrainingIndex />
           </ApplicationLayout>
         ),
       },
@@ -56,6 +58,14 @@ const router = createBrowserRouter([
         element: (
           <TrainingLayout>
             <TrainingPage />
+          </TrainingLayout>
+        ),
+      },
+      {
+        path: "/training-index/:moduleSlug/:lectureSlug",
+        element: (
+          <TrainingLayout>
+            <TrainingIndexPage />
           </TrainingLayout>
         ),
       },

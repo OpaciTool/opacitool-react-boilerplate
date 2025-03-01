@@ -717,7 +717,7 @@ export function LectureContent() {
       </div>
 
       {/* Add the navigation component */}
-      <LectureNavigation />
+      <LectureNavigation data={navigationData} path="training" />
 
       {/* Add ScrollToTop component */}
       <ScrollToTop />

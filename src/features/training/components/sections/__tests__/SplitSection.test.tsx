@@ -1,4 +1,4 @@
-import { render, screen, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent, act } from "@testing-library/react";
 import { SplitSection } from "../SplitSection";
 
 describe("SplitSection", () => {
@@ -89,7 +89,7 @@ describe("SplitSection", () => {
 
 
   // Modal Close Tests
-  it("closes modal when clicking close button", () => {
+  it("closes modal when clicking close button", async () => {
     const propsWithClickableImage = {
       ...defaultProps,
       content: {
@@ -105,11 +105,19 @@ describe("SplitSection", () => {
     render(<SplitSection {...propsWithClickableImage} />);
 
     // Open modal
-    fireEvent.click(screen.getByAltText("Test image"));
-    expect(screen.getByRole("dialog")).toBeInTheDocument();
-
-    // Close modal
-    fireEvent.click(screen.getByRole("button"));
+    const image = screen.getByAltText("Test image");
+    
+    await act(async () => {
+      fireEvent.click(image);
+    });
+    
+    // Find the close button using role and label
+    const closeButton = screen.getByRole("button", { name: /close modal/i });
+    
+    await act(async () => {
+      fireEvent.click(closeButton);
+    });
+    
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
   });
 });

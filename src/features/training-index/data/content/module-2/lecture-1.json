@@ -1,0 +1,271 @@
+{
+  "lectureId": "module-2-lecture-1",
+  "moduleId": 2,
+  "title": "Using the App",
+  "sections": [
+    {
+      "id": "section-1",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Reference Mode Overview",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Reference Mode allows you to quickly compare visible emissions to the OpaciTool reference scale.  Screenshots are manually taken by the user. Screenshots and opacity data are uploaded to your Dashboard where they can be viewed.\n\n Reference Mode is best used when you do not plan to create a report in the Dashboard or if you are recording observations on a paper form and want to supplement your report with referenced screenshots.  A report can be created in your Dashboard when you use Reference Mode, but you will need to input most of the data manually from your paper form.",
+        "media": {
+          "type": "image",
+          "url": "training-index/13.png",
+          "alt": "Reference Mode Overview",
+          "isClickable": true,
+          "width": "30%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-2",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Setup",
+      "bgColor": "bg-[#EEEEEE]",
+      "content": {
+        "text": "You can hand-hold your device or place it in a tripod when using Reference Mode. Screenshots are recorded manually.\n\n You will need to setup in a location that meets the observation requirements for the test method you are performing (EPA Method 9, Method 22, Method 203 a-c).",
+        "media": {
+          "type": "image",
+          "url": "training-index/14.png",
+          "alt": "Proper Device Orientation",
+          "width": "50%"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-3",
+      "type": "list-split",
+      "title": "Settings & Tools",
+      "description": "<p class='lg:w-1/2'>Tapping the ellipsis will open the Settings & Tools menu.\n\n <span class='block font-bold'>Not all features are available on all devices.</span></p>",
+      "bgColor": "bg-[#E4EAED]",
+      "layout": "text-left",
+      "content": {
+        "items": [
+          {
+            "text": "The brightness button allows you to adjust the screen brightness.",
+            "image": {
+              "url": "training-index/16.svg",
+              "alt": "Open App Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "The angle button will allow you to measure the viewing angle between you and the emission point.",
+            "image": {
+              "url": "training-index/17.svg",
+              "alt": "Position Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "If your phone is equipped with a compass, selecting this button will allow you to determine the direction to the emission point.",
+            "image": {
+              "url": "training-index/18.svg",
+              "alt": "Adjust Scale Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "Some devices allow you to select from multiple cameras.  If available, you can select the camera with the best view.",
+            "image": {
+              "url": "training-index/19.svg",
+              "alt": "Camera Icon",
+              "width": "w-10"
+            }
+          },
+          {
+            "text": "When the exit button is selected, you can choose to save your data and submit it to your Dashboard or exit and discard your data.",
+            "image": {
+              "url": "training-index/20.png",
+              "alt": "Review Icon"
+            }
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/15.png",
+          "alt": "Reference Mode Interface",
+          "width": "w-1/2"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-4",
+      "type": "subsection-split",
+      "title": "Reference Scale, Timer & Capture",
+      "description": "The reference scale can be adjusted by tapping the ellipsis in the lower left part of the screen.",
+      "bgColor": "bg-[#EEEEEE]",
+      "layout": "text-right",
+      "flexLayout": true,
+      "content": {
+        "subsections": [
+          {
+            "heading": "Color.",
+            "description": "The color slider adjusts the greyscale color of the reference scale between white and black to match the color of the emissions being observed.",
+            "headingStyle": "text-black text-xl  font-semibold"
+          },
+          {
+            "heading": "Scale.",
+            "description": "The scale slider adjusts the size of the reference scale.",
+            "headingStyle": "text-black text-xl  font-semibold"
+          },
+          {
+            "heading": "Greyscale.",
+            "description": "The greyscale button changes the entire scene to black and white.  For some observations, greyscale makes it easier to compare the reference scale to the emissions.",
+            "headingStyle": "text-black text-xl font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/21.png",
+          "alt": "Image of Reference Scale, Timer & Capture",
+          "width": "w-1/2"
+        }
+      }
+    },
+    {
+      "id": "section-5",
+      "type": "subsection-split",
+      "title": "",
+      "description": "",
+      "bgColor": "bg-[#EEEEEE]",
+      "layout": "text-left",
+      "flexLayout": true,
+      "content": {
+        "subsections": [
+          {
+            "heading": "Select Opacity.",
+            "description": "Tapping the box of the reference scale with the closest opacity will select and display the numeric opacity at the top of the screen.",
+            "headingStyle": "text-black text-xl  font-semibold"
+          },
+          {
+            "heading": "Capture.",
+            "description": "The capture button takes a screenshot of everything on your screen including the selected opacity, reference scale and time.",
+            "headingStyle": "text-black text-xl  font-semibold"
+          },
+          {
+            "heading": "Timer.",
+            "description": "The timer can be used to measure the time between observations.",
+            "headingStyle": "text-black text-xl  font-semibold"
+          }
+        ],
+        "media": {
+          "type": "image",
+          "url": "training-index/22.png",
+          "alt": "Image of Reference Scale, Timer & Capture",
+          "width": "w-1/2"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-6",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Using Reference Mode",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "<p class='lg:w-1/2'>When you first access Reference Mode, you will see a live scene with various user controls. Setting up is easy and you can quickly take screenshots with the Reference Scale and subject emissions in the same scene.</p>"
+      }
+    },
+    {
+      "id": "section-7",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Step 1 - Move the Reference Scale Next to the Emissions",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Using your finger, drag the Reference Scale next to the emissions to be observed.  Try to place it over a background similar to the one behind the subject emissions.  You can pinch to zoom in the live scene if needed.",
+        "media": {
+          "type": "image",
+          "url": "training-index/23.png",
+          "alt": "Reference Scale"
+        }
+      }
+    },
+    {
+      "id": "section-8",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Step 2 - Adjust the Size and Color of the Reference Scale",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Open the tray to adjust the size of the Reference Scale and the color.  Try to match the color of the scale to the color of the subject emissions.",
+        "media": {
+          "type": "image",
+          "url": "training-index/24.png",
+          "alt": "Size and Color of the Reference Scale"
+        }
+      }
+    },
+    {
+      "id": "section-9",
+      "type": "split",
+      "layout": "text-left",
+      "title": "Step 3 - Match the Opacity",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "Move the Reference Scale up and down next to the subject emissions until you find the closest matching opacity.  Tap the block to indicate the selected opacity. The selected opacity will be displayed at the top of the screen and recorded with each screenshot.",
+        "media": {
+          "type": "image",
+          "url": "training-index/25.png",
+          "alt": "Match the Opacity "
+        }
+      }
+    },
+    {
+      "id": "section-10",
+      "type": "split",
+      "layout": "text-right",
+      "title": "Step 4 - Capture Screenshots",
+      "titleStyle": "text-xl italic font-semibold text-zinc-900 dark:text-white",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "text": "When you tap the Capture button, a screenshot will be recorded containing both the Reference Scale and the live scene.  Screenshots will be uploaded to your online Dashboard for review and report generation.\n\n A timer function allows you to monitor your observation time and the time between readings.",
+        "media": {
+          "type": "image",
+          "url": "training-index/26.png",
+          "alt": "Capture Screenshots"
+        }
+      },
+      "divider": true,
+      "dividerStyle": "h-1 bg-orange-500 dark:bg-zinc-800"
+    },
+    {
+      "id": "section-11",
+      "type": "image-content-split",
+      "title": "Exiting Reference Mode",
+      "titleStyle": "text-xl font-semibold text-zinc-900 dark:text-white",
+      "layout": "text-left",
+      "bgColor": "bg-[#E4EAED]",
+      "content": {
+        "contentImage": {
+          "url": "training-index/28.svg",
+          "alt": "",
+          "width": "w-20"
+        },
+        "text": "When you are finished using Reference Mode, tap the Exit button under the Settings & Tools menu. A prompt will appear that allows you to save or discard any data from the Reference Mode session.\n\n If you choose to save the data from your session, screenshots and GPS data will be uploaded to your Dashboard when an internet connection is available.  Screenshots can be viewed and reports can be created in your Dashboard.",
+        "media": {
+          "type": "image",
+          "url": "training-index/27.png",
+          "alt": "Reference Mode Tips Illustration",
+          "width": "w-2/3"
+        }
+      }
+    }
+  ]
+}
